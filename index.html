@@ -1022,12 +1022,14 @@ function parseBatch() {
     const question = lines.slice(0, qIdx + 1).join(" ").trim();
 
     // Récupérer la "bonne réponse" si format A textuel
-    let bonneText = null;
+    // (priorité : "explication" déjà extraite avant nettoyage,
+    //  sinon on cherche la ligne "La réponse correcte est…" dans le bloc nettoyé)
+    let bonneText = explication || null;
     let propLines = lines.slice(qIdx + 1);
     const bonneIdxLine = propLines.findIndex(l => /la r[ée]ponse correcte est/i.test(l));
     if (bonneIdxLine !== -1) {
       const m = propLines[bonneIdxLine].match(/la r[ée]ponse correcte est\s*[:\-]?\s*(.+)/i);
-      if (m) bonneText = m[1].trim().replace(/[.\s]+$/, "");
+      if (m && !bonneText) bonneText = m[1].trim().replace(/[.\s]+$/, "");
       propLines = propLines.slice(0, bonneIdxLine);
     }
 
