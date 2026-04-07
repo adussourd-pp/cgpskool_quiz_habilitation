@@ -1231,16 +1231,20 @@ async function startQuiz() {
 }
 
 function progressInner() {
-  const pct = quizState.answered > 0 ? Math.round(100 * quizState.correct / quizState.answered) : 0;
+  const total = quizState.questions.length;
+  const successPct = quizState.answered > 0 ? Math.round(100 * quizState.correct / quizState.answered) : 0;
+  // Avancement = nombre de questions répondues sur total
+  const progressPct = Math.round(100 * quizState.answered / total);
   return `
     <div class="progress-top">
       <div>
-        <div class="progress-label">Question ${quizState.current + 1} / ${quizState.questions.length}</div>
+        <div class="progress-label">Question ${quizState.current + 1} / ${total}</div>
         <div class="progress-score">Score <em>${quizState.correct} / ${quizState.answered}</em></div>
       </div>
-      <div class="progress-pct">${quizState.answered > 0 ? pct + " %" : "—"}</div>
+      <div class="progress-pct">${quizState.answered > 0 ? successPct + " %" : "—"}</div>
     </div>
-    <div class="gauge"><div class="gauge-fill ${quizState.answered === 0 ? "empty" : ""}" style="width:${pct}%"></div></div>
+    <div class="gauge"><div class="gauge-fill" style="width:${progressPct}%"></div></div>
+    <div class="progress-label" style="margin-top:6px; text-align:right; color:var(--fog-2)">${quizState.answered} / ${total} répondues</div>
   `;
 }
 
