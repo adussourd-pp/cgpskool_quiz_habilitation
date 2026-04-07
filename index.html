@@ -1093,6 +1093,12 @@ async function renderBatchPreview(formatA) {
       html += `<li>${isCorrect ? '<strong>✓ ' : ''}${escapeHtml(p)}${isCorrect ? '</strong>' : ''}</li>`;
     });
     html += `</ul>`;
+    if (q.reference || q.explication) {
+      html += `<div class="small" style="margin-top:6px">`;
+      if (q.reference)   html += `📚 <strong>Référence :</strong> ${escapeHtml(q.reference)}<br>`;
+      if (q.explication) html += `💡 <strong>Réponse correcte :</strong> ${escapeHtml(q.explication)}`;
+      html += `</div>`;
+    }
     if (q.bonne_reponse === -1) {
       html += `<label>Sélectionnez la bonne réponse :</label>`;
       html += `<select onchange="parsedBatch[${i}].bonne_reponse = parseInt(this.value)">`;
