@@ -337,7 +337,8 @@ const HABILITANTES = [
   "CIF"
 ];
 
-const CONTINUE_TYPES = ["IMMO", "IOBSP", "ALPSI", "ASS"];
+// Années disponibles pour les formations habilitantes (modifiables ici)
+const HABILITANTES_YEARS = ["2026", "2025", "2024", "2023"];
 
 // Pour chaque année et pack, la liste des types proposés
 const CONTINUE_CATALOG = {
@@ -351,14 +352,22 @@ const CONTINUE_YEARS = Object.keys(CONTINUE_CATALOG);
 
 function formationLabel(f) {
   if (!f) return "Non précisée";
-  if (f.categorie === "habilitante") return "Habilitante — " + f.nom;
+  if (f.categorie === "habilitante") {
+    return "Habilitante " + (f.annee ? f.annee + " — " : "— ") + (f.nom || "");
+  }
   if (f.categorie === "continue") return `Continue ${f.annee} — ${f.pack} (${f.type})`;
   return "Non précisée";
 }
 
 // Crée un sélecteur de formation et le monte dans `container`.
-// Retourne une fonction getValue() qui renvoie l'objet formation ou null.
-function buildFormationSelector(container, { allowAll = false, label = "Formation" } = {}) {
+// `storageKey` permet de mémoriser la dernière sélection dans le localStorage.
+function buildFormationSelector(container, { allowAll = false, label = "Formation", storageKey = null } = {}) {
+  // Récupération éventuelle de l'état précédent
+  let saved = null;
+  if (storageKey) {
+    try { saved = JSON.parse(localStorage.getItem(storageKey) || "null"); } catch(e) {}
+  }
+
   container.innerHTML = `
     <label>${label}</label>
     <select class="fs-cat">
@@ -371,14 +380,31 @@ function buildFormationSelector(container, { allowAll = false, label = "Formatio
   const cat = container.querySelector(".fs-cat");
   const sub = container.querySelector(".fs-sub");
 
-  function renderSub() {
+  function renderSub(presetValues) {
     sub.innerHTML = "";
     if (cat.value === "habilitante") {
+      // Sélecteur année
+      const yearSel = document.createElement("select");
+      yearSel.className = "fs-hab-year";
+      yearSel.innerHTML = (allowAll ? '<option value="">— Toutes années —</option>' : '<option value="">— Année —</option>')
+        + HABILITANTES_YEARS.map(y => `<option value="${y}">${y}</option>`).join("");
+      sub.appendChild(yearSel);
+
+      // Sélecteur formation
       const sel = document.createElement("select");
       sel.className = "fs-hab";
+      sel.style.marginTop = "6px";
       sel.innerHTML = (allowAll ? '<option value="">— Toutes —</option>' : '<option value="">— Choisir —</option>')
         + HABILITANTES.map(h => `<option value="${escapeHtml(h)}">${escapeHtml(h)}</option>`).join("");
       sub.appendChild(sel);
+
+      yearSel.addEventListener("change", persist);
+      sel.addEventListener("change", persist);
+
+      if (presetValues) {
+        if (presetValues.annee) yearSel.value = presetValues.annee;
+        if (presetValues.nom)   sel.value     = presetValues.nom;
+      }
     } else if (cat.value === "continue") {
       const yearSel = document.createElement("select");
       yearSel.className = "fs-year";
@@ -394,37 +420,63 @@ function buildFormationSelector(container, { allowAll = false, label = "Formatio
       typeWrap.style.marginTop = "6px";
       sub.appendChild(typeWrap);
 
-      yearSel.addEventListener("change", () => {
+      function renderPacks(presetPack, presetType) {
         packWrap.innerHTML = "";
         typeWrap.innerHTML = "";
-        if (!yearSel.value) return;
+        if (!yearSel.value) { persist(); return; }
         const packs = Object.keys(CONTINUE_CATALOG[yearSel.value]);
         const packSel = document.createElement("select");
         packSel.className = "fs-pack";
         packSel.innerHTML = (allowAll ? '<option value="">— Tous packs —</option>' : '<option value="">— Pack —</option>')
           + packs.map(p => `<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join("");
         packWrap.appendChild(packSel);
-        packSel.addEventListener("change", () => {
+        packSel.addEventListener("change", () => renderTypes());
+        function renderTypes(presetT) {
           typeWrap.innerHTML = "";
-          if (!packSel.value) return;
+          if (!packSel.value) { persist(); return; }
           const types = CONTINUE_CATALOG[yearSel.value][packSel.value];
           const typeSel = document.createElement("select");
           typeSel.className = "fs-type";
           typeSel.innerHTML = (allowAll ? '<option value="">— Tous types —</option>' : '<option value="">— Type —</option>')
             + types.map(t => `<option value="${t}">${t}</option>`).join("");
           typeWrap.appendChild(typeSel);
-        });
-      });
-    }
-  }
-  cat.addEventListener("change", renderSub);
+          typeSel.addEventListener("change", persist);
+          if (presetT) typeSel.value = presetT;
+          persist();
+        }
+        if (presetPack) {
+          packSel.value = presetPack;
+          renderTypes(presetType);
+        } else {
+          persist();
+        }
+      }
 
-  return function getValue() {
+      yearSel.addEventListener("change", () => renderPacks());
+
+      if (presetValues) {
+        if (presetValues.annee) {
+          yearSel.value = presetValues.annee;
+          renderPacks(presetValues.pack, presetValues.type);
+        }
+      }
+    }
+    persist();
+  }
+
+  function getValue() {
     if (!cat.value || cat.value === "all") return null;
     if (cat.value === "habilitante") {
-      const v = sub.querySelector(".fs-hab")?.value;
-      if (!v) return allowAll ? { categorie: "habilitante" } : null;
-      return { categorie: "habilitante", nom: v };
+      const annee = sub.querySelector(".fs-hab-year")?.value;
+      const nom   = sub.querySelector(".fs-hab")?.value;
+      if (allowAll) {
+        const r = { categorie: "habilitante" };
+        if (annee) r.annee = annee;
+        if (nom)   r.nom   = nom;
+        return r;
+      }
+      if (!annee || !nom) return null;
+      return { categorie: "habilitante", annee, nom };
     }
     if (cat.value === "continue") {
       const annee = sub.querySelector(".fs-year")?.value;
@@ -441,7 +493,23 @@ function buildFormationSelector(container, { allowAll = false, label = "Formatio
       return { categorie: "continue", annee, pack, type };
     }
     return null;
-  };
+  }
+
+  function persist() {
+    if (!storageKey) return;
+    const v = getValue();
+    if (v) localStorage.setItem(storageKey, JSON.stringify(v));
+  }
+
+  cat.addEventListener("change", () => renderSub());
+
+  // Restauration à l'ouverture
+  if (saved && saved.categorie) {
+    cat.value = saved.categorie;
+    renderSub(saved);
+  }
+
+  return getValue;
 }
 
 // Vérifie qu'une question matche un filtre formation (pour le quiz)
@@ -593,19 +661,19 @@ addProposition(); addProposition(); addProposition(); addProposition();
 // Sélecteur formation pour le mode formateur
 const getFormateurFormation = buildFormationSelector(
   document.getElementById("f-formation"),
-  { allowAll: false, label: "Formation source" }
+  { allowAll: false, label: "Formation source", storageKey: "fs_formateur" }
 );
 
 // Sélecteur formation pour le mode import
 const getImportFormation = buildFormationSelector(
   document.getElementById("i-formation"),
-  { allowAll: false, label: "Formation source (appliquée à toutes les questions importées)" }
+  { allowAll: false, label: "Formation source (appliquée à toutes les questions importées)", storageKey: "fs_import" }
 );
 
 // Sélecteur formation pour le mode quiz (filtre optionnel)
 const getQuizFilter = buildFormationSelector(
   document.getElementById("q-formation"),
-  { allowAll: true, label: "Filtrer par formation (optionnel)" }
+  { allowAll: true, label: "Filtrer par formation (optionnel)", storageKey: "fs_quiz" }
 );
 
 async function submitFormateur() {
