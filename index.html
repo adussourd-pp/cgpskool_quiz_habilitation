@@ -1128,38 +1128,47 @@ async function startQuiz() {
   const count = Math.min(parseInt(document.getElementById("q-count").value) || 10, deduped.length);
   const shuffled = deduped.sort(() => Math.random() - 0.5).slice(0, count);
 
-  quizState = { questions: shuffled, current: 0, score: 0, answered: false };
-  document.getElementById("q-setup").classList.add("hidden");
+  quizState = { questions: shuffled, current: 0, score: 0, answered: 0, correct: 0, isAnswered: false };
+  // Le bloc q-setup (filtres + bouton démarrer) reste visible pendant le quiz.
   document.getElementById("q-end").classList.add("hidden");
   document.getElementById("q-game").classList.remove("hidden");
+  // Change le label du bouton démarrer pour qu'il devienne "Relancer avec ces filtres"
+  const startBtn = document.querySelector("#q-setup button");
+  if (startBtn) startBtn.textContent = "Relancer avec ces filtres";
   renderQuizQuestion();
 }
 
 function renderQuizQuestion() {
   const game = document.getElementById("q-game");
   const q = quizState.questions[quizState.current];
-  let html = `<div class="progress">Question ${quizState.current + 1} / ${quizState.questions.length} — Score : ${quizState.score}</div>`;
+  const pct = quizState.answered > 0 ? Math.round(100 * quizState.correct / quizState.answered) : 0;
+  let html = `<div class="progress">Question ${quizState.current + 1} / ${quizState.questions.length} — Score : ${quizState.correct} / ${quizState.answered}${quizState.answered > 0 ? " (" + pct + " %)" : ""}</div>`;
   html += `<div class="question-card"><div class="small">${escapeHtml(formationLabel(q.formation))}</div><h3>${escapeHtml(q.question)}</h3></div>`;
   q.propositions.forEach((p, i) => {
     html += `<div class="quiz-option" data-idx="${i}" onclick="answerQuiz(${i})">${escapeHtml(p)}</div>`;
   });
   html += `<div id="q-feedback"></div>`;
   game.innerHTML = html;
-  quizState.answered = false;
+  quizState.isAnswered = false;
 }
 
 function answerQuiz(idx) {
-  if (quizState.answered) return;
-  quizState.answered = true;
+  if (quizState.isAnswered) return;
+  quizState.isAnswered = true;
+  quizState.answered++;
   const q = quizState.questions[quizState.current];
   const opts = document.querySelectorAll(".quiz-option");
   opts.forEach(o => o.classList.add("disabled"));
   opts[q.bonne_reponse].classList.add("correct");
   if (idx === q.bonne_reponse) {
-    quizState.score++;
+    quizState.correct++;
   } else {
     opts[idx].classList.add("wrong");
   }
+  // Met à jour la barre de progression avec le nouveau %
+  const pct = Math.round(100 * quizState.correct / quizState.answered);
+  const prog = document.querySelector("#q-game .progress");
+  if (prog) prog.textContent = `Question ${quizState.current + 1} / ${quizState.questions.length} — Score : ${quizState.correct} / ${quizState.answered} (${pct} %)`;
   const feedback = document.getElementById("q-feedback");
   const isLast = quizState.current === quizState.questions.length - 1;
   feedback.innerHTML = `<button onclick="nextQuiz()">${isLast ? "Voir le score" : "Question suivante"}</button>`;
@@ -1171,9 +1180,9 @@ function nextQuiz() {
     document.getElementById("q-game").classList.add("hidden");
     const end = document.getElementById("q-end");
     end.classList.remove("hidden");
-    const pct = Math.round(100 * quizState.score / quizState.questions.length);
+    const pct = Math.round(100 * quizState.correct / quizState.questions.length);
     end.innerHTML = `
-      <div class="score">Score final<br><em>${quizState.score} / ${quizState.questions.length}</em><br><span style="font-size:18px; color:var(--ink-60);">${pct}%</span></div>
+      <div class="score">Score final<br><em>${quizState.correct} / ${quizState.questions.length}</em><br><span style="font-size:18px; color:var(--ink-60);">${pct} % de réussite</span></div>
       <button onclick="resetQuiz()">Recommencer</button>
     `;
   } else {
@@ -1184,8 +1193,9 @@ function nextQuiz() {
 function resetQuiz() {
   document.getElementById("q-end").classList.add("hidden");
   document.getElementById("q-game").classList.add("hidden");
-  document.getElementById("q-setup").classList.remove("hidden");
   document.getElementById("q-info").innerHTML = "";
+  const startBtn = document.querySelector("#q-setup button");
+  if (startBtn) startBtn.textContent = "Démarrer le quiz";
 }
 
 // ========== HELPERS UI ==========
