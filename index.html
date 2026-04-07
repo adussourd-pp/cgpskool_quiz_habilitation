@@ -411,6 +411,54 @@
     text-transform: none;
   }
 
+  .pbs-links {
+    margin-top: 28px;
+    background: var(--white);
+    border: 1px solid var(--rule-l);
+    padding: 26px 30px;
+  }
+  .pbs-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 14px;
+  }
+  .pbs-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 18px 22px;
+    background: var(--paper);
+    border: 1px solid var(--rule-l);
+    text-decoration: none;
+    color: var(--ink);
+    transition: all 0.2s;
+  }
+  .pbs-card:hover {
+    border-color: var(--orange);
+    background: var(--white);
+  }
+  .pbs-icon { font-size: 22px; flex-shrink: 0; }
+  .pbs-title {
+    font-family: var(--serif);
+    font-size: 17px;
+    color: var(--ink);
+  }
+  .pbs-sub {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink-60);
+    margin-top: 2px;
+  }
+  .pbs-arrow {
+    margin-left: auto;
+    color: var(--orange);
+    font-size: 20px;
+    transition: transform 0.2s;
+  }
+  .pbs-card:hover .pbs-arrow { transform: translateX(4px); }
+
   .back-home {
     background: transparent;
     color: var(--ink-60);
@@ -462,6 +510,31 @@
     </div>
 
     <div class="home-stats" id="home-stats">Chargement de la banque de questions…</div>
+
+    <div class="pbs-links">
+      <div class="kicker" style="margin-bottom:14px;">
+        <span class="kicker-line"></span>
+        <span class="kicker-text">Prodemial Business School</span>
+      </div>
+      <div class="pbs-cards">
+        <a class="pbs-card" href="https://boutique.prodemial-business-school.com/user/login" target="_blank" rel="noopener">
+          <span class="pbs-icon">🛒</span>
+          <div>
+            <div class="pbs-title">Acheter une formation</div>
+            <div class="pbs-sub">Boutique PBS</div>
+          </div>
+          <span class="pbs-arrow">→</span>
+        </a>
+        <a class="pbs-card" href="https://www.formation.prodemial-business-school.com/my/" target="_blank" rel="noopener">
+          <span class="pbs-icon">🎓</span>
+          <div>
+            <div class="pbs-title">Suivre une formation</div>
+            <div class="pbs-sub">Plateforme e-learning</div>
+          </div>
+          <span class="pbs-arrow">→</span>
+        </a>
+      </div>
+    </div>
   </div>
 </div>
 
