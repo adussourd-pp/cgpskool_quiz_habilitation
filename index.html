@@ -227,41 +227,78 @@
   }
   .score em { color: var(--orange); font-style: italic; }
   .progress {
-    font-family: var(--serif);
-    font-size: 22px;
-    font-weight: 400;
-    color: var(--ink);
-    margin-bottom: 20px;
-    padding: 14px 20px;
-    background: var(--paper);
-    border-left: 4px solid var(--orange);
+    margin-bottom: 24px;
+    padding: 18px 24px;
+    background: var(--bg);
+    color: var(--white);
+  }
+  .progress-top {
     display: flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 12px;
+    margin-bottom: 12px;
   }
-  .progress .progress-label {
+  .progress-label {
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--ink-60);
+    color: var(--fog-2);
     font-family: var(--sans);
   }
-  .progress .progress-score em {
-    color: var(--orange);
-    font-style: italic;
-    font-size: 28px;
-  }
-  .progress .progress-pct {
-    font-family: var(--sans);
-    font-size: 14px;
-    font-weight: 600;
+  .progress-score {
+    font-family: var(--serif);
+    font-size: 22px;
     color: var(--white);
-    background: var(--orange);
-    padding: 6px 14px;
-    letter-spacing: 0.04em;
+  }
+  .progress-score em { color: var(--orange); font-style: italic; font-size: 28px; }
+  .progress-pct {
+    font-family: var(--serif);
+    font-size: 26px;
+    font-style: italic;
+    color: var(--orange);
+  }
+  .gauge {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    position: relative;
+  }
+  .gauge-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--orange) 0%, var(--orange-lt) 100%);
+    transition: width 0.45s ease;
+  }
+  .gauge-fill.empty { background: transparent; }
+  /* Question + propositions groupées dans un même cadre clair */
+  .quiz-card {
+    background: var(--white);
+    border: 1px solid var(--rule-l);
+    padding: 28px 32px;
+    margin-bottom: 18px;
+  }
+  .quiz-card .quiz-formation {
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 10px;
+  }
+  .quiz-card h3 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    color: var(--ink);
+  }
+  .quiz-card .quiz-hint {
+    color: var(--ink-60);
+    font-size: 12px;
+    margin: 14px 0 6px;
   }
 
   /* ── BATCH IMPORT ── */
@@ -1196,11 +1233,14 @@ async function startQuiz() {
 function progressInner() {
   const pct = quizState.answered > 0 ? Math.round(100 * quizState.correct / quizState.answered) : 0;
   return `
-    <div>
-      <div class="progress-label">Question ${quizState.current + 1} / ${quizState.questions.length}</div>
-      <div class="progress-score">Score <em>${quizState.correct} / ${quizState.answered}</em></div>
+    <div class="progress-top">
+      <div>
+        <div class="progress-label">Question ${quizState.current + 1} / ${quizState.questions.length}</div>
+        <div class="progress-score">Score <em>${quizState.correct} / ${quizState.answered}</em></div>
+      </div>
+      <div class="progress-pct">${quizState.answered > 0 ? pct + " %" : "—"}</div>
     </div>
-    ${quizState.answered > 0 ? `<div class="progress-pct">${pct} % de réussite</div>` : ""}
+    <div class="gauge"><div class="gauge-fill ${quizState.answered === 0 ? "empty" : ""}" style="width:${pct}%"></div></div>
   `;
 }
 
@@ -1208,11 +1248,14 @@ function renderQuizQuestion() {
   const game = document.getElementById("q-game");
   const q = quizState.questions[quizState.current];
   let html = `<div class="progress">${progressInner()}</div>`;
-  html += `<div class="question-card"><div class="small">${escapeHtml(formationLabel(q.formation))}</div><h3>${escapeHtml(q.question)}</h3></div>`;
-  html += `<p class="small" style="margin:8px 0 4px">👉 Cliquez sur une réponse pour valider automatiquement.</p>`;
+  html += `<div class="quiz-card">`;
+  html += `<div class="quiz-formation">${escapeHtml(formationLabel(q.formation))}</div>`;
+  html += `<h3>${escapeHtml(q.question)}</h3>`;
+  html += `<p class="quiz-hint">👉 Cliquez sur une réponse pour valider automatiquement.</p>`;
   q.propositions.forEach((p, i) => {
     html += `<div class="quiz-option" data-idx="${i}" onclick="answerQuiz(${i})">${escapeHtml(p)}</div>`;
   });
+  html += `</div>`;
   html += `<div id="q-feedback"></div>`;
   game.innerHTML = html;
   quizState.isAnswered = false;
