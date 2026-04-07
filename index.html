@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Banque de Questions - Habilitation CGPSkool</title>
+<title>Révision Habilitations / Formations Continues — CGPSkool</title>
 <style>
   * { box-sizing: border-box; }
   body {
@@ -147,26 +147,109 @@
     border-radius: 3px;
     font-size: 13px;
   }
+  /* === Page de garde === */
+  .home-hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 50px 30px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 24px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  }
+  .home-hero h1 { color: white; margin: 0 0 12px; font-size: 32px; }
+  .home-hero p { margin: 0; font-size: 17px; opacity: 0.95; max-width: 600px; margin: 0 auto; }
+  .home-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  .home-card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    cursor: pointer;
+    transition: transform 0.15s, box-shadow 0.15s;
+    border: 2px solid transparent;
+  }
+  .home-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    border-color: #667eea;
+  }
+  .home-card .icon { font-size: 36px; margin-bottom: 8px; }
+  .home-card h3 { margin: 6px 0; color: #2c3e50; }
+  .home-card p { margin: 0; color: #666; font-size: 14px; line-height: 1.5; }
+  .home-stats {
+    background: #fff;
+    padding: 16px 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: #555;
+    font-size: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .home-stats strong { color: #667eea; font-size: 22px; }
+  .back-home {
+    background: none;
+    color: #667eea;
+    border: none;
+    padding: 6px 0;
+    margin: 0 0 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  .back-home:hover { text-decoration: underline; }
 </style>
 </head>
 <body>
 
-<h1>Banque de Questions — Habilitation CGPSkool</h1>
+<!-- ========== PAGE DE GARDE ========== -->
+<div id="panel-home">
+  <div class="home-hero">
+    <h1>🎓 Révision Habilitations / Formations Continues</h1>
+    <p>Plateforme collaborative CGPSkool pour réviser les formations habilitantes et continues. Ajoutez vos questions, importez vos lots et entraînez-vous en mode quiz.</p>
+  </div>
 
-<div style="background:#fff; padding:12px 16px; border-radius:8px; margin-bottom:12px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
-  <button onclick="promptToken()" style="margin:0">Définir mon token GitHub</button>
-  <span id="token-status" class="small">Aucun token configuré</span>
-  <span class="small" style="margin-left:auto">Le token est stocké uniquement dans votre navigateur. Nécessaire pour les modes Formateur et Import.</span>
+  <div class="home-cards">
+    <div class="home-card" onclick="goToTab('formateur')">
+      <div class="icon">✏️</div>
+      <h3>Mode Formateur</h3>
+      <p>Saisir manuellement une nouvelle question avec ses propositions de réponses.</p>
+    </div>
+    <div class="home-card" onclick="goToTab('import')">
+      <div class="icon">📥</div>
+      <h3>Import par lot</h3>
+      <p>Coller un texte brut copié depuis la plateforme e-learning et importer plusieurs questions d'un coup.</p>
+    </div>
+    <div class="home-card" onclick="goToTab('quiz')">
+      <div class="icon">🎯</div>
+      <h3>Mode Quiz</h3>
+      <p>S'entraîner avec un tirage aléatoire, filtrable par formation, et obtenir un score.</p>
+    </div>
+  </div>
+
+  <div class="home-stats" id="home-stats">Chargement de la banque de questions…</div>
 </div>
 
-<div class="tabs">
-  <button class="tab active" data-tab="formateur">Mode Formateur</button>
-  <button class="tab" data-tab="import">Import par lot</button>
-  <button class="tab" data-tab="quiz">Mode Quiz</button>
+<!-- ========== INTERFACE PRINCIPALE ========== -->
+<div id="main-app" class="hidden">
+  <button class="back-home" onclick="goHome()">← Retour à l'accueil</button>
+  <h1>Révision Habilitations / Formations Continues</h1>
+
+  <div class="tabs">
+    <button class="tab" data-tab="formateur">Mode Formateur</button>
+    <button class="tab" data-tab="import">Import par lot</button>
+    <button class="tab" data-tab="quiz">Mode Quiz</button>
+  </div>
 </div>
+
 
 <!-- ========== MODE FORMATEUR ========== -->
-<div class="panel" id="panel-formateur">
+<div class="panel hidden" id="panel-formateur">
   <h2>Ajouter une question</h2>
   <div id="f-formation"></div>
 
@@ -217,13 +300,10 @@
    CONFIGURATION GITHUB
    =====================================================================
    - GITHUB_USER / GITHUB_REPO : repo où est stocké questions.json
-   - Le PAT (Personal Access Token) N'EST PAS stocké dans le code source
-     pour éviter d'exposer un secret publiquement.
-     Chaque formateur saisit son propre token via le bouton "Définir mon
-     token GitHub" en haut de la page. Le token est conservé uniquement
-     dans le localStorage du navigateur.
+   - GITHUB_TOKEN : Personal Access Token (fine-grained) avec permission
+     "Contents: Read and write" sur ce repo uniquement.
 
-   Pour générer un PAT fine-grained :
+   Pour générer un PAT :
      https://github.com/settings/personal-access-tokens/new
      - Repository access : seulement cgpskool_quiz_habilitation
      - Permissions       : Contents = Read and Write
@@ -235,35 +315,12 @@ const GITHUB_USER    = "adussourd-pp";
 const GITHUB_REPO    = "cgpskool_quiz_habilitation";
 const GITHUB_BRANCH  = "main";
 const QUESTIONS_FILE = "questions.json";
-
-// 👉 COLLEZ ICI VOTRE PAT (commence par github_pat_...)
-//    Laissez "" si vous préférez le saisir via le bouton dans la page.
 const GITHUB_TOKEN   = "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";
 
 /* ===================================================================== */
 
-// Token : priorité au localStorage (si saisi via le bouton),
-// sinon fallback sur la constante GITHUB_TOKEN ci-dessus.
 function getToken() {
-  return localStorage.getItem("github_pat") || GITHUB_TOKEN || "";
-}
-function setToken(t) {
-  if (t) localStorage.setItem("github_pat", t);
-  else   localStorage.removeItem("github_pat");
-  refreshTokenStatus();
-}
-function refreshTokenStatus() {
-  const el = document.getElementById("token-status");
-  if (!el) return;
-  const t = getToken();
-  el.textContent = t ? `Token configuré (…${t.slice(-6)})` : "Aucun token configuré";
-  el.style.color = t ? "#27ae60" : "#e74c3c";
-}
-function promptToken() {
-  const current = getToken();
-  const v = prompt("Collez votre Personal Access Token GitHub (laisser vide pour supprimer) :", current);
-  if (v === null) return;
-  setToken(v.trim());
+  return GITHUB_TOKEN || "";
 }
 
 const API_BASE = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${QUESTIONS_FILE}`;
@@ -449,7 +506,7 @@ async function loadQuestions() {
 
 function ensureToken() {
   if (!getToken()) {
-    throw new Error("Aucun token GitHub configuré. Cliquez sur « Définir mon token GitHub » en haut de la page.");
+    throw new Error("Aucun token GitHub configuré dans GITHUB_TOKEN.");
   }
 }
 
@@ -486,16 +543,37 @@ async function saveQuestions(allQuestions, message) {
   return await r.json();
 }
 
-// ========== ONGLETS ==========
-document.querySelectorAll(".tab").forEach(t => {
-  t.addEventListener("click", () => {
-    document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
-    t.classList.add("active");
-    ["formateur","import","quiz"].forEach(name => {
-      document.getElementById("panel-"+name).classList.toggle("hidden", name !== t.dataset.tab);
-    });
+// ========== NAVIGATION ==========
+function goHome() {
+  document.getElementById("panel-home").classList.remove("hidden");
+  document.getElementById("main-app").classList.add("hidden");
+  ["formateur","import","quiz"].forEach(n => document.getElementById("panel-"+n).classList.add("hidden"));
+  refreshHomeStats();
+}
+function goToTab(name) {
+  document.getElementById("panel-home").classList.add("hidden");
+  document.getElementById("main-app").classList.remove("hidden");
+  document.querySelectorAll(".tab").forEach(x => {
+    x.classList.toggle("active", x.dataset.tab === name);
   });
+  ["formateur","import","quiz"].forEach(n => {
+    document.getElementById("panel-"+n).classList.toggle("hidden", n !== name);
+  });
+}
+document.querySelectorAll(".tab").forEach(t => {
+  t.addEventListener("click", () => goToTab(t.dataset.tab));
 });
+
+async function refreshHomeStats() {
+  const el = document.getElementById("home-stats");
+  if (!el) return;
+  try {
+    const all = await loadQuestions();
+    el.innerHTML = `<strong>${all.length}</strong> question${all.length > 1 ? "s" : ""} dans la banque`;
+  } catch(e) {
+    el.textContent = "Impossible de charger la banque de questions.";
+  }
+}
 
 // ========== MODE FORMATEUR ==========
 function addProposition(value = "") {
@@ -889,7 +967,7 @@ function showAlert(target, type, msg) {
   target.innerHTML = `<div class="alert ${type}">${escapeHtml(msg)}</div>`;
 }
 
-refreshTokenStatus();
+refreshHomeStats();
 </script>
 
 </body>
