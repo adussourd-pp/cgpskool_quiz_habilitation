@@ -1,1 +1,146 @@
-[]
+[
+  {
+    "id": "88647117-a993-4ff6-84ca-20f592f54dfe",
+    "question": "Quels sont les principaux avantages des SCPI à capital variable en matière de liquidité ?",
+    "propositions": [
+      "Elles permettent une revente plus rapide des parts grâce au mécanisme de souscription-retrait, sous réserve de demandes équivalentes",
+      "Elles sont totalement exemptées de tout risque de liquidité",
+      "Elles permettent d’éviter tout risque de variation de valeur lors des retraits",
+      "Elles permettent un retrait immédiat des parts si elles sont détenues depuis plus de 2 ans"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ALPSI"
+    },
+    "date": "2026-04-07"
+  },
+  {
+    "id": "95e86635-5491-48ad-9f4a-d6db3ab3aaf2",
+    "question": "Quel est l’objectif principal d’une SCPI « Déficit Foncier » ?",
+    "propositions": [
+      "Générer une exonération d’impôt sur les plus-values réalisées à la revente des parts",
+      "Investir dans des biens classés pour bénéficier d’une déduction sur le revenu global",
+      "Permettre de déduire les dépenses de travaux de revenus fonciers existants",
+      "Offrir une réduction d’impôt sur le montant investi"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ALPSI"
+    },
+    "date": "2026-04-07"
+  },
+  {
+    "id": "7cb10520-f034-4045-9e1c-445b9c51f0c3",
+    "question": "Quel est l’un des avantages d’investir en SCPI via un contrat d’assurance-vie ?",
+    "propositions": [
+      "La fiscalité applicable est celle de l’assurance-vie, plus avantageuse en cas de rachat ou de transmission",
+      "L’investisseur peut librement choisir n’importe quelle SCPI du marché sans restriction",
+      "Tous les assureurs garantissent un rendement minimum sur les SCPI",
+      "Les frais de gestion sont inexistants dans le cadre d’un contrat d’assurance-vie"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ALPSI"
+    },
+    "date": "2026-04-07"
+  },
+  {
+    "id": "093503d6-20b1-4d75-a9e9-ddda267983b2",
+    "question": "Que se passe-t-il lorsque les demandes de retrait atteignent 10 % de la capitalisation sur 12 mois ?",
+    "propositions": [
+      "Les associés sont automatiquement remboursés intégralement",
+      "L’AMF organise une vente forcée des actifs",
+      "La société de gestion doit convoquer une assemblée générale extraordinaire (AGE) et informer l’AMF",
+      "La SCPI est automatiquement liquidée"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ALPSI"
+    },
+    "date": "2026-04-07"
+  },
+  {
+    "id": "957b403f-01cc-4dc1-88e1-bfa76a548974",
+    "question": "Qu’est-ce que le délai de jouissance dans le cadre d’un investissement en SCPI ?",
+    "propositions": [
+      "C’est le temps nécessaire pour que la SCPI soit enregistrée auprès de l’AMF",
+      "C’est la durée pendant laquelle l’investisseur peut revenir sur sa décision et annuler son investissement",
+      "C’est la période durant laquelle la SCPI cherche un locataire avant d’acheter un bien",
+      "C’est la période durant laquelle les parts de SCPI ne sont pas productives de dividendes"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ALPSI"
+    },
+    "date": "2026-04-07"
+  },
+  {
+    "id": "f7202862-ef4c-4e09-8aed-69dd6a00bec5",
+    "question": "Les SCPI de rendement ciblent principalement l’immobilier professionnel et ont pour objectif de :",
+    "propositions": [
+      "Distribuer régulièrement des revenus aux investisseurs",
+      "Garantir une exonération fiscale sur les plus-values",
+      "S’inscrire dans une logique de placement court terme",
+      "Réduire l’impôt sur le revenu des souscripteurs"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ALPSI"
+    },
+    "date": "2026-04-07"
+  },
+  {
+    "id": "fcaefb43-f993-4704-9a53-6c385cafa111",
+    "question": "Quelle règle s’applique lors du traitement des demandes via le fonds de remboursement ?",
+    "propositions": [
+      "Aucun plafonnement n’est prévu sur la décote",
+      "L’ordre chronologique des demandes, avec une éventuelle décote plafonnée à 10 %",
+      "Le traitement libre selon la volonté de la société de gestion",
+      "La priorité accordée aux investisseurs institutionnels"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ALPSI"
+    },
+    "date": "2026-04-07"
+  },
+  {
+    "id": "1312f2e9-67a0-48db-98de-9476f8fc88a7",
+    "question": "Quels sont les principaux avantages de l’investissement en SCPI ?",
+    "propositions": [
+      "Les SCPI permettent de bénéficier d’une garantie contre les fluctuations du marché immobilier",
+      "Les SCPI garantissent un rendement annuel fixe, quel que soit le marché immobilier",
+      "L'investissement en SCPI offre une exonération fiscale complète sur les plus-values à la revente des parts",
+      "Accéder avec un faible montant d’investissement à l’immobilier commercial et possibilité de financement bancaire"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ALPSI"
+    },
+    "date": "2026-04-07"
+  }
+]
