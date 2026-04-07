@@ -76,7 +76,12 @@ export default {
         return json({ error: "GitHub GET failed", status: getRes.status, body: t }, 502);
       }
       const fileData = await getRes.json();
-      const currentContent = atob(fileData.content.replace(/\n/g, ""));
+      // Décodage UTF-8 correct (atob seul donne du Latin-1 et casse les accents)
+      const b64 = fileData.content.replace(/\n/g, "");
+      const binary = atob(b64);
+      const bytes = new Uint8Array(binary.length);
+      for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+      const currentContent = new TextDecoder("utf-8").decode(bytes);
       let questions;
       try {
         questions = JSON.parse(currentContent);
