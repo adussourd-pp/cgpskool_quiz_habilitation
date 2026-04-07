@@ -227,12 +227,41 @@
   }
   .score em { color: var(--orange); font-style: italic; }
   .progress {
-    font-size: 10.5px;
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 20px;
+    padding: 14px 20px;
+    background: var(--paper);
+    border-left: 4px solid var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .progress .progress-label {
+    font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--ink-60);
-    margin-bottom: 16px;
+    font-family: var(--sans);
+  }
+  .progress .progress-score em {
+    color: var(--orange);
+    font-style: italic;
+    font-size: 28px;
+  }
+  .progress .progress-pct {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--white);
+    background: var(--orange);
+    padding: 6px 14px;
+    letter-spacing: 0.04em;
   }
 
   /* ── BATCH IMPORT ── */
@@ -1138,11 +1167,21 @@ async function startQuiz() {
   renderQuizQuestion();
 }
 
+function progressInner() {
+  const pct = quizState.answered > 0 ? Math.round(100 * quizState.correct / quizState.answered) : 0;
+  return `
+    <div>
+      <div class="progress-label">Question ${quizState.current + 1} / ${quizState.questions.length}</div>
+      <div class="progress-score">Score <em>${quizState.correct} / ${quizState.answered}</em></div>
+    </div>
+    ${quizState.answered > 0 ? `<div class="progress-pct">${pct} % de réussite</div>` : ""}
+  `;
+}
+
 function renderQuizQuestion() {
   const game = document.getElementById("q-game");
   const q = quizState.questions[quizState.current];
-  const pct = quizState.answered > 0 ? Math.round(100 * quizState.correct / quizState.answered) : 0;
-  let html = `<div class="progress">Question ${quizState.current + 1} / ${quizState.questions.length} — Score : ${quizState.correct} / ${quizState.answered}${quizState.answered > 0 ? " (" + pct + " %)" : ""}</div>`;
+  let html = `<div class="progress">${progressInner()}</div>`;
   html += `<div class="question-card"><div class="small">${escapeHtml(formationLabel(q.formation))}</div><h3>${escapeHtml(q.question)}</h3></div>`;
   q.propositions.forEach((p, i) => {
     html += `<div class="quiz-option" data-idx="${i}" onclick="answerQuiz(${i})">${escapeHtml(p)}</div>`;
@@ -1165,10 +1204,9 @@ function answerQuiz(idx) {
   } else {
     opts[idx].classList.add("wrong");
   }
-  // Met à jour la barre de progression avec le nouveau %
-  const pct = Math.round(100 * quizState.correct / quizState.answered);
+  // Met à jour la barre de progression avec le nouveau score / %
   const prog = document.querySelector("#q-game .progress");
-  if (prog) prog.textContent = `Question ${quizState.current + 1} / ${quizState.questions.length} — Score : ${quizState.correct} / ${quizState.answered} (${pct} %)`;
+  if (prog) prog.innerHTML = progressInner();
   const feedback = document.getElementById("q-feedback");
   const isLast = quizState.current === quizState.questions.length - 1;
   feedback.innerHTML = `<button onclick="nextQuiz()">${isLast ? "Voir le score" : "Question suivante"}</button>`;
