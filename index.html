@@ -1209,6 +1209,7 @@ function renderQuizQuestion() {
   const q = quizState.questions[quizState.current];
   let html = `<div class="progress">${progressInner()}</div>`;
   html += `<div class="question-card"><div class="small">${escapeHtml(formationLabel(q.formation))}</div><h3>${escapeHtml(q.question)}</h3></div>`;
+  html += `<p class="small" style="margin:8px 0 4px">👉 Cliquez sur une réponse pour valider automatiquement.</p>`;
   q.propositions.forEach((p, i) => {
     html += `<div class="quiz-option" data-idx="${i}" onclick="answerQuiz(${i})">${escapeHtml(p)}</div>`;
   });
