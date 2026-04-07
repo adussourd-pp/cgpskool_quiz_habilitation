@@ -3,206 +3,362 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Révision Habilitations / Formations Continues — CGPSkool</title>
+<title>Révision Habilitations / Formations Continues — CGP Skool</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
-  * { box-sizing: border-box; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background: #f5f7fa;
-    color: #222;
-    line-height: 1.5;
+  /* ── CGP SKOOL DESIGN SYSTEM ── */
+  :root {
+    --bg:          #0f0e0d;
+    --bg-2:        #161412;
+    --paper:       #F6F3EE;
+    --paper-2:     #EDEAE3;
+    --orange:      #D4622A;
+    --orange-lt:   #E8855A;
+    --orange-hover:#b8501f;
+    --o-dim:       rgba(212,98,42,0.13);
+    --white:       #FFFFFF;
+    --fog:         rgba(255,255,255,0.58);
+    --fog-2:       rgba(255,255,255,0.3);
+    --rule-d:      rgba(255,255,255,0.07);
+    --rule-l:      rgba(24,22,20,0.08);
+    --ink:         #181614;
+    --ink-60:      rgba(24,22,20,0.6);
+    --ink-30:      rgba(24,22,20,0.3);
+    --serif:       'Playfair Display', Georgia, serif;
+    --sans:        'Inter', system-ui, sans-serif;
+    --green:       #2D7A5B;
+    --green-l:     #EAF5EF;
+    --red:         #C0392B;
+    --red-l:       #FDEEEC;
+    --blue:        #2B5EA7;
+    --blue-l:      #EDF2FB;
+    --amber:       #B07300;
+    --amber-l:     #FBF3DC;
   }
-  h1 { color: #2c3e50; }
-  h2 { color: #34495e; margin-top: 0; }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body {
+    font-family: var(--sans);
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 15px;
+    min-height: 100vh;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 28px 24px 80px; }
+
+  h1, h2, h3 { font-family: var(--serif); font-weight: 400; letter-spacing: -0.01em; color: var(--ink); }
+  h1 { font-size: clamp(28px, 3.2vw, 44px); line-height: 1.1; margin-bottom: 18px; }
+  h2 { font-size: clamp(20px, 2.2vw, 30px); line-height: 1.15; margin-bottom: 14px; }
+  h3 { font-size: 18px; line-height: 1.3; }
+  h1 em, h2 em, h3 em { font-style: italic; color: var(--orange); }
+  p { color: var(--ink-60); }
+
+  .hidden { display: none !important; }
+
+  /* ── TABS ── */
   .tabs {
     display: flex;
-    gap: 4px;
-    margin-bottom: 20px;
+    gap: 0;
+    margin-bottom: 0;
     flex-wrap: wrap;
+    border-bottom: 1px solid var(--rule-l);
   }
   .tab {
     flex: 1;
     min-width: 140px;
-    padding: 12px 16px;
-    background: #dfe6ed;
+    padding: 16px 20px;
+    background: transparent;
     border: none;
-    border-radius: 8px 8px 0 0;
+    border-bottom: 2px solid transparent;
     cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    color: #555;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-60);
+    transition: all 0.2s;
   }
+  .tab:hover { color: var(--ink); }
   .tab.active {
-    background: #fff;
-    color: #2c3e50;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+    color: var(--orange);
+    border-bottom-color: var(--orange);
   }
+
+  /* ── PANEL ── */
   .panel {
-    background: #fff;
-    padding: 24px;
-    border-radius: 0 8px 8px 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    background: var(--white);
+    padding: 36px 40px;
+    border: 1px solid var(--rule-l);
+    border-top: none;
   }
-  .hidden { display: none; }
+
+  /* ── FORMS ── */
   label {
     display: block;
-    margin-top: 12px;
-    font-weight: 600;
-    font-size: 14px;
-    color: #555;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-60);
   }
   input[type="text"], textarea, select {
     width: 100%;
-    padding: 10px;
-    margin-top: 4px;
-    border: 1px solid #ccd;
-    border-radius: 6px;
+    padding: 12px 14px;
+    background: var(--white);
+    border: 1px solid var(--rule-l);
+    border-radius: 0;
     font-size: 14px;
-    font-family: inherit;
+    font-family: var(--sans);
+    color: var(--ink);
+    transition: border-color 0.2s;
   }
-  textarea { resize: vertical; min-height: 100px; }
+  input[type="text"]:focus, textarea:focus, select:focus {
+    outline: none;
+    border-color: var(--orange);
+  }
+  textarea { resize: vertical; min-height: 120px; line-height: 1.55; }
+  select { cursor: pointer; appearance: none; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'><path fill='%23181614' d='M6 8L0 0h12z'/></svg>"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+
+  /* ── BUTTONS ── */
   button {
-    background: #3498db;
-    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 14px 28px;
+    background: var(--orange);
+    color: var(--white);
     border: none;
-    padding: 12px 22px;
-    border-radius: 6px;
     cursor: pointer;
-    font-size: 15px;
-    font-weight: 600;
-    margin-top: 16px;
+    transition: all 0.22s;
+    margin-top: 18px;
+    box-shadow: 0 6px 20px rgba(212,98,42,0.22);
   }
-  button:hover { background: #2980b9; }
-  button:disabled { background: #aaa; cursor: not-allowed; }
-  button.secondary { background: #95a5a6; }
-  button.secondary:hover { background: #7f8c8d; }
-  button.danger { background: #e74c3c; }
+  button:hover { background: var(--orange-hover); gap: 14px; }
+  button:disabled { background: var(--ink-30); box-shadow: none; cursor: not-allowed; }
+  button.secondary {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--rule-l);
+    box-shadow: none;
+  }
+  button.secondary:hover { border-color: var(--orange); color: var(--orange); background: transparent; }
+  button.danger {
+    background: transparent;
+    color: var(--red);
+    border: 1px solid rgba(192,57,43,0.25);
+    box-shadow: none;
+    padding: 6px 12px;
+  }
+  button.danger:hover { background: var(--red-l); border-color: var(--red); }
+
+  /* ── PROPOSITIONS ── */
   .proposition {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-top: 6px;
+    gap: 12px;
+    margin-top: 8px;
   }
-  .proposition input[type="radio"] { width: auto; }
+  .proposition input[type="radio"] {
+    width: 18px; height: 18px; accent-color: var(--orange); cursor: pointer;
+  }
   .proposition input[type="text"] { flex: 1; margin-top: 0; }
-  .proposition button { margin-top: 0; padding: 6px 10px; }
+  .proposition button { margin-top: 0; padding: 8px 12px; }
+
+  /* ── ALERTS ── */
   .alert {
-    padding: 12px;
-    border-radius: 6px;
-    margin: 12px 0;
+    padding: 14px 18px;
+    margin: 16px 0;
+    font-size: 13px;
+    line-height: 1.6;
+    border-left: 3px solid;
+    background: var(--paper-2);
   }
-  .alert.warn { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
-  .alert.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
-  .alert.error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
-  .alert.info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+  .alert.warn    { border-color: var(--amber);  background: var(--amber-l); color: #5e3d00; }
+  .alert.success { border-color: var(--green);  background: var(--green-l); color: #1d4d39; }
+  .alert.error   { border-color: var(--red);    background: var(--red-l);   color: #6b1f17; }
+  .alert.info    { border-color: var(--blue);   background: var(--blue-l);  color: #1a3a6b; }
+
+  /* ── QUESTION CARDS / QUIZ ── */
   .question-card {
-    background: #f8f9fb;
-    padding: 16px;
-    border-radius: 8px;
-    margin: 12px 0;
-    border-left: 4px solid #3498db;
+    background: var(--paper);
+    padding: 24px 28px;
+    margin: 18px 0;
+    border-left: 3px solid var(--orange);
   }
+  .question-card h3 { margin-top: 8px; }
   .quiz-option {
     display: block;
-    padding: 12px;
-    margin: 8px 0;
-    background: #fff;
-    border: 2px solid #e0e6ed;
-    border-radius: 6px;
+    padding: 16px 20px;
+    margin: 10px 0;
+    background: var(--white);
+    border: 1px solid var(--rule-l);
     cursor: pointer;
     transition: all 0.2s;
+    font-size: 14px;
+    color: var(--ink);
   }
-  .quiz-option:hover { border-color: #3498db; background: #f0f8ff; }
-  .quiz-option.selected { border-color: #3498db; background: #e8f4fd; }
-  .quiz-option.correct { border-color: #27ae60; background: #d4edda; }
-  .quiz-option.wrong { border-color: #e74c3c; background: #f8d7da; }
+  .quiz-option:hover { border-color: var(--orange); background: var(--paper); }
+  .quiz-option.selected { border-color: var(--orange); }
+  .quiz-option.correct { border-color: var(--green); background: var(--green-l); color: #1d4d39; }
+  .quiz-option.wrong   { border-color: var(--red);   background: var(--red-l);   color: #6b1f17; }
   .quiz-option.disabled { cursor: default; pointer-events: none; }
+
   .score {
-    font-size: 24px;
-    font-weight: bold;
+    font-family: var(--serif);
+    font-size: 36px;
+    font-weight: 400;
     text-align: center;
-    padding: 20px;
-    color: #2c3e50;
+    padding: 30px 20px;
+    color: var(--ink);
   }
+  .score em { color: var(--orange); font-style: italic; }
   .progress {
-    color: #777;
-    font-size: 13px;
-    margin-bottom: 8px;
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ink-60);
+    margin-bottom: 16px;
   }
+
+  /* ── BATCH IMPORT ── */
   .batch-question {
-    background: #f8f9fb;
-    padding: 12px;
-    margin: 10px 0;
-    border-radius: 6px;
-    border-left: 3px solid #3498db;
+    background: var(--paper);
+    padding: 16px 20px;
+    margin: 12px 0;
+    border-left: 3px solid var(--orange);
   }
-  .batch-question.duplicate { border-left-color: #f39c12; background: #fff8e7; }
-  .small { font-size: 12px; color: #777; }
+  .batch-question.duplicate { border-left-color: var(--amber); background: var(--amber-l); }
+  .batch-question ul { margin: 8px 0 0 18px; }
+  .batch-question li { font-size: 13px; line-height: 1.6; color: var(--ink-60); }
+
+  .small { font-size: 12px; color: var(--ink-60); line-height: 1.6; }
   code {
-    background: #eef;
+    background: var(--paper-2);
     padding: 2px 6px;
-    border-radius: 3px;
-    font-size: 13px;
+    font-family: 'Menlo', monospace;
+    font-size: 12px;
+    color: var(--ink);
   }
-  /* === Page de garde === */
+
+  /* ── HOME / LANDING ── */
   .home-hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 50px 30px;
-    border-radius: 12px;
-    text-align: center;
-    margin-bottom: 24px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    background: var(--bg);
+    color: var(--white);
+    padding: 80px 50px 90px;
+    text-align: left;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
   }
-  .home-hero h1 { color: white; margin: 0 0 12px; font-size: 32px; }
-  .home-hero p { margin: 0; font-size: 17px; opacity: 0.95; max-width: 600px; margin: 0 auto; }
+  .home-hero::before {
+    content: "";
+    position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+    background: radial-gradient(ellipse at 80% 20%, rgba(212,98,42,0.18), transparent 60%);
+    pointer-events: none;
+  }
+  .home-hero-inner { position: relative; max-width: 720px; }
+  .home-hero h1 {
+    color: var(--white);
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.05;
+    margin-bottom: 22px;
+  }
+  .home-hero h1 em { color: var(--orange); font-style: italic; }
+  .home-hero p { color: var(--fog); font-size: 16px; line-height: 1.7; max-width: 580px; }
+
+  .kicker {
+    display: flex; align-items: center; gap: 12px;
+    margin-bottom: 20px;
+  }
+  .kicker-line { width: 28px; height: 1px; background: var(--orange); }
+  .kicker-text {
+    font-family: var(--sans);
+    font-size: 10.5px; font-weight: 500;
+    letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--orange);
+  }
+
   .home-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 16px;
-    margin-bottom: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 0;
+    margin-bottom: 28px;
+    border: 1px solid var(--rule-l);
+    border-right: none;
+    border-bottom: none;
+    background: var(--white);
   }
   .home-card {
-    background: #fff;
-    padding: 24px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    background: var(--white);
+    padding: 36px 30px;
     cursor: pointer;
-    transition: transform 0.15s, box-shadow 0.15s;
-    border: 2px solid transparent;
+    transition: background 0.2s;
+    border-right: 1px solid var(--rule-l);
+    border-bottom: 1px solid var(--rule-l);
   }
-  .home-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-    border-color: #667eea;
+  .home-card:hover { background: var(--paper); }
+  .home-card .icon {
+    font-size: 28px;
+    margin-bottom: 14px;
+    display: block;
   }
-  .home-card .icon { font-size: 36px; margin-bottom: 8px; }
-  .home-card h3 { margin: 6px 0; color: #2c3e50; }
-  .home-card p { margin: 0; color: #666; font-size: 14px; line-height: 1.5; }
+  .home-card h3 {
+    margin: 8px 0 10px;
+    color: var(--ink);
+  }
+  .home-card p { color: var(--ink-60); font-size: 13.5px; line-height: 1.7; }
+
   .home-stats {
-    background: #fff;
-    padding: 16px 20px;
-    border-radius: 10px;
+    background: var(--white);
+    padding: 22px 28px;
+    border: 1px solid var(--rule-l);
     text-align: center;
-    color: #555;
-    font-size: 14px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    color: var(--ink-60);
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 500;
   }
-  .home-stats strong { color: #667eea; font-size: 22px; }
+  .home-stats strong {
+    color: var(--orange);
+    font-family: var(--serif);
+    font-size: 32px;
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 8px;
+    letter-spacing: -0.02em;
+    text-transform: none;
+  }
+
   .back-home {
-    background: none;
-    color: #667eea;
+    background: transparent;
+    color: var(--ink-60);
     border: none;
-    padding: 6px 0;
-    margin: 0 0 12px;
+    padding: 0;
+    margin: 0 0 18px;
     cursor: pointer;
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    box-shadow: none;
   }
-  .back-home:hover { text-decoration: underline; }
+  .back-home:hover { color: var(--orange); background: transparent; gap: 10px; }
 </style>
 </head>
 <body>
@@ -210,45 +366,56 @@
 <!-- ========== PAGE DE GARDE ========== -->
 <div id="panel-home">
   <div class="home-hero">
-    <h1>🎓 Révision Habilitations / Formations Continues</h1>
-    <p>Plateforme collaborative CGPSkool pour réviser les formations habilitantes et continues. Ajoutez vos questions, importez vos lots et entraînez-vous en mode quiz.</p>
-  </div>
-
-  <div class="home-cards">
-    <div class="home-card" onclick="goToTab('formateur')">
-      <div class="icon">✏️</div>
-      <h3>Mode Formateur</h3>
-      <p>Saisir manuellement une nouvelle question avec ses propositions de réponses.</p>
-    </div>
-    <div class="home-card" onclick="goToTab('import')">
-      <div class="icon">📥</div>
-      <h3>Import par lot</h3>
-      <p>Coller un texte brut copié depuis la plateforme e-learning et importer plusieurs questions d'un coup.</p>
-    </div>
-    <div class="home-card" onclick="goToTab('quiz')">
-      <div class="icon">🎯</div>
-      <h3>Mode Quiz</h3>
-      <p>S'entraîner avec un tirage aléatoire, filtrable par formation, et obtenir un score.</p>
+    <div class="home-hero-inner wrap" style="padding-top:0; padding-bottom:0;">
+      <div class="kicker">
+        <span class="kicker-line"></span>
+        <span class="kicker-text" style="color: var(--fog);">CGP Skool — Révision</span>
+      </div>
+      <h1>Révise tes formations<br><em>habilitantes & continues</em></h1>
+      <p>Plateforme collaborative CGP Skool pour réviser les formations habilitantes et continues. Saisis tes questions, importe tes lots et entraîne-toi en mode quiz.</p>
     </div>
   </div>
 
-  <div class="home-stats" id="home-stats">Chargement de la banque de questions…</div>
+  <div class="wrap" style="padding-top:0;">
+    <div class="home-cards">
+      <div class="home-card" onclick="goToTab('formateur')">
+        <span class="icon">✏️</span>
+        <h3>Saisie manuelle</h3>
+        <p>Créer une nouvelle question avec ses propositions de réponses.</p>
+      </div>
+      <div class="home-card" onclick="goToTab('import')">
+        <span class="icon">📥</span>
+        <h3>Import par lot</h3>
+        <p>Coller un texte brut copié depuis la plateforme e-learning et importer plusieurs questions d'un coup.</p>
+      </div>
+      <div class="home-card" onclick="goToTab('quiz')">
+        <span class="icon">🎯</span>
+        <h3>Mode Quiz</h3>
+        <p>S'entraîner avec un tirage aléatoire, filtrable par formation, et obtenir un score.</p>
+      </div>
+    </div>
+
+    <div class="home-stats" id="home-stats">Chargement de la banque de questions…</div>
+  </div>
 </div>
 
 <!-- ========== INTERFACE PRINCIPALE ========== -->
-<div id="main-app" class="hidden">
+<div id="main-app" class="hidden wrap">
   <button class="back-home" onclick="goHome()">← Retour à l'accueil</button>
-  <h1>Révision Habilitations / Formations Continues</h1>
+  <div class="kicker">
+    <span class="kicker-line"></span>
+    <span class="kicker-text">CGP Skool</span>
+  </div>
+  <h1>Révision <em>Habilitations & Formations Continues</em></h1>
 
   <div class="tabs">
-    <button class="tab" data-tab="formateur">Mode Formateur</button>
+    <button class="tab" data-tab="formateur">Saisie manuelle</button>
     <button class="tab" data-tab="import">Import par lot</button>
     <button class="tab" data-tab="quiz">Mode Quiz</button>
   </div>
-</div>
 
 
-<!-- ========== MODE FORMATEUR ========== -->
+<!-- ========== SAISIE MANUELLE ========== -->
 <div class="panel hidden" id="panel-formateur">
   <h2>Ajouter une question</h2>
   <div id="f-formation"></div>
@@ -283,7 +450,7 @@
 <div class="panel hidden" id="panel-quiz">
   <h2>Quiz</h2>
   <div id="q-setup">
-    <p>Lancez un quiz avec des questions aléatoires de la banque.</p>
+    <p>Lance un quiz avec des questions aléatoires de la banque.</p>
     <div id="q-formation"></div>
     <label>Nombre de questions</label>
     <input type="text" id="q-count" value="10" style="max-width:100px">
@@ -294,6 +461,8 @@
   <div id="q-game" class="hidden"></div>
   <div id="q-end" class="hidden"></div>
 </div>
+
+</div><!-- /main-app -->
 
 <script>
 /* =====================================================================
@@ -637,7 +806,7 @@ async function refreshHomeStats() {
   if (!el) return;
   try {
     const all = await loadQuestions();
-    el.innerHTML = `<strong>${all.length}</strong> question${all.length > 1 ? "s" : ""} dans la banque`;
+    el.innerHTML = `<strong>${all.length}</strong> question${all.length > 1 ? "s" : ""} disponibles`;
   } catch(e) {
     el.textContent = "Impossible de charger la banque de questions.";
   }
@@ -1009,7 +1178,7 @@ function nextQuiz() {
     end.classList.remove("hidden");
     const pct = Math.round(100 * quizState.score / quizState.questions.length);
     end.innerHTML = `
-      <div class="score">Score final : ${quizState.score} / ${quizState.questions.length} (${pct}%)</div>
+      <div class="score">Score final<br><em>${quizState.score} / ${quizState.questions.length}</em><br><span style="font-size:18px; color:var(--ink-60);">${pct}%</span></div>
       <button onclick="resetQuiz()">Recommencer</button>
     `;
   } else {
