@@ -927,6 +927,7 @@ function cleanBatchText(text) {
     /^feedback$/i,
     /votre r[ée]ponse est (correcte|incorrecte)/i,
     /^cf\s*m\d+l\d+/i,
+    /^la r[ée]ponse correcte est/i,
     /^r[ée]f\s*:/i,
     /^question\s*\d+\s*$/i,
     /^q\d+\s*[:\-]?\s*$/i,
@@ -1002,6 +1003,15 @@ function parseBatch() {
 
   parsedBatch = [];
   blocks.forEach(block => {
+    // Avant nettoyage : extraire la référence "Cf MxLx" et l'explication
+    // "La réponse correcte est : ..." pour les conserver dans la question.
+    let reference = null;
+    let explication = null;
+    const refMatch = block.match(/cf\s*(m\d+l\d+(?:[-.\s]*\d+)?)/i);
+    if (refMatch) reference = refMatch[1].toUpperCase().replace(/\s+/g, "");
+    const explMatch = block.match(/la r[ée]ponse correcte est\s*[:\-]?\s*(.+)/i);
+    if (explMatch) explication = explMatch[1].trim().replace(/[.\s]+$/, "");
+
     const cleanBlock = cleanBatchText(block);
     const lines = cleanBlock.split("\n").map(l => l.trim()).filter(Boolean);
     if (lines.length < 3) return;
@@ -1049,7 +1059,10 @@ function parseBatch() {
       bonneIndex = propositions.findIndex(p => normalize(p) === bt || normalize(p).includes(bt) || bt.includes(normalize(p)));
     }
 
-    parsedBatch.push({ question, propositions, bonne_reponse: bonneIndex });
+    const item = { question, propositions, bonne_reponse: bonneIndex };
+    if (reference) item.reference = reference;
+    if (explication) item.explication = explication;
+    parsedBatch.push(item);
   });
 
   if (parsedBatch.length === 0) {
@@ -1108,14 +1121,19 @@ async function submitBatch() {
   }
   showAlert(resultDiv, "info", "Envoi en cours...");
   try {
-    const newQuestions = parsedBatch.map(q => ({
-      id: uuid(),
-      question: q.question,
-      propositions: q.propositions,
-      bonne_reponse: q.bonne_reponse,
-      formation,
-      date: today()
-    }));
+    const newQuestions = parsedBatch.map(q => {
+      const obj = {
+        id: uuid(),
+        question: q.question,
+        propositions: q.propositions,
+        bonne_reponse: q.bonne_reponse,
+        formation,
+        date: today()
+      };
+      if (q.reference)   obj.reference   = q.reference;
+      if (q.explication) obj.explication = q.explication;
+      return obj;
+    });
     await pushQuestions(newQuestions);
     showAlert(resultDiv, "success", `✅ ${parsedBatch.length} question(s) ajoutée(s) !`);
     parsedBatch = [];
@@ -1209,7 +1227,14 @@ function answerQuiz(idx) {
   if (prog) prog.innerHTML = progressInner();
   const feedback = document.getElementById("q-feedback");
   const isLast = quizState.current === quizState.questions.length - 1;
-  feedback.innerHTML = `<button onclick="nextQuiz()">${isLast ? "Voir le score" : "Question suivante"}</button>`;
+  let info = "";
+  if (q.explication || q.reference) {
+    info += `<div class="alert info" style="margin-top:18px">`;
+    if (q.explication) info += `<strong>Réponse correcte :</strong> ${escapeHtml(q.explication)}`;
+    if (q.reference)   info += `${q.explication ? "<br>" : ""}<strong>Référence :</strong> ${escapeHtml(q.reference)}`;
+    info += `</div>`;
+  }
+  feedback.innerHTML = info + `<button onclick="nextQuiz()">${isLast ? "Voir le score" : "Question suivante"}</button>`;
 }
 
 function nextQuiz() {
