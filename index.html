@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Banque de Questions - Habilitation CGPSkool</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f7fa;
+    color: #222;
+    line-height: 1.5;
+  }
+  h1 { color: #2c3e50; }
+  h2 { color: #34495e; margin-top: 0; }
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  .tab {
+    flex: 1;
+    min-width: 140px;
+    padding: 12px 16px;
+    background: #dfe6ed;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    color: #555;
+  }
+  .tab.active {
+    background: #fff;
+    color: #2c3e50;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+  }
+  .panel {
+    background: #fff;
+    padding: 24px;
+    border-radius: 0 8px 8px 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .hidden { display: none; }
+  label {
+    display: block;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #555;
+  }
+  input[type="text"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 4px;
+    border: 1px solid #ccd;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: inherit;
+  }
+  textarea { resize: vertical; min-height: 100px; }
+  button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 16px;
+  }
+  button:hover { background: #2980b9; }
+  button:disabled { background: #aaa; cursor: not-allowed; }
+  button.secondary { background: #95a5a6; }
+  button.secondary:hover { background: #7f8c8d; }
+  button.danger { background: #e74c3c; }
+  .proposition {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 6px;
+  }
+  .proposition input[type="radio"] { width: auto; }
+  .proposition input[type="text"] { flex: 1; margin-top: 0; }
+  .proposition button { margin-top: 0; padding: 6px 10px; }
+  .alert {
+    padding: 12px;
+    border-radius: 6px;
+    margin: 12px 0;
+  }
+  .alert.warn { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+  .alert.success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+  .alert.error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+  .alert.info { background: #d1ecf1; color: #0c5460; border: 1px solid #bee5eb; }
+  .question-card {
+    background: #f8f9fb;
+    padding: 16px;
+    border-radius: 8px;
+    margin: 12px 0;
+    border-left: 4px solid #3498db;
+  }
+  .quiz-option {
+    display: block;
+    padding: 12px;
+    margin: 8px 0;
+    background: #fff;
+    border: 2px solid #e0e6ed;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .quiz-option:hover { border-color: #3498db; background: #f0f8ff; }
+  .quiz-option.selected { border-color: #3498db; background: #e8f4fd; }
+  .quiz-option.correct { border-color: #27ae60; background: #d4edda; }
+  .quiz-option.wrong { border-color: #e74c3c; background: #f8d7da; }
+  .quiz-option.disabled { cursor: default; pointer-events: none; }
+  .score {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    color: #2c3e50;
+  }
+  .progress {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .batch-question {
+    background: #f8f9fb;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 6px;
+    border-left: 3px solid #3498db;
+  }
+  .batch-question.duplicate { border-left-color: #f39c12; background: #fff8e7; }
+  .small { font-size: 12px; color: #777; }
+  code {
+    background: #eef;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 13px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Banque de Questions — Habilitation CGPSkool</h1>
+
+<div class="tabs">
+  <button class="tab active" data-tab="formateur">Mode Formateur</button>
+  <button class="tab" data-tab="import">Import par lot</button>
+  <button class="tab" data-tab="quiz">Mode Quiz</button>
+</div>
+
+<!-- ========== MODE FORMATEUR ========== -->
+<div class="panel" id="panel-formateur">
+  <h2>Ajouter une question</h2>
+  <label>Question</label>
+  <textarea id="f-question" placeholder="Énoncé de la question..."></textarea>
+
+  <label>Propositions de réponses (cochez la bonne)</label>
+  <div id="f-propositions"></div>
+  <button class="secondary" type="button" onclick="addProposition()">+ Ajouter une proposition</button>
+
+  <label>Auteur (optionnel)</label>
+  <input type="text" id="f-auteur" placeholder="Votre nom">
+
+  <div id="f-warning"></div>
+  <button id="f-submit" onclick="submitFormateur()">Vérifier et envoyer</button>
+  <div id="f-result"></div>
+</div>
+
+<!-- ========== MODE IMPORT PAR LOT ========== -->
+<div class="panel hidden" id="panel-import">
+  <h2>Import par lot</h2>
+  <p class="small">Collez ci-dessous le texte brut copié depuis la plateforme e-learning. Le parser détecte automatiquement le format (avec ou sans indication de la bonne réponse).</p>
+  <textarea id="i-text" rows="12" placeholder="Coller le texte ici..."></textarea>
+  <button onclick="parseBatch()">Analyser le texte</button>
+  <div id="i-preview"></div>
+</div>
+
+<!-- ========== MODE QUIZ ========== -->
+<div class="panel hidden" id="panel-quiz">
+  <h2>Quiz</h2>
+  <div id="q-setup">
+    <p>Lancez un quiz avec des questions aléatoires de la banque.</p>
+    <label>Nombre de questions</label>
+    <input type="text" id="q-count" value="10" style="max-width:100px">
+    <br>
+    <button onclick="startQuiz()">Démarrer le quiz</button>
+    <div id="q-info"></div>
+  </div>
+  <div id="q-game" class="hidden"></div>
+  <div id="q-end" class="hidden"></div>
+</div>
+
+<script>
+/* =====================================================================
+   CONFIGURATION GITHUB - À RENSEIGNER
+   =====================================================================
+   1. GITHUB_USER  : votre pseudo GitHub (ou propriétaire du repo)
+   2. GITHUB_REPO  : nom du repo
+   3. GITHUB_TOKEN : Personal Access Token (PAT) avec scope "repo"
+                     ⚠️  ATTENTION : ce token sera visible publiquement
+                         dans le code source. Utilisez un token dédié à
+                         ce projet, avec accès limité à ce seul repo
+                         (fine-grained PAT recommandé).
+
+   Pour générer un PAT fine-grained :
+     https://github.com/settings/personal-access-tokens/new
+     - Repository access : seulement cgpskool_quiz_habilitation
+     - Permissions       : Contents = Read and Write
+   ===================================================================== */
+const GITHUB_USER  = "adussourd-pp";                        // <-- À RENSEIGNER
+const GITHUB_REPO  = "cgpskool_quiz_habilitation";          // <-- À RENSEIGNER
+const GITHUB_TOKEN = "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";  // <-- À RENSEIGNER
+const GITHUB_BRANCH = "main";
+const QUESTIONS_FILE = "questions.json";
+
+/* ===================================================================== */
+
+const API_BASE = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${QUESTIONS_FILE}`;
+
+// ========== UTILITAIRES ==========
+function uuid() {
+  return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+    const r = Math.random() * 16 | 0;
+    return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+  });
+}
+
+function today() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+// Normalisation pour comparaison de similarité
+function normalize(text) {
+  return text.toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^\w\s]/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+const STOPWORDS = new Set(["le","la","les","un","une","des","de","du","et","ou","a","au","aux","en","dans","sur","pour","par","avec","sans","est","sont","ce","cette","ces","que","qui","quoi","quel","quelle","quels","quelles","il","elle","ils","elles","on","se","sa","son","ses","mon","ma","mes","ton","ta","tes","notre","votre","leur","leurs","y","n","l","d","s","t","si","ne","pas","plus","moins","tres","aussi","comme","mais","donc","car","or","ni"]);
+
+function keywords(text) {
+  return new Set(normalize(text).split(" ").filter(w => w.length > 2 && !STOPWORDS.has(w)));
+}
+
+function similarity(a, b) {
+  const ka = keywords(a), kb = keywords(b);
+  if (ka.size === 0 || kb.size === 0) return 0;
+  let inter = 0;
+  ka.forEach(w => { if (kb.has(w)) inter++; });
+  const union = ka.size + kb.size - inter;
+  return inter / union; // Jaccard
+}
+
+const SIMILARITY_THRESHOLD = 0.6;
+
+// ========== API GITHUB ==========
+async function loadQuestions() {
+  // Lecture publique - pas besoin de token
+  const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${QUESTIONS_FILE}?_=${Date.now()}`;
+  const r = await fetch(url);
+  if (!r.ok) throw new Error("Impossible de charger questions.json");
+  return await r.json();
+}
+
+async function getFileSha() {
+  const r = await fetch(`${API_BASE}?ref=${GITHUB_BRANCH}`, {
+    headers: { Authorization: `Bearer ${GITHUB_TOKEN}` }
+  });
+  if (!r.ok) throw new Error("Erreur récupération SHA : " + r.status);
+  const j = await r.json();
+  return j.sha;
+}
+
+async function saveQuestions(allQuestions, message) {
+  const sha = await getFileSha();
+  const content = btoa(unescape(encodeURIComponent(JSON.stringify(allQuestions, null, 2) + "\n")));
+  const r = await fetch(API_BASE, {
+    method: "PUT",
+    headers: {
+      Authorization: `Bearer ${GITHUB_TOKEN}`,
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({
+      message: message || "Mise à jour questions.json",
+      content,
+      sha,
+      branch: GITHUB_BRANCH
+    })
+  });
+  if (!r.ok) {
+    const t = await r.text();
+    throw new Error("Erreur sauvegarde : " + r.status + " - " + t);
+  }
+  return await r.json();
+}
+
+// ========== ONGLETS ==========
+document.querySelectorAll(".tab").forEach(t => {
+  t.addEventListener("click", () => {
+    document.querySelectorAll(".tab").forEach(x => x.classList.remove("active"));
+    t.classList.add("active");
+    ["formateur","import","quiz"].forEach(name => {
+      document.getElementById("panel-"+name).classList.toggle("hidden", name !== t.dataset.tab);
+    });
+  });
+});
+
+// ========== MODE FORMATEUR ==========
+function addProposition(value = "") {
+  const container = document.getElementById("f-propositions");
+  const idx = container.children.length;
+  const div = document.createElement("div");
+  div.className = "proposition";
+  div.innerHTML = `
+    <input type="radio" name="bonne" value="${idx}" ${idx === 0 ? "checked" : ""}>
+    <input type="text" placeholder="Proposition ${idx + 1}" value="${value.replace(/"/g,'&quot;')}">
+    <button class="danger" type="button" onclick="this.parentElement.remove()">×</button>
+  `;
+  container.appendChild(div);
+}
+addProposition(); addProposition(); addProposition(); addProposition();
+
+async function submitFormateur() {
+  const question = document.getElementById("f-question").value.trim();
+  const propsEls = document.querySelectorAll("#f-propositions .proposition");
+  const propositions = Array.from(propsEls).map(p => p.querySelector('input[type="text"]').value.trim());
+  const bonneRadio = document.querySelector('#f-propositions input[type="radio"]:checked');
+  const auteur = document.getElementById("f-auteur").value.trim();
+  const warningDiv = document.getElementById("f-warning");
+  const resultDiv = document.getElementById("f-result");
+
+  warningDiv.innerHTML = "";
+  resultDiv.innerHTML = "";
+
+  if (!question) return showAlert(resultDiv, "error", "La question est obligatoire.");
+  if (propositions.filter(p => p).length < 2) return showAlert(resultDiv, "error", "Au moins 2 propositions sont requises.");
+  if (!bonneRadio) return showAlert(resultDiv, "error", "Indiquez la bonne réponse.");
+
+  const bonneIndex = parseInt(bonneRadio.value);
+  const cleanProps = propositions.filter(p => p);
+  // Réajuster l'index si certaines propositions sont vides
+  const realIndex = propositions.slice(0, bonneIndex + 1).filter(p => p).length - 1;
+
+  let existing;
+  try { existing = await loadQuestions(); }
+  catch (e) { return showAlert(resultDiv, "error", e.message); }
+
+  // Détection de doublons
+  const similar = existing.filter(q => similarity(q.question, question) >= SIMILARITY_THRESHOLD);
+  if (similar.length > 0 && !warningDiv.dataset.confirmed) {
+    let html = `<div class="alert warn"><strong>⚠️ Question(s) similaire(s) trouvée(s) :</strong><ul>`;
+    similar.forEach(s => { html += `<li>${escapeHtml(s.question)}</li>`; });
+    html += `</ul><button onclick="confirmAddDespiteDuplicate()">Ajouter quand même</button></div>`;
+    warningDiv.innerHTML = html;
+    warningDiv.dataset.confirmed = "false";
+    return;
+  }
+
+  await doAddQuestion(existing, question, cleanProps, realIndex, auteur, resultDiv, warningDiv);
+}
+
+function confirmAddDespiteDuplicate() {
+  document.getElementById("f-warning").dataset.confirmed = "true";
+  submitFormateur();
+}
+
+async function doAddQuestion(existing, question, propositions, bonneIndex, auteur, resultDiv, warningDiv) {
+  const newQ = {
+    id: uuid(),
+    question,
+    propositions,
+    bonne_reponse: bonneIndex,
+    auteur: auteur || undefined,
+    date: today()
+  };
+  existing.push(newQ);
+  try {
+    await saveQuestions(existing, `Ajout question : ${question.slice(0, 50)}`);
+    showAlert(resultDiv, "success", "✅ Question ajoutée !");
+    document.getElementById("f-question").value = "";
+    document.getElementById("f-propositions").innerHTML = "";
+    addProposition(); addProposition(); addProposition(); addProposition();
+    warningDiv.innerHTML = "";
+    delete warningDiv.dataset.confirmed;
+  } catch (e) {
+    showAlert(resultDiv, "error", e.message);
+  }
+}
+
+// ========== MODE IMPORT PAR LOT ==========
+let parsedBatch = [];
+
+function cleanBatchText(text) {
+  const noiseLines = [
+    /pas encore r[ée]pondu/i,
+    /not[ée] sur [\d,\.]+/i,
+    /marquer la question/i,
+    /retirer le marquage/i,
+    /^feedback$/i,
+    /votre r[ée]ponse est (correcte|incorrecte)/i,
+    /^cf\s*m\d+l\d+/i,
+    /^r[ée]f\s*:/i,
+    /question\s*\d+\s*$/i,
+    /^correct$/i,
+    /^incorrect$/i,
+    /^terminé/i,
+    /information$/i
+  ];
+  return text.split("\n")
+    .map(l => l.trim())
+    .filter(l => l && !noiseLines.some(rx => rx.test(l)))
+    .join("\n");
+}
+
+function parseBatch() {
+  const raw = document.getElementById("i-text").value;
+  const previewDiv = document.getElementById("i-preview");
+  if (!raw.trim()) { previewDiv.innerHTML = ""; return; }
+
+  const cleaned = cleanBatchText(raw);
+  const hasFormatA = /la r[ée]ponse correcte est/i.test(cleaned);
+
+  // Découpage en blocs question. Heuristique :
+  // une question commence à une ligne se terminant par "?" OU précédée de "Question N"
+  // Ici on splitte sur les marqueurs "Question N" si présents, sinon on regroupe sur "?".
+  let blocks = [];
+  if (/question\s+\d+/i.test(raw)) {
+    blocks = raw.split(/question\s+\d+/i).map(b => b.trim()).filter(Boolean);
+  } else {
+    // Split entre questions: on suppose que chaque "La réponse correcte est..." termine un bloc en format A
+    if (hasFormatA) {
+      const parts = cleaned.split(/(?=la r[ée]ponse correcte est)/i);
+      // Re-grouper : chaque bloc question doit contenir un "La réponse correcte"
+      let current = "";
+      blocks = [];
+      const lines = cleaned.split("\n");
+      let buf = [];
+      for (const line of lines) {
+        buf.push(line);
+        if (/la r[ée]ponse correcte est/i.test(line)) {
+          blocks.push(buf.join("\n"));
+          buf = [];
+        }
+      }
+      if (buf.length) blocks.push(buf.join("\n"));
+    } else {
+      // Format B : split sur les "?"
+      const lines = cleaned.split("\n");
+      let buf = [];
+      for (const line of lines) {
+        buf.push(line);
+        if (line.endsWith("?") && buf.length > 1) {
+          // continue, propositions à venir
+        }
+      }
+      blocks = [cleaned]; // fallback : un seul bloc
+      // Tentative : split par double saut de ligne
+      const altBlocks = cleaned.split(/\n\s*\n/).filter(b => b.includes("?"));
+      if (altBlocks.length > 1) blocks = altBlocks;
+    }
+  }
+
+  parsedBatch = [];
+  blocks.forEach(block => {
+    const cleanBlock = cleanBatchText(block);
+    const lines = cleanBlock.split("\n").map(l => l.trim()).filter(Boolean);
+    if (lines.length < 3) return;
+
+    // Trouver la ligne question (première qui finit par ? ou la première ligne)
+    let qIdx = lines.findIndex(l => l.endsWith("?"));
+    if (qIdx === -1) qIdx = 0;
+    const question = lines.slice(0, qIdx + 1).join(" ");
+
+    // Récupérer la "bonne réponse" si format A
+    let bonneText = null;
+    let propLines = lines.slice(qIdx + 1);
+    const bonneIdxLine = propLines.findIndex(l => /la r[ée]ponse correcte est/i.test(l));
+    if (bonneIdxLine !== -1) {
+      const m = propLines[bonneIdxLine].match(/la r[ée]ponse correcte est\s*[:\-]?\s*(.+)/i);
+      if (m) bonneText = m[1].trim().replace(/[.\s]+$/, "");
+      propLines = propLines.slice(0, bonneIdxLine);
+    }
+
+    // Nettoyer puces a. b. c. ou 1) 2)
+    const propositions = propLines
+      .map(l => l.replace(/^[a-z]\s*[\.\)]\s*/i, "").replace(/^\d+\s*[\.\)]\s*/, "").trim())
+      .filter(l => l.length > 0 && l.length < 500);
+
+    if (propositions.length < 2 || !question) return;
+
+    let bonneIndex = -1;
+    if (bonneText) {
+      const bt = normalize(bonneText);
+      bonneIndex = propositions.findIndex(p => normalize(p) === bt || normalize(p).includes(bt) || bt.includes(normalize(p)));
+    }
+
+    parsedBatch.push({ question, propositions, bonne_reponse: bonneIndex });
+  });
+
+  if (parsedBatch.length === 0) {
+    previewDiv.innerHTML = `<div class="alert error">Aucune question détectée. Vérifiez le format du texte.</div>`;
+    return;
+  }
+
+  renderBatchPreview(hasFormatA);
+}
+
+async function renderBatchPreview(formatA) {
+  const previewDiv = document.getElementById("i-preview");
+  let existing = [];
+  try { existing = await loadQuestions(); } catch(e) {}
+
+  let html = `<div class="alert info">Format détecté : <strong>${formatA ? "A (avec réponse correcte)" : "B (sans réponse correcte)"}</strong> — ${parsedBatch.length} question(s) détectée(s).</div>`;
+
+  parsedBatch.forEach((q, i) => {
+    const dup = existing.find(e => similarity(e.question, q.question) >= SIMILARITY_THRESHOLD);
+    html += `<div class="batch-question ${dup ? 'duplicate' : ''}">`;
+    html += `<strong>Q${i+1} :</strong> ${escapeHtml(q.question)}`;
+    if (dup) html += ` <span class="small">⚠️ doublon possible : "${escapeHtml(dup.question.slice(0,80))}..."</span>`;
+    html += `<ul>`;
+    q.propositions.forEach((p, pi) => {
+      const isCorrect = pi === q.bonne_reponse;
+      html += `<li>${isCorrect ? '<strong>✓ ' : ''}${escapeHtml(p)}${isCorrect ? '</strong>' : ''}</li>`;
+    });
+    html += `</ul>`;
+    if (q.bonne_reponse === -1) {
+      html += `<label>Sélectionnez la bonne réponse :</label>`;
+      html += `<select onchange="parsedBatch[${i}].bonne_reponse = parseInt(this.value)">`;
+      html += `<option value="-1">-- choisir --</option>`;
+      q.propositions.forEach((p, pi) => {
+        html += `<option value="${pi}">${escapeHtml(p)}</option>`;
+      });
+      html += `</select>`;
+    }
+    html += `<br><button class="danger" onclick="parsedBatch.splice(${i},1); renderBatchPreview(${formatA})">Supprimer</button>`;
+    html += `</div>`;
+  });
+
+  html += `<button onclick="submitBatch()">Envoyer toutes les questions</button>`;
+  html += `<div id="i-result"></div>`;
+  previewDiv.innerHTML = html;
+}
+
+async function submitBatch() {
+  const resultDiv = document.getElementById("i-result");
+  const incomplete = parsedBatch.filter(q => q.bonne_reponse === -1 || q.bonne_reponse == null);
+  if (incomplete.length > 0) {
+    return showAlert(resultDiv, "error", `${incomplete.length} question(s) sans bonne réponse sélectionnée.`);
+  }
+  showAlert(resultDiv, "info", "Envoi en cours...");
+  try {
+    const existing = await loadQuestions();
+    parsedBatch.forEach(q => {
+      existing.push({
+        id: uuid(),
+        question: q.question,
+        propositions: q.propositions,
+        bonne_reponse: q.bonne_reponse,
+        date: today()
+      });
+    });
+    await saveQuestions(existing, `Import par lot : ${parsedBatch.length} questions`);
+    showAlert(resultDiv, "success", `✅ ${parsedBatch.length} question(s) ajoutée(s) !`);
+    parsedBatch = [];
+    document.getElementById("i-text").value = "";
+    setTimeout(() => { document.getElementById("i-preview").innerHTML = ""; }, 2000);
+  } catch (e) {
+    showAlert(resultDiv, "error", e.message);
+  }
+}
+
+// ========== MODE QUIZ ==========
+let quizState = null;
+
+function dedupQuestions(list) {
+  const groups = [];
+  list.forEach(q => {
+    const g = groups.find(grp => similarity(grp[0].question, q.question) >= SIMILARITY_THRESHOLD);
+    if (g) g.push(q);
+    else groups.push([q]);
+  });
+  // Garde une question par groupe (la première)
+  return groups.map(g => g[0]);
+}
+
+async function startQuiz() {
+  const infoDiv = document.getElementById("q-info");
+  infoDiv.innerHTML = "Chargement...";
+  let all;
+  try { all = await loadQuestions(); }
+  catch (e) { return showAlert(infoDiv, "error", e.message); }
+
+  if (all.length === 0) return showAlert(infoDiv, "error", "Aucune question dans la banque.");
+
+  const deduped = dedupQuestions(all);
+  const count = Math.min(parseInt(document.getElementById("q-count").value) || 10, deduped.length);
+  const shuffled = deduped.sort(() => Math.random() - 0.5).slice(0, count);
+
+  quizState = { questions: shuffled, current: 0, score: 0, answered: false };
+  document.getElementById("q-setup").classList.add("hidden");
+  document.getElementById("q-end").classList.add("hidden");
+  document.getElementById("q-game").classList.remove("hidden");
+  renderQuizQuestion();
+}
+
+function renderQuizQuestion() {
+  const game = document.getElementById("q-game");
+  const q = quizState.questions[quizState.current];
+  let html = `<div class="progress">Question ${quizState.current + 1} / ${quizState.questions.length} — Score : ${quizState.score}</div>`;
+  html += `<div class="question-card"><h3>${escapeHtml(q.question)}</h3></div>`;
+  q.propositions.forEach((p, i) => {
+    html += `<div class="quiz-option" data-idx="${i}" onclick="answerQuiz(${i})">${escapeHtml(p)}</div>`;
+  });
+  html += `<div id="q-feedback"></div>`;
+  game.innerHTML = html;
+  quizState.answered = false;
+}
+
+function answerQuiz(idx) {
+  if (quizState.answered) return;
+  quizState.answered = true;
+  const q = quizState.questions[quizState.current];
+  const opts = document.querySelectorAll(".quiz-option");
+  opts.forEach(o => o.classList.add("disabled"));
+  opts[q.bonne_reponse].classList.add("correct");
+  if (idx === q.bonne_reponse) {
+    quizState.score++;
+  } else {
+    opts[idx].classList.add("wrong");
+  }
+  const feedback = document.getElementById("q-feedback");
+  const isLast = quizState.current === quizState.questions.length - 1;
+  feedback.innerHTML = `<button onclick="nextQuiz()">${isLast ? "Voir le score" : "Question suivante"}</button>`;
+}
+
+function nextQuiz() {
+  quizState.current++;
+  if (quizState.current >= quizState.questions.length) {
+    document.getElementById("q-game").classList.add("hidden");
+    const end = document.getElementById("q-end");
+    end.classList.remove("hidden");
+    const pct = Math.round(100 * quizState.score / quizState.questions.length);
+    end.innerHTML = `
+      <div class="score">Score final : ${quizState.score} / ${quizState.questions.length} (${pct}%)</div>
+      <button onclick="resetQuiz()">Recommencer</button>
+    `;
+  } else {
+    renderQuizQuestion();
+  }
+}
+
+function resetQuiz() {
+  document.getElementById("q-end").classList.add("hidden");
+  document.getElementById("q-game").classList.add("hidden");
+  document.getElementById("q-setup").classList.remove("hidden");
+  document.getElementById("q-info").innerHTML = "";
+}
+
+// ========== HELPERS UI ==========
+function escapeHtml(s) {
+  return String(s).replace(/[&<>"']/g, c => ({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"
+  }[c]));
+}
+
+function showAlert(target, type, msg) {
+  target.innerHTML = `<div class="alert ${type}">${escapeHtml(msg)}</div>`;
+}
+</script>
+
+</body>
+</html>
