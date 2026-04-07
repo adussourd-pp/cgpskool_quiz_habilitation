@@ -396,16 +396,6 @@
     </div>
 
     <div class="home-stats" id="home-stats">Chargement de la banque de questions…</div>
-
-    <div style="margin-top:24px; background:var(--white); border:1px solid var(--rule-l); padding:22px 28px;">
-      <div class="kicker" style="margin-bottom:12px;">
-        <span class="kicker-line"></span>
-        <span class="kicker-text">Configuration</span>
-      </div>
-      <div id="token-status" class="small" style="margin-bottom:8px;">Aucun token</div>
-      <p class="small" style="margin-bottom:12px;">Pour ajouter ou importer des questions, tu dois fournir un Personal Access Token GitHub. Il reste stocké uniquement dans ton navigateur.</p>
-      <button class="secondary" onclick="promptToken()" style="margin-top:0;">Définir mon token GitHub</button>
-    </div>
   </div>
 </div>
 
@@ -476,55 +466,22 @@
 
 <script>
 /* =====================================================================
-   CONFIGURATION GITHUB
+   CONFIGURATION
    =====================================================================
-   - GITHUB_USER / GITHUB_REPO : repo où est stocké questions.json
-   - GITHUB_TOKEN : Personal Access Token (fine-grained) avec permission
-     "Contents: Read and write" sur ce repo uniquement.
+   - GITHUB_USER / GITHUB_REPO : repo public qui héberge questions.json
+     (utilisé seulement pour la LECTURE, qui est libre)
+   - WORKER_URL : URL du Cloudflare Worker qui détient le token GitHub
+     et gère l'ÉCRITURE. Aucun token n'est exposé dans ce code.
 
-   Pour générer un PAT :
-     https://github.com/settings/personal-access-tokens/new
-     - Repository access : seulement cgpskool_quiz_habilitation
-     - Permissions       : Contents = Read and Write
-
-   Le mode Quiz fonctionne sans token (lecture publique).
-   Les modes Formateur et Import nécessitent un token.
+   👉 À RENSEIGNER après déploiement du Worker :
    ===================================================================== */
 const GITHUB_USER    = "adussourd-pp";
 const GITHUB_REPO    = "cgpskool_quiz_habilitation";
 const GITHUB_BRANCH  = "main";
 const QUESTIONS_FILE = "questions.json";
-// Le token est saisi via le bouton "Définir mon token" sur la page de garde
-// et stocké dans le localStorage du navigateur (pas dans le code source).
-const GITHUB_TOKEN   = "";
+const WORKER_URL     = "https://cgpskool-quiz.YOUR-SUBDOMAIN.workers.dev"; // <-- À REMPLACER
 
 /* ===================================================================== */
-
-function getToken() {
-  return localStorage.getItem("github_pat") || GITHUB_TOKEN || "";
-}
-function setToken(t) {
-  if (t) localStorage.setItem("github_pat", t);
-  else   localStorage.removeItem("github_pat");
-  refreshTokenStatus();
-}
-function refreshTokenStatus() {
-  const el = document.getElementById("token-status");
-  if (!el) return;
-  const t = getToken();
-  if (t) {
-    el.innerHTML = `<span style="color:var(--green)">● Token configuré</span> (…${t.slice(-6)})`;
-  } else {
-    el.innerHTML = `<span style="color:var(--red)">● Aucun token</span> — nécessaire pour ajouter / importer des questions`;
-  }
-}
-function promptToken() {
-  const v = prompt("Colle ton Personal Access Token GitHub (laisser vide pour le retirer) :", getToken());
-  if (v === null) return;
-  setToken(v.trim());
-}
-
-const API_BASE = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${QUESTIONS_FILE}`;
 
 /* =====================================================================
    CATALOGUE DES FORMATIONS
@@ -765,51 +722,32 @@ function similarity(a, b) {
 const SIMILARITY_THRESHOLD = 0.6;
 
 // ========== API GITHUB ==========
+// Lecture publique de questions.json — directement depuis GitHub raw
 async function loadQuestions() {
-  // Lecture publique - pas besoin de token
   const url = `https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPO}/${GITHUB_BRANCH}/${QUESTIONS_FILE}?_=${Date.now()}`;
   const r = await fetch(url);
   if (!r.ok) throw new Error("Impossible de charger questions.json");
   return await r.json();
 }
 
-function ensureToken() {
-  if (!getToken()) {
-    throw new Error("Aucun token GitHub configuré. Clique sur « Définir mon token GitHub » sur la page d'accueil.");
+// Écriture via le Cloudflare Worker (qui détient le token GitHub côté serveur)
+async function pushQuestions(newQuestions) {
+  if (!Array.isArray(newQuestions) || newQuestions.length === 0) {
+    throw new Error("Aucune question à envoyer.");
   }
-}
-
-async function getFileSha() {
-  ensureToken();
-  const r = await fetch(`${API_BASE}?ref=${GITHUB_BRANCH}`, {
-    headers: { Authorization: `Bearer ${getToken()}` }
+  if (!WORKER_URL || WORKER_URL.includes("YOUR-SUBDOMAIN")) {
+    throw new Error("WORKER_URL n'est pas configuré dans index.html.");
+  }
+  const r = await fetch(`${WORKER_URL}/add`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ questions: newQuestions }),
   });
-  if (!r.ok) throw new Error("Erreur récupération SHA : " + r.status);
-  const j = await r.json();
-  return j.sha;
-}
-
-async function saveQuestions(allQuestions, message) {
-  const sha = await getFileSha();
-  const content = btoa(unescape(encodeURIComponent(JSON.stringify(allQuestions, null, 2) + "\n")));
-  const r = await fetch(API_BASE, {
-    method: "PUT",
-    headers: {
-      Authorization: `Bearer ${getToken()}`,
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      message: message || "Mise à jour questions.json",
-      content,
-      sha,
-      branch: GITHUB_BRANCH
-    })
-  });
+  const j = await r.json().catch(() => ({}));
   if (!r.ok) {
-    const t = await r.text();
-    throw new Error("Erreur sauvegarde : " + r.status + " - " + t);
+    throw new Error("Erreur du serveur : " + (j.error || r.status));
   }
-  return await r.json();
+  return j;
 }
 
 // ========== NAVIGATION ==========
@@ -818,7 +756,6 @@ function goHome() {
   document.getElementById("main-app").classList.add("hidden");
   ["formateur","import","quiz"].forEach(n => document.getElementById("panel-"+n).classList.add("hidden"));
   refreshHomeStats();
-  refreshTokenStatus();
 }
 function goToTab(name) {
   document.getElementById("panel-home").classList.add("hidden");
@@ -934,9 +871,8 @@ async function doAddQuestion(existing, question, propositions, bonneIndex, auteu
     formation,
     date: today()
   };
-  existing.push(newQ);
   try {
-    await saveQuestions(existing, `Ajout question : ${question.slice(0, 50)}`);
+    await pushQuestions([newQ]);
     showAlert(resultDiv, "success", "✅ Question ajoutée !");
     document.getElementById("f-question").value = "";
     document.getElementById("f-propositions").innerHTML = "";
@@ -1114,18 +1050,15 @@ async function submitBatch() {
   }
   showAlert(resultDiv, "info", "Envoi en cours...");
   try {
-    const existing = await loadQuestions();
-    parsedBatch.forEach(q => {
-      existing.push({
-        id: uuid(),
-        question: q.question,
-        propositions: q.propositions,
-        bonne_reponse: q.bonne_reponse,
-        formation,
-        date: today()
-      });
-    });
-    await saveQuestions(existing, `Import par lot : ${parsedBatch.length} questions`);
+    const newQuestions = parsedBatch.map(q => ({
+      id: uuid(),
+      question: q.question,
+      propositions: q.propositions,
+      bonne_reponse: q.bonne_reponse,
+      formation,
+      date: today()
+    }));
+    await pushQuestions(newQuestions);
     showAlert(resultDiv, "success", `✅ ${parsedBatch.length} question(s) ajoutée(s) !`);
     parsedBatch = [];
     document.getElementById("i-text").value = "";
@@ -1238,7 +1171,6 @@ function showAlert(target, type, msg) {
 }
 
 refreshHomeStats();
-refreshTokenStatus();
 </script>
 
 </body>
