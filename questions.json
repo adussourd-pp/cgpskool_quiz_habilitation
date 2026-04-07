@@ -302,5 +302,165 @@
     "date": "2026-04-07",
     "reference": "M2L3",
     "explication": "Chaque chambre est louée séparément, augmentant le total des loyers perçus"
+  },
+  {
+    "id": "5cfaaa81-b723-4038-b5fc-b58daa327fc9",
+    "question": "Quel est l’un des principaux avantages des SCPI ?",
+    "propositions": [
+      "La garantie en capital",
+      "La possibilité de retrait immédiat sans conditions",
+      "L'exonération de fiscalité sur les revenus",
+      "La diversification géographique et sectorielle",
+      "Cf P2M1L3"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ASS"
+    },
+    "date": "2026-04-07",
+    "explication": "La diversification géographique et sectorielle"
+  },
+  {
+    "id": "59a09a91-21ce-4af6-bde5-162669d9e9d5",
+    "question": "Quels revenus un actionnaire peut-il percevoir grâce à ses actions ?",
+    "propositions": [
+      "Le taux d’intérêt contractuel",
+      "Le loyer financier",
+      "Le dividende",
+      "Le coupon d’obligation",
+      "Cf P2M1L2"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ASS"
+    },
+    "date": "2026-04-07",
+    "explication": "Le dividende"
+  },
+  {
+    "id": "571726eb-d0cf-46ec-9da2-7ed7ec6f5c57",
+    "question": "Quelle action peut entreprendre une banque centrale en période de faible croissance sans inflation ?",
+    "propositions": [
+      "Augmenter les taxes sur les entreprises",
+      "Baisser ses taux directeurs pour relancer l’économie",
+      "Imposer une limitation sur les exportations",
+      "Réduire les salaires dans le secteur public",
+      "Cf P2M1L1"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ASS"
+    },
+    "date": "2026-04-07",
+    "explication": "Baisser ses taux directeurs pour relancer l’économie"
+  },
+  {
+    "id": "5b30a84e-32ca-4905-85cc-1ce405fb4990",
+    "question": "Que reflète une balance commerciale excédentaire ?",
+    "propositions": [
+      "Une baisse de la production nationale",
+      "Une forte dépendance aux importations",
+      "Une économie compétitive et une monnaie renforcée",
+      "Un affaiblissement du pouvoir d’achat",
+      "Cf P2M1L1"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ASS"
+    },
+    "date": "2026-04-07",
+    "explication": "Une économie compétitive et une monnaie renforcée"
+  },
+  {
+    "id": "cc5b906a-8873-4b88-b1f8-32f73629bf1d",
+    "question": "Quel est le rôle principal du Produit Intérieur Brut (PIB) ?",
+    "propositions": [
+      "Mesurer la consommation des ménages",
+      "Calculer la dette publique",
+      "Mesurer la richesse créée à l’intérieur d’un pays",
+      "Évaluer le taux de chômage",
+      "Cf P2M1L1"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ASS"
+    },
+    "date": "2026-04-07",
+    "explication": "Mesurer la richesse créée à l’intérieur d’un pays"
+  },
+  {
+    "id": "dcbf7477-f7f2-4129-9623-bf6d356ef066",
+    "question": "Que reflète un taux de chômage élevé dans un pays ?",
+    "propositions": [
+      "Une croissance rapide du PIB",
+      "Une augmentation des exportations",
+      "Un ralentissement économique et une baisse de la consommation",
+      "Un renforcement de la monnaie nationale",
+      "Cf P2M1L1"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ASS"
+    },
+    "date": "2026-04-07",
+    "explication": "Un ralentissement économique et une baisse de la consommation"
+  },
+  {
+    "id": "676cc57b-950f-46d7-8b02-8512925818ad",
+    "question": "Quelle est la différence entre une SICAV et un FCP ?",
+    "propositions": [
+      "La SICAV est réservée aux professionnels, le FCP aux particuliers",
+      "La SICAV est exempte de frais de gestion contrairement au FCP",
+      "Le FCP offre une garantie du capital, contrairement à la SICAV",
+      "Dans une SICAV, l'investisseur détient des actions ; dans un FCP, il détient des parts",
+      "Cf P2M1L2"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ASS"
+    },
+    "date": "2026-04-07",
+    "explication": "Dans une SICAV, l'investisseur détient des actions ; dans un FCP, il détient des parts"
+  },
+  {
+    "id": "895c357f-36be-4a1e-99f0-9b4e98c07938",
+    "question": "Quel indicateur est utilisé pour mesurer la hausse générale des prix dans une économie ?",
+    "propositions": [
+      "Le PMI des services",
+      "Le solde budgétaire",
+      "L’inflation",
+      "Le taux d’emploi",
+      "Cf P2M1L1"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "ASS"
+    },
+    "date": "2026-04-07",
+    "explication": "L’inflation"
   }
 ]
