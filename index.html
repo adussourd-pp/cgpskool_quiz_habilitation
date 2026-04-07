@@ -396,6 +396,16 @@
     </div>
 
     <div class="home-stats" id="home-stats">Chargement de la banque de questions…</div>
+
+    <div style="margin-top:24px; background:var(--white); border:1px solid var(--rule-l); padding:22px 28px;">
+      <div class="kicker" style="margin-bottom:12px;">
+        <span class="kicker-line"></span>
+        <span class="kicker-text">Configuration</span>
+      </div>
+      <div id="token-status" class="small" style="margin-bottom:8px;">Aucun token</div>
+      <p class="small" style="margin-bottom:12px;">Pour ajouter ou importer des questions, tu dois fournir un Personal Access Token GitHub. Il reste stocké uniquement dans ton navigateur.</p>
+      <button class="secondary" onclick="promptToken()" style="margin-top:0;">Définir mon token GitHub</button>
+    </div>
   </div>
 </div>
 
@@ -484,12 +494,34 @@ const GITHUB_USER    = "adussourd-pp";
 const GITHUB_REPO    = "cgpskool_quiz_habilitation";
 const GITHUB_BRANCH  = "main";
 const QUESTIONS_FILE = "questions.json";
-const GITHUB_TOKEN   = "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";
+// Le token est saisi via le bouton "Définir mon token" sur la page de garde
+// et stocké dans le localStorage du navigateur (pas dans le code source).
+const GITHUB_TOKEN   = "";
 
 /* ===================================================================== */
 
 function getToken() {
-  return GITHUB_TOKEN || "";
+  return localStorage.getItem("github_pat") || GITHUB_TOKEN || "";
+}
+function setToken(t) {
+  if (t) localStorage.setItem("github_pat", t);
+  else   localStorage.removeItem("github_pat");
+  refreshTokenStatus();
+}
+function refreshTokenStatus() {
+  const el = document.getElementById("token-status");
+  if (!el) return;
+  const t = getToken();
+  if (t) {
+    el.innerHTML = `<span style="color:var(--green)">● Token configuré</span> (…${t.slice(-6)})`;
+  } else {
+    el.innerHTML = `<span style="color:var(--red)">● Aucun token</span> — nécessaire pour ajouter / importer des questions`;
+  }
+}
+function promptToken() {
+  const v = prompt("Colle ton Personal Access Token GitHub (laisser vide pour le retirer) :", getToken());
+  if (v === null) return;
+  setToken(v.trim());
 }
 
 const API_BASE = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${QUESTIONS_FILE}`;
@@ -743,7 +775,7 @@ async function loadQuestions() {
 
 function ensureToken() {
   if (!getToken()) {
-    throw new Error("Aucun token GitHub configuré dans GITHUB_TOKEN.");
+    throw new Error("Aucun token GitHub configuré. Clique sur « Définir mon token GitHub » sur la page d'accueil.");
   }
 }
 
@@ -786,6 +818,7 @@ function goHome() {
   document.getElementById("main-app").classList.add("hidden");
   ["formateur","import","quiz"].forEach(n => document.getElementById("panel-"+n).classList.add("hidden"));
   refreshHomeStats();
+  refreshTokenStatus();
 }
 function goToTab(name) {
   document.getElementById("panel-home").classList.add("hidden");
@@ -1205,6 +1238,7 @@ function showAlert(target, type, msg) {
 }
 
 refreshHomeStats();
+refreshTokenStatus();
 </script>
 
 </body>
