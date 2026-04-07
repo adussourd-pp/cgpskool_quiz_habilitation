@@ -153,6 +153,12 @@
 
 <h1>Banque de Questions — Habilitation CGPSkool</h1>
 
+<div style="background:#fff; padding:12px 16px; border-radius:8px; margin-bottom:12px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+  <button onclick="promptToken()" style="margin:0">Définir mon token GitHub</button>
+  <span id="token-status" class="small">Aucun token configuré</span>
+  <span class="small" style="margin-left:auto">Le token est stocké uniquement dans votre navigateur. Nécessaire pour les modes Formateur et Import.</span>
+</div>
+
 <div class="tabs">
   <button class="tab active" data-tab="formateur">Mode Formateur</button>
   <button class="tab" data-tab="import">Import par lot</button>
@@ -162,6 +168,8 @@
 <!-- ========== MODE FORMATEUR ========== -->
 <div class="panel" id="panel-formateur">
   <h2>Ajouter une question</h2>
+  <div id="f-formation"></div>
+
   <label>Question</label>
   <textarea id="f-question" placeholder="Énoncé de la question..."></textarea>
 
@@ -181,6 +189,8 @@
 <div class="panel hidden" id="panel-import">
   <h2>Import par lot</h2>
   <p class="small">Collez ci-dessous le texte brut copié depuis la plateforme e-learning. Le parser détecte automatiquement le format (avec ou sans indication de la bonne réponse).</p>
+  <div id="i-formation"></div>
+  <label>Texte à importer</label>
   <textarea id="i-text" rows="12" placeholder="Coller le texte ici..."></textarea>
   <button onclick="parseBatch()">Analyser le texte</button>
   <div id="i-preview"></div>
@@ -191,6 +201,7 @@
   <h2>Quiz</h2>
   <div id="q-setup">
     <p>Lancez un quiz avec des questions aléatoires de la banque.</p>
+    <div id="q-formation"></div>
     <label>Nombre de questions</label>
     <input type="text" id="q-count" value="10" style="max-width:100px">
     <br>
@@ -203,30 +214,191 @@
 
 <script>
 /* =====================================================================
-   CONFIGURATION GITHUB - À RENSEIGNER
+   CONFIGURATION GITHUB
    =====================================================================
-   1. GITHUB_USER  : votre pseudo GitHub (ou propriétaire du repo)
-   2. GITHUB_REPO  : nom du repo
-   3. GITHUB_TOKEN : Personal Access Token (PAT) avec scope "repo"
-                     ⚠️  ATTENTION : ce token sera visible publiquement
-                         dans le code source. Utilisez un token dédié à
-                         ce projet, avec accès limité à ce seul repo
-                         (fine-grained PAT recommandé).
+   - GITHUB_USER / GITHUB_REPO : repo où est stocké questions.json
+   - Le PAT (Personal Access Token) N'EST PAS stocké dans le code source
+     pour éviter d'exposer un secret publiquement.
+     Chaque formateur saisit son propre token via le bouton "Définir mon
+     token GitHub" en haut de la page. Le token est conservé uniquement
+     dans le localStorage du navigateur.
 
    Pour générer un PAT fine-grained :
      https://github.com/settings/personal-access-tokens/new
      - Repository access : seulement cgpskool_quiz_habilitation
      - Permissions       : Contents = Read and Write
+
+   Le mode Quiz fonctionne sans token (lecture publique).
+   Les modes Formateur et Import nécessitent un token.
    ===================================================================== */
-const GITHUB_USER  = "adussourd-pp";                        // <-- À RENSEIGNER
-const GITHUB_REPO  = "cgpskool_quiz_habilitation";          // <-- À RENSEIGNER
-const GITHUB_TOKEN = "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";  // <-- À RENSEIGNER
-const GITHUB_BRANCH = "main";
+const GITHUB_USER    = "adussourd-pp";
+const GITHUB_REPO    = "cgpskool_quiz_habilitation";
+const GITHUB_BRANCH  = "main";
 const QUESTIONS_FILE = "questions.json";
+
+// 👉 COLLEZ ICI VOTRE PAT (commence par github_pat_...)
+//    Laissez "" si vous préférez le saisir via le bouton dans la page.
+const GITHUB_TOKEN   = "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";
 
 /* ===================================================================== */
 
+// Token : priorité au localStorage (si saisi via le bouton),
+// sinon fallback sur la constante GITHUB_TOKEN ci-dessus.
+function getToken() {
+  return localStorage.getItem("github_pat") || GITHUB_TOKEN || "";
+}
+function setToken(t) {
+  if (t) localStorage.setItem("github_pat", t);
+  else   localStorage.removeItem("github_pat");
+  refreshTokenStatus();
+}
+function refreshTokenStatus() {
+  const el = document.getElementById("token-status");
+  if (!el) return;
+  const t = getToken();
+  el.textContent = t ? `Token configuré (…${t.slice(-6)})` : "Aucun token configuré";
+  el.style.color = t ? "#27ae60" : "#e74c3c";
+}
+function promptToken() {
+  const current = getToken();
+  const v = prompt("Collez votre Personal Access Token GitHub (laisser vide pour supprimer) :", current);
+  if (v === null) return;
+  setToken(v.trim());
+}
+
 const API_BASE = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${QUESTIONS_FILE}`;
+
+/* =====================================================================
+   CATALOGUE DES FORMATIONS
+   Pour ajouter une nouvelle année de formation continue, ajoutez-la
+   simplement dans CONTINUE_YEARS et adaptez les packs si besoin.
+   ===================================================================== */
+const HABILITANTES = [
+  "IMMOBILIER-IOBSP Niveau II",
+  "Assurance Niveau II",
+  "Agents Liés",
+  "CIF"
+];
+
+const CONTINUE_TYPES = ["IMMO", "IOBSP", "ALPSI", "ASS"];
+
+// Pour chaque année et pack, la liste des types proposés
+const CONTINUE_CATALOG = {
+  "2025": {
+    "PACK01-FC : IMMO / IOBSP / ALPSI":         ["IMMO", "IOBSP", "ALPSI"],
+    "PACK02-FC : IMMO / IOBSP / ASS":           ["IMMO", "IOBSP", "ASS"],
+    "PACK03-FC : IMMO / IOBSP / ALPSI / ASS":   ["IMMO", "IOBSP", "ALPSI", "ASS"]
+  }
+};
+const CONTINUE_YEARS = Object.keys(CONTINUE_CATALOG);
+
+function formationLabel(f) {
+  if (!f) return "Non précisée";
+  if (f.categorie === "habilitante") return "Habilitante — " + f.nom;
+  if (f.categorie === "continue") return `Continue ${f.annee} — ${f.pack} (${f.type})`;
+  return "Non précisée";
+}
+
+// Crée un sélecteur de formation et le monte dans `container`.
+// Retourne une fonction getValue() qui renvoie l'objet formation ou null.
+function buildFormationSelector(container, { allowAll = false, label = "Formation" } = {}) {
+  container.innerHTML = `
+    <label>${label}</label>
+    <select class="fs-cat">
+      ${allowAll ? '<option value="all">— Toutes les formations —</option>' : '<option value="">— Choisir —</option>'}
+      <option value="habilitante">Formation habilitante</option>
+      <option value="continue">Formation continue</option>
+    </select>
+    <div class="fs-sub" style="margin-top:8px"></div>
+  `;
+  const cat = container.querySelector(".fs-cat");
+  const sub = container.querySelector(".fs-sub");
+
+  function renderSub() {
+    sub.innerHTML = "";
+    if (cat.value === "habilitante") {
+      const sel = document.createElement("select");
+      sel.className = "fs-hab";
+      sel.innerHTML = (allowAll ? '<option value="">— Toutes —</option>' : '<option value="">— Choisir —</option>')
+        + HABILITANTES.map(h => `<option value="${escapeHtml(h)}">${escapeHtml(h)}</option>`).join("");
+      sub.appendChild(sel);
+    } else if (cat.value === "continue") {
+      const yearSel = document.createElement("select");
+      yearSel.className = "fs-year";
+      yearSel.innerHTML = (allowAll ? '<option value="">— Toutes années —</option>' : '<option value="">— Année —</option>')
+        + CONTINUE_YEARS.map(y => `<option value="${y}">${y}</option>`).join("");
+      sub.appendChild(yearSel);
+
+      const packWrap = document.createElement("div");
+      packWrap.style.marginTop = "6px";
+      sub.appendChild(packWrap);
+
+      const typeWrap = document.createElement("div");
+      typeWrap.style.marginTop = "6px";
+      sub.appendChild(typeWrap);
+
+      yearSel.addEventListener("change", () => {
+        packWrap.innerHTML = "";
+        typeWrap.innerHTML = "";
+        if (!yearSel.value) return;
+        const packs = Object.keys(CONTINUE_CATALOG[yearSel.value]);
+        const packSel = document.createElement("select");
+        packSel.className = "fs-pack";
+        packSel.innerHTML = (allowAll ? '<option value="">— Tous packs —</option>' : '<option value="">— Pack —</option>')
+          + packs.map(p => `<option value="${escapeHtml(p)}">${escapeHtml(p)}</option>`).join("");
+        packWrap.appendChild(packSel);
+        packSel.addEventListener("change", () => {
+          typeWrap.innerHTML = "";
+          if (!packSel.value) return;
+          const types = CONTINUE_CATALOG[yearSel.value][packSel.value];
+          const typeSel = document.createElement("select");
+          typeSel.className = "fs-type";
+          typeSel.innerHTML = (allowAll ? '<option value="">— Tous types —</option>' : '<option value="">— Type —</option>')
+            + types.map(t => `<option value="${t}">${t}</option>`).join("");
+          typeWrap.appendChild(typeSel);
+        });
+      });
+    }
+  }
+  cat.addEventListener("change", renderSub);
+
+  return function getValue() {
+    if (!cat.value || cat.value === "all") return null;
+    if (cat.value === "habilitante") {
+      const v = sub.querySelector(".fs-hab")?.value;
+      if (!v) return allowAll ? { categorie: "habilitante" } : null;
+      return { categorie: "habilitante", nom: v };
+    }
+    if (cat.value === "continue") {
+      const annee = sub.querySelector(".fs-year")?.value;
+      const pack  = sub.querySelector(".fs-pack")?.value;
+      const type  = sub.querySelector(".fs-type")?.value;
+      if (allowAll) {
+        const r = { categorie: "continue" };
+        if (annee) r.annee = annee;
+        if (pack)  r.pack  = pack;
+        if (type)  r.type  = type;
+        return r;
+      }
+      if (!annee || !pack || !type) return null;
+      return { categorie: "continue", annee, pack, type };
+    }
+    return null;
+  };
+}
+
+// Vérifie qu'une question matche un filtre formation (pour le quiz)
+function matchesFormationFilter(question, filter) {
+  if (!filter) return true;
+  const f = question.formation;
+  if (!f) return false;
+  if (filter.categorie && f.categorie !== filter.categorie) return false;
+  if (filter.nom    && f.nom    !== filter.nom)    return false;
+  if (filter.annee  && f.annee  !== filter.annee)  return false;
+  if (filter.pack   && f.pack   !== filter.pack)   return false;
+  if (filter.type   && f.type   !== filter.type)   return false;
+  return true;
+}
 
 // ========== UTILITAIRES ==========
 function uuid() {
@@ -275,9 +447,16 @@ async function loadQuestions() {
   return await r.json();
 }
 
+function ensureToken() {
+  if (!getToken()) {
+    throw new Error("Aucun token GitHub configuré. Cliquez sur « Définir mon token GitHub » en haut de la page.");
+  }
+}
+
 async function getFileSha() {
+  ensureToken();
   const r = await fetch(`${API_BASE}?ref=${GITHUB_BRANCH}`, {
-    headers: { Authorization: `Bearer ${GITHUB_TOKEN}` }
+    headers: { Authorization: `Bearer ${getToken()}` }
   });
   if (!r.ok) throw new Error("Erreur récupération SHA : " + r.status);
   const j = await r.json();
@@ -290,7 +469,7 @@ async function saveQuestions(allQuestions, message) {
   const r = await fetch(API_BASE, {
     method: "PUT",
     headers: {
-      Authorization: `Bearer ${GITHUB_TOKEN}`,
+      Authorization: `Bearer ${getToken()}`,
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
@@ -333,6 +512,24 @@ function addProposition(value = "") {
 }
 addProposition(); addProposition(); addProposition(); addProposition();
 
+// Sélecteur formation pour le mode formateur
+const getFormateurFormation = buildFormationSelector(
+  document.getElementById("f-formation"),
+  { allowAll: false, label: "Formation source" }
+);
+
+// Sélecteur formation pour le mode import
+const getImportFormation = buildFormationSelector(
+  document.getElementById("i-formation"),
+  { allowAll: false, label: "Formation source (appliquée à toutes les questions importées)" }
+);
+
+// Sélecteur formation pour le mode quiz (filtre optionnel)
+const getQuizFilter = buildFormationSelector(
+  document.getElementById("q-formation"),
+  { allowAll: true, label: "Filtrer par formation (optionnel)" }
+);
+
 async function submitFormateur() {
   const question = document.getElementById("f-question").value.trim();
   const propsEls = document.querySelectorAll("#f-propositions .proposition");
@@ -345,6 +542,8 @@ async function submitFormateur() {
   warningDiv.innerHTML = "";
   resultDiv.innerHTML = "";
 
+  const formation = getFormateurFormation();
+  if (!formation) return showAlert(resultDiv, "error", "Sélectionnez la formation source (catégorie + détails).");
   if (!question) return showAlert(resultDiv, "error", "La question est obligatoire.");
   if (propositions.filter(p => p).length < 2) return showAlert(resultDiv, "error", "Au moins 2 propositions sont requises.");
   if (!bonneRadio) return showAlert(resultDiv, "error", "Indiquez la bonne réponse.");
@@ -369,7 +568,7 @@ async function submitFormateur() {
     return;
   }
 
-  await doAddQuestion(existing, question, cleanProps, realIndex, auteur, resultDiv, warningDiv);
+  await doAddQuestion(existing, question, cleanProps, realIndex, auteur, formation, resultDiv, warningDiv);
 }
 
 function confirmAddDespiteDuplicate() {
@@ -377,13 +576,14 @@ function confirmAddDespiteDuplicate() {
   submitFormateur();
 }
 
-async function doAddQuestion(existing, question, propositions, bonneIndex, auteur, resultDiv, warningDiv) {
+async function doAddQuestion(existing, question, propositions, bonneIndex, auteur, formation, resultDiv, warningDiv) {
   const newQ = {
     id: uuid(),
     question,
     propositions,
     bonne_reponse: bonneIndex,
     auteur: auteur || undefined,
+    formation,
     date: today()
   };
   existing.push(newQ);
@@ -556,6 +756,10 @@ async function renderBatchPreview(formatA) {
 
 async function submitBatch() {
   const resultDiv = document.getElementById("i-result");
+  const formation = getImportFormation();
+  if (!formation) {
+    return showAlert(resultDiv, "error", "Sélectionnez la formation source avant l'envoi.");
+  }
   const incomplete = parsedBatch.filter(q => q.bonne_reponse === -1 || q.bonne_reponse == null);
   if (incomplete.length > 0) {
     return showAlert(resultDiv, "error", `${incomplete.length} question(s) sans bonne réponse sélectionnée.`);
@@ -569,6 +773,7 @@ async function submitBatch() {
         question: q.question,
         propositions: q.propositions,
         bonne_reponse: q.bonne_reponse,
+        formation,
         date: today()
       });
     });
@@ -605,7 +810,11 @@ async function startQuiz() {
 
   if (all.length === 0) return showAlert(infoDiv, "error", "Aucune question dans la banque.");
 
-  const deduped = dedupQuestions(all);
+  const filter = getQuizFilter();
+  const filtered = all.filter(q => matchesFormationFilter(q, filter));
+  if (filtered.length === 0) return showAlert(infoDiv, "error", "Aucune question ne correspond au filtre formation.");
+
+  const deduped = dedupQuestions(filtered);
   const count = Math.min(parseInt(document.getElementById("q-count").value) || 10, deduped.length);
   const shuffled = deduped.sort(() => Math.random() - 0.5).slice(0, count);
 
@@ -620,7 +829,7 @@ function renderQuizQuestion() {
   const game = document.getElementById("q-game");
   const q = quizState.questions[quizState.current];
   let html = `<div class="progress">Question ${quizState.current + 1} / ${quizState.questions.length} — Score : ${quizState.score}</div>`;
-  html += `<div class="question-card"><h3>${escapeHtml(q.question)}</h3></div>`;
+  html += `<div class="question-card"><div class="small">${escapeHtml(formationLabel(q.formation))}</div><h3>${escapeHtml(q.question)}</h3></div>`;
   q.propositions.forEach((p, i) => {
     html += `<div class="quiz-option" data-idx="${i}" onclick="answerQuiz(${i})">${escapeHtml(p)}</div>`;
   });
@@ -679,6 +888,8 @@ function escapeHtml(s) {
 function showAlert(target, type, msg) {
   target.innerHTML = `<div class="alert ${type}">${escapeHtml(msg)}</div>`;
 }
+
+refreshTokenStatus();
 </script>
 
 </body>
