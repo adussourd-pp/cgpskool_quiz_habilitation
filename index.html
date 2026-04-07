@@ -890,23 +890,37 @@ let parsedBatch = [];
 function cleanBatchText(text) {
   const noiseLines = [
     /pas encore r[ée]pondu/i,
+    /^note\s+de\s+[\d,\.]+\s+sur\s+[\d,\.]+/i,
     /not[ée] sur [\d,\.]+/i,
+    /^texte de la question$/i,
     /marquer la question/i,
     /retirer le marquage/i,
     /^feedback$/i,
     /votre r[ée]ponse est (correcte|incorrecte)/i,
     /^cf\s*m\d+l\d+/i,
     /^r[ée]f\s*:/i,
-    /question\s*\d+\s*$/i,
+    /^question\s*\d+\s*$/i,
+    /^q\d+\s*[:\-]?\s*$/i,
     /^correct$/i,
     /^incorrect$/i,
+    /^r[ée]ponse$/i,
+    /^choisissez\s+une\s+r[ée]ponse/i,
     /^terminé/i,
     /information$/i
   ];
-  return text.split("\n")
-    .map(l => l.trim())
-    .filter(l => l && !noiseLines.some(rx => rx.test(l)))
-    .join("\n");
+  // Nettoyage ligne par ligne, puis suppression inline des morceaux courants
+  // qui peuvent rester collés dans une même ligne
+  let lines = text.split("\n").map(l => l.trim());
+  lines = lines.map(l => l
+    // "Note de X,XX sur Y,YY" inline
+    .replace(/note\s+de\s+[\d,\.]+\s+sur\s+[\d,\.]+/gi, "")
+    // "Texte de la question" inline
+    .replace(/texte de la question/gi, "")
+    // "Q4 :" ou "Question 4 :" en début
+    .replace(/^q(uestion)?\s*\d+\s*[:\-]?\s*/i, "")
+    .trim()
+  );
+  return lines.filter(l => l && !noiseLines.some(rx => rx.test(l))).join("\n");
 }
 
 function parseBatch() {
@@ -963,12 +977,12 @@ function parseBatch() {
     const lines = cleanBlock.split("\n").map(l => l.trim()).filter(Boolean);
     if (lines.length < 3) return;
 
-    // Trouver la ligne question (première qui finit par ? ou la première ligne)
-    let qIdx = lines.findIndex(l => l.endsWith("?"));
+    // Trouver la ligne question (première qui finit par ? ou par ":" ou la première ligne)
+    let qIdx = lines.findIndex(l => l.endsWith("?") || l.endsWith(" :") || l.endsWith(":"));
     if (qIdx === -1) qIdx = 0;
-    const question = lines.slice(0, qIdx + 1).join(" ");
+    const question = lines.slice(0, qIdx + 1).join(" ").trim();
 
-    // Récupérer la "bonne réponse" si format A
+    // Récupérer la "bonne réponse" si format A textuel
     let bonneText = null;
     let propLines = lines.slice(qIdx + 1);
     const bonneIdxLine = propLines.findIndex(l => /la r[ée]ponse correcte est/i.test(l));
@@ -978,15 +992,30 @@ function parseBatch() {
       propLines = propLines.slice(0, bonneIdxLine);
     }
 
-    // Nettoyer puces a. b. c. ou 1) 2)
+    // Nettoyer puces a. b. c. ou 1) 2), détecter le marqueur ✓ de bonne réponse
+    let markedBonne = -1;
     const propositions = propLines
-      .map(l => l.replace(/^[a-z]\s*[\.\)]\s*/i, "").replace(/^\d+\s*[\.\)]\s*/, "").trim())
-      .filter(l => l.length > 0 && l.length < 500);
+      .map(l => l
+        .replace(/^[a-z]\s*[\.\)]\s*/i, "")
+        .replace(/^\d+\s*[\.\)]\s*/, "")
+        .trim()
+      )
+      .filter(l => l.length > 0 && l.length < 500)
+      .map((l, i, arr) => {
+        // Détecte ✓ ou ✔ en début (avec ou sans espace)
+        if (/^[✓✔]\s*/.test(l)) {
+          markedBonne = i;
+          return l.replace(/^[✓✔]\s*/, "").trim();
+        }
+        return l;
+      });
 
     if (propositions.length < 2 || !question) return;
 
     let bonneIndex = -1;
-    if (bonneText) {
+    if (markedBonne !== -1) {
+      bonneIndex = markedBonne;
+    } else if (bonneText) {
       const bt = normalize(bonneText);
       bonneIndex = propositions.findIndex(p => normalize(p) === bt || normalize(p).includes(bt) || bt.includes(normalize(p)));
     }
