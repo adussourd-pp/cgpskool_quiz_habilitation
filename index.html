@@ -153,6 +153,12 @@
 
 <h1>Banque de Questions — Habilitation CGPSkool</h1>
 
+<div style="background:#fff; padding:12px 16px; border-radius:8px; margin-bottom:12px; display:flex; align-items:center; gap:12px; flex-wrap:wrap; box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+  <button onclick="promptToken()" style="margin:0">Définir mon token GitHub</button>
+  <span id="token-status" class="small">Aucun token configuré</span>
+  <span class="small" style="margin-left:auto">Le token est stocké uniquement dans votre navigateur. Nécessaire pour les modes Formateur et Import.</span>
+</div>
+
 <div class="tabs">
   <button class="tab active" data-tab="formateur">Mode Formateur</button>
   <button class="tab" data-tab="import">Import par lot</button>
@@ -208,28 +214,52 @@
 
 <script>
 /* =====================================================================
-   CONFIGURATION GITHUB - À RENSEIGNER
+   CONFIGURATION GITHUB
    =====================================================================
-   1. GITHUB_USER  : votre pseudo GitHub (ou propriétaire du repo)
-   2. GITHUB_REPO  : nom du repo
-   3. GITHUB_TOKEN : Personal Access Token (PAT) avec scope "repo"
-                     ⚠️  ATTENTION : ce token sera visible publiquement
-                         dans le code source. Utilisez un token dédié à
-                         ce projet, avec accès limité à ce seul repo
-                         (fine-grained PAT recommandé).
+   - GITHUB_USER / GITHUB_REPO : repo où est stocké questions.json
+   - Le PAT (Personal Access Token) N'EST PAS stocké dans le code source
+     pour éviter d'exposer un secret publiquement.
+     Chaque formateur saisit son propre token via le bouton "Définir mon
+     token GitHub" en haut de la page. Le token est conservé uniquement
+     dans le localStorage du navigateur.
 
    Pour générer un PAT fine-grained :
      https://github.com/settings/personal-access-tokens/new
      - Repository access : seulement cgpskool_quiz_habilitation
      - Permissions       : Contents = Read and Write
+
+   Le mode Quiz fonctionne sans token (lecture publique).
+   Les modes Formateur et Import nécessitent un token.
    ===================================================================== */
-const GITHUB_USER  = "adussourd-pp";                        // <-- À RENSEIGNER
-const GITHUB_REPO  = "cgpskool_quiz_habilitation";          // <-- À RENSEIGNER
-const GITHUB_TOKEN = "ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";  // <-- À RENSEIGNER
-const GITHUB_BRANCH = "main";
+const GITHUB_USER    = "adussourd-pp";
+const GITHUB_REPO    = "cgpskool_quiz_habilitation";
+const GITHUB_BRANCH  = "main";
 const QUESTIONS_FILE = "questions.json";
 
 /* ===================================================================== */
+
+// Le PAT est lu depuis le localStorage (saisi par chaque formateur).
+function getToken() {
+  return localStorage.getItem("github_pat") || "";
+}
+function setToken(t) {
+  if (t) localStorage.setItem("github_pat", t);
+  else   localStorage.removeItem("github_pat");
+  refreshTokenStatus();
+}
+function refreshTokenStatus() {
+  const el = document.getElementById("token-status");
+  if (!el) return;
+  const t = getToken();
+  el.textContent = t ? `Token configuré (…${t.slice(-6)})` : "Aucun token configuré";
+  el.style.color = t ? "#27ae60" : "#e74c3c";
+}
+function promptToken() {
+  const current = getToken();
+  const v = prompt("Collez votre Personal Access Token GitHub (laisser vide pour supprimer) :", current);
+  if (v === null) return;
+  setToken(v.trim());
+}
 
 const API_BASE = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/${QUESTIONS_FILE}`;
 
@@ -412,9 +442,16 @@ async function loadQuestions() {
   return await r.json();
 }
 
+function ensureToken() {
+  if (!getToken()) {
+    throw new Error("Aucun token GitHub configuré. Cliquez sur « Définir mon token GitHub » en haut de la page.");
+  }
+}
+
 async function getFileSha() {
+  ensureToken();
   const r = await fetch(`${API_BASE}?ref=${GITHUB_BRANCH}`, {
-    headers: { Authorization: `Bearer ${GITHUB_TOKEN}` }
+    headers: { Authorization: `Bearer ${getToken()}` }
   });
   if (!r.ok) throw new Error("Erreur récupération SHA : " + r.status);
   const j = await r.json();
@@ -427,7 +464,7 @@ async function saveQuestions(allQuestions, message) {
   const r = await fetch(API_BASE, {
     method: "PUT",
     headers: {
-      Authorization: `Bearer ${GITHUB_TOKEN}`,
+      Authorization: `Bearer ${getToken()}`,
       "Content-Type": "application/json"
     },
     body: JSON.stringify({
@@ -846,6 +883,8 @@ function escapeHtml(s) {
 function showAlert(target, type, msg) {
   target.innerHTML = `<div class="alert ${type}">${escapeHtml(msg)}</div>`;
 }
+
+refreshTokenStatus();
 </script>
 
 </body>
