@@ -236,11 +236,16 @@ const GITHUB_REPO    = "cgpskool_quiz_habilitation";
 const GITHUB_BRANCH  = "main";
 const QUESTIONS_FILE = "questions.json";
 
+// 👉 COLLEZ ICI VOTRE PAT (commence par github_pat_...)
+//    Laissez "" si vous préférez le saisir via le bouton dans la page.
+const GITHUB_TOKEN   = "";
+
 /* ===================================================================== */
 
-// Le PAT est lu depuis le localStorage (saisi par chaque formateur).
+// Token : priorité au localStorage (si saisi via le bouton),
+// sinon fallback sur la constante GITHUB_TOKEN ci-dessus.
 function getToken() {
-  return localStorage.getItem("github_pat") || "";
+  return localStorage.getItem("github_pat") || GITHUB_TOKEN || "";
 }
 function setToken(t) {
   if (t) localStorage.setItem("github_pat", t);
