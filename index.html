@@ -337,6 +337,29 @@
     background: radial-gradient(ellipse at 80% 20%, rgba(212,98,42,0.18), transparent 60%);
     pointer-events: none;
   }
+  .hero-back {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--fog-2);
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: all 0.2s;
+  }
+  .hero-back:hover {
+    color: var(--white);
+    border-color: var(--orange);
+  }
   .home-hero-inner { position: relative; max-width: 720px; }
   .home-hero h1 {
     color: var(--white);
@@ -480,6 +503,7 @@
 <!-- ========== PAGE DE GARDE ========== -->
 <div id="panel-home">
   <div class="home-hero">
+    <a class="hero-back" href="https://adussourd-pp.github.io/cgpskool/index.html">← Retour au site</a>
     <div class="home-hero-inner wrap" style="padding-top:0; padding-bottom:0;">
       <div class="kicker">
         <span class="kicker-line"></span>
@@ -1036,7 +1060,7 @@ function cleanBatchText(text) {
     /retirer le marquage/i,
     /^feedback$/i,
     /votre r[ée]ponse est (correcte|incorrecte)/i,
-    /^cf\s*m\d+l\d+/i,
+    /^cf[\.\s]*m\d+l\d+/i,
     /^la r[ée]ponse correcte est/i,
     /^r[ée]f\s*:/i,
     /^question\s*\d+\s*$/i,
@@ -1117,7 +1141,7 @@ function parseBatch() {
     // "La réponse correcte est : ..." pour les conserver dans la question.
     let reference = null;
     let explication = null;
-    const refMatch = block.match(/cf\s*(m\d+l\d+(?:[-.\s]*\d+)?)/i);
+    const refMatch = block.match(/cf[\.\s]*(m\d+l\d+(?:[-.\s]*\d+)?)/i);
     if (refMatch) reference = refMatch[1].toUpperCase().replace(/\s+/g, "");
     const explMatch = block.match(/la r[ée]ponse correcte est\s*[:\-]?\s*(.+)/i);
     if (explMatch) explication = explMatch[1].trim().replace(/[.\s]+$/, "");
