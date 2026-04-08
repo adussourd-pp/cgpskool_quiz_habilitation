@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Quiz Habilitations</title>
+<title>Révision Habilitations / Formations Continues — CGP Skool</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -337,6 +337,29 @@
     background: radial-gradient(ellipse at 80% 20%, rgba(212,98,42,0.18), transparent 60%);
     pointer-events: none;
   }
+  .hero-back {
+    position: absolute;
+    top: 22px;
+    right: 30px;
+    z-index: 2;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--sans);
+    font-size: 10.5px;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--fog-2);
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: all 0.2s;
+  }
+  .hero-back:hover {
+    color: var(--white);
+    border-color: var(--orange);
+  }
   .home-hero-inner { position: relative; max-width: 720px; }
   .home-hero h1 {
     color: var(--white);
@@ -466,14 +489,12 @@
     margin: 0;
   }
 
-  .site-footer {
-    background: var(--bg);
-    color: var(--white);
-    padding: 50px 0 60px;
-    margin-top: 40px;
-    border-top: 1px solid var(--rule-d);
+  .pbs-links {
+    margin-top: 28px;
+    background: var(--white);
+    border: 1px solid var(--rule-l);
+    padding: 26px 30px;
   }
-  .site-footer .kicker-text { color: var(--orange); }
   .pbs-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -484,28 +505,28 @@
     align-items: center;
     gap: 14px;
     padding: 18px 22px;
-    background: rgba(255,255,255,0.025);
-    border: 1px solid var(--rule-d);
+    background: var(--paper);
+    border: 1px solid var(--rule-l);
     text-decoration: none;
-    color: var(--white);
+    color: var(--ink);
     transition: all 0.2s;
   }
   .pbs-card:hover {
     border-color: var(--orange);
-    background: rgba(212,98,42,0.08);
+    background: var(--white);
   }
   .pbs-icon { font-size: 22px; flex-shrink: 0; }
   .pbs-title {
     font-family: var(--serif);
     font-size: 17px;
-    color: var(--white);
+    color: var(--ink);
   }
   .pbs-sub {
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--fog-2);
+    color: var(--ink-60);
     margin-top: 2px;
   }
   .pbs-arrow {
@@ -546,6 +567,13 @@
     .home-hero { padding: 50px 20px 55px; margin-bottom: 18px; }
     .home-hero h1 { font-size: 28px; line-height: 1.1; margin-bottom: 16px; }
     .home-hero p { font-size: 14px; }
+    .hero-back {
+      top: 12px;
+      right: 12px;
+      padding: 6px 10px;
+      font-size: 9.5px;
+      letter-spacing: 0.12em;
+    }
 
     /* Panels */
     .panel { padding: 22px 18px; }
@@ -577,7 +605,7 @@
     .home-stats strong { font-size: 26px; }
 
     /* PBS */
-    .site-footer { padding: 36px 0 40px; margin-top: 28px; }
+    .pbs-links { padding: 20px 18px; }
     .pbs-cards { grid-template-columns: 1fr; }
     .pbs-card { padding: 14px 16px; gap: 12px; }
     .pbs-title { font-size: 15px; }
@@ -635,6 +663,7 @@
     .home-hero h1 { font-size: 24px; }
     .panel { padding: 18px 14px; }
     .quiz-card { padding: 18px 14px; }
+    .hero-back { top: 10px; right: 10px; font-size: 9px; }
   }
 </style>
 </head>
@@ -643,6 +672,7 @@
 <!-- ========== PAGE DE GARDE ========== -->
 <div id="panel-home">
   <div class="home-hero">
+    <a class="hero-back" href="https://adussourd-pp.github.io/cgpskool/index.html">← Retour au site</a>
     <div class="home-hero-inner wrap" style="padding-top:0; padding-bottom:0;">
       <div class="kicker">
         <span class="kicker-line"></span>
@@ -660,28 +690,28 @@
         <span class="kicker-line"></span>
         <span class="kicker-text">Comment ça marche</span>
       </div>
-      <p>Ce site est une <strong>banque collaborative de questions/réponses</strong> pour réviser les formations habilitantes et les formations continues. Tout le monde peut contribuer et tout le monde peut s'entraîner.</p>
+      <p>Ce site est une <strong>banque collaborative de questions/réponses</strong> pour réviser les formations habilitantes et continues CGP Skool. Tout le monde peut contribuer et tout le monde peut s'entraîner.</p>
 
       <div class="how-grid">
         <div class="how-item">
           <span class="how-num">1</span>
           <div>
-            <strong>Alimentez la banque</strong>
-            <p>À la fin de chaque leçon e-learning, copiez-collez le texte des questions corrigées dans <em>« Import par lot »</em> et choisissez la formation source. Le site détecte automatiquement la bonne réponse et la référence du module. Il est aussi possible de créer une question manuellement via <em>« Saisie manuelle »</em>.</p>
+            <strong>Alimente la banque</strong>
+            <p>À la fin de chaque leçon e-learning, copie-colle le texte des questions corrigées dans <em>« Import par lot »</em> et choisis la formation source. Le site détecte automatiquement la bonne réponse et la référence du module. Tu peux aussi créer une question manuellement via <em>« Saisie manuelle »</em>.</p>
           </div>
         </div>
         <div class="how-item">
           <span class="how-num">2</span>
           <div>
-            <strong>Entraînez-vous</strong>
-            <p>Lancez un quiz en mode <em>« Quiz »</em>, filtrez par formation (habilitante ou continue) et choisissez le nombre de questions. Cliquez sur une réponse pour valider automatiquement. À chaque réponse, la bonne solution et la référence s'affichent pour retrouver le bon module à réviser.</p>
+            <strong>Entraîne-toi</strong>
+            <p>Lance un quiz en mode <em>« Quiz »</em>, filtre par formation (habilitante ou continue) et choisis le nombre de questions. Clique sur une réponse pour valider automatiquement. À chaque réponse, tu vois la bonne solution et la référence pour aller réviser le bon module si besoin.</p>
           </div>
         </div>
         <div class="how-item">
           <span class="how-num">3</span>
           <div>
-            <strong>Partagez</strong>
-            <p>Toutes les questions ajoutées sont immédiatement disponibles pour vos collègues — pas de compte, pas de connexion nécessaire. Plus les contributions sont nombreuses, plus la banque devient riche pour tout le monde.</p>
+            <strong>Partage</strong>
+            <p>Toutes les questions ajoutées sont immédiatement disponibles pour tes collègues — pas de compte, pas de connexion nécessaire. Plus on contribue, plus la banque devient riche pour tout le monde.</p>
           </div>
         </div>
       </div>
@@ -706,13 +736,11 @@
     </div>
 
     <div class="home-stats" id="home-stats">Chargement de la banque de questions…</div>
-  </div>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="kicker" style="margin-bottom:18px;">
+    <div class="pbs-links">
+      <div class="kicker" style="margin-bottom:14px;">
         <span class="kicker-line"></span>
-        <span class="kicker-text">À vos côtés</span>
+        <span class="kicker-text">Prodemial Business School</span>
       </div>
       <div class="pbs-cards">
         <a class="pbs-card" href="https://boutique.prodemial-business-school.com/user/login" target="_blank" rel="noopener">
@@ -741,7 +769,7 @@
         </a>
       </div>
     </div>
-  </footer>
+  </div>
 </div>
 
 <!-- ========== INTERFACE PRINCIPALE ========== -->
@@ -749,9 +777,9 @@
   <button class="back-home" onclick="goHome()">← Retour à l'accueil</button>
   <div class="kicker">
     <span class="kicker-line"></span>
-    <span class="kicker-text">Habilitations</span>
+    <span class="kicker-text">CGP Skool</span>
   </div>
-  <h1>Quiz <em>Habilitations</em></h1>
+  <h1>Révision <em>Habilitations & Formations Continues</em></h1>
 
   <div class="tabs">
     <button class="tab" data-tab="formateur">Saisie manuelle</button>
