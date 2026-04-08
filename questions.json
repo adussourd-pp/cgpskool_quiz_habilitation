@@ -721,5 +721,165 @@
     },
     "date": "2026-04-08",
     "explication": "Le 31 décembre de l'année du 25ème anniversaire de son titulaire"
+  },
+  {
+    "id": "b68c3a72-52a6-4b0a-a14c-4e92125b39d9",
+    "question": "Le marché réglementé qui regroupe toutes les valeurs cotées à la Bourse de Paris se nomme :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "L’EURONEXT GROWTH",
+      "L’EURIBOR",
+      "Le MONEP",
+      "L’EUROLIST",
+      "Cf. M2L8"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "L’EUROLIST"
+  },
+  {
+    "id": "87f2acc3-58f3-4368-bc72-7a51e512cecd",
+    "question": "Les gains nets de cession de valeurs mobilières sont imposables :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Dans tous les cas, au barème progressif de l’Impôt sur le Revenu",
+      "Dès le 1er euro de cession",
+      "Au taux de 24%",
+      "A partir d’un certain seuil",
+      "Cf. M2L7"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Dès le 1er euro de cession"
+  },
+  {
+    "id": "48011d1d-a504-47a3-8944-978843c20a15",
+    "question": "Le bêta financier d’un titre proche de 1 signifie que :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "La valeur amplifie les variations de son indice de référence",
+      "La valeur diminue les variations de son indice de référence",
+      "La valeur et son indice de référence sont très proches",
+      "La valeur réagit à l’inverse de son indice de référence",
+      "Cf. M2L9"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "La valeur et son indice de référence sont très proches"
+  },
+  {
+    "id": "ad29287d-72b3-46f2-b140-4395d8404043",
+    "question": "Les dividendes sont soumis aux prélèvements sociaux au taux global de :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "12,8%",
+      "30%",
+      "15%",
+      "6%",
+      "Cf. M2L7"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "18.6%"
+  },
+  {
+    "id": "a83fe6b2-93bc-4d99-b609-899b9a5cad7a",
+    "question": "EURONEXT Paris SA est :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Un indice de cotation des moyennes capitalisations",
+      "Une des valeurs composant le CAC40",
+      "Un indice représentatif des valeurs cotées à la Bourse de Paris",
+      "La société qui gère la Bourse de Paris",
+      "Cf. M2L8"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "La société qui gère la Bourse de Paris"
+  },
+  {
+    "id": "92420ef9-15a2-4ba8-8bf9-cb4a8e3c9f31",
+    "question": "Les intérêts générés sur les livrets bancaires et super livrets :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Sont exonérés d'impôt sur le revenu pendant les 2 premières années",
+      "Sont soumis aux prélèvements sociaux",
+      "Sont exonérés des prélèvements sociaux",
+      "Ne sont pas soumis au barème progressif de l’impôt sur le revenu",
+      "Cf. M2L10"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Sont soumis aux prélèvements sociaux"
+  },
+  {
+    "id": "eae0838f-e2f1-420a-b28f-ae971c189ac4",
+    "question": "Dans le cadre du régime d’imposition des dividendes versés depuis le 1er janvier 2018 :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Les prélèvements sociaux ne sont pas applicables",
+      "L’option au barème progressif de l’Impôt sur le Revenu a été supprimée",
+      "L’abattement en cas d’option au barème progressif de l’Impôt sur le Revenu a été supprimé",
+      "Le taux forfaitaire d’Impôt sur le Revenu applicable est de 12,8%",
+      "Cf. M2L7"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Le taux forfaitaire d’Impôt sur le Revenu applicable est de 12,8%"
+  },
+  {
+    "id": "8e10d938-349c-447d-9b0e-61704c7b16ef",
+    "question": "Dans le cadre de l’épargne logement :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Il est possible de transformer son CEL en PEL",
+      "Il possible de transférer ses droits à prêt d’un CEL à un membre de sa famille ne détenant pas lui-même de CEL",
+      "Il est possible de transformer son PEL en CEL",
+      "Le transfert d’un CEL existant dans un autre établissement est impossible",
+      "Cf. M2L10"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Il est possible de transformer son PEL en CEL"
   }
 ]
