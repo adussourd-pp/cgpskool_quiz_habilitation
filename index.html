@@ -466,12 +466,14 @@
     margin: 0;
   }
 
-  .pbs-links {
-    margin-top: 28px;
-    background: var(--white);
-    border: 1px solid var(--rule-l);
-    padding: 26px 30px;
+  .site-footer {
+    background: var(--bg);
+    color: var(--white);
+    padding: 50px 0 60px;
+    margin-top: 40px;
+    border-top: 1px solid var(--rule-d);
   }
+  .site-footer .kicker-text { color: var(--orange); }
   .pbs-cards {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -482,28 +484,28 @@
     align-items: center;
     gap: 14px;
     padding: 18px 22px;
-    background: var(--paper);
-    border: 1px solid var(--rule-l);
+    background: rgba(255,255,255,0.025);
+    border: 1px solid var(--rule-d);
     text-decoration: none;
-    color: var(--ink);
+    color: var(--white);
     transition: all 0.2s;
   }
   .pbs-card:hover {
     border-color: var(--orange);
-    background: var(--white);
+    background: rgba(212,98,42,0.08);
   }
   .pbs-icon { font-size: 22px; flex-shrink: 0; }
   .pbs-title {
     font-family: var(--serif);
     font-size: 17px;
-    color: var(--ink);
+    color: var(--white);
   }
   .pbs-sub {
     font-size: 11px;
     font-weight: 500;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--ink-60);
+    color: var(--fog-2);
     margin-top: 2px;
   }
   .pbs-arrow {
@@ -575,7 +577,7 @@
     .home-stats strong { font-size: 26px; }
 
     /* PBS */
-    .pbs-links { padding: 20px 18px; }
+    .site-footer { padding: 36px 0 40px; margin-top: 28px; }
     .pbs-cards { grid-template-columns: 1fr; }
     .pbs-card { padding: 14px 16px; gap: 12px; }
     .pbs-title { font-size: 15px; }
@@ -664,22 +666,22 @@
         <div class="how-item">
           <span class="how-num">1</span>
           <div>
-            <strong>Alimente la banque</strong>
-            <p>À la fin de chaque leçon e-learning, copie-colle le texte des questions corrigées dans <em>« Import par lot »</em> et choisis la formation source. Le site détecte automatiquement la bonne réponse et la référence du module. Tu peux aussi créer une question manuellement via <em>« Saisie manuelle »</em>.</p>
+            <strong>Alimentez la banque</strong>
+            <p>À la fin de chaque leçon e-learning, copiez-collez le texte des questions corrigées dans <em>« Import par lot »</em> et choisissez la formation source. Le site détecte automatiquement la bonne réponse et la référence du module. Il est aussi possible de créer une question manuellement via <em>« Saisie manuelle »</em>.</p>
           </div>
         </div>
         <div class="how-item">
           <span class="how-num">2</span>
           <div>
-            <strong>Entraîne-toi</strong>
-            <p>Lance un quiz en mode <em>« Quiz »</em>, filtre par formation (habilitante ou continue) et choisis le nombre de questions. Clique sur une réponse pour valider automatiquement. À chaque réponse, tu vois la bonne solution et la référence pour aller réviser le bon module si besoin.</p>
+            <strong>Entraînez-vous</strong>
+            <p>Lancez un quiz en mode <em>« Quiz »</em>, filtrez par formation (habilitante ou continue) et choisissez le nombre de questions. Cliquez sur une réponse pour valider automatiquement. À chaque réponse, la bonne solution et la référence s'affichent pour retrouver le bon module à réviser.</p>
           </div>
         </div>
         <div class="how-item">
           <span class="how-num">3</span>
           <div>
-            <strong>Partage</strong>
-            <p>Toutes les questions ajoutées sont immédiatement disponibles pour tes collègues — pas de compte, pas de connexion nécessaire. Plus on contribue, plus la banque devient riche pour tout le monde.</p>
+            <strong>Partagez</strong>
+            <p>Toutes les questions ajoutées sont immédiatement disponibles pour vos collègues — pas de compte, pas de connexion nécessaire. Plus les contributions sont nombreuses, plus la banque devient riche pour tout le monde.</p>
           </div>
         </div>
       </div>
@@ -704,11 +706,13 @@
     </div>
 
     <div class="home-stats" id="home-stats">Chargement de la banque de questions…</div>
+  </div>
 
-    <div class="pbs-links">
-      <div class="kicker" style="margin-bottom:14px;">
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="kicker" style="margin-bottom:18px;">
         <span class="kicker-line"></span>
-        <span class="kicker-text">Prodemial Business School</span>
+        <span class="kicker-text">À vos côtés</span>
       </div>
       <div class="pbs-cards">
         <a class="pbs-card" href="https://boutique.prodemial-business-school.com/user/login" target="_blank" rel="noopener">
@@ -737,7 +741,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </footer>
 </div>
 
 <!-- ========== INTERFACE PRINCIPALE ========== -->
