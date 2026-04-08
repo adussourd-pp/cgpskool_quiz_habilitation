@@ -968,5 +968,138 @@
       "nom": "Assurance Niveau II"
     },
     "date": "2026-04-08"
+  },
+  {
+    "id": "555c7494-0e26-4c41-af0e-68dbe3345d90",
+    "question": "En cas de dénouement d’un contrat d’assurance-vie par le versement d’une rente viagère, seule une fraction de la rente viagère acquise à titre onéreux est imposable. En fonction de quoi cette fraction est-elle calculée ?",
+    "propositions": [
+      "En fonction de l’âge du souscripteur à chaque déclaration de revenus",
+      "En fonction de l’âge du souscripteur lorsqu’il perçoit la rente pour la première fois",
+      "En fonction de l’âge du souscripteur à la souscription du contrat",
+      "En fonction de l’âge du contrat"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "En fonction de l’âge du souscripteur lorsqu’il perçoit la rente pour la première fois"
+  },
+  {
+    "id": "4ac704a9-de72-4746-874c-aff266e9cffd",
+    "question": "Parmi les cas d’exonération d’imposition des produits d’un contrat d’assurance-vie, dans quelle situation les produits sont-ils également exonérés des prélèvements sociaux ?Veuillez choisir une réponse.",
+    "propositions": [
+      "La cessation d’activité non salariée à la suite d’un jugement de liquidation judiciaire",
+      "La mise à la retraite anticipée",
+      "L’invalidité",
+      "Le licenciement ou la perte involontaire d’emploi ouvrant droit à une indemnisation"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "L’invalidité"
+  },
+  {
+    "id": "a2e9601e-c4be-4824-a531-59081f934157",
+    "question": "Depuis le 24 mai 2019, les personnes physiques majeures rattachées au foyer fiscal sont autorisées à ouvrir un PEA. Quel est le plafond de versements ?",
+    "propositions": [
+      "30 000€",
+      "40 000€",
+      "20 000€",
+      "50 000€"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L6",
+    "explication": "20 000€"
+  },
+  {
+    "id": "5e918f1c-c107-47c7-a831-d1cebbac2972",
+    "question": "Le principe de gestion applicable aux sommes versées sur le PER est :",
+    "propositions": [
+      "La gestion suivie",
+      "La gestion assistée",
+      "La gestion libre",
+      "La gestion pilotée"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L7",
+    "explication": "La gestion pilotée"
+  },
+  {
+    "id": "e1f6f49f-8305-4fa5-af48-3b052ff2adef",
+    "question": "Si le plafond de déduction des versements effectués sur le PERP n’a pas été totalement utilisé…",
+    "propositions": [
+      "Le reliquat ne peut plus être utilisé",
+      "Le reliquat est utilisable dans les 6 années suivantes",
+      "Le reliquat peut être utilisé par le conjoint ou partenaire PACS qui aurait lui-même épuisé son propre plafond de déductibilité",
+      "Le reliquat peut être utilisé par le concubin qui aurait lui-même épuisé son propre plafond de déductibilité"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L9",
+    "explication": "Le reliquat peut être utilisé par le conjoint ou partenaire PACS qui aurait lui-même épuisé son propre plafond de déductibilité"
+  },
+  {
+    "id": "f9139e62-c09e-41d7-a817-b1235c219a93",
+    "question": "Que se passe t’il en cas de décès du titulaire d’un PER assurance vie pendant la phase d'épargne ?",
+    "propositions": [
+      "Les sommes épargnées sont perdues et reviennent à l’état",
+      "Les sommes épargnées sont intégrées dans la succession et réparties entre les héritiers légaux",
+      "Les sommes épargnées sont reversées à un ou plusieurs bénéficiaires désignés",
+      "Les sommes épargnées sont bloquées jusqu’à ce que les bénéficiaires atteignent l'âge de la retraite"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L7",
+    "explication": "Les sommes épargnées sont reversées à un ou plusieurs bénéficiaires désignés"
+  },
+  {
+    "id": "ae68be1d-9a5a-4d89-80d0-d01af5624690",
+    "question": "La durée du PERP :",
+    "propositions": [
+      "Est limitée à 40 ans",
+      "Est limitée à 30 ans",
+      "Est limitée à 42 ans",
+      "N’est pas limitée"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L9",
+    "explication": "N’est pas limitée"
   }
 ]
