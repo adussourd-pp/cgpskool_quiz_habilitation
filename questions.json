@@ -1101,5 +1101,328 @@
     "date": "2026-04-08",
     "reference": "M3L9",
     "explication": "N’est pas limitée"
+  },
+  {
+    "id": "3081c0da-d2f7-4109-8327-64cada27102d",
+    "question": "Un contrat d’assurance décès peut être complété par une garantie :",
+    "propositions": [
+      "Familiale",
+      "Santé",
+      "Mutuelle",
+      "Perte d’emploi"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L1",
+    "explication": "Perte d’emploi"
+  },
+  {
+    "id": "b633e4d5-06b0-42dc-bf8f-7d0246d0e6fd",
+    "question": "L’assurance mixte engage l’assureur à verser un capital ou une rente :",
+    "propositions": [
+      "Au souscripteur assuré ou au bénéficiaire",
+      "Au bénéficiaire",
+      "Aux héritiers du souscripteur assuré",
+      "Au souscripteur assuré"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L1",
+    "explication": "Au souscripteur assuré ou au bénéficiaire"
+  },
+  {
+    "id": "a3e42828-c1e3-4f77-98f4-4990afb09611",
+    "question": "En cas de décès, quel est le délai maximum accordé aux assureurs pour régler le capital ou la rente au bénéficiaire d’un contrat d’assurance-vie après réception de toutes les pièces requises ?",
+    "propositions": [
+      "1 mois",
+      "15 jours",
+      "6 mois",
+      "15 ans"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L2",
+    "explication": "1 mois"
+  },
+  {
+    "id": "90ab0e11-ef15-44d4-80d1-5adc0a36aae7",
+    "question": "Dans le cadre d’un contrat investi en unités de compte, l'option dynamisation progressive du capital :",
+    "propositions": [
+      "Permet d’arbitrer une position si le seuil de moins-value prédéfini est atteint",
+      "Permet de lisser le risque encouru",
+      "Permet de créer un couloir de performance",
+      "Permet de maintenir une allocation constante d’actifs"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L3",
+    "explication": "Permet de lisser le risque encouru"
+  },
+  {
+    "id": "24c254de-4b91-4f90-a4e4-145f01386835",
+    "question": "Dans un contrat d'assurance-vie à bonus de fidélité, quel est le rôle du \"bonus de fidélité\" ?",
+    "propositions": [
+      "Il correspond aux primes versées par l'assuré dans la gestion libre",
+      "Il représente les gains réalisés et capitalisés dans le contrat",
+      "Il est constitué des frais de gestion prélevés sur les primes",
+      "Il désigne une somme versée uniquement en cas de décès de l'assuré"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L3",
+    "explication": "Il représente les gains réalisés et capitalisés dans le contrat"
+  },
+  {
+    "id": "9ef26af6-0c07-45f5-80a0-ab93ebd763c1",
+    "question": "Dans le cadre d’une assurance vie prévoyant une rente viagère réversible au profit du conjoint survivant, quel âge est pris en compte pour déterminer la fraction imposable de la rente ?Veuillez choisir une réponse.",
+    "propositions": [
+      "Toujours l’âge du plus jeune des deux époux au moment de la souscription du contrat",
+      "L’âge du conjoint survivant au moment de la réversibilité, peu importe les autres critères",
+      "Toujours l’âge de l’époux survivant au moment du décès du premier époux",
+      "L’âge du plus âgé des deux époux lors de l’entrée en jouissance de la rente, ou l’âge de l’époux survivant au moment du premier décès si cela est plus avantageux"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "L’âge du plus âgé des deux époux lors de l’entrée en jouissance de la rente, ou l’âge de l’époux survivant au moment du premier décès si cela est plus avantageux"
+  },
+  {
+    "id": "ec5d713c-4095-4ccc-90b1-504bdedcf0ae",
+    "question": "Dans le cadre d'un contrat d'assurance-vie, le caractère de primes manifestement exagérées s’apprécie au moment : (copie)",
+    "propositions": [
+      "De l’ouverture du contrat par l’assuré",
+      "De l’ouverture de la succession",
+      "Du versement des primes par l’assuré",
+      "Du décès de l’assuré"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "Du versement des primes par l’assuré"
+  },
+  {
+    "id": "04f9228d-d158-494d-aaba-a3284410eb14",
+    "question": "Une personne redevable de l’IFI a dans son patrimoine un contrat d’assurance vie investi en unités de compte, dont une partie est constituée d’actifs immobiliers. Quelle valeur doit-elle déclarer ?",
+    "propositions": [
+      "Les plus-values réalisées jusqu’au 1er janvier de l’année d’imposition",
+      "La valeur de rachat au 1er janvier représentative de la part en unités de compte composés d’actifs immobiliers",
+      "La valeur totale de rachat au jour de la déclaration d’IFI",
+      "Les plus-values réalisées jusqu’au jour de la déclaration d’IFI"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "La valeur de rachat au 1er janvier représentative de la part en unités de compte composés d’actifs immobiliers"
+  },
+  {
+    "id": "40120100-ce78-4f8b-86b1-cc056f34fa9a",
+    "question": "Dans le cadre d’un PEA :",
+    "propositions": [
+      "Le souscripteur peut réaliser des versements sans limite de montant investi",
+      "Chaque versement est d’un montant minimum de 50€",
+      "Aucune périodicité de versement n’est exigée",
+      "Au moins un versement doit être réalisé chaque année"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L6",
+    "explication": "Aucune périodicité de versement n’est exigée"
+  },
+  {
+    "id": "5c223208-9147-4999-89de-6af1c28aa502",
+    "question": "A la suite de quel évènement ayant lieu dans les 5 premières années de souscription, le PEA est-il clôturé ?",
+    "propositions": [
+      "Le détenteur est mis en retraite anticipée",
+      "Un rachat",
+      "Le détenteur est licencié",
+      "Le retrait porte sur des titres de sociétés faisant l’objet d’une liquidation judiciaire"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L6",
+    "explication": "Un rachat"
+  },
+  {
+    "id": "fe3c8032-fb24-41d6-802b-f6f85ddc9dbb",
+    "question": "Le PER est un produit d’épargne retraite qui peut se décliner sous quelles formes ?Veuillez choisir une réponse.",
+    "propositions": [
+      "Un PERP ou un contrat Madelin",
+      "Un compte-titre ou un contrat d’assurance-vie",
+      "Un PEA bancaire ou un PEA assurance",
+      "Un compte épargne logement (CEL) ou un plan épargne logement (PEL)"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L7",
+    "explication": "Un compte-titre ou un contrat d’assurance-vie"
+  },
+  {
+    "id": "4d8eee2a-01eb-41d1-971f-3874a5b22b8f",
+    "question": "La rente réversible d’un contrat Madelin est :",
+    "propositions": [
+      "Versée à vie à un deuxième bénéficiaire, après le décès du premier bénéficiaire",
+      "Versée pendant une durée minimum garantie à un bénéficiaire désigné",
+      "Versée pour une durée toujours fixe de 5 ans à un deuxième bénéficiaire après le décès du premier",
+      "Transférable d’un premier bénéficiaire à un deuxième sans condition particulière"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L8",
+    "explication": "Versée à vie à un deuxième bénéficiaire, après le décès du premier bénéficiaire"
+  },
+  {
+    "id": "24320b94-9a51-4403-9513-dc50bd3131bd",
+    "question": "Le contrat Madelin a été remplacé par :",
+    "propositions": [
+      "Le PER",
+      "Les contrats Article 83",
+      "Le PERP",
+      "Les contrats de capitalisation"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L8",
+    "explication": "Le PER"
+  },
+  {
+    "id": "9f0746a3-760c-4d12-a66a-a920c5937f2b",
+    "question": "Quel formulaire doit être utilisé pour indiquer les primes versées sur un contrat d’épargne handicap afin de bénéficier de la réduction d’impôt ?",
+    "propositions": [
+      "Le montant des primes doit être indiqué sur l’imprimé 2074",
+      "Le montant des primes doit être indiqué sur l’imprimé 2044",
+      "Le montant des primes doit être indiqué sur l’imprimé 2047",
+      "Le montant des primes doit être indiqué sur l’imprimé 2042 RICI"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L9",
+    "explication": "Le montant des primes doit être indiqué sur l’imprimé 2042 RICI"
+  },
+  {
+    "id": "d7997b3a-ba0d-4841-8fd0-e54f84b818d8",
+    "question": "La valeur acquise d’un capital est :",
+    "propositions": [
+      "Sa valeur actuelle + les intérêts produits",
+      "Sa valeur nominale – les intérêts produits",
+      "Sa valeur nominale + les intérêts produits",
+      "Sa valeur acquise - les intérêts produits"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L10",
+    "explication": "Sa valeur nominale + les intérêts produits"
+  },
+  {
+    "id": "265d2143-4049-4785-95b2-8a69590400bf",
+    "question": "Le PERP a été remplacé par :",
+    "propositions": [
+      "Le contrat Madelin",
+      "Les contrats de capitalisation",
+      "Le PER",
+      "Les contrats Article 83"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L8",
+    "explication": "Le PER"
+  },
+  {
+    "id": "23e0301d-428c-4599-bd92-916a2fc74dac",
+    "question": "La valeur actuelle d’un capital est :",
+    "propositions": [
+      "Sa valeur acquise + les intérêts produits",
+      "Sa valeur nominale + les intérêts produits",
+      "Sa valeur nominale – les intérêts produits",
+      "Sa valeur acquise – les intérêts produits"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L10",
+    "explication": "Sa valeur nominale – les intérêts produits"
   }
 ]
