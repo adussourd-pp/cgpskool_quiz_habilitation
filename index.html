@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Révision Habilitations / Formations Continues — CGP Skool</title>
+<title>Quiz Habilitations</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -337,29 +337,6 @@
     background: radial-gradient(ellipse at 80% 20%, rgba(212,98,42,0.18), transparent 60%);
     pointer-events: none;
   }
-  .hero-back {
-    position: absolute;
-    top: 22px;
-    right: 30px;
-    z-index: 2;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    font-family: var(--sans);
-    font-size: 10.5px;
-    font-weight: 500;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: var(--fog-2);
-    text-decoration: none;
-    padding: 8px 14px;
-    border: 1px solid rgba(255,255,255,0.15);
-    transition: all 0.2s;
-  }
-  .hero-back:hover {
-    color: var(--white);
-    border-color: var(--orange);
-  }
   .home-hero-inner { position: relative; max-width: 720px; }
   .home-hero h1 {
     color: var(--white);
@@ -567,13 +544,6 @@
     .home-hero { padding: 50px 20px 55px; margin-bottom: 18px; }
     .home-hero h1 { font-size: 28px; line-height: 1.1; margin-bottom: 16px; }
     .home-hero p { font-size: 14px; }
-    .hero-back {
-      top: 12px;
-      right: 12px;
-      padding: 6px 10px;
-      font-size: 9.5px;
-      letter-spacing: 0.12em;
-    }
 
     /* Panels */
     .panel { padding: 22px 18px; }
@@ -663,7 +633,6 @@
     .home-hero h1 { font-size: 24px; }
     .panel { padding: 18px 14px; }
     .quiz-card { padding: 18px 14px; }
-    .hero-back { top: 10px; right: 10px; font-size: 9px; }
   }
 </style>
 </head>
@@ -672,7 +641,6 @@
 <!-- ========== PAGE DE GARDE ========== -->
 <div id="panel-home">
   <div class="home-hero">
-    <a class="hero-back" href="https://adussourd-pp.github.io/cgpskool/index.html">← Retour au site</a>
     <div class="home-hero-inner wrap" style="padding-top:0; padding-bottom:0;">
       <div class="kicker">
         <span class="kicker-line"></span>
@@ -690,7 +658,7 @@
         <span class="kicker-line"></span>
         <span class="kicker-text">Comment ça marche</span>
       </div>
-      <p>Ce site est une <strong>banque collaborative de questions/réponses</strong> pour réviser les formations habilitantes et continues CGP Skool. Tout le monde peut contribuer et tout le monde peut s'entraîner.</p>
+      <p>Ce site est une <strong>banque collaborative de questions/réponses</strong> pour réviser les formations habilitantes et les formations continues. Tout le monde peut contribuer et tout le monde peut s'entraîner.</p>
 
       <div class="how-grid">
         <div class="how-item">
@@ -777,9 +745,9 @@
   <button class="back-home" onclick="goHome()">← Retour à l'accueil</button>
   <div class="kicker">
     <span class="kicker-line"></span>
-    <span class="kicker-text">CGP Skool</span>
+    <span class="kicker-text">Habilitations</span>
   </div>
-  <h1>Révision <em>Habilitations & Formations Continues</em></h1>
+  <h1>Quiz <em>Habilitations</em></h1>
 
   <div class="tabs">
     <button class="tab" data-tab="formateur">Saisie manuelle</button>
