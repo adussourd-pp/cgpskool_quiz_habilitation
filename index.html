@@ -1060,8 +1060,9 @@ function cleanBatchText(text) {
     /retirer le marquage/i,
     /^feedback$/i,
     /votre r[ée]ponse est (correcte|incorrecte)/i,
-    /^cf[\.\s]*m\d+l\d+/i,
+    /^cf[\.\s]+(?:p\d+[\.\s]*)?m\d+l\d+/i,
     /^la r[ée]ponse correcte est/i,
+    /^veuillez\s+choisir\s+une\s+r[ée]ponse/i,
     /^r[ée]f\s*:/i,
     /^question\s*\d+\s*$/i,
     /^q\d+\s*[:\-]?\s*$/i,
@@ -1141,8 +1142,8 @@ function parseBatch() {
     // "La réponse correcte est : ..." pour les conserver dans la question.
     let reference = null;
     let explication = null;
-    const refMatch = block.match(/cf[\.\s]*(m\d+l\d+(?:[-.\s]*\d+)?)/i);
-    if (refMatch) reference = refMatch[1].toUpperCase().replace(/\s+/g, "");
+    const refMatch = block.match(/cf[\.\s]+((?:p\d+[\.\s]*)?m\d+l\d+[-\.\d]*)/i);
+    if (refMatch) reference = refMatch[1].toUpperCase().replace(/[\s\.]+/g, "");
     const explMatch = block.match(/la r[ée]ponse correcte est\s*[:\-]?\s*(.+)/i);
     if (explMatch) explication = explMatch[1].trim().replace(/[.\s]+$/, "");
 

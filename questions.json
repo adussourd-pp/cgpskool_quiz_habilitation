@@ -310,8 +310,7 @@
       "La garantie en capital",
       "La possibilité de retrait immédiat sans conditions",
       "L'exonération de fiscalité sur les revenus",
-      "La diversification géographique et sectorielle",
-      "Cf P2M1L3"
+      "La diversification géographique et sectorielle"
     ],
     "bonne_reponse": 3,
     "formation": {
@@ -321,7 +320,8 @@
       "type": "ASS"
     },
     "date": "2026-04-07",
-    "explication": "La diversification géographique et sectorielle"
+    "explication": "La diversification géographique et sectorielle",
+    "reference": "P2M1L3"
   },
   {
     "id": "59a09a91-21ce-4af6-bde5-162669d9e9d5",
@@ -330,8 +330,7 @@
       "Le taux d’intérêt contractuel",
       "Le loyer financier",
       "Le dividende",
-      "Le coupon d’obligation",
-      "Cf P2M1L2"
+      "Le coupon d’obligation"
     ],
     "bonne_reponse": 2,
     "formation": {
@@ -341,7 +340,8 @@
       "type": "ASS"
     },
     "date": "2026-04-07",
-    "explication": "Le dividende"
+    "explication": "Le dividende",
+    "reference": "P2M1L2"
   },
   {
     "id": "571726eb-d0cf-46ec-9da2-7ed7ec6f5c57",
@@ -350,8 +350,7 @@
       "Augmenter les taxes sur les entreprises",
       "Baisser ses taux directeurs pour relancer l’économie",
       "Imposer une limitation sur les exportations",
-      "Réduire les salaires dans le secteur public",
-      "Cf P2M1L1"
+      "Réduire les salaires dans le secteur public"
     ],
     "bonne_reponse": 1,
     "formation": {
@@ -361,7 +360,8 @@
       "type": "ASS"
     },
     "date": "2026-04-07",
-    "explication": "Baisser ses taux directeurs pour relancer l’économie"
+    "explication": "Baisser ses taux directeurs pour relancer l’économie",
+    "reference": "P2M1L1"
   },
   {
     "id": "5b30a84e-32ca-4905-85cc-1ce405fb4990",
@@ -370,8 +370,7 @@
       "Une baisse de la production nationale",
       "Une forte dépendance aux importations",
       "Une économie compétitive et une monnaie renforcée",
-      "Un affaiblissement du pouvoir d’achat",
-      "Cf P2M1L1"
+      "Un affaiblissement du pouvoir d’achat"
     ],
     "bonne_reponse": 2,
     "formation": {
@@ -381,7 +380,8 @@
       "type": "ASS"
     },
     "date": "2026-04-07",
-    "explication": "Une économie compétitive et une monnaie renforcée"
+    "explication": "Une économie compétitive et une monnaie renforcée",
+    "reference": "P2M1L1"
   },
   {
     "id": "cc5b906a-8873-4b88-b1f8-32f73629bf1d",
@@ -390,8 +390,7 @@
       "Mesurer la consommation des ménages",
       "Calculer la dette publique",
       "Mesurer la richesse créée à l’intérieur d’un pays",
-      "Évaluer le taux de chômage",
-      "Cf P2M1L1"
+      "Évaluer le taux de chômage"
     ],
     "bonne_reponse": 2,
     "formation": {
@@ -401,7 +400,8 @@
       "type": "ASS"
     },
     "date": "2026-04-07",
-    "explication": "Mesurer la richesse créée à l’intérieur d’un pays"
+    "explication": "Mesurer la richesse créée à l’intérieur d’un pays",
+    "reference": "P2M1L1"
   },
   {
     "id": "dcbf7477-f7f2-4129-9623-bf6d356ef066",
@@ -410,8 +410,7 @@
       "Une croissance rapide du PIB",
       "Une augmentation des exportations",
       "Un ralentissement économique et une baisse de la consommation",
-      "Un renforcement de la monnaie nationale",
-      "Cf P2M1L1"
+      "Un renforcement de la monnaie nationale"
     ],
     "bonne_reponse": 2,
     "formation": {
@@ -421,7 +420,8 @@
       "type": "ASS"
     },
     "date": "2026-04-07",
-    "explication": "Un ralentissement économique et une baisse de la consommation"
+    "explication": "Un ralentissement économique et une baisse de la consommation",
+    "reference": "P2M1L1"
   },
   {
     "id": "676cc57b-950f-46d7-8b02-8512925818ad",
@@ -430,8 +430,7 @@
       "La SICAV est réservée aux professionnels, le FCP aux particuliers",
       "La SICAV est exempte de frais de gestion contrairement au FCP",
       "Le FCP offre une garantie du capital, contrairement à la SICAV",
-      "Dans une SICAV, l'investisseur détient des actions ; dans un FCP, il détient des parts",
-      "Cf P2M1L2"
+      "Dans une SICAV, l'investisseur détient des actions ; dans un FCP, il détient des parts"
     ],
     "bonne_reponse": 3,
     "formation": {
@@ -441,7 +440,8 @@
       "type": "ASS"
     },
     "date": "2026-04-07",
-    "explication": "Dans une SICAV, l'investisseur détient des actions ; dans un FCP, il détient des parts"
+    "explication": "Dans une SICAV, l'investisseur détient des actions ; dans un FCP, il détient des parts",
+    "reference": "P2M1L2"
   },
   {
     "id": "895c357f-36be-4a1e-99f0-9b4e98c07938",
@@ -450,8 +450,7 @@
       "Le PMI des services",
       "Le solde budgétaire",
       "L’inflation",
-      "Le taux d’emploi",
-      "Cf P2M1L1"
+      "Le taux d’emploi"
     ],
     "bonne_reponse": 2,
     "formation": {
@@ -461,178 +460,36 @@
       "type": "ASS"
     },
     "date": "2026-04-07",
-    "explication": "L’inflation"
+    "explication": "L’inflation",
+    "reference": "P2M1L1"
   },
   {
     "id": "aa1b8d05-0fb5-4283-9a1f-1cea16e5503f",
     "question": "Dans le cadre du livret jeune :",
     "propositions": [
-      "Veuillez choisir une réponse.",
       "Le titulaire doit avoir entre 12 et 25 ans",
       "Les intérêts générés sont soumis aux prélèvements sociaux",
       "L’épargne est bloquée jusqu’à la majorité",
-      "Il est possible de le transférer dans un autre établissement de crédit",
-      "Cf. M2L10"
+      "Il est possible de le transférer dans un autre établissement de crédit"
     ],
-    "bonne_reponse": 1,
+    "bonne_reponse": 0,
     "formation": {
       "categorie": "habilitante",
       "annee": "2026",
       "nom": "Assurance Niveau II"
     },
     "date": "2026-04-08",
-    "explication": "Le titulaire doit avoir entre 12 et 25 ans"
+    "explication": "Le titulaire doit avoir entre 12 et 25 ans",
+    "reference": "M2L10"
   },
   {
     "id": "cb73cf8f-3b1e-4477-91be-f9162898d341",
     "question": "Pour un compte à terme, quelle est la durée minimale de blocage des fonds ?",
     "propositions": [
-      "Veuillez choisir une réponse.",
       "1 an",
       "1 semestre",
       "1 mois",
-      "1 trimestre",
-      "Cf. M2L10"
-    ],
-    "bonne_reponse": 3,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "1 mois"
-  },
-  {
-    "id": "c6c63d49-6ea5-4132-bcd1-6fed69d03074",
-    "question": "Dans le cadre du régime d’imposition des dividendes versés depuis le 1er janvier 2018, en cas d’option au barème progressif de l’Impôt sur le Revenu, l’investisseur :",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "Bénéficie d’un abattement de 40%",
-      "Peut déduire de son impôt le montant perçu",
-      "Bénéficie d’un crédit d’impôt de 30%",
-      "Bénéficie d’une réduction d’impôt de 20%",
-      "Cf. M2L7"
-    ],
-    "bonne_reponse": 1,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "Bénéficie d’un abattement de 40%"
-  },
-  {
-    "id": "103ffc93-3f7d-4011-8b03-87e60e495757",
-    "question": "Qu’est ce que le risque de change ?",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "Le risqué lié à la variation du prix ou la valorisation de cet actif résultant d’une variation du taux d’intérêt",
-      "Le risqué lié à l’impossibilité de vendre des titres en raison de l’inexistence du marché pour cette valeur",
-      "Le risqué lié à la variation du cours d’une devise par rapport à une autre monnaie de référence",
-      "Le risqué lié à l’incertitude quant à la possibilité pour les investisseurs de remplir leurs obligations",
-      "Cf. M2L9"
-    ],
-    "bonne_reponse": 3,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "Le risqué lié à la variation du cours d’une devise par rapport à une autre monnaie de référence"
-  },
-  {
-    "id": "11697516-1d67-4a39-a70f-13356b3e9e09",
-    "question": "Dans le cadre de la gestion de portefeuille et de l’évaluation des actifs :",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "Le bêta financier d’un titre proche de 1 signifie que la valeur réagit à l’inverse de son indice de référence",
-      "Un PER faible implique une action chère",
-      "Pour investir sur du court terme, l’investisseur privilégie des fonds monétaires ou obligataires",
-      "Le Price Earning Ratio correspond au bénéfice net d’une action",
-      "Cf. M2L9"
-    ],
-    "bonne_reponse": 3,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "Pour investir sur du court terme, l’investisseur privilégie des fonds monétaires ou obligataires"
-  },
-  {
-    "id": "f62c16a0-00a6-4a1d-8978-64f1d8a70b19",
-    "question": "Depuis le 1er janvier 2018, les plus-values de la cession d’actions  :",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "Supportent un prélèvement forfaitaire unique de 7.5%",
-      "Sont soumises obligatoirement au barème progressif de l'Impôt sur le Revenu",
-      "Supportent par principe un prélèvement forfaitaire unique",
-      "Sont exonérées de prélèvements sociaux",
-      "Cf. M2L7"
-    ],
-    "bonne_reponse": 3,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "Supportent par principe un prélèvement forfaitaire unique"
-  },
-  {
-    "id": "aa8c74b2-a9a5-464d-adf9-463e0dc8ce7a",
-    "question": "L’Autorité des Marchés Financiers (AMF) est :",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "Un organisme public de contrôle des marchés financiers",
-      "L’instance qui régit les dispositions législatives et réglementaires du système monétaire et financier",
-      "Une instance qui assure la réception et la transmission d’ordres de bourse",
-      "Une filiale d’Euronext",
-      "Cf. M2L8"
-    ],
-    "bonne_reponse": 1,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "Un organisme public de contrôle des marchés financiers"
-  },
-  {
-    "id": "4fba702f-3128-441f-a396-1121f3232520",
-    "question": "Dans le cadre d’une diversification de portefeuille, quels types d’entreprises offrent le plus de stabilité ?",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "Blue chips",
-      "Small caps",
-      "Large caps",
-      "Mid caps",
-      "Cf. M2L9"
-    ],
-    "bonne_reponse": 1,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "Blue chips"
-  },
-  {
-    "id": "ee1bbde7-8a81-4ba9-bc00-5d58f1dfd1d7",
-    "question": "L’Euronext Growth est le marché financier destiné aux :",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "Sociétés technologiques",
-      "PME",
-      "Multinationales",
-      "TPE",
-      "Cf. M2L8"
+      "1 trimestre"
     ],
     "bonne_reponse": 2,
     "formation": {
@@ -641,19 +498,152 @@
       "nom": "Assurance Niveau II"
     },
     "date": "2026-04-08",
-    "explication": "PME"
+    "explication": "1 mois",
+    "reference": "M2L10"
+  },
+  {
+    "id": "c6c63d49-6ea5-4132-bcd1-6fed69d03074",
+    "question": "Dans le cadre du régime d’imposition des dividendes versés depuis le 1er janvier 2018, en cas d’option au barème progressif de l’Impôt sur le Revenu, l’investisseur :",
+    "propositions": [
+      "Bénéficie d’un abattement de 40%",
+      "Peut déduire de son impôt le montant perçu",
+      "Bénéficie d’un crédit d’impôt de 30%",
+      "Bénéficie d’une réduction d’impôt de 20%"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Bénéficie d’un abattement de 40%",
+    "reference": "M2L7"
+  },
+  {
+    "id": "103ffc93-3f7d-4011-8b03-87e60e495757",
+    "question": "Qu’est ce que le risque de change ?",
+    "propositions": [
+      "Le risqué lié à la variation du prix ou la valorisation de cet actif résultant d’une variation du taux d’intérêt",
+      "Le risqué lié à l’impossibilité de vendre des titres en raison de l’inexistence du marché pour cette valeur",
+      "Le risqué lié à la variation du cours d’une devise par rapport à une autre monnaie de référence",
+      "Le risqué lié à l’incertitude quant à la possibilité pour les investisseurs de remplir leurs obligations"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Le risqué lié à la variation du cours d’une devise par rapport à une autre monnaie de référence",
+    "reference": "M2L9"
+  },
+  {
+    "id": "11697516-1d67-4a39-a70f-13356b3e9e09",
+    "question": "Dans le cadre de la gestion de portefeuille et de l’évaluation des actifs :",
+    "propositions": [
+      "Le bêta financier d’un titre proche de 1 signifie que la valeur réagit à l’inverse de son indice de référence",
+      "Un PER faible implique une action chère",
+      "Pour investir sur du court terme, l’investisseur privilégie des fonds monétaires ou obligataires",
+      "Le Price Earning Ratio correspond au bénéfice net d’une action"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Pour investir sur du court terme, l’investisseur privilégie des fonds monétaires ou obligataires",
+    "reference": "M2L9"
+  },
+  {
+    "id": "f62c16a0-00a6-4a1d-8978-64f1d8a70b19",
+    "question": "Depuis le 1er janvier 2018, les plus-values de la cession d’actions  :",
+    "propositions": [
+      "Supportent un prélèvement forfaitaire unique de 7.5%",
+      "Sont soumises obligatoirement au barème progressif de l'Impôt sur le Revenu",
+      "Supportent par principe un prélèvement forfaitaire unique",
+      "Sont exonérées de prélèvements sociaux"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Supportent par principe un prélèvement forfaitaire unique",
+    "reference": "M2L7"
+  },
+  {
+    "id": "aa8c74b2-a9a5-464d-adf9-463e0dc8ce7a",
+    "question": "L’Autorité des Marchés Financiers (AMF) est :",
+    "propositions": [
+      "Un organisme public de contrôle des marchés financiers",
+      "L’instance qui régit les dispositions législatives et réglementaires du système monétaire et financier",
+      "Une instance qui assure la réception et la transmission d’ordres de bourse",
+      "Une filiale d’Euronext"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Un organisme public de contrôle des marchés financiers",
+    "reference": "M2L8"
+  },
+  {
+    "id": "4fba702f-3128-441f-a396-1121f3232520",
+    "question": "Dans le cadre d’une diversification de portefeuille, quels types d’entreprises offrent le plus de stabilité ?",
+    "propositions": [
+      "Blue chips",
+      "Small caps",
+      "Large caps",
+      "Mid caps"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Blue chips",
+    "reference": "M2L9"
+  },
+  {
+    "id": "ee1bbde7-8a81-4ba9-bc00-5d58f1dfd1d7",
+    "question": "L’Euronext Growth est le marché financier destiné aux :",
+    "propositions": [
+      "Sociétés technologiques",
+      "PME",
+      "Multinationales",
+      "TPE"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "PME",
+    "reference": "M2L8"
   },
   {
     "id": "c718380c-1f51-4a31-8e52-650439c72f3a",
     "question": "Le PER (Price Earning Ratio) correspond:",
     "propositions": [
-      "Veuillez choisir une réponse.",
       "A un degré d’évaluation dit « spéculatif » des agences de notation",
       "A l’indice de valorisation d’une société",
       "Au bénéfice net d’une action",
       "Au coefficient de capitalisation des bénéfices"
     ],
-    "bonne_reponse": 4,
+    "bonne_reponse": 3,
     "formation": {
       "categorie": "habilitante",
       "annee": "2026",
@@ -666,172 +656,105 @@
     "id": "980b0ccb-3c3f-4762-b2c5-655f12068fbb",
     "question": "Dans le cadre du livret A :",
     "propositions": [
-      "Veuillez choisir une réponse.",
       "Au décès du titulaire, le compte n’est pas clôturé",
       "L’épargne placée est totalement disponible",
       "Au décès du titulaire, le solde est exonéré de droits de succession",
-      "Aucun dépôt initial est exigé",
-      "Cf. M2L10"
+      "Aucun dépôt initial est exigé"
     ],
-    "bonne_reponse": 2,
+    "bonne_reponse": 1,
     "formation": {
       "categorie": "habilitante",
       "annee": "2026",
       "nom": "Assurance Niveau II"
     },
     "date": "2026-04-08",
-    "explication": "L’épargne placée est totalement disponible"
+    "explication": "L’épargne placée est totalement disponible",
+    "reference": "M2L10"
   },
   {
     "id": "6355ee12-aaf6-4d24-8f41-a0a953931d73",
     "question": "Que signifie le sigle FCPI ?",
     "propositions": [
-      "Veuillez choisir une réponse.",
       "Formule Commune de Placement dans l’Immobilier",
       "Fonds Communs de Placement dans l’Immobilier",
       "Formule Commune de Placement dans l’innovation",
-      "Fonds Communs de Placement dans l’innovation",
-      "Cf. M2L7"
+      "Fonds Communs de Placement dans l’innovation"
     ],
-    "bonne_reponse": 4,
+    "bonne_reponse": 3,
     "formation": {
       "categorie": "habilitante",
       "annee": "2026",
       "nom": "Assurance Niveau II"
     },
     "date": "2026-04-08",
-    "explication": "Fonds Communs de Placement dans l’innovation"
+    "explication": "Fonds Communs de Placement dans l’innovation",
+    "reference": "M2L7"
   },
   {
     "id": "b44d8bb1-3728-40e1-a1a1-4471e4f851a0",
     "question": "Le livret jeune est clos au plus tard :",
     "propositions": [
-      "Veuillez choisir une réponse.",
       "La veille du 26ème anniversaire de son titulaire",
       "La veille du 21ème anniversaire de son titulaire",
       "Le 31 décembre de l'année du 25ème anniversaire de son titulaire",
-      "Le 31 décembre de l'année du 20ème anniversaire de son titulaire",
-      "Cf. M2L10"
+      "Le 31 décembre de l'année du 20ème anniversaire de son titulaire"
     ],
-    "bonne_reponse": 3,
+    "bonne_reponse": 2,
     "formation": {
       "categorie": "habilitante",
       "annee": "2026",
       "nom": "Assurance Niveau II"
     },
     "date": "2026-04-08",
-    "explication": "Le 31 décembre de l'année du 25ème anniversaire de son titulaire"
+    "explication": "Le 31 décembre de l'année du 25ème anniversaire de son titulaire",
+    "reference": "M2L10"
   },
   {
     "id": "b68c3a72-52a6-4b0a-a14c-4e92125b39d9",
     "question": "Le marché réglementé qui regroupe toutes les valeurs cotées à la Bourse de Paris se nomme :",
     "propositions": [
-      "Veuillez choisir une réponse.",
       "L’EURONEXT GROWTH",
       "L’EURIBOR",
       "Le MONEP",
-      "L’EUROLIST",
-      "Cf. M2L8"
+      "L’EUROLIST"
     ],
-    "bonne_reponse": 4,
+    "bonne_reponse": 3,
     "formation": {
       "categorie": "habilitante",
       "annee": "2026",
       "nom": "Assurance Niveau II"
     },
     "date": "2026-04-08",
-    "explication": "L’EUROLIST"
+    "explication": "L’EUROLIST",
+    "reference": "M2L8"
   },
   {
     "id": "87f2acc3-58f3-4368-bc72-7a51e512cecd",
     "question": "Les gains nets de cession de valeurs mobilières sont imposables :",
     "propositions": [
-      "Veuillez choisir une réponse.",
       "Dans tous les cas, au barème progressif de l’Impôt sur le Revenu",
       "Dès le 1er euro de cession",
       "Au taux de 24%",
-      "A partir d’un certain seuil",
-      "Cf. M2L7"
+      "A partir d’un certain seuil"
     ],
-    "bonne_reponse": 2,
+    "bonne_reponse": 1,
     "formation": {
       "categorie": "habilitante",
       "annee": "2026",
       "nom": "Assurance Niveau II"
     },
     "date": "2026-04-08",
-    "explication": "Dès le 1er euro de cession"
+    "explication": "Dès le 1er euro de cession",
+    "reference": "M2L7"
   },
   {
     "id": "48011d1d-a504-47a3-8944-978843c20a15",
     "question": "Le bêta financier d’un titre proche de 1 signifie que :",
     "propositions": [
-      "Veuillez choisir une réponse.",
       "La valeur amplifie les variations de son indice de référence",
       "La valeur diminue les variations de son indice de référence",
       "La valeur et son indice de référence sont très proches",
-      "La valeur réagit à l’inverse de son indice de référence",
-      "Cf. M2L9"
-    ],
-    "bonne_reponse": 3,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "La valeur et son indice de référence sont très proches"
-  },
-  {
-    "id": "ad29287d-72b3-46f2-b140-4395d8404043",
-    "question": "Les dividendes sont soumis aux prélèvements sociaux au taux global de :",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "12,8%",
-      "30%",
-      "15%",
-      "6%",
-      "Cf. M2L7"
-    ],
-    "bonne_reponse": 4,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "18.6%"
-  },
-  {
-    "id": "a83fe6b2-93bc-4d99-b609-899b9a5cad7a",
-    "question": "EURONEXT Paris SA est :",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "Un indice de cotation des moyennes capitalisations",
-      "Une des valeurs composant le CAC40",
-      "Un indice représentatif des valeurs cotées à la Bourse de Paris",
-      "La société qui gère la Bourse de Paris",
-      "Cf. M2L8"
-    ],
-    "bonne_reponse": 4,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "La société qui gère la Bourse de Paris"
-  },
-  {
-    "id": "92420ef9-15a2-4ba8-8bf9-cb4a8e3c9f31",
-    "question": "Les intérêts générés sur les livrets bancaires et super livrets :",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "Sont exonérés d'impôt sur le revenu pendant les 2 premières années",
-      "Sont soumis aux prélèvements sociaux",
-      "Sont exonérés des prélèvements sociaux",
-      "Ne sont pas soumis au barème progressif de l’impôt sur le revenu",
-      "Cf. M2L10"
+      "La valeur réagit à l’inverse de son indice de référence"
     ],
     "bonne_reponse": 2,
     "formation": {
@@ -840,38 +763,17 @@
       "nom": "Assurance Niveau II"
     },
     "date": "2026-04-08",
-    "explication": "Sont soumis aux prélèvements sociaux"
+    "explication": "La valeur et son indice de référence sont très proches",
+    "reference": "M2L9"
   },
   {
-    "id": "eae0838f-e2f1-420a-b28f-ae971c189ac4",
-    "question": "Dans le cadre du régime d’imposition des dividendes versés depuis le 1er janvier 2018 :",
+    "id": "ad29287d-72b3-46f2-b140-4395d8404043",
+    "question": "Les dividendes sont soumis aux prélèvements sociaux au taux global de :",
     "propositions": [
-      "Veuillez choisir une réponse.",
-      "Les prélèvements sociaux ne sont pas applicables",
-      "L’option au barème progressif de l’Impôt sur le Revenu a été supprimée",
-      "L’abattement en cas d’option au barème progressif de l’Impôt sur le Revenu a été supprimé",
-      "Le taux forfaitaire d’Impôt sur le Revenu applicable est de 12,8%",
-      "Cf. M2L7"
-    ],
-    "bonne_reponse": 4,
-    "formation": {
-      "categorie": "habilitante",
-      "annee": "2026",
-      "nom": "Assurance Niveau II"
-    },
-    "date": "2026-04-08",
-    "explication": "Le taux forfaitaire d’Impôt sur le Revenu applicable est de 12,8%"
-  },
-  {
-    "id": "8e10d938-349c-447d-9b0e-61704c7b16ef",
-    "question": "Dans le cadre de l’épargne logement :",
-    "propositions": [
-      "Veuillez choisir une réponse.",
-      "Il est possible de transformer son CEL en PEL",
-      "Il possible de transférer ses droits à prêt d’un CEL à un membre de sa famille ne détenant pas lui-même de CEL",
-      "Il est possible de transformer son PEL en CEL",
-      "Le transfert d’un CEL existant dans un autre établissement est impossible",
-      "Cf. M2L10"
+      "12,8%",
+      "30%",
+      "15%",
+      "6%"
     ],
     "bonne_reponse": 3,
     "formation": {
@@ -880,6 +782,83 @@
       "nom": "Assurance Niveau II"
     },
     "date": "2026-04-08",
-    "explication": "Il est possible de transformer son PEL en CEL"
+    "explication": "18.6%",
+    "reference": "M2L7"
+  },
+  {
+    "id": "a83fe6b2-93bc-4d99-b609-899b9a5cad7a",
+    "question": "EURONEXT Paris SA est :",
+    "propositions": [
+      "Un indice de cotation des moyennes capitalisations",
+      "Une des valeurs composant le CAC40",
+      "Un indice représentatif des valeurs cotées à la Bourse de Paris",
+      "La société qui gère la Bourse de Paris"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "La société qui gère la Bourse de Paris",
+    "reference": "M2L8"
+  },
+  {
+    "id": "92420ef9-15a2-4ba8-8bf9-cb4a8e3c9f31",
+    "question": "Les intérêts générés sur les livrets bancaires et super livrets :",
+    "propositions": [
+      "Sont exonérés d'impôt sur le revenu pendant les 2 premières années",
+      "Sont soumis aux prélèvements sociaux",
+      "Sont exonérés des prélèvements sociaux",
+      "Ne sont pas soumis au barème progressif de l’impôt sur le revenu"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Sont soumis aux prélèvements sociaux",
+    "reference": "M2L10"
+  },
+  {
+    "id": "eae0838f-e2f1-420a-b28f-ae971c189ac4",
+    "question": "Dans le cadre du régime d’imposition des dividendes versés depuis le 1er janvier 2018 :",
+    "propositions": [
+      "Les prélèvements sociaux ne sont pas applicables",
+      "L’option au barème progressif de l’Impôt sur le Revenu a été supprimée",
+      "L’abattement en cas d’option au barème progressif de l’Impôt sur le Revenu a été supprimé",
+      "Le taux forfaitaire d’Impôt sur le Revenu applicable est de 12,8%"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Le taux forfaitaire d’Impôt sur le Revenu applicable est de 12,8%",
+    "reference": "M2L7"
+  },
+  {
+    "id": "8e10d938-349c-447d-9b0e-61704c7b16ef",
+    "question": "Dans le cadre de l’épargne logement :",
+    "propositions": [
+      "Il est possible de transformer son CEL en PEL",
+      "Il possible de transférer ses droits à prêt d’un CEL à un membre de sa famille ne détenant pas lui-même de CEL",
+      "Il est possible de transformer son PEL en CEL",
+      "Le transfert d’un CEL existant dans un autre établissement est impossible"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Il est possible de transformer son PEL en CEL",
+    "reference": "M2L10"
   }
 ]
