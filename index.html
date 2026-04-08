@@ -496,6 +496,113 @@
     box-shadow: none;
   }
   .back-home:hover { color: var(--orange); background: transparent; gap: 10px; }
+
+  /* ═══════════════════════════════════════════════════════════════
+     RESPONSIVE — MOBILE (≤ 768px)
+     ═══════════════════════════════════════════════════════════════ */
+  @media (max-width: 768px) {
+    body { font-size: 14px; }
+    .wrap { padding: 18px 14px 60px; }
+
+    h1 { font-size: 24px; line-height: 1.15; }
+    h2 { font-size: 20px; }
+    h3 { font-size: 16px; }
+
+    /* Hero */
+    .home-hero { padding: 50px 20px 55px; margin-bottom: 18px; }
+    .home-hero h1 { font-size: 28px; line-height: 1.1; margin-bottom: 16px; }
+    .home-hero p { font-size: 14px; }
+    .hero-back {
+      top: 12px;
+      right: 12px;
+      padding: 6px 10px;
+      font-size: 9.5px;
+      letter-spacing: 0.12em;
+    }
+
+    /* Panels */
+    .panel { padding: 22px 18px; }
+
+    /* Tabs */
+    .tabs { overflow-x: auto; flex-wrap: nowrap; }
+    .tab {
+      padding: 14px 12px;
+      font-size: 10px;
+      letter-spacing: 0.1em;
+      min-width: 0;
+      white-space: nowrap;
+    }
+
+    /* Home cards */
+    .home-cards { grid-template-columns: 1fr; }
+    .home-card { padding: 24px 22px; }
+    .home-card .icon { font-size: 24px; }
+
+    /* Home stats */
+    .home-stats { padding: 18px 20px; }
+    .home-stats strong { font-size: 26px; }
+
+    /* PBS */
+    .pbs-links { padding: 20px 18px; }
+    .pbs-cards { grid-template-columns: 1fr; }
+    .pbs-card { padding: 14px 16px; gap: 12px; }
+    .pbs-title { font-size: 15px; }
+
+    /* Forms */
+    label { margin-top: 14px; font-size: 9.5px; }
+    input[type="text"], textarea, select { padding: 11px 12px; font-size: 14px; }
+    textarea { min-height: 100px; }
+
+    /* Buttons */
+    button {
+      padding: 13px 20px;
+      font-size: 10.5px;
+      width: 100%;
+      justify-content: center;
+    }
+    button.secondary { width: auto; }
+    button.danger { width: auto; padding: 6px 12px; }
+    .proposition button, .back-home { width: auto; }
+    .home-card button, .pbs-card { width: auto; }
+
+    /* Quiz progress bar */
+    .progress { padding: 14px 16px; margin-bottom: 18px; }
+    .progress-top { gap: 8px; margin-bottom: 10px; }
+    .progress-label { font-size: 10px; letter-spacing: 0.12em; }
+    .progress-score { font-size: 17px; }
+    .progress-score em { font-size: 22px; }
+    .progress-pct { font-size: 22px; }
+    .gauge { height: 6px; }
+
+    /* Quiz card */
+    .quiz-card { padding: 20px 18px; }
+    .quiz-card h3 { font-size: 17px; line-height: 1.35; }
+    .quiz-option { padding: 13px 15px; font-size: 13.5px; }
+
+    /* Batch preview */
+    .batch-question { padding: 14px 16px; }
+
+    /* Question card legacy */
+    .question-card { padding: 18px 20px; }
+
+    /* Proposition row */
+    .proposition { gap: 8px; }
+    .proposition input[type="text"] { font-size: 13.5px; }
+
+    /* Kicker smaller */
+    .kicker-text { font-size: 9.5px; letter-spacing: 0.16em; }
+
+    /* Score final */
+    .score { font-size: 26px; padding: 22px 14px; }
+  }
+
+  @media (max-width: 420px) {
+    .home-hero { padding: 44px 16px 48px; }
+    .home-hero h1 { font-size: 24px; }
+    .panel { padding: 18px 14px; }
+    .quiz-card { padding: 18px 14px; }
+    .hero-back { top: 10px; right: 10px; font-size: 9px; }
+  }
 </style>
 </head>
 <body>
