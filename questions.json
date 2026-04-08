@@ -462,5 +462,264 @@
     },
     "date": "2026-04-07",
     "explication": "L’inflation"
+  },
+  {
+    "id": "aa1b8d05-0fb5-4283-9a1f-1cea16e5503f",
+    "question": "Dans le cadre du livret jeune :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Le titulaire doit avoir entre 12 et 25 ans",
+      "Les intérêts générés sont soumis aux prélèvements sociaux",
+      "L’épargne est bloquée jusqu’à la majorité",
+      "Il est possible de le transférer dans un autre établissement de crédit",
+      "Cf. M2L10"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Le titulaire doit avoir entre 12 et 25 ans"
+  },
+  {
+    "id": "cb73cf8f-3b1e-4477-91be-f9162898d341",
+    "question": "Pour un compte à terme, quelle est la durée minimale de blocage des fonds ?",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "1 an",
+      "1 semestre",
+      "1 mois",
+      "1 trimestre",
+      "Cf. M2L10"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "1 mois"
+  },
+  {
+    "id": "c6c63d49-6ea5-4132-bcd1-6fed69d03074",
+    "question": "Dans le cadre du régime d’imposition des dividendes versés depuis le 1er janvier 2018, en cas d’option au barème progressif de l’Impôt sur le Revenu, l’investisseur :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Bénéficie d’un abattement de 40%",
+      "Peut déduire de son impôt le montant perçu",
+      "Bénéficie d’un crédit d’impôt de 30%",
+      "Bénéficie d’une réduction d’impôt de 20%",
+      "Cf. M2L7"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Bénéficie d’un abattement de 40%"
+  },
+  {
+    "id": "103ffc93-3f7d-4011-8b03-87e60e495757",
+    "question": "Qu’est ce que le risque de change ?",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Le risqué lié à la variation du prix ou la valorisation de cet actif résultant d’une variation du taux d’intérêt",
+      "Le risqué lié à l’impossibilité de vendre des titres en raison de l’inexistence du marché pour cette valeur",
+      "Le risqué lié à la variation du cours d’une devise par rapport à une autre monnaie de référence",
+      "Le risqué lié à l’incertitude quant à la possibilité pour les investisseurs de remplir leurs obligations",
+      "Cf. M2L9"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Le risqué lié à la variation du cours d’une devise par rapport à une autre monnaie de référence"
+  },
+  {
+    "id": "11697516-1d67-4a39-a70f-13356b3e9e09",
+    "question": "Dans le cadre de la gestion de portefeuille et de l’évaluation des actifs :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Le bêta financier d’un titre proche de 1 signifie que la valeur réagit à l’inverse de son indice de référence",
+      "Un PER faible implique une action chère",
+      "Pour investir sur du court terme, l’investisseur privilégie des fonds monétaires ou obligataires",
+      "Le Price Earning Ratio correspond au bénéfice net d’une action",
+      "Cf. M2L9"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Pour investir sur du court terme, l’investisseur privilégie des fonds monétaires ou obligataires"
+  },
+  {
+    "id": "f62c16a0-00a6-4a1d-8978-64f1d8a70b19",
+    "question": "Depuis le 1er janvier 2018, les plus-values de la cession d’actions  :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Supportent un prélèvement forfaitaire unique de 7.5%",
+      "Sont soumises obligatoirement au barème progressif de l'Impôt sur le Revenu",
+      "Supportent par principe un prélèvement forfaitaire unique",
+      "Sont exonérées de prélèvements sociaux",
+      "Cf. M2L7"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Supportent par principe un prélèvement forfaitaire unique"
+  },
+  {
+    "id": "aa8c74b2-a9a5-464d-adf9-463e0dc8ce7a",
+    "question": "L’Autorité des Marchés Financiers (AMF) est :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Un organisme public de contrôle des marchés financiers",
+      "L’instance qui régit les dispositions législatives et réglementaires du système monétaire et financier",
+      "Une instance qui assure la réception et la transmission d’ordres de bourse",
+      "Une filiale d’Euronext",
+      "Cf. M2L8"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Un organisme public de contrôle des marchés financiers"
+  },
+  {
+    "id": "4fba702f-3128-441f-a396-1121f3232520",
+    "question": "Dans le cadre d’une diversification de portefeuille, quels types d’entreprises offrent le plus de stabilité ?",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Blue chips",
+      "Small caps",
+      "Large caps",
+      "Mid caps",
+      "Cf. M2L9"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Blue chips"
+  },
+  {
+    "id": "ee1bbde7-8a81-4ba9-bc00-5d58f1dfd1d7",
+    "question": "L’Euronext Growth est le marché financier destiné aux :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Sociétés technologiques",
+      "PME",
+      "Multinationales",
+      "TPE",
+      "Cf. M2L8"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "PME"
+  },
+  {
+    "id": "c718380c-1f51-4a31-8e52-650439c72f3a",
+    "question": "Le PER (Price Earning Ratio) correspond:",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "A un degré d’évaluation dit « spéculatif » des agences de notation",
+      "A l’indice de valorisation d’une société",
+      "Au bénéfice net d’une action",
+      "Au coefficient de capitalisation des bénéfices"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Au coefficient de capitalisation des bénéfices"
+  },
+  {
+    "id": "980b0ccb-3c3f-4762-b2c5-655f12068fbb",
+    "question": "Dans le cadre du livret A :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Au décès du titulaire, le compte n’est pas clôturé",
+      "L’épargne placée est totalement disponible",
+      "Au décès du titulaire, le solde est exonéré de droits de succession",
+      "Aucun dépôt initial est exigé",
+      "Cf. M2L10"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "L’épargne placée est totalement disponible"
+  },
+  {
+    "id": "6355ee12-aaf6-4d24-8f41-a0a953931d73",
+    "question": "Que signifie le sigle FCPI ?",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Formule Commune de Placement dans l’Immobilier",
+      "Fonds Communs de Placement dans l’Immobilier",
+      "Formule Commune de Placement dans l’innovation",
+      "Fonds Communs de Placement dans l’innovation",
+      "Cf. M2L7"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Fonds Communs de Placement dans l’innovation"
+  },
+  {
+    "id": "b44d8bb1-3728-40e1-a1a1-4471e4f851a0",
+    "question": "Le livret jeune est clos au plus tard :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "La veille du 26ème anniversaire de son titulaire",
+      "La veille du 21ème anniversaire de son titulaire",
+      "Le 31 décembre de l'année du 25ème anniversaire de son titulaire",
+      "Le 31 décembre de l'année du 20ème anniversaire de son titulaire",
+      "Cf. M2L10"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "explication": "Le 31 décembre de l'année du 25ème anniversaire de son titulaire"
   }
 ]
