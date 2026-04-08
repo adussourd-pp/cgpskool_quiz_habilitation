@@ -860,5 +860,113 @@
     "date": "2026-04-08",
     "explication": "Il est possible de transformer son PEL en CEL",
     "reference": "M2L10"
+  },
+  {
+    "id": "928d879a-3826-42c5-aeb8-74b846b7dbe0",
+    "question": "Dans le cadre de la fiscalité d’un contrat d’assurance-vie, les primes versées après les 70 ans de l’assuré bénéficient :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "D’un abattement de 152 500€ applicable par contrat",
+      "D’un abattement unique et global de 30 500€",
+      "D’une créance de restitution de 152 500€",
+      "D’une créance de restitution de 30 500€"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08"
+  },
+  {
+    "id": "5ca20a8a-a3ac-4663-942d-359f61074810",
+    "question": "La co-souscription d’un contrat d’assurance-vie réalisée par des époux communs en biens est possible lorsque les fonds  :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Sont des fonds propres",
+      "Sont des fonds communs",
+      "Sont des fonds indivis",
+      "Sont des fonds propres ou communs"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08"
+  },
+  {
+    "id": "d87b831b-ea56-4ede-91a4-2d19b9c85c28",
+    "question": "La personne qui investit sur un contrat d’assurance-vie est :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Le bénéficiaire",
+      "Le cessionnaire",
+      "Le souscripteur",
+      "Toujours l’assuré"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08"
+  },
+  {
+    "id": "330a3ee0-0032-41f6-ad0b-eda97dfa41d7",
+    "question": "Dans le cadre de l’assurance-vie, les bénéficiaires en cas de décès sont désignés par :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Le souscripteur",
+      "La sécurité sociale",
+      "L’assureur",
+      "L’assuré"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08"
+  },
+  {
+    "id": "b1f3ab9c-2b77-44dc-a6c1-7ed3825791cf",
+    "question": "Dans le cadre de l’acceptation du bénéficiaire d’un contrat d’assurance-vie :",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "L’acceptation du bénéficiaire de second rang empêche le souscripteur de modifier le bénéficiaire de 1er rang",
+      "Le souscripteur a la possibilité d’effectuer un rachat sans l’accord du bénéficiaire acceptant",
+      "L’acceptation du bénéficiaire est exigée pour que le contrat se dénoue",
+      "Le souscripteur ne peut pas modifier l’identité du bénéficiaire acceptant sans l’accord de celui-ci"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08"
+  },
+  {
+    "id": "3c4b16fe-d94b-493d-9d69-5a7f5de2c662",
+    "question": "Lors du dénouement d’un contrat d’assurance-vie suite au décès de l’assuré, le bénéficiaire peut-il renoncer au bénéfice du contrat ?",
+    "propositions": [
+      "Veuillez choisir une réponse.",
+      "Cela dépend des conditions spécifiées dans le contrat",
+      "Non, le bénéficiaire est obligé d’accepter le contrat",
+      "Uniquement si un bénéficiaire de substitution a été désigné",
+      "Oui, le bénéficiaire est libre refuser le contrat"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08"
   }
 ]
