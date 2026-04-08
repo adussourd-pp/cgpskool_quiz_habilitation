@@ -1424,5 +1424,215 @@
     "date": "2026-04-08",
     "reference": "M3L10",
     "explication": "Sa valeur nominale – les intérêts produits"
+  },
+  {
+    "id": "8e8a9f24-9ffa-4a6b-aa1b-33e0b5e15baa",
+    "question": "L’assurance décès est un contrat :",
+    "propositions": [
+      "D’épargne à court terme »",
+      "De préparation de la retraite",
+      "De prévoyance",
+      "De spéculation"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L1",
+    "explication": "De prévoyance"
+  },
+  {
+    "id": "385cbf95-dce9-4520-8760-98936612b08e",
+    "question": "Parmi les cas d’exonération d’imposition des produits d’un contrat d’assurance-vie, dans quelle situation les produits sont-ils également exonérés des prélèvements sociaux ?Veuillez choisir une réponse.",
+    "propositions": [
+      "La mise à la retraite anticipée",
+      "Le licenciement ou la perte involontaire d’emploi ouvrant droit à une indemnisation",
+      "L’invalidité",
+      "La cessation d’activité non salariée à la suite d’un jugement de liquidation judiciaire"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "L’invalidité"
+  },
+  {
+    "id": "e8c9fa8f-27c2-4274-89ea-89726d9466d0",
+    "question": "En cas d'option pour le prélèvement forfaitaire unique, les produits des contrats d'assurance-vie ayant une durée courue de moins de 8 ans, correspondant à des versements effectués à compter du 27/09/2017 sont soumis :",
+    "propositions": [
+      "Au taux de 12,8% et prélèvements sociaux",
+      "Obligatoirement au barème progressif de l’impôt sur le revenu",
+      "Au taux global de 35%",
+      "Au taux de 7,5% et prélèvements sociaux"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "Au taux de 12,8% et prélèvements sociaux"
+  },
+  {
+    "id": "97069041-0c90-4f82-979e-ba5cbad84bcb",
+    "question": "Dans le cadre d’un rachat total réalisé sur un contrat d’assurance-vie, sur lequel aucun rachat partiel n’a été effectué, le montant imposable correspond :",
+    "propositions": [
+      "Aux intérêts du fonds euros uniquement",
+      "A la totalité des primes versées – valeur du contrat",
+      "Aux primes versées depuis l’ouverture",
+      "A la valeur du contrat – totalité des primes versées"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "A la valeur du contrat – totalité des primes versées"
+  },
+  {
+    "id": "cdf60e2e-5161-4c14-82e0-aa0ffd2a4e81",
+    "question": "En cas de rachats partiels successifs sur un contrat d’assurance-vie, comment est calculée la fraction imposable du rachat partiel ?Veuillez choisir une réponse.",
+    "propositions": [
+      "En déduisant du total des primes versées la fraction des rachats précédents correspondant au capital",
+      "En appliquant un taux forfaitaire fixe à chaque rachat",
+      "En prenant en compte uniquement les intérêts générés par le contrat depuis son ouverture",
+      "En considérant que l’intégralité de chaque rachat partiel est imposable"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "En déduisant du total des primes versées la fraction des rachats précédents correspondant au capital"
+  },
+  {
+    "id": "7fcc90af-608b-43cf-8ab0-cc58b2ebc2a8",
+    "question": "Dans le cadre d’un contrat de capitalisation, les produits perçus depuis le 1er janvier 2018 afférents à des primes versées à partir du 27 septembre 2017 sont assujettis à un prélèvement à la source de :",
+    "propositions": [
+      "35% lorsque le contrat a une durée inférieure à 8 ans",
+      "15% lorsque le contrat a une durée inférieure à 8 ans",
+      "12,8% lorsque le contrat a une durée inférieure à 8 ans",
+      "21% lorsque le contrat a une durée inférieure à 8 ans"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L5",
+    "explication": "12,8% lorsque le contrat a une durée inférieure à 8 ans"
+  },
+  {
+    "id": "a5541094-61ac-4155-9830-19c1d3c4b858",
+    "question": "Dans le cadre d’un contrat de capitalisation, les sommes peuvent être investies :",
+    "propositions": [
+      "Uniquement en unités de compte",
+      "Uniquement en euros",
+      "En euros et en unités de compte",
+      "Ni en euros ni en unités de compte"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L5",
+    "explication": "En euros et en unités de compte"
+  },
+  {
+    "id": "84af5d79-9587-46f2-b804-56814342f2d4",
+    "question": "Le PER individuel :",
+    "propositions": [
+      "Succède au PERECO",
+      "Succède au PERP et au contrat Madelin",
+      "Succède aux contrats Article 83",
+      "Succède au PER catégoriel"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L7",
+    "explication": "Succède au PERP et au contrat Madelin"
+  },
+  {
+    "id": "be44c645-d5e6-4f21-aa4a-2e8d3cfa5d22",
+    "question": "La « garantie de reconstitution » d’un contrat Madelin est une rente versée aux bénéficiaires désignés en cas de décès du souscripteur calculée en fonction :",
+    "propositions": [
+      "Du nombre d’années de détention du contrat",
+      "Des cotisations versées avant le décès et de celles qui auraient dû être versées jusqu'au départ à la retraite",
+      "Des cotisations versées avant le décès uniquement",
+      "De l’âge du souscripteur au moment du décès"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L8",
+    "explication": "Des cotisations versées avant le décès et de celles qui auraient dû être versées jusqu'au départ à la retraite"
+  },
+  {
+    "id": "61a7dfa9-7c42-40a1-b260-a065669ac1b6",
+    "question": "La sortie d’un PERP peut être partiellement réalisée en capital dans la limite de :",
+    "propositions": [
+      "20% de la valeur de rachat du contrat",
+      "30% de la valeur de rachat du contrat",
+      "50% de la valeur de rachat du contrat",
+      "40% de la valeur de rachat du contrat"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L9",
+    "explication": "20% de la valeur de rachat du contrat"
+  },
+  {
+    "id": "3fa79053-330d-4201-8adc-15a11b45f0aa",
+    "question": "Quel type de garantie complémentaire peut être associée à un contrat Madelin ?",
+    "propositions": [
+      "Garantie des accidents de la vie",
+      "Incapacité",
+      "Assistance",
+      "Mutation professionnelle",
+      "Terminer la relecture"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L8",
+    "explication": "Incapacité"
   }
 ]
