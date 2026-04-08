@@ -1634,5 +1634,252 @@
     "date": "2026-04-08",
     "reference": "M3L8",
     "explication": "Incapacité"
+  },
+  {
+    "id": "612043cb-50bf-4dd4-aa2c-8a458fdb675a",
+    "question": "Comment fonctionne un contrat de rente viagère ?",
+    "propositions": [
+      "En échange d’un versement unique, l’assureur verse une rente à l’assuré jusqu’à son décès",
+      "L’assuré reçoit une rente tant qu’il en fait la demande, indépendamment de son décès.",
+      "Les arrérages de rente se poursuivent pour les héritiers après le décès de l’assuré.",
+      "L’assuré effectue des versements réguliers pour recevoir une rente après un délai"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L1",
+    "explication": "En échange d’un versement unique, l’assureur verse une rente à l’assuré jusqu’à son décès"
+  },
+  {
+    "id": "232a125e-a0db-44e6-abc1-f29e62d7bac2",
+    "question": "Dans le cadre d’un contrat investi en unités de compte, l’option pour le rééquilibrage automatique :",
+    "propositions": [
+      "Permet de lisser le risque encouru",
+      "Permet d’arbitrer une position si le seuil de moins-value prédéfini est atteint",
+      "Permet de créer un couloir de performance",
+      "Permet de maintenir une allocation constante d’actifs"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L3",
+    "explication": "Permet de maintenir une allocation constante d’actifs"
+  },
+  {
+    "id": "dd158f02-a70d-4b9a-8141-02a06eb88c98",
+    "question": "Lorsqu’un expatrié réalise un rachat partiel sur son contrat d’assurance-vie de plus de 8 ans, les produits afférents au rachat sont imposés :",
+    "propositions": [
+      "Avec un prélèvement forfaitaire de 15% après abattement de 4 600 ou 9 200 €",
+      "Avec un prélèvement forfaitaire de 7,5% après abattement de 4 600 ou 9 200 €",
+      "Avec un prélèvement forfaitaire de 7,5%",
+      "Avec un prélèvement forfaitaire de 15%"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "Avec un prélèvement forfaitaire de 7,5%"
+  },
+  {
+    "id": "edf79c2f-0ac8-4ad2-b227-3da7ae2d4c9c",
+    "question": "En cas d'option pour le prélèvement forfaitaire unique, les produits des contrats d'assurance-vie ayant une durée courue de moins de 8 ans, correspondant à des versements effectués à compter du 27/09/2017 sont soumis :",
+    "propositions": [
+      "Obligatoirement au barème progressif de l’impôt sur le revenu",
+      "Au taux global de 35%",
+      "Au taux de 12,8% et prélèvements sociaux",
+      "Au taux de 7,5% et prélèvements sociaux"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "Au taux de 12,8% et prélèvements sociaux"
+  },
+  {
+    "id": "3d8c1b7d-2c3a-4748-a74e-60f105de491d",
+    "question": "Le contrat rente survie ou le contrat épargne handicap ouvre droit à une réduction d’impôt de :",
+    "propositions": [
+      "20% des versements effectués dans la limite de 1 525 € par an augmentés de 200 € par enfant à charge",
+      "15% des versements effectués dans la limite de 1 525 € par an augmentés de 300 € par enfant à charge",
+      "30% des versements effectués dans la limite de 1 525 € par an augmentés de 250 € par enfant à charge",
+      "25% des versements effectués dans la limite de 1 525 € par an augmentés de 300 € par enfant à charge"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L4",
+    "explication": "25% des versements effectués dans la limite de 1 525 € par an augmentés de 300 € par enfant à charge"
+  },
+  {
+    "id": "384725fc-4312-44a3-bab9-3639aca4f89a",
+    "question": "Dans le cadre d’un contrat de capitalisation, les produits perçus depuis le 1er janvier 2018 afférents à des primes versées à partir du 27 septembre 2017 sont assujettis à un prélèvement à la source de :",
+    "propositions": [
+      "21% lorsque le contrat a une durée inférieure à 8 ans",
+      "35% lorsque le contrat a une durée inférieure à 8 ans",
+      "12,8% lorsque le contrat a une durée inférieure à 8 ans",
+      "15% lorsque le contrat a une durée inférieure à 8 ans"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L5",
+    "explication": "12,8% lorsque le contrat a une durée inférieure à 8 ans"
+  },
+  {
+    "id": "242f51a9-19e2-49a7-b2e1-0c4b8fca07fe",
+    "question": "Comment est imposé un contrat de capitalisation souscrit par une personne morale soumise à l'Impôt sur les Sociétés ?",
+    "propositions": [
+      "L'imposition des produits générés dépend de la durée de détention du contrat",
+      "L'imposition des produits générés est réalisée uniquement lors du rachat du contrat",
+      "Les produits sont soumis à une taxation forfaitaire annuelle, même sans rachat",
+      "Les produits sont soumis à une imposition progressive en fonction des gains réalisés"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L5",
+    "explication": "Les produits sont soumis à une taxation forfaitaire annuelle, même sans rachat"
+  },
+  {
+    "id": "bee65a00-4c93-4384-8f54-151e32643681",
+    "question": "Dans le cadre de la transmission d’un PEA :",
+    "propositions": [
+      "Au décès du titulaire du plan, les sommes figurant sur le PEA ne sont pas comprises dans l’actif successoral",
+      "Il est possible de le transmettre par testament",
+      "Au décès du titulaire du plan, le PEA n’est pas clôturé",
+      "Il est impossible de le transmettre par donation"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L6",
+    "explication": "Il est impossible de le transmettre par donation"
+  },
+  {
+    "id": "68864e91-6e2e-4d00-8ed3-843985be9cbb",
+    "question": "Quel facteur détermine la fiscalité du PER à l’entrée et à la sortie ?",
+    "propositions": [
+      "La durée de détention du plan",
+      "Le montant total des versements effectués sur le plan",
+      "Le type de versements réalisés (versements volontaires, obligatoires, ou issus de l’épargne salariale)",
+      "La nature des supports présents sur le plan (fonds en euros ou unités de compte)"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L7",
+    "explication": "Le type de versements réalisés (versements volontaires, obligatoires, ou issus de l’épargne salariale)"
+  },
+  {
+    "id": "e8420236-1d8a-4bd0-b2d6-be8ef8aeae80",
+    "question": "Les versements sur un PERP :",
+    "propositions": [
+      "Sont périodiques : ils doivent être d'un montant annuel d'au moins 540 €",
+      "Sont fixes : ils sont déterminés à l’ouverture du plan",
+      "Sont programmés : ils doivent être d'un montant mensuel d'au moins 30 €",
+      "Sont libres, il n’y a pas d’obligation annuelle de versement"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L9",
+    "explication": "Sont libres, il n’y a pas d’obligation annuelle de versement"
+  },
+  {
+    "id": "ea9fdb70-ccf5-4418-aeab-7b6f1674a657",
+    "question": "Le taux de rendement interne mesure :",
+    "propositions": [
+      "La santé financière d’une entreprise et son potentiel de développement",
+      "La rentabilité annualisée moyenne d’un projet financier",
+      "La solidité financière d’un projet grâce au plan de financement initial",
+      "La performance de certains ratios financiers issus d’un bilan"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L10",
+    "explication": "La rentabilité annualisée moyenne d’un projet financier"
+  },
+  {
+    "id": "ef9f99a1-2eb6-4cf3-8d3e-59594ff4a874",
+    "question": "Dans le cadre du PER, les versements obligatoires alimentent :",
+    "propositions": [
+      "Le PER catégoriel",
+      "Le PER différentiel",
+      "Le PER dépendance",
+      "Le PER individuel"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L7",
+    "explication": "Le PER catégoriel"
+  },
+  {
+    "id": "14e1081a-df86-4ff4-b581-f62adb0d36c1",
+    "question": "Parmi les situations suivantes, laquelle n’est pas un cas de déblocage exceptionnel du PERP ?",
+    "propositions": [
+      "La survenance d’une invalidité de 2ème ou 3ème catégorie",
+      "Le divorce",
+      "L' expiration des droits aux allocations chômage suite à licenciement",
+      "Le décès du conjoint"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-08",
+    "reference": "M3L9",
+    "explication": "Le divorce"
   }
 ]
