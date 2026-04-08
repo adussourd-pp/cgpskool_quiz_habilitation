@@ -434,6 +434,61 @@
     text-transform: none;
   }
 
+  .how-it-works {
+    background: var(--white);
+    border: 1px solid var(--rule-l);
+    padding: 30px 32px;
+    margin-bottom: 28px;
+  }
+  .how-it-works > p {
+    color: var(--ink-60);
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 22px;
+    max-width: 680px;
+  }
+  .how-it-works strong { color: var(--ink); font-weight: 600; }
+  .how-it-works em { color: var(--orange); font-style: italic; font-weight: 500; }
+  .how-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+    margin-top: 8px;
+  }
+  .how-item {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .how-num {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid var(--orange);
+    color: var(--orange);
+    font-family: var(--serif);
+    font-size: 18px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .how-item > div > strong {
+    display: block;
+    font-family: var(--serif);
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--ink);
+    margin-bottom: 6px;
+    font-style: normal;
+  }
+  .how-item p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    color: var(--ink-60);
+    margin: 0;
+  }
+
   .pbs-links {
     margin-top: 28px;
     background: var(--white);
@@ -533,6 +588,13 @@
       white-space: nowrap;
     }
 
+    /* How it works */
+    .how-it-works { padding: 22px 18px; }
+    .how-it-works > p { font-size: 13.5px; }
+    .how-grid { grid-template-columns: 1fr; gap: 18px; }
+    .how-num { width: 30px; height: 30px; font-size: 15px; }
+    .how-item > div > strong { font-size: 15px; }
+
     /* Home cards */
     .home-cards { grid-template-columns: 1fr; }
     .home-card { padding: 24px 22px; }
@@ -622,6 +684,39 @@
   </div>
 
   <div class="wrap" style="padding-top:0;">
+
+    <div class="how-it-works">
+      <div class="kicker" style="margin-bottom:14px;">
+        <span class="kicker-line"></span>
+        <span class="kicker-text">Comment ça marche</span>
+      </div>
+      <p>Ce site est une <strong>banque collaborative de questions/réponses</strong> pour réviser les formations habilitantes et continues CGP Skool. Tout le monde peut contribuer et tout le monde peut s'entraîner.</p>
+
+      <div class="how-grid">
+        <div class="how-item">
+          <span class="how-num">1</span>
+          <div>
+            <strong>Alimente la banque</strong>
+            <p>À la fin de chaque leçon e-learning, copie-colle le texte des questions corrigées dans <em>« Import par lot »</em> et choisis la formation source. Le site détecte automatiquement la bonne réponse et la référence du module. Tu peux aussi créer une question manuellement via <em>« Saisie manuelle »</em>.</p>
+          </div>
+        </div>
+        <div class="how-item">
+          <span class="how-num">2</span>
+          <div>
+            <strong>Entraîne-toi</strong>
+            <p>Lance un quiz en mode <em>« Quiz »</em>, filtre par formation (habilitante ou continue) et choisis le nombre de questions. Clique sur une réponse pour valider automatiquement. À chaque réponse, tu vois la bonne solution et la référence pour aller réviser le bon module si besoin.</p>
+          </div>
+        </div>
+        <div class="how-item">
+          <span class="how-num">3</span>
+          <div>
+            <strong>Partage</strong>
+            <p>Toutes les questions ajoutées sont immédiatement disponibles pour tes collègues — pas de compte, pas de connexion nécessaire. Plus on contribue, plus la banque devient riche pour tout le monde.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="home-cards">
       <div class="home-card" onclick="goToTab('formateur')">
         <span class="icon">✏️</span>
