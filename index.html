@@ -538,6 +538,35 @@
   }
   .pbs-card:hover .pbs-arrow { transform: translateX(4px); }
 
+  .import-tabs {
+    display: flex;
+    gap: 0;
+    margin: 18px 0 20px;
+    border: 1px solid var(--rule-l);
+  }
+  .import-tab {
+    flex: 1;
+    padding: 12px 16px;
+    font-family: var(--sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-60);
+    background: var(--paper);
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    box-shadow: none;
+    transition: all 0.15s;
+  }
+  .import-tab:hover { color: var(--ink); background: var(--paper-2); }
+  .import-tab.active {
+    color: var(--orange);
+    background: var(--white);
+    box-shadow: inset 0 -2px 0 var(--orange);
+  }
+
   .back-home {
     background: transparent;
     color: var(--ink-60);
@@ -812,11 +841,35 @@
 <!-- ========== MODE IMPORT PAR LOT ========== -->
 <div class="panel hidden" id="panel-import">
   <h2>Import par lot</h2>
-  <p class="small">Collez ci-dessous le texte brut copié depuis la plateforme e-learning. Le parser détecte automatiquement le format (avec ou sans indication de la bonne réponse).</p>
   <div id="i-formation"></div>
-  <label>Texte à importer</label>
-  <textarea id="i-text" rows="12" placeholder="Coller le texte ici..."></textarea>
-  <button onclick="parseBatch()">Analyser le texte</button>
+
+  <div class="import-tabs">
+    <button class="import-tab active" onclick="switchImportMode('text')">Coller du texte</button>
+    <button class="import-tab" onclick="switchImportMode('images')">Importer des images</button>
+  </div>
+
+  <div id="import-text-mode">
+    <p class="small">Collez ci-dessous le texte brut copié depuis la plateforme e-learning. Le parser détecte automatiquement le format.</p>
+    <label>Texte à importer</label>
+    <textarea id="i-text" rows="12" placeholder="Coller le texte ici..."></textarea>
+    <button onclick="parseBatch()">Analyser le texte</button>
+  </div>
+
+  <div id="import-images-mode" class="hidden">
+    <p class="small">Sélectionnez vos captures d'écran de questions/réponses. Le site les lit par OCR (reconnaissance de texte) directement dans votre navigateur, puis les analyse comme un import texte classique.</p>
+    <label>Images (PNG, JPG — sélection multiple)</label>
+    <input type="file" id="i-files" accept="image/*" multiple style="margin-top:6px">
+    <div id="ocr-progress" class="hidden" style="margin-top:16px">
+      <div class="progress-label" style="color:var(--ink-60); margin-bottom:8px">
+        <span id="ocr-status">Préparation...</span>
+      </div>
+      <div class="gauge" style="height:10px; background:var(--paper-2);">
+        <div id="ocr-bar" class="gauge-fill" style="width:0%"></div>
+      </div>
+    </div>
+    <button onclick="startOcr()" id="ocr-start-btn">Lancer la lecture OCR</button>
+  </div>
+
   <div id="i-preview"></div>
 </div>
 
@@ -1638,6 +1691,96 @@ function showAlert(target, type, msg) {
 }
 
 refreshHomeStats();
+
+// ========== IMPORT IMAGES — OCR ==========
+function switchImportMode(mode) {
+  document.getElementById("import-text-mode").classList.toggle("hidden", mode !== "text");
+  document.getElementById("import-images-mode").classList.toggle("hidden", mode !== "images");
+  document.querySelectorAll(".import-tab").forEach(t => {
+    t.classList.toggle("active", t.textContent.toLowerCase().includes(mode === "text" ? "texte" : "image"));
+  });
+}
+
+let tesseractLoaded = false;
+function loadTesseract() {
+  return new Promise((resolve, reject) => {
+    if (tesseractLoaded) return resolve();
+    const s = document.createElement("script");
+    s.src = "https://cdn.jsdelivr.net/npm/tesseract.js@5/dist/tesseract.min.js";
+    s.onload = () => { tesseractLoaded = true; resolve(); };
+    s.onerror = () => reject(new Error("Impossible de charger Tesseract.js"));
+    document.head.appendChild(s);
+  });
+}
+
+async function startOcr() {
+  const files = document.getElementById("i-files").files;
+  if (!files || files.length === 0) {
+    alert("Sélectionnez au moins une image.");
+    return;
+  }
+
+  const btn = document.getElementById("ocr-start-btn");
+  const progressDiv = document.getElementById("ocr-progress");
+  const statusEl = document.getElementById("ocr-status");
+  const barEl = document.getElementById("ocr-bar");
+
+  btn.disabled = true;
+  btn.textContent = "Chargement de l'OCR...";
+  progressDiv.classList.remove("hidden");
+  statusEl.textContent = "Chargement du moteur OCR (première fois : ~10 secondes)...";
+  barEl.style.width = "0%";
+
+  try {
+    await loadTesseract();
+  } catch(e) {
+    alert(e.message);
+    btn.disabled = false;
+    btn.textContent = "Lancer la lecture OCR";
+    return;
+  }
+
+  statusEl.textContent = "Initialisation des workers OCR...";
+
+  const numWorkers = Math.min(4, files.length);
+  const scheduler = Tesseract.createScheduler();
+  for (let i = 0; i < numWorkers; i++) {
+    const worker = await Tesseract.createWorker("fra");
+    scheduler.addWorker(worker);
+  }
+
+  let done = 0;
+  const total = files.length;
+  const results = [];
+
+  statusEl.textContent = `Lecture en cours : 0 / ${total}`;
+  btn.textContent = "Lecture en cours...";
+
+  const sorted = Array.from(files).sort((a, b) => a.name.localeCompare(b.name, undefined, { numeric: true }));
+
+  const promises = sorted.map((file, idx) => {
+    return scheduler.addJob("recognize", file).then(({ data }) => {
+      done++;
+      const pct = Math.round(100 * done / total);
+      statusEl.textContent = `Lecture en cours : ${done} / ${total}`;
+      barEl.style.width = pct + "%";
+      results[idx] = data.text;
+    });
+  });
+
+  await Promise.all(promises);
+  await scheduler.terminate();
+
+  const fullText = results.join("\n\n");
+  document.getElementById("i-text").value = fullText;
+
+  statusEl.textContent = `✅ ${total} image(s) lue(s) — texte extrait ci-dessous.`;
+  btn.disabled = false;
+  btn.textContent = "Lancer la lecture OCR";
+
+  switchImportMode("text");
+  parseBatch();
+}
 </script>
 
 </body>
