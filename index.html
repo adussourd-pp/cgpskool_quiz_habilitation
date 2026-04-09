@@ -1401,46 +1401,32 @@ function parseBatch() {
 
   // Détecter le format AVANT le nettoyage (qui supprime "La réponse correcte est")
   const hasFormatA = /la r[ée]ponse correcte est/i.test(raw);
-  const cleaned = cleanBatchText(raw);
 
-  // Découpage en blocs question. Heuristique :
-  // une question commence à une ligne se terminant par "?" OU précédée de "Question N"
-  // Ici on splitte sur les marqueurs "Question N" si présents, sinon on regroupe sur "?".
+  // Découpage en blocs question.
+  // IMPORTANT : on travaille sur `raw` (pas cleaned) pour que
+  // "La réponse correcte est" et "Cf MxLx" soient encore présents
+  // dans chaque bloc pour l'extraction.
   let blocks = [];
   if (/question\s+\d+/i.test(raw)) {
     blocks = raw.split(/question\s+\d+/i).map(b => b.trim()).filter(Boolean);
-  } else {
-    // Split entre questions: on suppose que chaque "La réponse correcte est..." termine un bloc en format A
-    if (hasFormatA) {
-      const parts = cleaned.split(/(?=la r[ée]ponse correcte est)/i);
-      // Re-grouper : chaque bloc question doit contenir un "La réponse correcte"
-      let current = "";
-      blocks = [];
-      const lines = cleaned.split("\n");
-      let buf = [];
-      for (const line of lines) {
-        buf.push(line);
-        if (/la r[ée]ponse correcte est/i.test(line)) {
-          blocks.push(buf.join("\n"));
-          buf = [];
-        }
+  } else if (hasFormatA) {
+    // Chaque "La réponse correcte est..." termine un bloc
+    const lines = raw.split("\n");
+    let buf = [];
+    for (const line of lines) {
+      buf.push(line);
+      if (/la r[ée]ponse correcte est/i.test(line)) {
+        blocks.push(buf.join("\n"));
+        buf = [];
       }
-      if (buf.length) blocks.push(buf.join("\n"));
-    } else {
-      // Format B : split sur les "?"
-      const lines = cleaned.split("\n");
-      let buf = [];
-      for (const line of lines) {
-        buf.push(line);
-        if (line.endsWith("?") && buf.length > 1) {
-          // continue, propositions à venir
-        }
-      }
-      blocks = [cleaned]; // fallback : un seul bloc
-      // Tentative : split par double saut de ligne
-      const altBlocks = cleaned.split(/\n\s*\n/).filter(b => b.includes("?"));
-      if (altBlocks.length > 1) blocks = altBlocks;
     }
+    if (buf.length > 0 && buf.some(l => l.trim())) blocks.push(buf.join("\n"));
+  } else {
+    // Format B : fallback
+    const cleaned = cleanBatchText(raw);
+    blocks = [cleaned];
+    const altBlocks = cleaned.split(/\n\s*\n/).filter(b => b.includes("?"));
+    if (altBlocks.length > 1) blocks = altBlocks;
   }
 
   parsedBatch = [];
