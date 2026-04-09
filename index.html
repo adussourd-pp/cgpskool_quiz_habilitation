@@ -1352,10 +1352,52 @@ function cleanBatchText(text) {
   return lines.filter(l => l && !noiseLines.some(rx => rx.test(l))).join("\n");
 }
 
+// Nettoyage OCR : recolle les lignes coupées, supprime les artefacts
+function cleanOcrText(text) {
+  let lines = text.split("\n");
+
+  // 1. Supprimer les "*" en fin de ligne (marqueur de sélection utilisateur, pas la bonne réponse)
+  lines = lines.map(l => l.replace(/\s*\*\s*$/, "").trim());
+
+  // 2. Supprimer les artefacts OCR isolés (un seul caractère X, >, etc.)
+  lines = lines.map(l => (/^[A-Z\W]{1,2}$/.test(l.trim()) && !/^[a-d]\.$/i.test(l.trim())) ? "" : l);
+
+  // 3. Recoller les lignes coupées au milieu d'une phrase
+  // Heuristique : si une ligne ne termine pas par un marqueur de fin (.?!:)
+  // et que la suivante commence par une minuscule ou un mot courant,
+  // on les fusionne. Exception : lignes de bruit, lignes "a.", "b.", "Cf", "La réponse"
+  const result = [];
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    if (!line) { result.push(""); continue; }
+
+    const next = (i + 1 < lines.length) ? lines[i + 1].trim() : "";
+    const endsClean = /[.?!:»"]$/.test(line.trim());
+    const nextIsNew = !next ||
+      /^[a-d]\s*[\.\)]/i.test(next) ||
+      /^(cf[\.\s]|la r[ée]ponse|veuillez|question\s+\d|feedback|correct|incorrect|note de|texte de|marquer|pas encore)/i.test(next) ||
+      /^[A-Z][A-Z]/.test(next);  // ligne commençant par 2 majuscules = probablement un début
+    const nextContinues = next && /^[a-zéèêàùâîôûçë''(]/.test(next);
+
+    if (!endsClean && nextContinues && !nextIsNew) {
+      // Fusionner avec la ligne suivante
+      result.push(line.trim() + " " + next);
+      i++; // sauter la ligne suivante
+    } else {
+      result.push(line);
+    }
+  }
+
+  return result.join("\n");
+}
+
 function parseBatch() {
-  const raw = document.getElementById("i-text").value;
+  let raw = document.getElementById("i-text").value;
   const previewDiv = document.getElementById("i-preview");
   if (!raw.trim()) { previewDiv.innerHTML = ""; return; }
+
+  // Nettoyage OCR (recolle lignes, supprime artefacts)
+  raw = cleanOcrText(raw);
 
   const cleaned = cleanBatchText(raw);
   const hasFormatA = /la r[ée]ponse correcte est/i.test(cleaned);
@@ -1404,12 +1446,28 @@ function parseBatch() {
   blocks.forEach(block => {
     // Avant nettoyage : extraire la référence "Cf MxLx" et l'explication
     // "La réponse correcte est : ..." pour les conserver dans la question.
+    // L'explication peut être sur plusieurs lignes (OCR coupe les phrases).
     let reference = null;
     let explication = null;
     const refMatch = block.match(/cf[\.\s]+((?:p\d+[\.\s]*)?m\d+l\d+[-\.\d]*)/i);
     if (refMatch) reference = refMatch[1].toUpperCase().replace(/[\s\.]+/g, "");
-    const explMatch = block.match(/la r[ée]ponse correcte est\s*[:\-]?\s*(.+)/i);
-    if (explMatch) explication = explMatch[1].trim().replace(/[.\s]+$/, "");
+
+    // Extraction multi-ligne de "La réponse correcte est : ..."
+    const blockLines = block.split("\n");
+    for (let li = 0; li < blockLines.length; li++) {
+      const m = blockLines[li].match(/la r[ée]ponse correcte est\s*[:\-]?\s*(.*)/i);
+      if (m) {
+        let txt = (m[1] || "").trim();
+        // Continuer sur les lignes suivantes si la réponse est coupée
+        for (let lj = li + 1; lj < blockLines.length; lj++) {
+          const nextL = blockLines[lj].trim();
+          if (!nextL || /^(question\s+\d|cf[\.\s]|feedback|correct|incorrect|note de)/i.test(nextL)) break;
+          txt += " " + nextL;
+        }
+        explication = txt.replace(/[.\s]+$/, "").trim();
+        break;
+      }
+    }
 
     const cleanBlock = cleanBatchText(block);
     const lines = cleanBlock.split("\n").map(l => l.trim()).filter(Boolean);
@@ -1432,8 +1490,9 @@ function parseBatch() {
       propLines = propLines.slice(0, bonneIdxLine);
     }
 
-    // Nettoyer puces a. b. c. ou 1) 2), détecter le marqueur ✓ de bonne réponse
+    // Nettoyer puces a. b. c. ou 1) 2), détecter les marqueurs ✓ et * de bonne réponse
     let markedBonne = -1;
+    let starMarked = -1;
     const propositions = propLines
       .map(l => l
         .replace(/^[a-z]\s*[\.\)]\s*/i, "")
@@ -1441,23 +1500,32 @@ function parseBatch() {
         .trim()
       )
       .filter(l => l.length > 0 && l.length < 500)
-      .map((l, i, arr) => {
-        // Détecte ✓ ou ✔ en début (avec ou sans espace)
+      .map((l, i) => {
+        // Détecte ✓ ou ✔ en début
         if (/^[✓✔]\s*/.test(l)) {
           markedBonne = i;
           return l.replace(/^[✓✔]\s*/, "").trim();
+        }
+        // Détecte * en fin de ligne (marqueur OCR secondaire)
+        if (/\s*\*\s*$/.test(l)) {
+          starMarked = i;
+          return l.replace(/\s*\*\s*$/, "").trim();
         }
         return l;
       });
 
     if (propositions.length < 2 || !question) return;
 
+    // Priorité : ✓ > "La réponse correcte est" > * (fallback)
     let bonneIndex = -1;
     if (markedBonne !== -1) {
       bonneIndex = markedBonne;
     } else if (bonneText) {
       const bt = normalize(bonneText);
       bonneIndex = propositions.findIndex(p => normalize(p) === bt || normalize(p).includes(bt) || bt.includes(normalize(p)));
+    }
+    if (bonneIndex === -1 && starMarked !== -1) {
+      bonneIndex = starMarked;
     }
 
     const item = { question, propositions, bonne_reponse: bonneIndex };
