@@ -2308,5 +2308,271 @@
     "date": "2026-04-09",
     "reference": "M4L1",
     "explication": "Est exonéré de droits de succession"
+  },
+  {
+    "id": "966be27d-f1a8-4ebe-bb66-c39eed860a84",
+    "question": "Comment appelle-t-on la période pendant laquelle certaines prestations ne sont pas prises en charge par l’assureur après la souscription d’un contrat de complémentaire santé ?",
+    "propositions": [
+      "Délai de réflexion",
+      "Délai de couverture",
+      "Délai de résiliation",
+      "Délai de carence"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L6",
+    "explication": "Délai de carence"
+  },
+  {
+    "id": "2beeb349-6280-4f18-9d0c-8a2612002d80",
+    "question": "Non répondue Les prestations des contrats d’assurance décès sont :",
+    "propositions": [
+      "Décroissantes",
+      "Exponentielles",
+      "Forfaitaires",
+      "Indemnitaires"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L3",
+    "explication": "Forfaitaires"
+  },
+  {
+    "id": "dc8780ba-ac39-40d1-ab27-78f6bc2acfc1",
+    "question": "Non répondue Dans un contrat d’assurance emprunteur groupe, la cotisation est généralement calculée ?",
+    "propositions": [
+      "Sur le capital emprunté",
+      "Sur le capital restant dû",
+      "Sur les revenus",
+      "Sur le risque médical réel de l’emprunteur"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L2",
+    "explication": "Sur le capital emprunté"
+  },
+  {
+    "id": "8ec83cd1-ed37-4b89-8c3c-1bb02aa870b7",
+    "question": "Non répondue Dans le cadre de l’assurance emprunteur, quel est l’objectif principal de la fiche standardisée d’information (FSI) ?",
+    "propositions": [
+      "Permettre à l’emprunteur de comparer les contrats d’assurance",
+      "Présenter les exclusions médicales de manière exhaustive",
+      "Fixer la quotité minimale exigée par la banque",
+      "Informer l’assureur des risques médicaux"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L2",
+    "explication": "Permettre à l’emprunteur de comparer les contrats d’assurance"
+  },
+  {
+    "id": "aaf6f5d0-0618-4c84-941a-bcbd6b09dadb",
+    "question": "Non répondue Dans le cadre de l’Assurance Maladie, qu’est-ce que le tiers payant ?",
+    "propositions": [
+      "Le mécanisme qui permet à l’assuré de ne pas avancer tous les frais de santé s’ils ne sont pas pris en charge par la Sécurité sociale",
+      "L’assuré qui règle directement auprès des professionnels de santé le tiers des dépenses occasionnées",
+      "Le prix des soins restant à la charge des assurés et qui ne peuvent être inclus dans sa Sécurité sociale",
+      "Les frais non remboursés par le régime obligatoire et complémentaire"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L6",
+    "explication": "Le mécanisme qui permet à l’assuré de ne pas avancer tous les frais de santé s’ils ne sont pas pris en charge par la Sécurité sociale"
+  },
+  {
+    "id": "3865bd54-ee32-4933-bf0d-33bc75044e7e",
+    "question": "Non répondue La garantie croisée entre associés est :",
+    "propositions": [
+      "Une assurance décès",
+      "Une assurance emprunteur",
+      "Une assurance-vie",
+      "Un contrat de capitalisation"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L4",
+    "explication": "Une assurance décès"
+  },
+  {
+    "id": "8457b8e1-cc45-4e3c-b2b4-466112272a58",
+    "question": "Non répondue Le degré de perte d’autonomie d’une personne est mesuré sur la base de :",
+    "propositions": [
+      "La classification AVQ",
+      "La grille AGGIR",
+      "La grille AERAS",
+      "La classification propre à la Sécurité Sociale"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L5",
+    "explication": "La grille AGGIR"
+  },
+  {
+    "id": "a54a62ef-6f72-47c4-ab96-8e10faa757f4",
+    "question": "Non répondue « L’homme clé » désigne toute personne :",
+    "propositions": [
+      "Détenant plus de 2/3 des parts d’une entreprise",
+      "Ayant un rôle déterminant dans le fonctionnement d’une entreprise",
+      "Ayant une ancienneté dans l’entreprise supérieure à 20 ans",
+      "Ayant un rôle de manager au sein d’une entreprise"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L4",
+    "explication": "Ayant un rôle déterminant dans le fonctionnement d’une entreprise"
+  },
+  {
+    "id": "f9d0bec0-657e-4d83-8415-82c0aaaeafd2",
+    "question": "Non répondue Dans le cadre de la fiscalité transmission du contrat d’assurance décès, lequel de ces bénéficiaires est toujours exonéré ?",
+    "propositions": [
+      "Le conjoint ou partenaire de PACS",
+      "Les enfants mineurs",
+      "Les parents",
+      "Les enfants, qu’ils soient mineurs ou majeurs"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L3",
+    "explication": "Le conjoint ou partenaire de PACS"
+  },
+  {
+    "id": "31b5fc73-c0d7-4a39-8b01-fe949f625586",
+    "question": "Non répondue La quotité minimale exigée par la banque pour un emprunteur unique est généralement ?",
+    "propositions": [
+      "50 %",
+      "80 %",
+      "100 %",
+      "20 %"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L2",
+    "explication": "100 %"
+  },
+  {
+    "id": "ec468139-9995-4cae-b997-b5122ea66b03",
+    "question": "Non répondue En cas d’invalidité d’une personne, cette dernière pourra prétendre au versement :",
+    "propositions": [
+      "D’un capital de 100 000€ par la Sécurité Sociale",
+      "D’un capital de 100 000€ par Pôle emploi",
+      "D’une pension d’invalidité par la Sécurité Sociale",
+      "D’une pension d’invalidité par Pôle emploi"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L1",
+    "explication": "D’une pension d’invalidité par la Sécurité Sociale"
+  },
+  {
+    "id": "697e713e-e53e-4b9e-a24e-c24925c3dd9b",
+    "question": "Non répondue La protection qui permet d’indemniser l'assuré, et éventuellement sa famille, des conséquences des accidents de la vie quotidienne est nommée :",
+    "propositions": [
+      "Contrat de capitalisation",
+      "Aide Accidents Privés (AAP)",
+      "Garantie des Accidents de la Vie (GAV)",
+      "Protection Vie Quotidienne (PVQ)"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L2",
+    "explication": "Garantie des Accidents de la Vie (GAV)"
+  },
+  {
+    "id": "016781c9-ddb6-4523-a6f1-77c2429e95bf",
+    "question": "Non répondue Dans le cadre de la dépendance des personnes âgées, la grille AGGIR est utilisée par l’Etat notamment pour le versement de :",
+    "propositions": [
+      "L’aide des caisses de retraite",
+      "La prestation de compensation du handicap",
+      "L’allocation personnalisée d’autonomie",
+      "La rente d’incapacité permanente partielle"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L5",
+    "explication": "L’allocation personnalisée d’autonomie"
+  },
+  {
+    "id": "df896a6b-e2f0-4ab7-9ecc-6c1e6b447973",
+    "question": "Non répondue Les indemnités journalières versées au profit d’un salarié au titre d’un contrat de prévoyance collective sont :",
+    "propositions": [
+      "Soumises au prélèvement forfaitaire de 12,8%",
+      "Soumises à l’impôt sur le revenu dans la catégorie des « revenus de capitaux mobiliers »",
+      "Soumises à l’impôt sur le revenu dans la catégorie des « traitements et salaires »",
+      "Soumises à l’impôt sur le revenu dans la catégorie des « bénéfices industriels et commerciaux »"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L1",
+    "explication": "Soumises à l’impôt sur le revenu dans la catégorie des « traitements et salaires »"
   }
 ]
