@@ -1509,7 +1509,20 @@ function parseBatch() {
       bonneIndex = markedBonne;
     } else if (bonneText) {
       const bt = normalize(bonneText);
-      bonneIndex = propositions.findIndex(p => normalize(p) === bt || normalize(p).includes(bt) || bt.includes(normalize(p)));
+      // 1. Correspondance exacte
+      bonneIndex = propositions.findIndex(p => normalize(p) === bt);
+      if (bonneIndex === -1) {
+        // 2. Meilleur score de similarité (évite les faux positifs "5 jours" ⊂ "15 jours")
+        let bestScore = 0;
+        propositions.forEach((p, i) => {
+          const np = normalize(p);
+          const score = similarity(bt, np);
+          if (score > bestScore && score >= 0.7) {
+            bestScore = score;
+            bonneIndex = i;
+          }
+        });
+      }
     }
     if (bonneIndex === -1 && starMarked !== -1) {
       bonneIndex = starMarked;
