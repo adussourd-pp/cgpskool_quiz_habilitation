@@ -1881,5 +1881,165 @@
     "date": "2026-04-08",
     "reference": "M3L9",
     "explication": "Le divorce"
+  },
+  {
+    "id": "fdf9b75e-1f9f-4c31-a456-0373e548f2a1",
+    "question": "Dans le cadre d’un différé total de prêt, que se passe-t-il pendant la période de différé ?",
+    "propositions": [
+      "Le capital est remboursé en avance",
+      "Ni le capital ni les intérêts ne sont remboursés",
+      "Seuls les intérêts sont remboursés",
+      "Les mensualités sont réduites de moitié"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "IOBSP"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Ni le capital ni les intérêts ne sont remboursés"
+  },
+  {
+    "id": "2e4385ab-61b9-41c8-8530-6d60736b8c49",
+    "question": "Dans une location meublée dans l’ancien avec exploitant, quel élément peut nécessiter un financement complémentaire au moment de l’acquisition ?",
+    "propositions": [
+      "Les travaux de gros œuvre du bâtiment",
+      "Le financement du renouvellement des meubles",
+      "Les frais de notaire majorés liés à la revente",
+      "Le rachat du bail commercial en cours"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "IOBSP"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Le financement du renouvellement des meubles"
+  },
+  {
+    "id": "688bddad-f70a-4aa9-9db4-36bd7fd08984",
+    "question": "Quel est le principal avantage de l’éco-PTZ ?",
+    "propositions": [
+      "Il permet de financer les travaux sans payer d’intérêts",
+      "Un prêt à durée réduite",
+      "Il est remboursé par l’État",
+      "Il est réservé aux logements neufs"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "IOBSP"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L1",
+    "explication": "Il permet de financer les travaux sans payer d’intérêts"
+  },
+  {
+    "id": "14a4460c-7afa-4a7e-a9f9-b6df29fa85b0",
+    "question": "Quelle est la principale différence entre la location meublée avec exploitant et sans exploitant ?",
+    "propositions": [
+      "Dans la location meublée avec exploitant, le bien est loué via un bail commercial à un gestionnaire, alors que sans exploitant, le propriétaire loue directement à un particulier",
+      "La location meublée sans exploitant est automatiquement exonérée de taxe foncière",
+      "La location meublée avec exploitant est interdite dans les zones tendues",
+      "La location meublée sans exploitant nécessite une autorisation préfectorale spéciale"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "IOBSP"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Dans la location meublée avec exploitant, le bien est loué via un bail commercial à un gestionnaire, alors que sans exploitant, le propriétaire loue directement à un particulier"
+  },
+  {
+    "id": "018b4253-ea03-4a29-af99-eaf7e374b3d3",
+    "question": "MaPrimeRénov’ a été créée pour encourager les travaux de rénovation énergétique. À qui cette aide est-elle destinée ?",
+    "propositions": [
+      "Aux locataires uniquement, pour des travaux de rénovation énergétique",
+      "Aux copropriétés uniquement, quel que soit l'âge du logement",
+      "Uniquement aux propriétaires occupants, pour des logements de moins de 5 ans",
+      "À l'ensemble des propriétaires (occupants ou bailleurs), ainsi qu'aux copropriétés, pour des logements de plus de 15 ans"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "IOBSP"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L1",
+    "explication": "À l'ensemble des propriétaires (occupants ou bailleurs), ainsi qu'aux copropriétés, pour des logements de plus de 15 ans"
+  },
+  {
+    "id": "8817a9f0-9ee0-42d1-9081-ca07a2c6210f",
+    "question": "Quelles sont les conditions pour récupérer la TVA lors d’un investissement en résidence de services neuve avec exploitant ?",
+    "propositions": [
+      "Le bien est loué avec services para-hôteliers, un bail commercial est signé et l’investisseur conserve le bien 20 ans",
+      "L’investisseur réalise les travaux lui-même dans un logement ancien",
+      "Le logement est loué vide avec un bail d’habitation classique",
+      "Le bien est situé en zone tendue et l’investisseur est en statut LMNP"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "IOBSP"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Le bien est loué avec services para-hôteliers, un bail commercial est signé et l’investisseur conserve le bien 20 ans"
+  },
+  {
+    "id": "9508721a-f24b-4ba6-a6df-de18547ce028",
+    "question": "Quelle affirmation décrit correctement le prêt travaux affecté ?",
+    "propositions": [
+      "Il nécessite des devis ou factures pour justifier des travaux",
+      "Il est obligatoirement adossé à un prêt immobilier",
+      "Il peut être utilisé librement, sans justificatifs",
+      "Il est toujours débloqué en une seule fois"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "IOBSP"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Il nécessite des devis ou factures pour justifier des travaux"
+  },
+  {
+    "id": "92bd21ca-3f3d-47ad-871b-a1ec3aa20229",
+    "question": "Pourquoi la colocation meublée est-elle souvent plus rentable qu’une location classique ?",
+    "propositions": [
+      "Elle est exonérée de taxe foncière en zones tendues",
+      "Les colocataires doivent obligatoirement signer un bail de 9 ans minimum",
+      "Chaque chambre est louée séparément, augmentant le total des loyers perçus",
+      "Les travaux sont financés uniquement par des subventions publiques"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "continue",
+      "annee": "2025",
+      "pack": "PACK03-FC : IMMO / IOBSP / ALPSI / ASS",
+      "type": "IOBSP"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Chaque chambre est louée séparément, augmentant le total des loyers perçus"
   }
 ]
