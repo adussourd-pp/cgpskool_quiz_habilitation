@@ -2041,5 +2041,272 @@
     "date": "2026-04-09",
     "reference": "M2L3",
     "explication": "Chaque chambre est louée séparément, augmentant le total des loyers perçus"
+  },
+  {
+    "id": "2e038234-041d-4cec-922f-d1197807bf34",
+    "question": "Non répondue Dans le cadre d’un prêt de 300 000 € accordé à un couple, si chacun bénéficie d’une quotité de 50%, chaque co-emprunteur est couvert à hauteur de :",
+    "propositions": [
+      "50 000€",
+      "30 000€",
+      "300 000€",
+      "150 000€"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L2",
+    "explication": "150 000€"
+  },
+  {
+    "id": "9906a339-5db8-47fc-9a99-17a3e4d0ab54",
+    "question": "Non répondue En cas de décès d’un salarié, le capital versé à ses ayants droit au titre d’une assurance collective :",
+    "propositions": [
+      "Est soumis à l’impôt sur le revenu à hauteur de 50% de son montant",
+      "Est soumis à l’impôt sur le revenu à hauteur de 20% de son montant",
+      "Est exonéré d’impôt sur le revenu",
+      "Est soumis au prélèvement forfaitaire (30%)"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L1",
+    "explication": "Est exonéré d’impôt sur le revenu"
+  },
+  {
+    "id": "05e60454-489c-4dde-b75a-cfb2a1f87b40",
+    "question": "Non répondue Les primes versées sur un contrat prévoyance Madelin par un micro-entrepreneur :",
+    "propositions": [
+      "Génèrent une réduction d’impôt",
+      "Génèrent un crédit d’impôt",
+      "Sont déductibles du résultat imposable",
+      "Ne sont pas déductibles fiscalement"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L4",
+    "explication": "Ne sont pas déductibles fiscalement"
+  },
+  {
+    "id": "db05f6ee-720e-4bec-9b11-4b23b07f4e31",
+    "question": "Non répondue Dans un contrat en délégation d’assurance emprunteur, la cotisation est généralement calculée ?",
+    "propositions": [
+      "Uniquement sur l’âge",
+      "Sur le capital restant dû",
+      "Sur le capital emprunté",
+      "Sur les intérêts du prêt"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L2",
+    "explication": "Sur le capital restant dû"
+  },
+  {
+    "id": "ad394c76-6b61-412f-8e68-ec0c997fe63b",
+    "question": "Non répondue",
+    "propositions": [
+      "Dans la grille AGGIR, quel niveau de GIR correspond au plus haut degré de dépendance chez les personnes âgées ?Veuillez choisir une réponse.",
+      "GIR1",
+      "GIR7",
+      "GIR5",
+      "GIR6"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L5",
+    "explication": "GIR1"
+  },
+  {
+    "id": "162ae976-b88f-4c85-8c0c-88e69b45ac99",
+    "question": "Non répondue Quelle est la particularité des contrats responsables ?",
+    "propositions": [
+      "Ils permettent d’automatiquement avoir un reste à charge de zéro",
+      "Ils respectent un cahier des charges précis",
+      "Ils sont assujettis à la taxe sur les conventions d’assurance",
+      "Ils ne recueillent aucune information médicale"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L6",
+    "explication": "Ils respectent un cahier des charges précis"
+  },
+  {
+    "id": "17d25d67-2a1c-41b6-b2c9-b07e39491d0f",
+    "question": "Non répondue Le capital d’une assurance décès :",
+    "propositions": [
+      "Est soumis à l’impôt sur le revenu à hauteur de 50% de son montant",
+      "Doit obligatoirement être déclaré à l’impôt sur le revenu",
+      "Est soumis à l’impôt sur le revenu à hauteur de 20% de son montant",
+      "N’est pas soumis à l’impôt sur le revenu"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L3",
+    "explication": "N’est pas soumis à l’impôt sur le revenu"
+  },
+  {
+    "id": "89713dfd-f2fd-400d-a7f3-c5909a5702a5",
+    "question": "Non répondue Depuis la loi Lemoine, l’emprunteur peut résilier son assurance emprunteur ?",
+    "propositions": [
+      "Uniquement après 12 mois de contrat",
+      "Uniquement à la date anniversaire",
+      "À tout moment",
+      "Uniquement durant la première année"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L2",
+    "explication": "À tout moment"
+  },
+  {
+    "id": "e560a503-a3b5-41f8-bbbb-434357863107",
+    "question": "Non répondue Les prestations complémentaires des contrats d’assurance dépendance correspondent à :",
+    "propositions": [
+      "Des remboursements de frais pris en charge par la mutuelle",
+      "Des services complémentaires permettant de faire face à l’état de dépendance",
+      "Couvrir les besoins vitaux lorsque l’APA ne suffit pas",
+      "Une indemnité forfaitaire destinée à compenser la perte d’autonomie partielle"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L5",
+    "explication": "Des services complémentaires permettant de faire face à l’état de dépendance"
+  },
+  {
+    "id": "ee12452b-7092-4f01-97cd-f5e40f448a70",
+    "question": "Non répondue Dans le cadre des contrats de prévoyance, les indemnités journalières sont versées à l’expiration :",
+    "propositions": [
+      "D’un délai de carence",
+      "D’un délai de forclusion",
+      "D’un délai de franchise",
+      "D’un délai d’obtention"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L6",
+    "explication": "D’un délai de franchise"
+  },
+  {
+    "id": "22a09bc9-159a-4af6-94c2-0c5c4bfb155b",
+    "question": "Non répondue Dans le cadre de l’assurance emprunteur, le TAEA permet à l’emprunteur de ?",
+    "propositions": [
+      "Comparer le coût réel de différentes assurances",
+      "Calculer la durée du crédit",
+      "Connaître le taux des frais de notaire",
+      "Fixer librement sa quotité"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L2",
+    "explication": "Comparer le coût réel de différentes assurances"
+  },
+  {
+    "id": "30ea628f-e500-4000-9b4a-8f90293cf4e7",
+    "question": "Non répondue Dans le cadre d’un contrat d’assurance décès, l’épargne constituée est :",
+    "propositions": [
+      "Récupérable uniquement si le contrat a plus de 8 ans",
+      "Bloquée jusqu’au décès du souscripteur assuré",
+      "Récupérable à tout moment",
+      "Bloquée jusqu’au départ en retraite du souscripteur"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L3",
+    "explication": "Bloquée jusqu’au décès du souscripteur assuré"
+  },
+  {
+    "id": "dde40fc7-cafe-4ddb-9827-e60c6061c14d",
+    "question": "Non répondue Les primes versées par un TNS sur un contrat prévoyance Madelin :",
+    "propositions": [
+      "Ne bénéficient d’aucun avantage fiscal",
+      "Sont déductibles de son résultat imposable",
+      "Génèrent un crédit d’impôt",
+      "Génèrent une réduction d’impôt"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L4",
+    "explication": "Sont déductibles de son résultat imposable"
+  },
+  {
+    "id": "096de3ac-ff22-4674-ac12-7e65207cd453",
+    "question": "Non répondue En cas de décès d’un salarié, le capital versé par la sécurité sociale à ses ayants droit :",
+    "propositions": [
+      "Est soumis aux droits de succession",
+      "Est exonéré de droits de succession",
+      "Est soumis à l’impôt sur le revenu à hauteur de 50% de son montant",
+      "Est soumis à la fiscalité applicable à l’assurance-vie"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L1",
+    "explication": "Est exonéré de droits de succession"
   }
 ]
