@@ -113,6 +113,64 @@ export default {
       return json({ ok: true, added: newQuestions.length, total: questions.length });
     }
 
+    // POST /fix — corriger la bonne réponse d'une question existante
+    if (request.method === "POST" && url.pathname === "/fix") {
+      let payload;
+      try {
+        payload = await request.json();
+      } catch (e) {
+        return json({ error: "Invalid JSON" }, 400);
+      }
+      const { id, bonne_reponse } = payload;
+      if (!id || typeof bonne_reponse !== "number") {
+        return json({ error: "Missing id or bonne_reponse" }, 400);
+      }
+
+      const apiBase = `https://api.github.com/repos/${env.GITHUB_USER}/${env.GITHUB_REPO}/contents/questions.json`;
+      const ghHeaders = {
+        Authorization: `Bearer ${env.GITHUB_TOKEN}`,
+        "User-Agent": "cgp-skool-quiz-worker",
+        Accept: "application/vnd.github+json",
+      };
+
+      const getRes = await fetch(`${apiBase}?ref=${env.GITHUB_BRANCH}`, { headers: ghHeaders });
+      if (!getRes.ok) {
+        const t = await getRes.text();
+        return json({ error: "GitHub GET failed", status: getRes.status, body: t }, 502);
+      }
+      const fileData = await getRes.json();
+      const b64 = fileData.content.replace(/\n/g, "");
+      const binary = atob(b64);
+      const bytes = new Uint8Array(binary.length);
+      for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
+      const currentContent = new TextDecoder("utf-8").decode(bytes);
+      let questions;
+      try { questions = JSON.parse(currentContent); } catch (e) { questions = []; }
+
+      const idx = questions.findIndex(q => q.id === id);
+      if (idx === -1) return json({ error: "Question not found" }, 404);
+
+      questions[idx].bonne_reponse = bonne_reponse;
+
+      const newContent = btoa(unescape(encodeURIComponent(JSON.stringify(questions, null, 2) + "\n")));
+      const putRes = await fetch(apiBase, {
+        method: "PUT",
+        headers: { ...ghHeaders, "Content-Type": "application/json" },
+        body: JSON.stringify({
+          message: `Correction réponse : ${questions[idx].question.slice(0, 50)}`,
+          content: newContent,
+          sha: fileData.sha,
+          branch: env.GITHUB_BRANCH,
+        }),
+      });
+      if (!putRes.ok) {
+        const t = await putRes.text();
+        return json({ error: "GitHub PUT failed", status: putRes.status, body: t }, 502);
+      }
+
+      return json({ ok: true, id, bonne_reponse });
+    }
+
     return json({ error: "Not found" }, 404);
   },
 };

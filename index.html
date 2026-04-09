@@ -1720,7 +1720,50 @@ function answerQuiz(idx) {
     if (q.reference)   info += `${q.explication ? "<br>" : ""}<strong>Référence :</strong> ${escapeHtml(q.reference)}`;
     info += `</div>`;
   }
-  feedback.innerHTML = info + `<button onclick="nextQuiz()">${isLast ? "Voir le score" : "Question suivante"}</button>`;
+  // Bouton signaler une erreur
+  let report = `<div style="margin-top:14px">`;
+  report += `<button class="secondary" style="font-size:10px; padding:8px 14px;" onclick="toggleReportForm()">⚠️ Signaler une erreur sur cette question</button>`;
+  report += `<div id="report-form" class="hidden" style="margin-top:10px">`;
+  report += `<label>Quelle est la vraie bonne réponse ?</label>`;
+  report += `<select id="report-select"><option value="-1">-- choisir --</option>`;
+  q.propositions.forEach((p, pi) => {
+    report += `<option value="${pi}">${escapeHtml(p)}</option>`;
+  });
+  report += `</select>`;
+  report += `<button onclick="submitReport()" style="margin-top:8px">Corriger</button>`;
+  report += `<div id="report-result"></div>`;
+  report += `</div></div>`;
+
+  feedback.innerHTML = info + report + `<button onclick="nextQuiz()">${isLast ? "Voir le score" : "Question suivante"}</button>`;
+}
+
+function toggleReportForm() {
+  document.getElementById("report-form").classList.toggle("hidden");
+}
+
+async function submitReport() {
+  const resultDiv = document.getElementById("report-result");
+  const sel = document.getElementById("report-select");
+  const newIdx = parseInt(sel.value);
+  if (newIdx === -1) {
+    showAlert(resultDiv, "error", "Sélectionnez la bonne réponse.");
+    return;
+  }
+  const q = quizState.questions[quizState.current];
+  showAlert(resultDiv, "info", "Correction en cours...");
+  try {
+    const r = await fetch(`${WORKER_URL}/fix`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id: q.id, bonne_reponse: newIdx }),
+    });
+    const j = await r.json().catch(() => ({}));
+    if (!r.ok) throw new Error(j.error || r.status);
+    q.bonne_reponse = newIdx;
+    showAlert(resultDiv, "success", "✅ Corrigé ! La bonne réponse a été mise à jour.");
+  } catch(e) {
+    showAlert(resultDiv, "error", "Erreur : " + e.message);
+  }
 }
 
 function nextQuiz() {
