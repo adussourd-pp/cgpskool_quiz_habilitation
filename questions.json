@@ -2574,5 +2574,461 @@
     "date": "2026-04-09",
     "reference": "M4L1",
     "explication": "Soumises à l’impôt sur le revenu dans la catégorie des « traitements et salaires »"
+  },
+  {
+    "id": "db1fca43-4386-4a2a-a2e3-0486834a28e1",
+    "question": "Dans le cadre d’une assurance multirisques habitation, l'assuré a l'obligation de déclarer un sinistre (autre que le vol) dans un délai maximum de :",
+    "propositions": [
+      "2 jours à partir du moment où il en a connaissance",
+      "15 jours à partir du moment où il en a connaissance",
+      "10 jours à partir du moment où il en a connaissance",
+      "5 jours à partir du moment où il en a connaissance"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L2",
+    "explication": "5 jours à partir du moment où il en a connaissance"
+  },
+  {
+    "id": "61149885-1bae-4c8e-8ffe-106632732799",
+    "question": "Dans un contrat d'assurance-vie à bonus de fidélité, quel est le rôle du \"bonus de fidélité\" ?",
+    "propositions": [
+      "Il représente les gains réalisés et capitalisés dans le contrat",
+      "Il désigne une somme versée uniquement en cas de décès de X l'assuré",
+      "Il correspond aux primes versées par l'assuré dans la gestion libre",
+      "Il est constitué des frais de gestion prélevés sur les primes"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Il représente les gains réalisés et capitalisés dans le contrat"
+  },
+  {
+    "id": "6867ff57-5e39-4cc9-a86d-7a0026c2f095",
+    "question": "Une Société d'Assurance Mutuelle (SAM) se distingue d'une Société Mutuelle d'Assurance (SMA) par :",
+    "propositions": [
+      "L'objet de la société exclusivement professionnel ou régional",
+      "La possibilité de rémunérer des intermédiaires pour commercialiser leurs produits",
+      "Le fait d'appartenir au GEMA",
+      "La tarification des assurances qui est uniquement à cotisation fixe"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L4",
+    "explication": "La possibilité de rémunérer des intermédiaires pour commercialiser leurs produits"
+  },
+  {
+    "id": "32533281-fe60-4529-b38d-d643f461571b",
+    "question": "Les contrats dits « à frais précomptés » ont la particularité de :",
+    "propositions": [
+      "Prélever l'intégralité des frais de gestion à la sortie du contrat",
+      "Prélever les frais de gestion annuellement",
+      "Prélever l'intégralité des frais d'entrée dès les premières années du contrat",
+      "Prélever des frais lors de chaque arbitrage"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Prélever l'intégralité des frais d'entrée dès les premières années du contrat"
+  },
+  {
+    "id": "5590440f-4d4d-4f1f-8387-c24a791f25d2",
+    "question": "Une opération d'assurance fait intervenir 4 parties dont l'assuré. Par définition, ce dernier est la personne qui :",
+    "propositions": [
+      "Accepte la prise en charge du ou des risques",
+      "Est exposée au risque sans payer de cotisation",
+      "Signe la police d'assurance et qui paie la cotisation ou la prime d'assurance",
+      "Perçoit les cotisations et qui règle les sinistres"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L3",
+    "explication": "Est exposée au risque sans payer de cotisation"
+  },
+  {
+    "id": "7ea8d721-168e-4707-85bd-01924a3193ff",
+    "question": "Un contrat d'assurance décès peut être souscrit par :",
+    "propositions": [
+      "Un majeur non imposable",
+      "Un mineur âgé de moins de 12 ans",
+      "Un majeur sous tutelle",
+      "Une personne placée dans un établissement psychiatrique"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L1",
+    "explication": "Un majeur non imposable"
+  },
+  {
+    "id": "51ff1f15-c83f-4b15-b6b9-79466b703621",
+    "question": "L'assurance en cas de vie garantit le versement d'une rente :",
+    "propositions": [
+      "Au souscripteur en cas de décès de l'assuré après le terme du contrat",
+      "A l'assuré si le contrat arrive à terme avant son décès",
+      "A l'assureur en cas de décès de l'assuré après le terme du contrat",
+      "Au bénéficiaire en cas de décès de l'assuré avant le terme du contrat"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L3",
+    "explication": "À l'assuré si le contrat arrive à terme avant son décès"
+  },
+  {
+    "id": "e5d5319c-b1e8-4588-a66f-6ca155aaf9cc",
+    "question": "Depuis la loi Pacte du 24 mai 2019, quelles sont les conditions à remplir pour que le transfert d’un contrat d'assurance-vie au sein de la même compagnie permette de conserver l’antériorité fiscale ?",
+    "propositions": [
+      "Le transfert doit être effectué sans modification des supports % d'investissement",
+      "Les primes versées doivent être affectées à des unités de comptes ou à un fonds eurocroissance",
+      "Le transfert ne peut se faire qu'avec l'accord préalable de l'ACPR",
+      "Le transfert doit concerner un contrat monosupport uniquement"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Les primes versées doivent être affectées à des unités de comptes ou à un fonds eurocroissance"
+  },
+  {
+    "id": "6924b1d0-6e9a-4e4f-a0b8-f3e877a841d2",
+    "question": "Quelle instance réalise le contrôle concernant le respect des dispositions législatives relatives à l'intermédiation en assurance ?",
+    "propositions": [
+      "L'ORIAS %",
+      "L'ACPR",
+      "L'AMF",
+      "La Banque de France"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L6",
+    "explication": "L'ACPR"
+  },
+  {
+    "id": "c601aac0-adf3-4f43-a861-ac3c33c85004",
+    "question": "Les versements programmés réalisés sur un contrat d'assurance-vie :",
+    "propositions": [
+      "Ne peuvent être couplés avec le versement initial que s'ils sont effectués mensuellement",
+      "Ne peuvent être couplés avec des versements libres que s'ils excèdent son montant",
+      "Peuvent être couplés avec des versements libres",
+      "Peuvent être couplés uniquement avec un versement initial"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Peuvent être couplés avec des versements libres"
+  },
+  {
+    "id": "6cf41712-434d-4e01-aa4b-818acd84a716",
+    "question": "Le blanchiment de capitaux nécessite 3 étapes successives :",
+    "propositions": [
+      "L'intégration - l'empilement — le placement %",
+      "L'empilement — le placement — l'intégration",
+      "Le placement - l’empilage - l'intégration",
+      "L'empilage — le placement — l'intégration"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "Le placement - l'empilage - l'intégration"
+  },
+  {
+    "id": "fdf6713a-8eb1-4e53-b55d-546dbeb6f114",
+    "question": "Dans le cadre d'un contrat investi en unités de compte, l'option dynamisation progressive du capital :",
+    "propositions": [
+      "Permet de créer un couloir de performance",
+      "Permet d'arbitrer une position si le seuil de moins-value prédéfini est atteint",
+      "Permet de maintenir une allocation constante d'actifs",
+      "Permet de lisser le risque encouru"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Permet de lisser le risque encouru"
+  },
+  {
+    "id": "90dc37cf-5a65-4d02-83f3-a48ac224f422",
+    "question": "L'Autorité de tutelle en charge d'agréer les entreprises d'assurance est :",
+    "propositions": [
+      "L'Autorité de contrôle prudentiel et de résolution (ACPR)",
+      "L’Orias *%",
+      "L'Autorité des marchés financiers (AMF)",
+      "L'Autorité de Contrôle des Assurances et des Mutuelles (ACAM)"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L5",
+    "explication": "L'Autorité de contrôle prudentiel et de résolution (ACPR)"
+  },
+  {
+    "id": "10047243-b134-40da-951d-3214fcd0c4fb",
+    "question": "Dans le cadre d’une assurance-vie en cas de vie, la personne qui souscrit le contrat est nommé :",
+    "propositions": [
+      "Souscripteur",
+      "Assuré X",
+      "Assureur",
+      "Bénéficiaire"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L1",
+    "explication": "Souscripteur"
+  },
+  {
+    "id": "f7a8bd93-4349-427e-a335-dc95c07f62d2",
+    "question": "Le support papier dit IPID, détaillant l'ensemble des informations communiquées par un professionnel en assurance :",
+    "propositions": [
+      "A été introduit par le règlement PRIIPS",
+      "Concerne les produits d'assurance non-vie",
+      "Doit être fourni après la souscription",
+      "Est un document normalisé et détaillé"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L5",
+    "explication": "Concerne les produits d'assurance non-vie"
+  },
+  {
+    "id": "c345af18-1cdb-4e49-95b2-8e6724190177",
+    "question": "Comment fonctionne un contrat de rente viagère ?",
+    "propositions": [
+      "L'assuré effectue des versements réguliers pour recevoir une rente après un délai",
+      "En échange d'un versement unique, l'assureur verse une rente à l'assuré jusqu'à son décès",
+      "L'assuré reçoit une rente tant qu'il en fait la demande, indépendamment de son décès.",
+      "Les arrérages de rente se poursuivent pour les héritiers après le décès de l'assuré."
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L1",
+    "explication": "En échange d'un versement unique, l'assureur verse une rente à l'assuré jusqu'à son décès"
+  },
+  {
+    "id": "f37aedb1-e72f-44c1-bbfc-b60015f8aa68",
+    "question": "Les mandataires d'assurance peuvent :",
+    "propositions": [
+      "Être des personnes physiques ou morales sous conditions",
+      "Ne pas être mandatés par une entreprise d'assurance",
+      "Être des salariés",
+      "Cumuler ce statut avec celui d'agent général d'assurance"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L4",
+    "explication": "Être des personnes physiques ou morales sous conditions"
+  },
+  {
+    "id": "bc0d22cb-598a-4ad0-8ae6-9820cba3530c",
+    "question": "Dans le cadre réglementaire relatif à la LCB/FT :",
+    "propositions": [
+      "Le paiement en espèces d’un particulier à un professionnel est autorisé jusqu'à 3 000€",
+      "Le registre central des comptes bancaires et des biens immobiliers est supprimé par la 5ème Directive anti blanchiment",
+      "Les prestataires du secteur des jeux d'argent sont assujetties à la LCB/FT",
+      "Le seuil de paiement en espèces pour les personnes négociant des biens est de 15 000€"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "Les prestataires du secteur des jeux d'argent sont assujetties à la LCB/FT"
+  },
+  {
+    "id": "0c2523f9-dc53-4e68-80a2-8604e8a49d32",
+    "question": "Lors de la souscription d’un contrat d'assurance décès, les formalités d'acceptation et les examens médicaux requis dépendent :",
+    "propositions": [
+      "De l'âge de l'assuré et du montant des capitaux assurés",
+      "D'un calcul concernant la probabilité de décès de l'assuré",
+      "De la situation patrimoniale de l'assuré",
+      "D'une table de mortalité et d'un taux d'actualisation"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L1",
+    "explication": "De l'âge de l'assuré et du montant des capitaux assurés"
+  },
+  {
+    "id": "6307fe18-8cdd-4e12-9a4e-3793ccbbb7ee",
+    "question": "Afin de maintenir sa capacité professionnelle, un intermédiaire en assurance doit :",
+    "propositions": [
+      "Suivre une formation habilitante de 150 h par an",
+      "Suivre une formation habilitante de 15 h par an %",
+      "Suivre une formation continue de 150h tous les 3ans",
+      "Suivre une formation continue de 15h par an"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L5",
+    "explication": "Suivre une formation continue de 15h par an"
+  },
+  {
+    "id": "345b5afb-10d0-489c-b134-1f6b8e8941c9",
+    "question": "Les frais d'un contrat d'assurance vie, pouvant être calculés en fonction des sommes investies ou de l'épargne accumulée, sont :",
+    "propositions": [
+      "Les frais de souscription, les frais de gestion, les frais d'arbitrage et les frais de sortie anticipée",
+      "Les frais de suivi du contrat",
+      "Les frais de sortie anticipée uniquement",
+      "Les frais d'archivage du contrat"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Les frais de souscription, les frais de gestion, les frais d'arbitrage et les frais de sortie anticipée"
+  },
+  {
+    "id": "edec5fa6-cda3-4862-bade-ba6c34da8b19",
+    "question": "Lorsqu'une entreprise souscrit une assurance décès sur la tête de son dirigeant (assurance «homme clé»). Cette entreprise est :",
+    "propositions": [
+      "Le souscripteur uniquement",
+      "A la fois le souscripteur et le bénéficiaire",
+      "A la fois l'assuré et le souscripteur",
+      "A la fois l'assuré et le bénéficiaire"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L3",
+    "explication": "À la fois le souscripteur et le bénéficiaire"
+  },
+  {
+    "id": "f2e97085-83e9-4685-8aa1-a8a6fcfc5f55",
+    "question": "Le blanchiment est qualifié d'aggravé lorsqu'il est :",
+    "propositions": [
+      "Réalisé par plusieurs personnes",
+      "Commis en utilisant les facilités que procure l'exercice d'une activité professionnelle",
+      "Commis en connaissance de cause X",
+      "Réalisé uniquement par des dirigeants de sociétés"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "Commis en utilisant les facilités que procure l'exercice d'une activité professionnelle"
+  },
+  {
+    "id": "a751f483-524f-4989-b7ae-6c6f7b7432ff",
+    "question": "En matière de surveillance et de gouvernance, les intermédiaires qui conçoivent des produits d'assurance ont l'obligation :",
+    "propositions": [
+      "D'attribuer un numéro d'immatriculation à chaque produit pour faciliter leur surveillance par l'ACPR",
+      "D'envoyer pour validation leur marché cible à l’'ACPR",
+      "De déclarer chaque produit conçu à l'ACPR",
+      "D'élaborer un processus de validation de chaque produit avant leur commercialisation"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L5",
+    "explication": "D'élaborer un processus de validation de chaque produit avant leur commercialisation"
   }
 ]
