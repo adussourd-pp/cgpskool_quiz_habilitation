@@ -3030,5 +3030,4046 @@
     "date": "2026-04-09",
     "reference": "M1L5",
     "explication": "D'élaborer un processus de validation de chaque produit avant leur commercialisation"
+  },
+  {
+    "id": "46ffdc81-fb11-4178-8e33-0c98665b68c1",
+    "question": "Lors de la souscription d’un contrat d'assurance décès, les formalités d'acceptation et les examens médicaux requis dépendent :",
+    "propositions": [
+      "De l'âge de l'assuré et du montant des capitaux assurés",
+      "D'un calcul concernant la probabilité de décès de l'assuré",
+      "De la situation patrimoniale de l'assuré",
+      "D'une table de mortalité et d'un taux d'actualisation"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L1",
+    "explication": "De l'âge de l'assuré et du montant des capitaux assurés"
+  },
+  {
+    "id": "48339569-13ec-4ed7-9916-e637e16e8327",
+    "question": "Afin de maintenir sa capacité professionnelle, un intermédiaire en assurance doit :",
+    "propositions": [
+      "Suivre une formation habilitante de 150 h par an",
+      "Suivre une formation habilitante de 15 h par an %",
+      "Suivre une formation continue de 150h tous les 3ans",
+      "Suivre une formation continue de 15h par an"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L5",
+    "explication": "Suivre une formation continue de 15h par an"
+  },
+  {
+    "id": "b3fb2c79-7254-4ad2-90a5-e9e0af19747a",
+    "question": "Les frais d'un contrat d'assurance vie, pouvant être calculés en fonction des sommes investies ou de l'épargne accumulée, sont :",
+    "propositions": [
+      "Les frais de souscription, les frais de gestion, les frais d'arbitrage et les frais de sortie anticipée",
+      "Les frais de suivi du contrat",
+      "Les frais de sortie anticipée uniquement",
+      "Les frais d'archivage du contrat"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Les frais de souscription, les frais de gestion, les frais d'arbitrage et les frais de sortie anticipée"
+  },
+  {
+    "id": "e87d575a-502a-48f5-ab7c-98aeb57ff484",
+    "question": "Lorsqu'une entreprise souscrit une assurance décès sur la tête de son dirigeant (assurance «homme clé»). Cette entreprise est :",
+    "propositions": [
+      "Le souscripteur uniquement",
+      "A la fois le souscripteur et le bénéficiaire",
+      "A la fois l'assuré et le souscripteur",
+      "A la fois l'assuré et le bénéficiaire"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L3",
+    "explication": "À la fois le souscripteur et le bénéficiaire"
+  },
+  {
+    "id": "5f4f3f76-1062-4d27-9ba0-be8b8317990c",
+    "question": "Le blanchiment est qualifié d'aggravé lorsqu'il est :",
+    "propositions": [
+      "Réalisé par plusieurs personnes",
+      "Commis en utilisant les facilités que procure l'exercice d'une activité professionnelle",
+      "Commis en connaissance de cause X",
+      "Réalisé uniquement par des dirigeants de sociétés"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "Commis en utilisant les facilités que procure l'exercice d'une activité professionnelle"
+  },
+  {
+    "id": "35e635fd-3f0d-40eb-a063-da4b858aa8e2",
+    "question": "En matière de surveillance et de gouvernance, les intermédiaires qui conçoivent des produits d'assurance ont l'obligation :",
+    "propositions": [
+      "D'attribuer un numéro d'immatriculation à chaque produit pour faciliter leur surveillance par l'ACPR",
+      "D'envoyer pour validation leur marché cible à l’'ACPR",
+      "De déclarer chaque produit conçu à l'ACPR",
+      "D'élaborer un processus de validation de chaque produit avant leur commercialisation"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L5",
+    "explication": "D'élaborer un processus de validation de chaque produit avant leur commercialisation"
+  },
+  {
+    "id": "810c11da-7f30-4ddf-ad47-2764c1c117b2",
+    "question": "Lorsqu'un particulier souscrit un contrat d'assurance, il s'engage à payer une cotisation. Celle-ci correspond :",
+    "propositions": [
+      "A la contribution que verse l'assureur à l'assuré en échange d'une garantie d'indemnisation",
+      "Au coût du risque, aux frais de fonctionnement de l'assureur et aux taxes éventuelles",
+      "Au versement complémentaire qui intervient après la réalisation d'un sinistre",
+      "A la garantie qui est accordée de se voir indemniser en cas de réalisation du risque %"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L3",
+    "explication": "Au coût du risque, aux frais de fonctionnement de l'assureur et aux taxes éventuelles"
+  },
+  {
+    "id": "788135a2-960c-4ac7-880f-cb812cd12999",
+    "question": "Dans le cadre d'une vigilance renforcée, le professionnel doit conserver les documents sur une durée de:",
+    "propositions": [
+      "2 ans",
+      "10 ans",
+      "15ans X",
+      "Sans"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "5 ans"
+  },
+  {
+    "id": "13cedaae-217b-4930-989a-3e6840080125",
+    "question": "Quelle proposition caractérise une opération d'assurance ?",
+    "propositions": [
+      "Non isolée et contractuelle",
+      "Isolée et contractuelle",
+      "Aléatoire et discrétionnaire",
+      "Mutualisée et discrétionnaire"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L3",
+    "explication": "Non isolée et contractuelle"
+  },
+  {
+    "id": "19c27457-0ad6-40c6-8e42-02d469021a16",
+    "question": "La pratique de l'intermédiation en dehors du cadre fixé par la législation peut être assortie de sanctions :",
+    "propositions": [
+      "Officielles",
+      "Pénales",
+      "Administratives",
+      "Ordinaires"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L6",
+    "explication": "Pénales"
+  },
+  {
+    "id": "0e8c8365-8ecf-497d-a41d-d81dd3345a46",
+    "question": "Toute personne est considérée comme bénéficiaire effectif dès lors :",
+    "propositions": [
+      "Qu'elle détient plus de 15% du capital de la société",
+      "Qu'elle assure une vigilance constante tout au long de la relation d'affaires",
+      "Qu'elle détient plus de 25% des droits de vote de la société",
+      "Qu'elle assure une vigilance renforcée à l'entrée de la relation d’affaires"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "Qu'elle détient plus de 25% des droits de vote de la société"
+  },
+  {
+    "id": "96da1716-6030-4dd0-a6d1-af371ee3f218",
+    "question": "Dans le cadre de la LCB/FT, quelle autorité exerce le pouvoir de sanction disciplinaire ?",
+    "propositions": [
+      "La cellule spécialisée en matière de prédation économique",
+      "L'ACPR x",
+      "La DGDDI",
+      "La Commission nationale des sanctions"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "La Commission nationale des sanctions"
+  },
+  {
+    "id": "e8a0967c-67e2-400b-9c0b-524bf09103b4",
+    "question": "Quelle autorité est compétente pour apprécier les orientations à donner aux informations transmises par le Service Tracfin ?",
+    "propositions": [
+      "La cellule LCB/FT de l'ACPR",
+      "La DGDDI",
+      "La Commission nationale des sanctions",
+      "L'autorité judiciaire"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "L'autorité judiciaire"
+  },
+  {
+    "id": "03e66ee1-f4f0-4b4a-a6aa-045212e9d0ab",
+    "question": "Les agents généraux d'assurance sont :",
+    "propositions": [
+      "Obligatoirement salariés d'une entreprise d'assurance",
+      "Des mandataires d'assurance",
+      "Uniquement des personnes physiques mandatées par une entreprise d'assurance",
+      "Exclusivement rattachés à une ou plusieurs entreprises d'assurance"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L4",
+    "explication": "Exclusivement rattachés à une ou plusieurs entreprises d'assurance"
+  },
+  {
+    "id": "6e280871-6765-4fcb-93a3-30a5401a1ae2",
+    "question": "En France, les professionnels classifient les assurances en 2 grandes catégories :",
+    "propositions": [
+      "Les Assurances Vie et les Assurances de risques divers %",
+      "Les Assurances de biens et de responsabilité, et les Assurances de personnes",
+      "Les Assurances Dommages et les Assurances lARD",
+      "Les Assurances de biens et les Assurances de dommages corporels"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L1",
+    "explication": "Les Assurances de biens et de responsabilité, et les Assurances de personnes"
+  },
+  {
+    "id": "f50cb766-64c4-49b7-96a8-e7ac97869d68",
+    "question": "Pour une obligation, une émission au pair signifie que :",
+    "propositions": [
+      "Le prix d'émission de l'obligation est égal à 100% de la valeur nominale",
+      "La valeur de l'obligation est négative",
+      "Aucun intérêt n'est versé au cours de la durée de vie de l'obligation",
+      "L'acquisition de l'obligation s'effectue sur le marché secondaire"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Le prix d'émission de l'obligation est égal à"
+  },
+  {
+    "id": "74b56aea-0314-492c-adcf-deab55204bb1",
+    "question": "100% de la valeur nominale En cas de dénouement par décès d'un contrat d'assurance-vie alimenté après les 70 ans de l'assuré, l'abattement de 30 500 € :",
+    "propositions": [
+      "Est applicable par contrat",
+      "Est partagé entre tous les bénéficiaires qui ne sont pas exonérés de droits de succession",
+      "Est partagé uniquement entre les enfants de l'assuré",
+      "Est partagé entre tous les bénéficiaires exonérés de droitsde X succession"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Est partagé entre tous les bénéficiaires qui ne sont pas exonérés de droits de succession"
+  },
+  {
+    "id": "752b1ea6-bc56-49e9-8c8d-92f556ea9a56",
+    "question": "L'immobilier de jouissance peut se définir comme :",
+    "propositions": [
+      "la résidence de tourisme l'immobilier détenu par un usufruitier",
+      "l'immobilier détenu dans le patrimoine professionnel la résidence principale et le cas échéant la résidence secondaire"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L1",
+    "explication": "la résidence principale et le cas échéant la résidence secondaire"
+  },
+  {
+    "id": "2f2068ae-c76c-4224-a722-cbf60e6cb99a",
+    "question": "En cas de rachat sur un contrat générant une moins-value :",
+    "propositions": [
+      "Il n'y a pas d'imposition",
+      "Les pertes sont imputables sur le revenu global",
+      "Il y a une imposition minimum d’un montant de 50 €",
+      "Il y a une imposition forfaitaire de 7,5%"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Il n'y a pas d'imposition"
+  },
+  {
+    "id": "980e6c99-3f2a-4117-9167-653395124216",
+    "question": "Lequel des actes suivants est considéré comme un acte de disposition ?",
+    "propositions": [
+      "Encaisser des loyers %",
+      "Souscrire une assurance habitation",
+      "Régler une dette",
+      "Conclure un emprunt"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L1",
+    "explication": "Conclure un emprunt"
+  },
+  {
+    "id": "f08e7602-ce3b-4153-a0d8-899b94d221ff",
+    "question": "Dans le cadre d'un contrat d'assurance-vie, depuis la Loi TEPA, une exonération des droits de succession est applicable en faveur :",
+    "propositions": [
+      "Des ascendants",
+      "Ces 3 catégories de bénéficiaires",
+      "Du frère ou de la sœur du défunt âgé de moins de 50 ans",
+      "Du conjoint survivant"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Du conjoint survivant"
+  },
+  {
+    "id": "fdcab264-c08e-4d42-9d3e-b1f69ad3aef7",
+    "question": "Dans le cadre d’un contrat d'assurance vie dédié à la protection des personnes handicapées :",
+    "propositions": [
+      "Le contrat rente-survie ouvre droit à une déduction de base % imposable",
+      "Le contrat rente-survie ne procure pas d'avantage fiscal",
+      "Le contrat rente-survie ouvre droit à un crédit d'impôt",
+      "Le contrat rente-survie ouvre droit à une réduction d'impôt"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Le contrat rente-survie ouvre droit à une réduction d'impôt"
+  },
+  {
+    "id": "37602b97-ece4-49cf-b058-a1bed7ff1f11",
+    "question": "Dans quel cas les produits d'un contrat d'assurance-vie sont-ils exonérés d'impôt sur le revenu, quelle que soit la durée du contrat ?",
+    "propositions": [
+      "Lorsque le contrat dépasse une durée de 8 ans X",
+      "Lorsqu'il est dénoué à la suite d'une mise à la retraite anticipée du souscripteur ou de son conjoint/partenaire de PACS",
+      "Lorsque le contrat est dénoué en cas de décès d'un bénéficiaire désigné",
+      "Lorsqu'aucun rachat n’a été effectué pendant les 5 premières années du contrat"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Lorsqu'il est dénoué à la suite d’une mise à la retraite anticipée du souscripteur ou de son conjoint/partenaire de PACS"
+  },
+  {
+    "id": "0cefad88-5a14-438a-9334-0cd9d829bb06",
+    "question": "Lors du dénouement d'un contrat de capitalisation avec une sortie en capital, le montant de l'impôt dépend :",
+    "propositions": [
+      "De la durée de détention du contrat",
+      "De l'âge du souscripteur au moment de l'ouverture du contrat",
+      "De l'âge du souscripteur au moment de la clôture du contrat",
+      "De l'âge des bénéficiaires"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L5",
+    "explication": "De la durée de détention du contrat"
+  },
+  {
+    "id": "85b8fa3b-61c2-4e4b-bad6-efd1714e35a7",
+    "question": "Une personne redevable de l’IFI a dans son patrimoine un contrat d'assurance vie investi en unités de compte, dont une partie est constituée d'actifs immobiliers. Quelle valeur doit-elle déclarer ?",
+    "propositions": [
+      "Les plus-values réalisées jusqu'au 1°\" janvier de l'année *X d'imposition",
+      "Les plus-values réalisées jusqu'au jour de la déclaration d’IFI",
+      "La valeur totale de rachat au jour de la déclaration d’IFI",
+      "La valeur de rachat au 1“ janvier représentative de la part en unités de compte composés d'actifs immobiliers"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "La valeur de rachat au 1\" janvier représentative de la part en unités de compte composés d'actifs immobiliers"
+  },
+  {
+    "id": "9d8a1bbb-ac7e-4919-91d6-6f73360ffe67",
+    "question": "Dans le cadre de la souscription du contrat de capitalisation, celui-ci entre dans le champ d'application de la réglementation :",
+    "propositions": [
+      "Du Code Monétaire et Financier",
+      "Du Code de Commerce",
+      "Du Code des Assurances",
+      "Du Code Civil"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L5",
+    "explication": "Du Code des Assurances"
+  },
+  {
+    "id": "aef5fc32-ac01-4ddb-b1c2-ccbf497dcbf8",
+    "question": "Pour les versements effectués à partir du 26/09/2017 sur un contrat d'assurance-vie de plus de 8 ans, en cas d'option pour le PFU, les produits des versements inférieurs à 150 000€ sont imposés au taux de :",
+    "propositions": [
+      "7,5%",
+      "Exonérés X",
+      "30%",
+      "12,8%"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "7,5%"
+  },
+  {
+    "id": "60bbd1d8-61f1-4116-a033-156fd97634d6",
+    "question": "Lorsqu'un expatrié réalisé un rachat partiel sur son contrat d'assurance- vie de plus de 8 ans, les produits afférents au rachat sont imposés :",
+    "propositions": [
+      "Avec un prélèvement forfaitaire de 7,5% après abattement de 4 600 ou 9200 €",
+      "Avec un prélèvement forfaitaire de 15%",
+      "Avec un prélèvement forfaitaire de 15% après abattement de 4 600 ou 9200 €",
+      "Avec un prélèvement forfaitaire de 7,5%"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Avec un prélèvement forfaitaire de 7,5%"
+  },
+  {
+    "id": "4b29a8c2-eb1d-4c49-aa5d-02d1ef135299",
+    "question": "Dans le cadre d'un contrat d'assurance-vie, les prélèvements sociaux sont prélevés :",
+    "propositions": [
+      "Lors du décès de l'assuré uniquement",
+      "Par l'administration fiscale, lors du paiement de l'impôt sur le revenu",
+      "Par l'établissement auprès duquel le contrat est souscrit chaque",
+      "31 décembre",
+      "Par l'établissement auprès duquel le contrat est souscrit au moment des rachats ou, pour le compartiment euro, chaque 31 décembre"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Par l'établissement auprès duquel le contrat est souscrit au moment des rachats ou, pour le compartiment euro, chaque"
+  },
+  {
+    "id": "27a81ba4-67b1-44d1-97a5-a93ddb74c11d",
+    "question": "31 décembre Concernant les contrats multisupports, les prélèvements sociaux sont dus :",
+    "propositions": [
+      "Lors des rachats, à l'exception des produits générés par le compartiment unités de compte",
+      "Au 31 décembre qu'importe le compartiment",
+      "Lors des rachats, qu'il y ait un fonds euro ou non sur le contrat",
+      "Lors des rachats, à l'exception des produits générés par le compartiment euro"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Lors des rachats, à l'exception des produits générés par le compartiment euro"
+  },
+  {
+    "id": "97abac33-fbb7-4599-ae05-bd385d8b1303",
+    "question": "Lors d'une sortie en rente viagère, les produits d'un contrat de capitalisation acquis sont totalement exonérés :",
+    "propositions": [
+      "À condition que les produits aient atteint un certain plafond",
+      "Quelle que soit la durée du contrat",
+      "Seulement si le contrat a plus de 8 ans X",
+      "À condition que le contrat ait atteint un certain plafond"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L5",
+    "explication": "Quelle que soit la durée du contrat"
+  },
+  {
+    "id": "2d82440c-8a19-480c-9681-2cdb7e033969",
+    "question": "En cas de décès du souscripteur d'un contrat de capitalisation, celui-ci :",
+    "propositions": [
+      "Est clôturé, puis transmis à ses héritiers",
+      "Est transmis en fonction de la clause bénéficiaire",
+      "Est clôturé uniquement si le contrat a plus de 8 ans",
+      "Est transmis à ses héritiers, sans être clôturé"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L5",
+    "explication": "Est transmis à ses héritiers, sans être clôturé"
+  },
+  {
+    "id": "d1177fa8-936f-4caa-a1fc-c2d3534fd5b5",
+    "question": "Dans le cadre d'un rachat partiel sur un contrat d'assurance-vie de plus de 8 ans :",
+    "propositions": [
+      "Un abattement de 9 200 € s'applique par personne",
+      "Aucun abattement n’est applicable",
+      "Un abattement de 30 500 € s'applique",
+      "Un abattement de 4 600 € s'applique par personne"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Un abattement de 4 600 € s'applique par personne"
+  },
+  {
+    "id": "b93cca2a-6a8a-40df-b28a-9442c7603cf1",
+    "question": "Dans le cadre du livret jeune :",
+    "propositions": [
+      "Il est possible de le transférer dans un autre établissement de crédit",
+      "L'épargne est bloquée jusqu'à la majorité",
+      "Le titulaire doit avoir entre 12 et 25 ans",
+      "Les intérêts générés sont soumis aux prélèvements sociaux"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L10",
+    "explication": "Le titulaire doit avoir entre 12 et 25 ans"
+  },
+  {
+    "id": "ee23ce69-2b59-4db5-86ac-927c0a536691",
+    "question": "Dans le cadre d'un contrat de capitalisation, lors d’un rachat partiel, le montant des produits constatés :",
+    "propositions": [
+      "Doit être déclaré sur l’imprimé fiscal des revenus n°2042",
+      "Doit être déclaré sur le formulaire des valeurs mobilières n°2066",
+      "Ne doit pas être déclaré",
+      "Doit être déclaré sur le document spécifique « fiscalité des contrats d'assurance-vie et de capitalisation »"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L9",
+    "explication": "Doit être déclaré sur l'imprimé fiscal des revenus n°2042"
+  },
+  {
+    "id": "87ae2b63-b7d3-42e5-9bf7-55071c3c4b8b",
+    "question": "Dans le cadre d’une plus-value de cession d'obligations, quelle fiscalité est applicable pour des titres acquis postérieurement au 1er janvier 2018 ?",
+    "propositions": [
+      "Elles sont soumises au prélèvement forfaitaire unique de 21%",
+      "Elles sont imposables au prélèvement forfaitaire unique de 30% ou option pour le barème progressif de l'IR sans abattement pour durée de détention",
+      "Elles sont imposables au prélèvement forfaitaire unique de 30% ou option pour le barème progressif de l'IR avec abattement pour durée de détention",
+      "Elles sont soumises au prélèvement forfaitaire unique de 24%"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L7",
+    "explication": "Elles sont imposables au prélèvement forfaitaire unique de 30% ou option pour le barème progressif de l'IR sans abattement pour durée de détention"
+  },
+  {
+    "id": "cf4f58cb-9318-4fc9-8298-867e16d485c6",
+    "question": "Quel est le principe applicable au contrat Madelin en phase de rente en cas de décès du bénéficiaire ?",
+    "propositions": [
+      "Le versement de la rente est arrêté, sauf en cas de réversion au profit d'une tierce personne",
+      "Le versement de la rente continue au profit du conjoint survivant %",
+      "Le versement de la rente est systématiquement prolongé pour les héritiers légaux",
+      "Le versement de la rente est maintenu pour une période de 5 ans maximum après le décès"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L8",
+    "explication": "Le versement de la rente est arrêté, sauf en cas de réversion au profit d'une tierce personne"
+  },
+  {
+    "id": "19e69e08-fde3-4413-8b7f-ebf113d61a59",
+    "question": "Que signifie le sigle FCPI ?",
+    "propositions": [
+      "Formule Commune de Placement dans l'innovation",
+      "Fonds Communs de Placement dans l'Immobilier",
+      "Fonds Communs de Placement dans l'innovation",
+      "Formule Commune de Placement dans l'Immobilier"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L7",
+    "explication": "Fonds Communs de Placement dans l'innovation"
+  },
+  {
+    "id": "871d00bf-e7bc-4393-9a06-99a32d3622e8",
+    "question": "Dans le cadre du PER, les versements obligatoires alimentent :",
+    "propositions": [
+      "Le PER différentiel",
+      "Le PER catégoriel",
+      "Le PER dépendance",
+      "Le PER individuel"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Le PER catégoriel"
+  },
+  {
+    "id": "be4165cd-6bd8-41cb-9281-b0250a733c1c",
+    "question": "Qu'appelle-t-on gestion collective d'un portefeuille ?",
+    "propositions": [
+      "L'acquisition de parts d'OPCVM",
+      "L'investisseur confie son portefeuille à plusieurs sociétés de gestion",
+      "L'investisseur confie en gestion un portefeuille diversifié",
+      "L'investisseur est conseillé par un professionnel"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L9",
+    "explication": "L'acquisition de parts d'OPCVM"
+  },
+  {
+    "id": "a716f128-8e40-42ad-b457-794d92ff53e6",
+    "question": "Lorsqu'un retrait intervient avant le 4ème anniversaire de l'ouverture du PEL :",
+    "propositions": [
+      "Son titulaire doit verser des pénalités",
+      "Le plan est nécessairement clôturé",
+      "Cela n’est pas possible : les fonds sont bloqués pendant une durée de 4 ans minimum",
+      "Le plan reste ouvert mais son titulaire ne peut plus réaliser de versement"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L10",
+    "explication": "Le plan est nécessairement clôturé"
+  },
+  {
+    "id": "fb7e94ff-425b-43f1-a6aa-2ee2a5c60784",
+    "question": "Le marché réglementé qui regroupe toutes les valeurs cotées à la Bourse de Paris se nomme :",
+    "propositions": [
+      "L'EUROLIST",
+      "Le MONEP x",
+      "L'EURONEXT GROWTH",
+      "L'EURIBOR"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L8",
+    "explication": "L'EUROLIST"
+  },
+  {
+    "id": "e17a8452-089a-45f4-9a96-4ea7e7232092",
+    "question": "Pour un compte à terme, quelle est la durée minimale de blocage des fonds ?",
+    "propositions": [
+      "lan",
+      "1 semestre",
+      "1 trimestre",
+      "1 mois"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L10",
+    "explication": "1 mois"
+  },
+  {
+    "id": "e664fc05-8bea-4da2-aa58-a72ecfcede09",
+    "question": "Le montant minimum des versements périodiques annuels sur un PEL est de :",
+    "propositions": [
+      "Il n'y a pas de montant minimum de versement à respecter annuellement",
+      "540€",
+      "225€ x",
+      "300€"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L10",
+    "explication": "540€"
+  },
+  {
+    "id": "a936825d-51a2-4522-afc3-bd4d5daae7aa",
+    "question": "Un résident fiscal français de nationalité étrangère peut souscrire un contrat d'assurance vie :",
+    "propositions": [
+      "Sur présentation d’un justificatif de résidence fiscale française",
+      "Sans aucune condition particulière",
+      "Au moyen d'une déclaration sur l'honneur",
+      "Sur justificatif de détention d'une résidence secondaire en France"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L2",
+    "explication": "Sur présentation d’un justificatif de résidence fiscale française"
+  },
+  {
+    "id": "d8324f10-32b0-4a17-9e3c-6da1927aad20",
+    "question": "La souscription d'un contrat d'assurance-vie en fonds euros par un mineur n'ayant que l’un de ses parents est :",
+    "propositions": [
+      "Possible sur accord du parent",
+      "Impossible",
+      "Possible uniquement si un tuteur a été désigné par le juge",
+      "Possible uniquement si le mineur a moins de 12 ans"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L2",
+    "explication": "Possible sur accord du parent"
+  },
+  {
+    "id": "cad4e461-6686-4798-bcb9-4a72aee7b966",
+    "question": "Le pouvoir de vendre un actif est :",
+    "propositions": [
+      "Un acte authentique",
+      "Un acte de disposition",
+      "Un acte d'administration",
+      "Un acte de conservation"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L1",
+    "explication": "Un acte de disposition"
+  },
+  {
+    "id": "d4ec972a-7a45-4b9a-8456-e9152f8a5a1f",
+    "question": "Dans un contrat d'assurance vie, les frais d'arbitrage libre :",
+    "propositions": [
+      "Sont toujours gratuits",
+      "Sont plafonnés",
+      "Sont proportionnels aux sommes transférées sur d’autres supports",
+      "Sont fixes"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Sont proportionnels aux sommes transférées sur d’autres supports"
+  },
+  {
+    "id": "c8731987-5c12-4e22-bcdc-efc6eeedb02f",
+    "question": "Dans le cadre de la dévolution successorale, la représentation est :",
+    "propositions": [
+      "Un mécanisme qui permet de calculer le montant de la réserve héréditaire",
+      "Un mécanisme qui permet d'augmenter la quotité disponible pour un seul héritier",
+      "Un mécanisme qui permet à certaines personnes d’hériter en lieu et place d'un parent prédécédé",
+      "Un mécanisme qui permet de répartir à parts égales la succession entre la branche maternelle et paternelle"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Un mécanisme qui permet à certaines personnes d’hériter"
+  },
+  {
+    "id": "3d75c2fb-a980-40e9-9ced-2f051fbddaf8",
+    "question": "en lieu et place d'un parent prédécédé Dans le cadre de la rémunération des contrats en euros :",
+    "propositions": [
+      "Les obligations d'Etat sont des produits risqués",
+      "Leur rémunération ne cesse de croître d'années en années X",
+      "La participation aux bénéfices réalisés par l'assureur n’est pas définitivement acquise",
+      "Les intérêts sont calculés selon un taux d'intérêt minimum plafonné"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Les intérêts sont calculés selon un taux d'intérêt minimum plafonné"
+  },
+  {
+    "id": "e98f18c6-c0f2-42d5-a6be-94c6a4862daf",
+    "question": "Dans le cadre du régime de retraite de base des salariés, l'assiette servant de référence pour le calcul de la pension annuelle est :",
+    "propositions": [
+      "le salaire annuel moyen des 25 dernières années X le salaire annuel moyen de la dernière année",
+      "le salaire annuel moyen des 25 meilleures années le salaire annuel moyen des 5 dernières années"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L4",
+    "explication": "le salaire annuel moyen des 25 meilleures années"
+  },
+  {
+    "id": "9dee8fc0-d60d-4af7-8cc9-6c2470ee9faf",
+    "question": "Le taux minimum garanti des contrats en Euros est :",
+    "propositions": [
+      "Inférieur ou égal à taux d'intérêt technique + participation aux bénéfices",
+      "Egal à taux d'intérêt technique + participation aux bénéfices %",
+      "Supérieur ou égal au taux d'intérêt technique",
+      "Supérieur ou égal à taux d'intérêt technique + participation aux bénéfices"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Supérieur ou égal à taux d'intérêt technique + participation aux bénéfices"
+  },
+  {
+    "id": "e704eaac-62db-42c8-8412-0fd839630f4a",
+    "question": "Dans le cadre de la dévolution légale, qu'est-ce qu'un ordre ?",
+    "propositions": [
+      "Le mécanisme qui permet à certains héritiers de venir à une successionen  X lieu et place d’un parent prédécédé",
+      "La détermination des membres de la famille ayant vocation à recueillir la succession",
+      "Un mécanisme qui permet d'augmenter la quotité disponible d’un des héritiers",
+      "La répartition à parts égales de la succession entre la branche maternelle et paternelle"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "La détermination des membres de la famille ayant vocation"
+  },
+  {
+    "id": "c7b28cc8-878f-4874-88e8-c8ee002977b4",
+    "question": "à recueillir la succession",
+    "propositions": [
+      "Dans le cadre d'un contrat d'assurance-vie, le caractère de primes manifestement exagérées s'apprécie au moment : (copie)",
+      "Du versement des primes par l'assuré",
+      "Du décès de l'assuré",
+      "De l'ouverture du contrat par l'assuré",
+      "De l'ouverture de la succession"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Du versement des primes par l'assuré"
+  },
+  {
+    "id": "a7eed0cd-f0cb-4f87-8280-c307ed373de7",
+    "question": "Lorsqu'un défunt laisse un conjoint survivant et des enfants communs, le conjoint survivant peut :",
+    "propositions": [
+      "Choisir de recevoir la totalité de la succession en usufruit",
+      "Choisir de recevoir la totalité de la succession en pleine propriété",
+      "Choisir de recevoir les % de la succession en nue-propriété %",
+      "Choisir de recevoir les % de la succession en nue-propriété"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Choisir de recevoir la totalité de la succession en usufruit"
+  },
+  {
+    "id": "12980b11-bc70-489e-ba7d-2570354ab3be",
+    "question": "Au niveau du marché financier, le marché primaire est celui :",
+    "propositions": [
+      "Des émissions de titres",
+      "Des échanges de valeurs mobilières déjà émises",
+      "Des liquidations de titres",
+      "Des créations detitres X"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L6",
+    "explication": "Des émissions de titres"
+  },
+  {
+    "id": "389c3fba-c926-4f0d-903c-4c339e136a79",
+    "question": "En cas de décès du souscripteur d'un contrat de capitalisation, celui-ci :",
+    "propositions": [
+      "Est transmis à ses héritiers, sans être clôturé",
+      "Est clôturé, puis transmis à ses héritiers",
+      "Est clôturé uniquement si le contrat a plus de 8 ans",
+      "Est transmis en fonction de la clause bénéficiaire"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L5",
+    "explication": "Est transmis à ses héritiers, sans être clôturé"
+  },
+  {
+    "id": "99e12ba9-53f5-47db-a857-c16c5a555627",
+    "question": "Dans le cadre du régime d'imposition des dividendes versés depuis le 1° janvier 2018, en cas d'option au barème progressif de l'impôt sur le Revenu, l'investisseur :",
+    "propositions": [
+      "Bénéficie d’un abattement de 40%",
+      "Bénéficie d'une réduction d'impôt de 20%",
+      "Peut déduire de son impôt le montant perçu",
+      "Bénéficie d'un crédit d'impôt de 30% %"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L7",
+    "explication": "Bénéficie d’un abattement de 40%"
+  },
+  {
+    "id": "84684920-9dc8-4425-a067-9e2a741a8515",
+    "question": "Le PER d'entreprise collectif :",
+    "propositions": [
+      "Succède au PERP",
+      "Succède au PERCO",
+      "Succède au contrat de capitalisation",
+      "Succède au PERIN"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Succède au PERCO"
+  },
+  {
+    "id": "625eb4cd-d013-4503-a288-961bff7af8cc",
+    "question": "La rente réversible d'un contrat Madelin est :",
+    "propositions": [
+      "Versée pendant une durée minimum garantie à un bénéficiaire désigné",
+      "Versée à vie à un deuxième bénéficiaire, après le décès du premier bénéficiaire",
+      "Versée pour une durée toujours fixe de 5 ans à un deuxième bénéficiaire après le décès du premier",
+      "Transférable d'un premier bénéficiaire à un deuxième sans condition particulière"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L8",
+    "explication": "Versée à vie à un deuxième bénéficiaire, après"
+  },
+  {
+    "id": "bc338ca9-85d5-49c6-8c9a-16eb15644cd5",
+    "question": "le décès du premier bénéficiaire Le marché réglementé qui regroupe toutes les valeurs cotées à la Bourse de Paris se nomme:",
+    "propositions": [
+      "L'EURONEXT GROWTH",
+      "L'EUROLIST",
+      "Le MONEP x",
+      "L'EURIBOR"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L8",
+    "explication": "L'EUROLIST"
+  },
+  {
+    "id": "3a7874ef-805a-4746-9606-7ca73c1910cf",
+    "question": "Dans le cadre d'une diversification de portefeuille, quels types d'entreprises offrent le plus de stabilité ?",
+    "propositions": [
+      "Mid caps",
+      "Blue chips",
+      "Small caps",
+      "Large caps X"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L9",
+    "explication": "Blue chips"
+  },
+  {
+    "id": "a1eaa1a3-aa6e-4930-8a19-29a32c9fe3eb",
+    "question": "Quel formulaire doit être utilisé pour indiquer les primes versées sur un contrat d'épargne handicap afin de bénéficier de la réduction d'impôt ?",
+    "propositions": [
+      "Le montant des primes doit être indiqué sur l'imprimé 2074",
+      "Le montant des primes doit être indiqué sur l'imprimé 2044",
+      "Le montant des primes doit être indiqué sur l’imprimé 2042 RICI",
+      "Le montant des primes doit être indiqué sur l’imprimé 2047"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L9",
+    "explication": "Le montant des primes doit être indiqué sur l'imprimé 2042 RICI"
+  },
+  {
+    "id": "ad404f10-0378-4df3-ae58-e12b65a6b644",
+    "question": "Le PER (Price Earning Ratio) correspond:",
+    "propositions": [
+      "A un degré d'évaluation dit « spéculatif » des agences de notation",
+      "À l'indice de valorisation d’une société",
+      "Au bénéfice net d'une action",
+      "Au coefficient de capitalisation des bénéfices"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Au coefficient de capitalisation des bénéfices"
+  },
+  {
+    "id": "5570ac01-5623-4b16-bf41-d69cdd8b1949",
+    "question": "Lors d’un transfert de PER intervenant dans les 5 premières années qui suivent le 1° versement :",
+    "propositions": [
+      "Des pénalités fiscales sont applicables, en sus des frais de transfert",
+      "Les frais de transfert ne peuvent pas excéder 5% des droits acquis",
+      "Aucun frais n'est applicable et ce, quelle que soit la date du transfert",
+      "Les frais de transfert ne peuvent pas excéder 1% des droits acquis"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Les frais de transfert ne peuvent pas excéder"
+  },
+  {
+    "id": "a125ddf9-6540-4cc0-8a69-be4774463bae",
+    "question": "1% des droits acquis Les intérêts générés sur les livrets bancaires et super livrets :",
+    "propositions": [
+      "Sont exonérés d'impôt sur le revenu pendant les 2 premières années",
+      "Sont soumis aux prélèvements sociaux",
+      "Sont exonérés des prélèvements sociaux",
+      "Ne sont pas soumis au barème progressif de l'impôt sur le revenu %"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L10",
+    "explication": "Sont soumis aux prélèvements sociaux"
+  },
+  {
+    "id": "864bc21d-95fa-42ba-af63-54316a838cfd",
+    "question": "Que se passe t'il en cas de décès du titulaire d'un PER assurance vie pendant la phase d'épargne ?",
+    "propositions": [
+      "Les sommes épargnées sont bloquées jusqu'à ce que les bénéficiaires atteignent l'âge de la retraite",
+      "Les sommes épargnées sont reversées à un ou plusieurs bénéficiaires désignés",
+      "Les sommes épargnées sont intégrées dans la successionet %X réparties entre les héritiers légaux",
+      "Les sommes épargnées sont perdues et reviennent à l’état"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Les sommes épargnées sont reversées à un ou plusieurs bénéficiaires désignés"
+  },
+  {
+    "id": "a6f97810-d7c6-4873-b602-070912ec36e2",
+    "question": "Un contrat Madelin pouvait être souscrit par :",
+    "propositions": [
+      "Les salariés uniquement",
+      "Les travailleurs non-salariés uniquement",
+      "Les personnes de moins de 50 ans uniquement",
+      "Toutes personnes sans condition liée"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L8",
+    "explication": "Les travailleurs non-salariés uniquement"
+  },
+  {
+    "id": "e555f776-ce7f-4d72-a99b-1e5f74f6f0d4",
+    "question": "La donation au dernier vivant permet :",
+    "propositions": [
+      "De déshériter ses enfants",
+      "De donner une partie de son patrimoine à un tiers %",
+      "De protéger ses enfants",
+      "De protéger son conjoint"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "De protéger son conjoint"
+  },
+  {
+    "id": "6190244b-ced8-4961-8872-a588a89c51e0",
+    "question": "Le PER (Price Earning Ratio) correspond:",
+    "propositions": [
+      "Au coefficient de capitalisation des bénéfices",
+      "A un degré d'évaluation dit « spéculatif » des agences de notation",
+      "Au bénéfice net d'une action",
+      "A l'indice de valorisation d'une société"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Au coefficient de capitalisation des bénéfices"
+  },
+  {
+    "id": "daace220-3539-4850-914c-f3b9bb9944e7",
+    "question": "Les SICAV ont pour objet :",
+    "propositions": [
+      "L'investissement en immobilier locatif",
+      "L'investissement dans des fonds structurés européens X",
+      "La gestion de portefeuille de valeurs mobilières",
+      "De gérer des sociétés civiles patrimoniales"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L1",
+    "explication": "La gestion de portefeuille de valeurs mobilières"
+  },
+  {
+    "id": "c32b4e65-4157-4779-bf6e-ca84d3275c57",
+    "question": "Quel est l'âge légal pour bénéficier d'une retraite à taux plein en France, pour les personnes nées après 1973, sous réserve d'avoir cotisé le nombre de trimestres requis ?",
+    "propositions": [
+      "63 ans %",
+      "64 ans",
+      "60 ans",
+      "62 ans"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L4",
+    "explication": "64 ans"
+  },
+  {
+    "id": "463e880e-8174-432c-a5f2-abb65439cf6b",
+    "question": "Lorsqu'un retrait intervient avant le 4ème anniversaire de l'ouverture du PEL:",
+    "propositions": [
+      "Le plan est nécessairement clôturé",
+      "Cela n'est pas possible : les fonds sont bloqués pendant une durée de 4 ans minimum",
+      "Le plan reste ouvert mais son titulaire ne peut plus réaliser de versement",
+      "Son titulaire doit verser des pénalités"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L10",
+    "explication": "Le plan est nécessairement clôturé"
+  },
+  {
+    "id": "264ba7c0-fe35-42ec-b613-e56e5ac8d5ed",
+    "question": "Dans le cadre d’une donation, qu'est-ce que le rappel fiscal ?",
+    "propositions": [
+      "Le non-paiement des droits de donation",
+      "Les liens de parenté entre le donateur et le donataire",
+      "Le délai de 15 ans applicable pour toutes donations antérieures",
+      "Le barème de taxation pris en compte pour calculer les droits de mutation en ligne directe"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Le délai de 15 ans applicable pour toutes donations antérieures"
+  },
+  {
+    "id": "c9e20627-0b54-4701-b821-0368ee847c03",
+    "question": "Dans le cadre d'un contrat de capitalisation, lors d’un rachat partiel, le montant des produits constatés :",
+    "propositions": [
+      "Doit être déclaré sur le document spécifique « fiscalité des contrats d'assurance-vie et de capitalisation »",
+      "Ne doit pas être déclaré",
+      "Doit être déclaré sur le formulaire des valeurs mobilières n°2066",
+      "Doit être déclaré sur l’imprimé fiscal des revenus n°2042"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L9",
+    "explication": "Doit être déclaré sur l'imprimé fiscal des revenus n°2042"
+  },
+  {
+    "id": "1e4199a3-ec3a-48b2-a71a-852d9fa0ce83",
+    "question": "Le support papier dit IPID, détaillant l’ensemble des informations communiquées par un professionnel en assurance :",
+    "propositions": [
+      "Est un document normalisé et détaillé",
+      "À été introduit par le règlement PRIIPS",
+      "Doit être fourni après la souscription",
+      "Concerne les produits d'assurance non-vie"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L5",
+    "explication": "Concerne les produits d'assurance non-vie"
+  },
+  {
+    "id": "a1c0c328-11f4-4525-b57a-2d5739496e65",
+    "question": "Le taux de rendement interne mesure :",
+    "propositions": [
+      "La solidité financière d'un projet grâce au plan de financement initial",
+      "La santé financière d’une entreprise et son potentiel de x développement",
+      "La performance de certains ratios financiers issus d’un bilan",
+      "La rentabilité annualisée moyenne d'un projet financier"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L10",
+    "explication": "La rentabilité annualisée moyenne d’un projet financier"
+  },
+  {
+    "id": "d7c6300e-50b0-4dcf-973a-e1e1299522c7",
+    "question": "En entreprise, la souscription d'une garantie décès est :",
+    "propositions": [
+      "Obligatoire pour les salariés de plus de 5 ans d'ancienneté",
+      "Obligatoire pour les cadres",
+      "Obligatoire pour les salariés rémunérés à hauteur du SMIC",
+      "Facultative pour tous les salariés %"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L1",
+    "explication": "Obligatoire pour les cadres"
+  },
+  {
+    "id": "f7cc088e-edce-40ac-a15b-022335315154",
+    "question": "Dans le cadre de la connaissance du client :",
+    "propositions": [
+      "L'obligation de déclarer les bénéficiaires effectifs d'une société a été supprimée pour toute nouvelle société créée depuis le 1er août 2017",
+      "Les groupements d'intérêts économiques ayant leur siège en France sont des entités concernées par la déclaration du bénéficiaire",
+      "effectif",
+      "Les sociétés cotées ont l'obligation de déclarer leurs bénéficiaires effectifs",
+      "Le bénéficiaire effectif d’une société représente la personne x physique qui détient plus de 10% du capital de la société"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "Les groupements d'intérêts économiques ayant"
+  },
+  {
+    "id": "7cdae8e9-62eb-460e-8b47-463735f90871",
+    "question": "leur siège en France sont des entités concernées par la déclaration du bénéficiaire effectif La garantie croisée entre associés est :",
+    "propositions": [
+      "Une assurance décès",
+      "Une assurance-vie",
+      "Une assurance emprunteur",
+      "Un contrat de capitalisation",
+      "Cf.MAL4"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Une assurance décès"
+  },
+  {
+    "id": "36b65788-677f-4266-bf67-56aca5d26acf",
+    "question": "Le contenu obligatoire d’une police d'assurance non-vie doit nécessairement indiquer :",
+    "propositions": [
+      "Les conditions de cessation ou de résiliation du contrat",
+      "La durée des engagements réciproques des parties",
+      "La loi applicable au contrat lorsqu'il ne s’agit pas de la loi française",
+      "Les cas et conditions de prorogation ou de tacite reconduction"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L1",
+    "explication": "La loi applicable au contrat lorsqu'il ne s'agit pas de la loi française"
+  },
+  {
+    "id": "47c74e06-403a-49e1-931a-8f27e4e5b330",
+    "question": "Dans le cadre de la gouvernance produit, le marché cible est défini par :",
+    "propositions": [
+      "Le client final et le producteur",
+      "Le distributeur uniquement",
+      "Le producteur et le distributeur",
+      "Le producteur uniquement"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L2",
+    "explication": "Le producteur et le distributeur"
+  },
+  {
+    "id": "f5b353d3-b5db-47e4-8c3b-40467da3d1d7",
+    "question": "Une entreprise d'assurance organisée sous forme de société civile sans capital social mais avec un fonds d'établissement est :",
+    "propositions": [
+      "Une société d'assurance à actions simplifiées",
+      "Une société d'assurance mutuelle",
+      "Une société à responsabilité limitée d'assurance",
+      "Une société anonyme d'assurance"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L4",
+    "explication": "Une société d'assurance mutuelle"
+  },
+  {
+    "id": "2c715d63-0a34-4c7d-a3bf-508fad2fee22",
+    "question": "Dans le cadre d’une assurance vie, lorsque le capital de l'assuré est transformé en rente viagère après ses 70 ans :",
+    "propositions": [
+      "40% de son montant est imposable",
+      "50% de son montant est imposable",
+      "30% de son montant est imposable",
+      "20% de son montant est imposable"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L3",
+    "explication": "30% de son montant est imposable"
+  },
+  {
+    "id": "1fa02691-7b1b-459e-9488-29dc92e7c764",
+    "question": "L'assureur doit reformuler la question pour obtenir une réponse complète Dans le cadre de la fiscalité des parts d'OPCVM :",
+    "propositions": [
+      "Les revenus des OPCVM de capitalisation sont imposables dans la catégorie des traitements et salaires",
+      "Les porteurs de parts des FCP et des SICAV ne sont pas x imposables sur les revenus perçus",
+      "Les OPCVM de distribution sont fiscalement transparentes",
+      "Les SICAV et les FCP sont imposables sur les produits qu'ils encaissent"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Les OPCVM de distribution sont fiscalement transparentes"
+  },
+  {
+    "id": "0b42b0a6-c5d4-47fc-943f-1e03d136490a",
+    "question": "A l'inverse des assurances gérées en répartition, les assurances gérées en capitalisation :",
+    "propositions": [
+      "Excluent les contrats de prévoyance collective",
+      "Comportent un aspect lié à l'épargne",
+      "Sont souscrites pour une courte période",
+      "Portent sur des risques constants",
+      "Cf: M1L3"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Comportent un aspect lié à l'épargne"
+  },
+  {
+    "id": "cca00b70-b0e9-4f54-8459-086f8c4d2277",
+    "question": "Quelle est l’autre appellation des instruments financiers à terme ?",
+    "propositions": [
+      "Les titres de créance",
+      "Les organismes de placement financiers",
+      "Les produits dérivés",
+      "Les titres vifs"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Les produits dérivés"
+  },
+  {
+    "id": "8f5e743c-f22d-4f10-8d61-3de7f05d1713",
+    "question": "En cas de décès d'un salarié, le capital versé à ses ayants droit au titre d'une assurance collective :",
+    "propositions": [
+      "Est exonéré d'impôt sur le revenu",
+      "Est soumis à l'impôt sur le revenu à hauteur de 20% de son montant",
+      "Est soumis au prélèvement forfaitaire (30%)",
+      "Est soumis à l'impôt sur le revenu à hauteur de 50% de son montant"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Est exonéré d'impôt sur le revenu"
+  },
+  {
+    "id": "8b0c1575-6838-4aaf-a665-7203f572b4da",
+    "question": "Dans un contrat d'assurance emprunteur groupe, la cotisation est généralement calculée ?",
+    "propositions": [
+      "Sur le risque médical réel de l'emprunteur",
+      "Sur le capital restant dû",
+      "Sur le capital emprunté",
+      "Sur les revenus",
+      "Cf. MAL2"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Sur le capital emprunté"
+  },
+  {
+    "id": "21ccd52c-c282-49aa-8a6b-ea45ac466c51",
+    "question": "Certains héritiers ne peuvent pas être déshérités, lesquels ?",
+    "propositions": [
+      "Les enfants et à défaut le conjoint",
+      "Les parents et les enfants",
+      "Le conjoint et à défaut les enfants",
+      "Les enfants et les petits-enfants"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Les enfants et à défaut le conjoint"
+  },
+  {
+    "id": "9bb30eba-f3c8-4395-8484-7b74afeaed38",
+    "question": "Quelle proposition désigne une catégorie d'actions ?",
+    "propositions": [
+      "Les valeurs défensives",
+      "Les valeurs actuelles",
+      "Les valeurs exponentielles",
+      "Les valeurs restrictives"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L6",
+    "explication": "Les valeurs défensives"
+  },
+  {
+    "id": "11dad0ec-6d87-478d-90ed-4a90735fb0ab",
+    "question": "Lors de la souscription d’un contrat d'assurance décès, les formalités d'acceptation et les examens médicaux requis dépendent :",
+    "propositions": [
+      "D'une table de mortalité et d'un taux d'actualisation",
+      "De la situation patrimoniale de l'assuré",
+      "D'un calcul concernant la probabilité de décès de l'assuré",
+      "De l'âge de l'assuré et du montant des capitaux assurés"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L1",
+    "explication": "De l'âge de l'assuré et du montant des capitaux assurés"
+  },
+  {
+    "id": "4fd22eb5-b3c9-4bbc-9345-3f8227924c11",
+    "question": "Le PERP se caractérise par 2 périodes successives :",
+    "propositions": [
+      "Une période d'épargne et une période de rente",
+      "Un période d'épargne et une période de défiscalisation",
+      "Une période de collecte et une période de capitalisation",
+      "Une période de collecte et une période d'allocation"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L9",
+    "explication": "Une période d'épargne et une période de rente"
+  },
+  {
+    "id": "44ee76a3-05b1-4ded-918d-66fbe1d012bf",
+    "question": "Quelles sont les 3 dimensions prises en compte dans le cadre de mathématiques financières ?",
+    "propositions": [
+      "L'âge — le temps et le foyer fiscal",
+      "Le profil de l'investisseur — le temps et le taux d'intérêt",
+      "L'argent — le profil de l'investisseur et le foyer fiscal",
+      "Le temps — l'argent et le taux d'intérêt"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L10",
+    "explication": "Le temps — l'argent et le taux d'intérêt"
+  },
+  {
+    "id": "560a69eb-555f-4cc9-b50a-9690b4f3eb04",
+    "question": "Si un assuré souhaite revenir sur sa décision de transformer son contrat d'assurance vie monosupport en contrat multisupports, il dispose d'un délai :",
+    "propositions": [
+      "De 2 mois à compter de sa demande de transformation",
+      "De 15 jours à compter de sa demande de transformation -",
+      "De 3 mois à compter de sa demande de transformation",
+      "D'1 mois à compter de sa demande de transformation"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L2",
+    "explication": "D'1 mois à compter de sa demande de transformation"
+  },
+  {
+    "id": "47262995-ba03-47f1-9339-27c80edaaccc",
+    "question": "Les détenteurs d'un PEA bénéficient d'une exonération d’IR sur les plus- values sous réserve :",
+    "propositions": [
+      "De conserver leur PEA jusqu'à leur départ en retraite",
+      "De détenir le PEA depuis plus de 4 ans",
+      "De détenir le PEA depuis plus de 2 ans",
+      "De détenir le PEA depuis plus de 5 ans"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L3",
+    "explication": "De détenir le PEA depuis plus de 5 ans"
+  },
+  {
+    "id": "06a2f1a9-665b-4e53-aef9-adbafcb75e76",
+    "question": "Dans le cadre d’une assurance de responsabilité, la preuve qu'un sinistre fait partie des clauses d'exclusion doit être rapportée par :",
+    "propositions": [
+      "Le médiateur de la compagnie d'assurance",
+      "Le tiers lésé %",
+      "L'assuré",
+      "L'assureur"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L1",
+    "explication": "L'assureur"
+  },
+  {
+    "id": "29e1d4d8-058f-4291-86ae-c08c62272ce3",
+    "question": "Lorsqu'un expatrié réalise un rachat partiel sur son contrat d'assurance- vie de plus de 8 ans, les produits afférents au rachat sont imposés :",
+    "propositions": [
+      "Avec un prélèvement forfaitaire de 7,5% après abattement de X",
+      "4 600 ou 9 200 €",
+      "Avec un prélèvement forfaitaire de 7,5%",
+      "Avec un prélèvement forfaitaire de 15%",
+      "Avec un prélèvement forfaitaire de 15% après abattement de 4 600 ou 9200 €"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Avec un prélèvement forfaitaire de 7,5%"
+  },
+  {
+    "id": "6b693c24-2219-4740-b5e9-10b0c6461894",
+    "question": "En cas d'option pour le prélèvement forfaitaire unique, les produits des contrats d'assurance-vie ayant une durée courue de moins de 8 ans, correspondant à des versements effectués à compter du 27/09/2017 sont soumis :",
+    "propositions": [
+      "Au taux de 7,5% et prélèvements sociaux",
+      "Au taux de 12,8% et prélèvements sociaux",
+      "Obligatoirement au barème progressif de l'impôt sur le revenu",
+      "Au taux global de 35% %"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Au taux de 12,8% et prélèvements sociaux"
+  },
+  {
+    "id": "92d1fcdc-9e17-48d6-8613-abb8d437c8e2",
+    "question": "Dans quel cas les produits d'un contrat d'assurance-vie sont-ils exonérés d'impôt sur le revenu, quelle que soit la durée du contrat ?",
+    "propositions": [
+      "Lorsque le contrat est dénoué en cas de décès d'un bénéficiaire désigné",
+      "Lorsqu'aucun rachat n’a été effectué pendant les 5 premières années du contrat",
+      "Lorsqu'il est dénoué à la suite d'une mise à la retraite anticipée du souscripteur ou de son conjoint/partenaire de PACS",
+      "Lorsque le contrat dépasse une durée de 8 ans X"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Lorsqu'il est dénoué à la suite d’une mise à la retraite anticipée du souscripteur ou de son conjoint/partenaire de PACS"
+  },
+  {
+    "id": "7d4da821-7849-4483-9669-a67981016da9",
+    "question": "Dans le cadre d'un contrat de capitalisation, les produits perçus depuis le 1°\" janvier 2018 afférents à des primes versées à partir du 27 septembre 2017 sont assujettis à un prélèvement à la source de :",
+    "propositions": [
+      "35% lorsque le contrat a une durée inférieure à 8 ans %",
+      "15% lorsque le contrat a une durée inférieure à 8 ans",
+      "12,8% lorsque le contrat a une durée inférieure à 8 ans",
+      "21% lorsque le contrat a une durée inférieure à 8 ans"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L5",
+    "explication": "12,8% lorsque le contrat a une durée inférieure à"
+  },
+  {
+    "id": "2ef8ccf7-67fe-4fce-bb6d-17a2a1d1ebd1",
+    "question": "8ans La sortie d'un PERP peut être partiellement réalisée en capital dans la limite de :",
+    "propositions": [
+      "50% de la valeur de rachat du contrat",
+      "20% de la valeur de rachat du contrat",
+      "30% de la valeur de rachat du contrat",
+      "40% de la valeur de rachat du contrat"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L9",
+    "explication": "20% de la valeur de rachat du contrat"
+  },
+  {
+    "id": "e7f369ae-b263-4da9-a4a3-500b0246e737",
+    "question": "Le PER d'entreprise obligatoire succède :",
+    "propositions": [
+      "Aux contrats article 83",
+      "Au PERIN",
+      "Au contrat Madelin",
+      "Au PERP"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Aux contrats article 83"
+  },
+  {
+    "id": "4acabfa8-cc88-4ddd-a56d-25bbb7044b3f",
+    "question": "« pensions et retraites » La valeur actuelle d'un capital est :",
+    "propositions": [
+      "Sa valeur acquise — les intérêts produits",
+      "Sa valeur acquise + les intérêts produits",
+      "Sa valeur nominale — les intérêts produits",
+      "Sa valeur nominale + les intérêts produits %"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L10",
+    "explication": "Sa valeur nominale — les intérêts produits"
+  },
+  {
+    "id": "efacbb35-969a-4673-89a5-112bdb2525e7",
+    "question": "Le taux de rendement interne mesure :",
+    "propositions": [
+      "La solidité financière d'un projet grâce au plan de financement initial",
+      "La santé financière d’une entreprise et son potentiel de développement",
+      "La rentabilité annualisée moyenne d'un projet financier",
+      "La performance de certains ratios financiers issus d’un bilan"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L10",
+    "explication": "La rentabilité annualisée moyenne d’un projet financier"
+  },
+  {
+    "id": "dde8f979-0599-457c-a530-f17f6a14fc73",
+    "question": "En cas d'impossibilité d'identifier le bénéficiaire effectif d’une société :",
+    "propositions": [
+      "L'obligation de déclaration de soupçon disparaît",
+      "La personne représentant légalement la société est réputée bénéficiaire effectif",
+      "Tracfin procède automatiquement à l'identification",
+      "Le seuil de détention de 10 % s'applique par défaut"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "La personne représentant légalement la société est réputée bénéficiaire effectif"
+  },
+  {
+    "id": "dec37a9a-b64c-40c3-90a3-2856d9c8acc6",
+    "question": "Dans quel cas un professionnel doit-il déclarer des sommes ou opérations à Tracfin ?",
+    "propositions": [
+      "Chaque fois qu'il soupçonne la moindre infraction, quelle qu'en x soit la gravité",
+      "Lorsqu'elles proviennent d’une infraction passible d’une peine privative de liberté supérieure à un an ou participent au financement",
+      "du terrorisme",
+      "Jamais, sauf si le client est une personne politiquement exposée",
+      "Uniquement lorsqu'il existe une condamnation judiciaire préalable"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "Lorsqu'elles proviennent d'une infraction passible d’une peine privative de liberté supérieure à un an ou participent"
+  },
+  {
+    "id": "1b366493-0519-4cd9-b9a4-ab150a41be71",
+    "question": "au financement du terrorisme Dans le cadre de la LCB-FT, parmi ces différentes mesures, laquelle est applicable dans le cadre des mesures de vigilance complémentaires ?",
+    "propositions": [
+      "Définir les critères d'alertes adaptés aux risques de LCB/FT dans le dispositif d'analyse de la relation d'affaires",
+      "Exiger des pièces justificatives complémentaires",
+      "Procéder à une actualisation plus fréquente des informations",
+      "Exercer une vigilance plus poussée sur l’ensemble des contrats"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "Exiger des pièces justificatives complémentaires"
+  },
+  {
+    "id": "ce6b2a12-55fe-48dc-acb7-443bbfaae371",
+    "question": "Que se passe t'il en cas de décès du titulaire d’un PER assurance vie pendant la phase d'épargne ?",
+    "propositions": [
+      "Les sommes épargnées sont intégrées dans la succession et X réparties entre les héritiers légaux",
+      "Les sommes épargnées sont perdues et reviennent à l’état",
+      "Les sommes épargnées sont bloquées jusqu'à ce que les bénéficiaires atteignent l'âge de la retraite",
+      "Les sommes épargnées sont reversées à un ou plusieurs bénéficiaires désignés"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Les sommes épargnées sont reversées à un ou plusieurs bénéficiaires désignés"
+  },
+  {
+    "id": "d4be2a29-dff3-4605-b686-78617da41e3d",
+    "question": "Dans le cadre de la donation entre vifs :",
+    "propositions": [
+      "Le donataire est la personne qui se dépouille irrévocablement X du bien en faveur d'une autre personne",
+      "Les droits de donation sont en principe à la charge du donataire",
+      "Les droits de donation sont calculés en fonction de l’âge du donateur et du donataire",
+      "Un abattement est applicable tous les 10 ans, quel que soit le lien qui unit le donateur et le donataire"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Les droits de donation sont en principe à la"
+  },
+  {
+    "id": "574c9f46-3adb-40a0-b3c4-c5b749f7d89f",
+    "question": "charge du donataire Un investisseur peut-il acheter des actions à travers un fonds (type OPCVM) ?",
+    "propositions": [
+      "Oui, s'il a une expérience des marchés financiers supérieure à 10 ans",
+      "Oui",
+      "Non, uniquement des obligations",
+      "Non, il doit toujours les acheter en direct"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L6",
+    "explication": "Oui"
+  },
+  {
+    "id": "0f45b7cb-7e61-49b7-ba6e-5a3b8b8329cc",
+    "question": "Dans le cadre du régime d'imposition des dividendes versés depuis le 1°\" janvier 2018 :",
+    "propositions": [
+      "L'option au barème progressif de l'impôt sur le Revenu a été supprimée",
+      "Les prélèvements sociaux ne sont pas applicables",
+      "L'abattement en cas d'option au barème progressif de l'impôt: % sur le Revenu a été supprimé",
+      "Le taux forfaitaire d'Impôt sur le Revenu applicable est de 12,8%"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L7",
+    "explication": "Le taux forfaitaire d'Impôt sur le Revenu applicable est de 12,8%"
+  },
+  {
+    "id": "79008bf5-4ca2-41f2-8666-6bdd629b0a98",
+    "question": "Dans le cadre d’une clause bénéficiaire démembrée, l'abattement de 152 500€ :",
+    "propositions": [
+      "Est exclusivement applicable sur la quote-part reçue par le nu- propriétaire",
+      "Est réparti entre l'usufruitier et le nu-propriétaire",
+      "Est exclusivement applicable sur la quote-part reçue par l'usufruitier",
+      "N'est pas applicable"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L2",
+    "explication": "Est réparti entre l’usufruitier et le nu- propriétaire"
+  },
+  {
+    "id": "5b6b00cb-6e37-4845-b3f8-c7c18b3af17f",
+    "question": "Dans le cadre d'un contrat d'assurance-vie, les prélèvements sociaux sont prélevés :",
+    "propositions": [
+      "Par l'établissement auprès duquel le contrat est souscrit au moment des rachats ou, pour le compartiment euro, chaque 31",
+      "décembre",
+      "Par l'établissement auprès duquel le contrat est souscrit % chaque 31 décembre",
+      "Lors du décès de l'assuré uniquement",
+      "Par l'administration fiscale, lors du paiement de l'impôt sur le revenu"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Par l'établissement auprès duquel le contrat est souscrit au moment des rachats ou, pour le compartiment euro,"
+  },
+  {
+    "id": "5f50d5a9-7994-4e69-a417-a233357abbd8",
+    "question": "chaque 31 décembre Une personne redevable de l'IFI opte pour une sortie de son contrat d'assurance-vie en rente viagère. Quel montant doit être déclaré à cet impôt ?",
+    "propositions": [
+      "Aucune valeur n'est à déclarer",
+      "Le cumul des rentes perçues l’année N-1",
+      "La valeur de capitalisation de la rente au jour de la déclaration %",
+      "IFI",
+      "Le cumul des rentes perçues l’année N"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Aucune valeur n'est à déclarer"
+  },
+  {
+    "id": "1e77a7b9-5f25-4e7d-a66c-4f575e6ad8dc",
+    "question": "Le PER d'entreprise obligatoire succède :",
+    "propositions": [
+      "Au PERP",
+      "Aux contrats article 83",
+      "Au contrat Madelin",
+      "Au PERIN"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Aux contrats article 83"
+  },
+  {
+    "id": "b7d9ad1c-0e6b-42c9-8935-cd6292066525",
+    "question": "La souscription du PERP était réservée :",
+    "propositions": [
+      "A toute personne physique, quelle que soit sa situation professionnelle",
+      "Aux salariés du secteur privé",
+      "Aux salariés du secteur privé et aux fonctionnaires",
+      "Aux travailleurs indépendants"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L9",
+    "explication": "À toute personne physique, quelle que soit sa situation professionnelle"
+  },
+  {
+    "id": "d4525362-f20e-401c-af04-ae86729873ba",
+    "question": "Quelle est la limite maximale de dépôt pour le LDDS ?",
+    "propositions": [
+      "15 000€",
+      "22 950€ x",
+      "12 000€",
+      "25 830€"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L10",
+    "explication": "12 000€"
+  },
+  {
+    "id": "c55f4f80-82db-4a25-a4b3-c233b97af315",
+    "question": "Les porteurs de FCP sont des :",
+    "propositions": [
+      "@ Copropriétaires",
+      "Obligataires",
+      "Actionnaires",
+      "Sociétaires",
+      "Dans le cadre d’une obligation :",
+      "Le droit à intérêt est lié aux résultats de la société émettrice",
+      "Le remboursement de celle-ci s'effectue obligatoirement à X l'échéance",
+      "La valeur de celle-ci est très sensible à l’évolution des taux",
+      "Le taux d'intérêt est fixé librement par l'investisseur"
+    ],
+    "bonne_reponse": 7,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L6",
+    "explication": "La valeur de celle-ci est très sensible à l'évolution des taux"
+  },
+  {
+    "id": "fc3379cd-ace6-4092-a0b1-fbf9209d1ef3",
+    "question": "Dans le cadre du régime d'imposition des dividendes versés depuis le 1°\" janvier 2018, en cas d'option au barème progressif de l'impôt sur le Revenu, l'investisseur :",
+    "propositions": [
+      "Peut déduire de son impôt le montant perçu",
+      "Bénéficie d’une réduction d'impôt de 20%",
+      "Bénéficie d’un crédit d'impôt de 30% %",
+      "Bénéficie d'un abattement de 40%"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L7",
+    "explication": "Bénéficie d’un abattement de 40%"
+  },
+  {
+    "id": "25fec00b-e035-4f0d-838d-0cef67fdaff8",
+    "question": "Dans le cadre du PACS, en cas de prédécès de l'un des partenaires, le partenaire survivant :",
+    "propositions": [
+      "Hérite de l’usufruit du patrimoine du défunt",
+      "@ N'a pas la qualité d'héritier",
+      "Hérite de 50% du patrimoine du défunt",
+      "Hérite de la totalité du patrimoine du défunt",
+      "Lequel des actes suivants est considéré comme un acte de disposition ?",
+      "Souscrire une assurance habitation",
+      "Régler une dette",
+      "Conclure un emprunt",
+      "Encaisser des loyers"
+    ],
+    "bonne_reponse": 7,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L1",
+    "explication": "Conclure un emprunt"
+  },
+  {
+    "id": "45e11734-f1d6-43fb-a369-31fbbad19766",
+    "question": "Contrairement à l'impôt sur le revenu, peuvent être imposées ensemble à l'impôt sur la fortune immobilière :",
+    "propositions": [
+      "Les personnes mariées",
+      "Les personnes pacsées",
+      "Les personnes vivant en concubinage notoire",
+      "Les personnes non mariées sous le régime légal"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L5",
+    "explication": "Les personnes vivant en concubinage notoire"
+  },
+  {
+    "id": "6ad36300-91ab-4b42-b3cd-10ede149b1d3",
+    "question": "Un petit fils et son grand père sont parents au :",
+    "propositions": [
+      "1€\" degré",
+      "4ème degré",
+      "2ème degré",
+      "3ème degré x"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "2°\"° degré"
+  },
+  {
+    "id": "291ff61f-0f31-4f10-b2c3-858db0631e51",
+    "question": "Dans le cadre de l'épargne logement :",
+    "propositions": [
+      "Il possible de transférer ses droits à prêt d'un CEL à un membre de sa famille ne détenant pas lui-même de CEL",
+      "Il est possible de transformer son PEL en CEL",
+      "Il est possible de transformer son CEL en PEL",
+      "Le transfert d’un CEL existant dans un autre établissement est impossible"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L10",
+    "explication": "Il est possible de transformer son PEL en CEL"
+  },
+  {
+    "id": "197960ab-2b80-4338-a44e-2f19162936ba",
+    "question": "Dans le cadre des régimes complémentaires obligatoires, la retraite est calculée :",
+    "propositions": [
+      "sur la base d'un nombre de trimestres cotisés sur la base du dernier revenu",
+      "Des revenus nets annuels multiplié par un taux de liquidation (O] sur la base de points accumulés",
+      "Les bénéfices industriels et commerciaux et les bénéfices agricoles sont:",
+      "Des revenus soumis aux impôts locaux",
+      "Des revenus soumis à l'impôt sur la fortune",
+      "Des revenus soumis à l'impôt sur les sociétés des personnes X morales",
+      "Des revenus soumis à l'impôt sur le revenu des personnes physiques"
+    ],
+    "bonne_reponse": 6,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L5",
+    "explication": "Des revenus soumis à l'impôt sur le revenu des personnes physiques"
+  },
+  {
+    "id": "bd01eeb3-5d2f-4d61-b6a9-51b8164b59f8",
+    "question": "Depuis le 1er janvier 2018, les plus-values de la cession d'actions :",
+    "propositions": [
+      "Supportent un prélèvement forfaitaire unique de 7.5%",
+      "Sont exonérées de prélèvements sociaux",
+      "Supportent par principe un prélèvement forfaitaire unique",
+      "Sont soumises obligatoirement au barème progressif de l'impôt sur le Revenu"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L7",
+    "explication": "Supportent par principe un prélèvement forfaitaire unique"
+  },
+  {
+    "id": "2f843f50-d2e2-4afc-b66f-ff3822ee8860",
+    "question": "Quel est l'âge légal pour bénéficier d'une retraite à taux plein en France, pour les personnes nées après 1973, sous réserve d'avoir cotisé le nombre de trimestres requis ?",
+    "propositions": [
+      "@ 64ans",
+      "60 ans",
+      "63 ans",
+      "62 ans",
+      "Depuis le 1°\" janvier 2018, les dividendes perçus par un actionnaire sont soumis :",
+      "A un prélèvement forfaitaire libératoire de 21% (O] Au prélèvement forfaitaire unique de 31.4 % ou sur option au barème",
+      "de l’IR",
+      "A l'impôt sur le revenu au taux forfaitaire de 40% uniquement",
+      "Au barème progressif de l'impôt sur le revenu uniquement",
+      "Dans le cadre de la gestion de portefeuille :",
+      "Les obligations sont des titres de propriété représentant une fraction du capital d’une entreprise",
+      "Les fonds d'actions sont des fonds communs de placement qui représentent le moins de risque",
+      "Les obligations représentent une classe d'actifs risquée mais performante à court terme",
+      "Les fonds d'obligations présentent un risque supérieur à ceux des fonds du marché monétaire"
+    ],
+    "bonne_reponse": 13,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L9",
+    "explication": "Les fonds d'obligations présentent un risque supérieur à ceux des fonds du marché monétaire"
+  },
+  {
+    "id": "9c097ee9-3ccc-4cb9-a2c5-a0e9037434f7",
+    "question": "La contribution sociale généralisée au taux de 9.20% s'applique :",
+    "propositions": [
+      "© AlaTVA",
+      "(© Aux indemnités journalières",
+      "(© Aux allocations chômage",
+      "@ Aux revenus d'activité",
+      "Le PER (Price Earning Ratio) correspond:",
+      "A l'indice de valorisation d’une société",
+      "A un degré d'évaluation dit « spéculatif » des agences de notation",
+      "Au bénéfice net d'une action",
+      "Au coefficient de capitalisation des bénéfices"
+    ],
+    "bonne_reponse": 8,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Au coefficient de capitalisation des bénéfices"
+  },
+  {
+    "id": "a1fadf3c-c7f4-4a15-8bb2-97c56ba2f0f7",
+    "question": "Quel est le taux des prélèvements sociaux applicables aux revenus du patrimoine ?",
+    "propositions": [
+      "15,50%",
+      "18,20%",
+      "© 17,20%",
+      "13,20%",
+      "Depuis le 1er janvier 2018, les plus-values de la cession d'actions :",
+      "Sont soumises obligatoirement au barème progressif de l'impôt sur le Revenu",
+      "Supportent par principe un prélèvement forfaitaire unique",
+      "Sont exonérées de prélèvements sociaux",
+      "Supportent un prélèvement forfaitaire unique de 7.5%"
+    ],
+    "bonne_reponse": 6,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L7",
+    "explication": "Supportent par principe un prélèvement forfaitaire unique"
+  },
+  {
+    "id": "46396b20-149f-4da6-a82c-35b2bb3abeab",
+    "question": "Dans le cadre du régime d'imposition des dividendes versés depuis le 1°\" janvier 2018, en cas d'option au barème progressif de l'impôt sur le Revenu, l'investisseur :",
+    "propositions": [
+      "Bénéficie d'un abattement de 40%",
+      "Peut déduire de son impôt le montant perçu",
+      "Bénéficie d’un crédit d'impôt de 30% %",
+      "Bénéficie d’une réduction d'impôt de 20%"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L7",
+    "explication": "Bénéficie d’un abattement de 40%"
+  },
+  {
+    "id": "8c4e25f1-40eb-4dfe-ae5a-72a710e261f0",
+    "question": "La donation au dernier vivant permet :",
+    "propositions": [
+      "De protéger ses enfants",
+      "De donner une partie de son patrimoine à un tiers",
+      "De déshériter ses enfants",
+      "@ De protéger son conjoint",
+      "La contribution économique territoriale est composé de :",
+      "La contribution sur le développement durable et la taxe sur le chiffre d'affaires",
+      "La cotisation foncière des entreprises et la cotisation sur la valeur ajoutée des entreprises",
+      "La contribution de performance énergétique et la cotisation foncières économique",
+      "La cotisation des particuliers pour le développement x économique et la contribution foncière écologique"
+    ],
+    "bonne_reponse": 6,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L5",
+    "explication": "La cotisation foncière des entreprises et la cotisation sur la valeur ajoutée des entreprises"
+  },
+  {
+    "id": "4d4f981b-7f53-4145-b10a-a89f37bd17bc",
+    "question": "L'immobilier de jouissance peut se définir comme :",
+    "propositions": [
+      "l'immobilier détenu par un usufruitier l'immobilier détenu dans le patrimoine professionnel",
+      "la résidence principale et le cas échéant la résidence secondaire la résidence de tourisme"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L1",
+    "explication": "la résidence principale et le cas échéant la résidence secondaire"
+  },
+  {
+    "id": "c82473b2-b79d-440e-9637-c143ebb4c363",
+    "question": "Un Price Earning Ratio faible implique :",
+    "propositions": [
+      "Une société dont on anticipe une forte croissance de ses résultats",
+      "Une action bon marché",
+      "Une action chère",
+      "Une société qui connaît une stagnation de ses bénéfices X"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L9",
+    "explication": "Une action bon marché"
+  },
+  {
+    "id": "e41889c7-5b99-4fc0-b962-c4445e057009",
+    "question": "Un résident fiscal français de nationalité étrangère peut souscrire un contrat d'assurance vie :",
+    "propositions": [
+      "Au moyen d'une déclaration sur l'honneur",
+      "Sur présentation d’un justificatif de résidence fiscale française",
+      "Sans aucune condition particulière",
+      "Sur justificatif de détention d'une résidence secondaire en France"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L2",
+    "explication": "Sur présentation d’un justificatif de résidence fiscale française"
+  },
+  {
+    "id": "5339ef55-5972-4c5a-a6c7-0239262883d7",
+    "question": "Dans le cadre de la gestion sous mandat :",
+    "propositions": [
+      "Le souscripteur répartit lui-même son épargne entre les différents supports d'investissement",
+      "La compagnie gère le contrat d'assurance vie en fonction dun % profil d'investissement retenu par le client",
+      "La répartition entre les classes d'actifs se fait selon un schéma dépendant de l'âge du souscripteur",
+      "Le souscripteur mandate un intermédiaire pour que celui-ci réalise à sa place les arbitrages"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Le souscripteur mandate un intermédiaire pour que celui-ci réalise à sa place les arbitrages"
+  },
+  {
+    "id": "a541e239-a60c-4883-98a5-427d49232fae",
+    "question": "Dans le cadre du PER, les versements obligatoires alimentent :",
+    "propositions": [
+      "Le PER catégoriel",
+      "Le PER individuel",
+      "Le PER dépendance",
+      "Le PER différentiel"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Le PER catégoriel"
+  },
+  {
+    "id": "d1a1e76d-90e2-4362-81c8-a74e67d9ed4b",
+    "question": "Quel facteur détermine la fiscalité du PER à l'entrée et à la sortie ?",
+    "propositions": [
+      "La durée de détention du plan",
+      "Le montant total des versements effectués sur le plan",
+      "Le type de versements réalisés (versements volontaires, obligatoires, ou issus de l'épargne salariale)",
+      "La nature des supports présents sur le plan (fonds en euros ou unités de compte)"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Le type de versements réalisés (versements volontaires, obligatoires, ou issus de l'épargne salariale)"
+  },
+  {
+    "id": "55119561-fcb0-41f3-a210-528d1ca1602f",
+    "question": "Le titulaire d’un contrat Madelin doit y verser des cotisations :",
+    "propositions": [
+      "A minima chaque année",
+      "A minima chaque mois",
+      "À minima chaque trimestre",
+      "Librement, aucune obligation légale n'existe quant à la régularité des versements"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L8",
+    "explication": "À minima chaque année"
+  },
+  {
+    "id": "de29647b-b86d-4d04-8776-9a4ef306bfa2",
+    "question": "La valeur actuelle d'un capital est :",
+    "propositions": [
+      "Sa valeur acquise — les intérêts produits",
+      "Sa valeur nominale — les intérêts produits",
+      "Sa valeur acquise + les intérêts produits %",
+      "Sa valeur nominale + les intérêts produits"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L10",
+    "explication": "Sa valeur nominale — les intérêts produits"
+  },
+  {
+    "id": "8759e238-570a-410b-951c-df012409a3fa",
+    "question": "Dans le cadre de versements sur un PERP le souscripteur peut bénéficier :",
+    "propositions": [
+      "D'un abattement sur les droits de mutation à titre gratuit",
+      "D'une réduction d’IFI (O] D'une déduction sur son revenu global dans la limite d'un plafond",
+      "D'un crédit d'impôt",
+      "Concernant les contrats multisupports, les prélèvements sociaux sont dus :",
+      "Lors des rachats, à l'exception des produits générés par le compartiment euro",
+      "Lors des rachats, qu'il y ait un fonds euro ou non sur le contrat",
+      "Au 31 décembre qu'importe le compartiment",
+      "Lors des rachats, à l'exception des produits générés par le compartiment unités de compte"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Lors des rachats, à l'exception des produits générés par le compartiment euro"
+  },
+  {
+    "id": "00ed1980-cb3f-4d33-9882-ddce127dfae8",
+    "question": "Dans le cadre d’un contrat d'assurance-vie dénoué par décès, les primes versées par l'assuré après ses 70 ans :",
+    "propositions": [
+      "Sont soumis pour la fraction qui excède 10 700 € aux droits de succession",
+      "Sont totalement exonérées d'impôt",
+      "Sont soumis pour la fraction qui excède 30 500 € aux droits de succession",
+      "Sont soumis pour la fraction qui excède 152 500 € aux droits de succession"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Sont soumis pour la fraction qui excède 30 500"
+  },
+  {
+    "id": "eedf464e-5c88-44c1-92fe-9ddf83993ccb",
+    "question": "€ aux droits de succession Lors d'une sortie en rente viagère, les produits d'un contrat de capitalisation acquis sont totalement exonérés :",
+    "propositions": [
+      "Quelle que soit la durée du contrat",
+      "À condition que les produits aient atteint un certain plafond",
+      "À condition que le contrat ait atteint un certain plafond",
+      "Seulement si le contrat a plus de 8 ans X"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L5",
+    "explication": "Quelle que soit la durée du contrat"
+  },
+  {
+    "id": "a80a95c2-d977-4148-bdb3-41d1c37c4745",
+    "question": "Dans le cadre du PEA, la Loi Pacte instaure :",
+    "propositions": [
+      "La suppression de la clôture automatique du plan dans le cadre de retraits effectués entre la 5ème et la 8ème de détention",
+      "La clôture du plan à la suite d’un retrait partiel anticipé pour licenciement ou invalidité",
+      "La suppression de la possibilité d'effectuer de nouveaux x versements en cas de retrait ou de rachat partiel",
+      "La clôture du plan en cas de retrait après 8 ans de détention"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L6",
+    "explication": "La suppression de la clôture automatique du plan dans le cadre de retraits effectués entre la 5ème et la 8ème de"
+  },
+  {
+    "id": "96cbaf2d-256d-4882-a94e-3ba89c8ee5c2",
+    "question": "détention Que se passe t'il en cas de décès du titulaire d'un PER assurance vie pendant la phase d'épargne ?",
+    "propositions": [
+      "Les sommes épargnées sont bloquées jusqu'à ce que les bénéficiaires atteignent l'âge de la retraite",
+      "Les sommes épargnées sont intégrées dans la successionet %X réparties entre les héritiers légaux",
+      "Les sommes épargnées sont reversées à un ou plusieurs bénéficiaires désignés",
+      "Les sommes épargnées sont perdues et reviennent à l’état"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Les sommes épargnées sont reversées à un ou plusieurs bénéficiaires désignés"
+  },
+  {
+    "id": "b4edee6a-5057-4484-b705-a15e9643b0a2",
+    "question": "Le PER est un produit d'épargne retraite qui peut se décliner sous quelles formes ?",
+    "propositions": [
+      "Un PERP ou un contrat Madelin",
+      "Un PEA bancaire ou un PEA assurance X",
+      "Un compte-titre ou un contrat d'assurance-vie",
+      "Un compte épargne logement (CEL) ou un plan épargne logement (PEL)"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L7",
+    "explication": "Un compte-titre ou un contrat d'assurance-vie"
+  },
+  {
+    "id": "81ab349d-173e-4d5d-887f-f5feb9ad5e11",
+    "question": "Que se passe-t-il en cas de décès du titulaire d'un contrat Madelin si aucune garantie n’a été souscrite ?",
+    "propositions": [
+      "Le capital épargné est définitivement perdu et conservé par l'assureur",
+      "Le capital est attribué à l'État en l'absence de bénéficiaire désigné",
+      "Le capital est transféré automatiquement au conjoint survivant",
+      "Le capital épargné est reversé aux héritiers du titulaire selon les règles de succession"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L8",
+    "explication": "Le capital épargné est définitivement perdu et conservé par l'assureur"
+  },
+  {
+    "id": "d3704654-59c3-4793-a0b9-9f56a9c81c10",
+    "question": "Le taux d'intérêt technique d’un contrat en Euros diffère selon l'âge:",
+    "propositions": [
+      "De l'assuré",
+      "Du bénéficiaire",
+      "æ@ Ducontrat",
+      "Du souscripteur",
+      "La rémunération des contrats en Euros est composée :",
+      "Des intérêts plafonnés et d'une participation aux bénéfices réalisés par l'assureur",
+      "Des intérêts calculés selon un taux d'intérêt minimum plafonné et d'une participation au chiffre d'affaires réalisé par l'assureur",
+      "Des intérêts plafonnés et d’une participation au chiffre d'affaires réalisé par l'assureur",
+      "@ Des intérêts calculés selon un taux d'intérêt minimum plafonné et",
+      "d'une participation aux bénéfices réalisés par l'assureur",
+      "La valeur actuelle d'un capital est :",
+      "Sa valeur nominale — les intérêts produits",
+      "Sa valeur acquise — les intérêts produits",
+      "Sa valeur acquise + les intérêts produits",
+      "Sa valeur nominale + les intérêts produits %"
+    ],
+    "bonne_reponse": 11,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L10",
+    "explication": "Sa valeur nominale — les intérêts produits"
+  },
+  {
+    "id": "b5540e8f-53b6-47d0-a14d-41524de704da",
+    "question": "Dans le cadre d’un contrat d'assurance vie dédié à la protection des personnes handicapées :",
+    "propositions": [
+      "Le contrat rente-survie ouvre droit à un crédit d'impôt",
+      "Le contrat rente-survie ouvre droit à une déduction de base % imposable",
+      "Le contrat rente-survie ne procure pas d'avantage fiscal",
+      "Le contrat rente-survie ouvre droit à une réduction d'impôt"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Le contrat rente-survie ouvre droit à une réduction d'impôt"
+  },
+  {
+    "id": "21ba2f9d-f6b8-463c-a344-d8d1c8b68bca",
+    "question": "Pour les versements effectués à partir du 26/09/2017 sur un contrat d'assurance-vie de plus de 8 ans, en cas d'option pour le PFU, les produits des versements inférieurs à 150 000€ sont imposés au taux de :",
+    "propositions": [
+      "12,8%",
+      "Exonérés X",
+      "7,5%",
+      "30%"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "7,5%"
+  },
+  {
+    "id": "a25360fe-be84-412c-9a54-4cf239276b4c",
+    "question": "La gestion à horizon est également dénommée :",
+    "propositions": [
+      "La gestion sous mandat",
+      "La gestion pilotée",
+      "La gestion programmée X",
+      "La gestion profilée"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "La gestion pilotée"
+  },
+  {
+    "id": "e86aa29a-7b08-4dc6-b2bb-d6348a804fab",
+    "question": "Depuis la loi Pacte du 24 mai 2019, quelles sont les conditions à remplir pour que le transfert d’un contrat d'assurance-vie au sein de la même compagnie permette de conserver l’antériorité fiscale ?",
+    "propositions": [
+      "Le transfert ne peut se faire qu'avec l'accord préalable de l'ACPR",
+      "Le transfert doit concerner un contrat monosupport uniquement",
+      "Les primes versées doivent être affectées à des unités de comptes ou à un fonds eurocroissance",
+      "Le transfert doit être effectué sans modification des supports % d'investissement"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L3",
+    "explication": "Les primes versées doivent être affectées à des unités de comptes ou à un fonds eurocroissance"
+  },
+  {
+    "id": "1369b236-ae14-436b-9a31-da861d613cb1",
+    "question": "Quel est l'impact des versements réalisés par un TNS sur un contrat Madelin en termes de déduction fiscale ?",
+    "propositions": [
+      "Les versements sont exonérés d'impôt sur le revenu, mais non déductibles de son bénéfice imposable",
+      "Les versements sont déductibles de son bénéfice imposable à condition d'être effectués avant le 30 juin de chaque année",
+      "@ Les versements sont déductibles de son bénéfice imposable dans la",
+      "limite d'un plafond",
+      "Les versements sont soumis à une imposition supplémentaire mais ne sont pas déductibles",
+      "Le plafond légal des dépôts sur un PERP est fixé à :",
+      "132 000 €",
+      "61200€ x",
+      "150 000 €",
+      "Il n'y a pas de plafond"
+    ],
+    "bonne_reponse": 9,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L9",
+    "explication": "Il n’y a pas de plafond"
+  },
+  {
+    "id": "cdee01a6-e4ee-4138-87e0-0973c125ef14",
+    "question": "L'objet exclusif du PERP est de :",
+    "propositions": [
+      "Acquérir sa résidence principale",
+      "@ Se constituer un complément de retraite",
+      "Transmettre un patrimoine",
+      "Se constituer une épargne",
+      "Quel est le principe applicable au contrat Madelin en phase de rente en cas",
+      "de décès du bénéficiaire ?",
+      "Le versement de la rente est maintenu pour une période de 5 ans maximum après le décès",
+      "Le versement de la rente est systématiquement prolongé pour les héritiers légaux",
+      "Le versement de la rente continue au profit du conjoint survivant",
+      "@ Le versement de la rente est arrêté, sauf en cas de réversion au profit",
+      "d'une tierce personne",
+      "La durée du PERP :",
+      "Est limitée à 42 ans",
+      "Est limitée à 30 ans",
+      "@ N'est pas limitée",
+      "Est limitée à 40 ans",
+      "Lors du dénouement d’un contrat de capitalisation avec une sortie en capital, le montant de l'impôt dépend :",
+      "@ De la durée de détention du contrat",
+      "De l'âge du souscripteur au moment de la clôture du contrat",
+      "De l'âge des bénéficiaires",
+      "De l'âge du souscripteur au moment de l'ouverture du contrat",
+      "Dans le cadre d'un contrat d'assurance-vie, le caractère de primes manifestement exagérées s'apprécie au moment : (copie)",
+      "Du décès de l'assuré",
+      "De l'ouverture du contrat par l'assuré",
+      "De l'ouverture de la succession X",
+      "Du versement des primes par l'assuré"
+    ],
+    "bonne_reponse": 25,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Du versement des primes par l'assuré"
+  },
+  {
+    "id": "7b3a905e-f04b-43dc-947c-021b114373f7",
+    "question": "La performance du contrat est calculée :",
+    "propositions": [
+      "Sur la somme investie (versement initial), augmentée des frais d'entrée",
+      "Sur la somme investie (versement initial), divisée par (1-taux de frais)",
+      "Sur la somme investie (versement initial), divisée par le taux de frais",
+      "@ Sur la somme investie (versement initial), frais d'entrée déduits",
+      "Concernant les contrats multisupports, les prélèvements sociaux sont dus :",
+      "Au 31 décembre qu'importe le compartiment",
+      "Lors des rachats, qu'il y ait un fonds euro ou non sur le contrat",
+      "Lors des rachats, à l'exception des produits générés par le compartiment unités de compte",
+      "Lors des rachats, à l'exception des produits générés par le compartiment euro"
+    ],
+    "bonne_reponse": 8,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L4",
+    "explication": "Lors des rachats, à l'exception des produits générés par le compartiment euro"
+  },
+  {
+    "id": "e7f2eea2-fac4-4dba-add4-7954a40f1ca2",
+    "question": "La rente réversible d'un contrat Madelin est :",
+    "propositions": [
+      "Versée pendant une durée minimum garantie à un bénéficiaire désigné",
+      "Transférable d’un premier bénéficiaire à un deuxième sans X condition particulière",
+      "Versée à vie à un deuxième bénéficiaire, après le décès du premier bénéficiaire",
+      "Versée pour une durée toujours fixe de 5 ans à un deuxième bénéficiaire après le décès du premier"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L8",
+    "explication": "Versée à vie à un deuxième bénéficiaire, après"
+  },
+  {
+    "id": "080c8db8-20f8-407e-9fea-996a534c39fb",
+    "question": "le décès du premier bénéficiaire Un contrat Madelin pouvait être souscrit par :",
+    "propositions": [
+      "Les salariés uniquement",
+      "Toutes personnes sans condition liée",
+      "Les personnes de moins de 50 ans uniquement",
+      "Les travailleurs non-salariés uniquement"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L8",
+    "explication": "Les travailleurs non-salariés uniquement"
+  },
+  {
+    "id": "0885f8c5-88a2-4c5a-a631-c4df2b384516",
+    "question": "Dans le cadre des acteurs institutionnels de la LCB-FT :",
+    "propositions": [
+      "L'OCRGDF est placé au sein du Ministère de la Justice",
+      "L'ACPR est en charge du volet répressif de la lutte contre le blanchiment de capitaux",
+      "(O] Le GAFI vise à développer et promouvoir des politiques nationales et internationales de la LCB/FT",
+      "TRACFIN est en charge de surveiller les opérations bancaires",
+      "Dans le cadre de la LCB/FT, quelle autorité exerce le pouvoir de sanction disciplinaire ?",
+      "La cellule spécialisée en matière de prédation économique",
+      "L'ACPR",
+      "La Commission nationale des sanctions",
+      "La DGDDI"
+    ],
+    "bonne_reponse": 7,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L7",
+    "explication": "La Commission nationale des sanctions"
+  },
+  {
+    "id": "3eace750-539e-4aa6-a2ff-a75b76639a83",
+    "question": "Dans le cadre d'un contrat d'assurance dépendance, lorsqu'un état de dépendance partielle d’un assuré est reconnu, la rente versée :",
+    "propositions": [
+      "Est généralement comprise entre 33% et 66%, en fonction de x l'état de santé de l'assuré",
+      "Correspond à un pourcentage de la rente prévue en cas de dépendance totale",
+      "Est toujours fixe et déterminée par un commun accord entre l'assureur et l'assuré",
+      "Est déterminée par le Médecin conseil qui mesure l'état de dépendance de l'assuré",
+      "Cf.MA4L5"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Correspond à un pourcentage de la rente prévue en cas de dépendance totale"
+  },
+  {
+    "id": "39670a70-604d-470d-8459-96c700ccf552",
+    "question": "Sous quelle condition un bénéficiaire non prioritaire peut demander le paiement d’un capital décès ?",
+    "propositions": [
+      "Si le bénéficiaire prioritaire décède au plus tôt 1 mois aprèsle  X décès de l'assuré",
+      "Si le bénéficiaire prioritaire ne se manifeste pas au plus tard 1 mois après le décès de l'assuré",
+      "Il ne peut jamais demander le paiement du capital au même titre que le bénéficiaire prioritaire",
+      "Si le bénéficiaire prioritaire ne se manifeste pas au plus tard 2 ans après le décès de l'assuré"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L1",
+    "explication": "Si le bénéficiaire prioritaire ne se manifeste pas au plus tard 1 mois après le décès de l'assuré"
+  },
+  {
+    "id": "a6dcc48b-d45f-44b8-8469-5552d15f24ec",
+    "question": "Les primes versées sur un contrat prévoyance Madelin par un micro- entrepreneur :",
+    "propositions": [
+      "Ne sont pas déductibles fiscalement",
+      "Génèrent un crédit d'impôt",
+      "Sont déductibles du résultat imposable",
+      "Génèrent une réduction d'impôt",
+      "Cf.MAL4"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Ne sont pas déductibles fiscalement"
+  },
+  {
+    "id": "daf85506-390d-4fc3-9586-138b0d412aac",
+    "question": "En matière de santé, la franchise ou la participation forfaitaire des dépenses réelles des assurés sont prises en charge par :",
+    "propositions": [
+      "La garantie des accidents de la vie",
+      "Les contrats de complémentaire santé",
+      "L'assurance maladie obligatoire",
+      "L'assuré lui-même",
+      "Cf.MAL6"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "L'assuré lui-même"
+  },
+  {
+    "id": "03ccee29-30b6-43e3-b148-c3f648594026",
+    "question": "Dans le cadre des assurances emprunteurs, que signifie le sigle IPP ?",
+    "propositions": [
+      "Incapacité Professionnelle Permanente",
+      "Invalidité Permanente Partielle",
+      "Inaptitude Partielle Professionnelle",
+      "Invalidité Permanente Potentielle",
+      "Cf.MA4L2"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Invalidité Permanente Partielle"
+  },
+  {
+    "id": "1ce5a464-e4d3-4a01-9189-17d6665a6cc9",
+    "question": "Dans le cadre de la dépendance des personnes âgées, que signifie le sigle AGGIR ?",
+    "propositions": [
+      "Aide Générale pour les Gens Isolés et Retraités %",
+      "Assistance Générale pour les Gens Isolés et Retraités",
+      "Aide Gérontologique pour les Gens Isolés et Retraités",
+      "Autonomie Gérontologie Groupes |so-Ressources",
+      "Cf.MAL5"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Autonomie Gérontologie Groupes Iso-"
+  },
+  {
+    "id": "f793a30b-412c-420a-9d90-14836e44aa2b",
+    "question": "Ressources Les exclusions de garanties d’un contrat d'assurance santé peuvent être imposées par la loi et par :",
+    "propositions": [
+      "La Sécurité sociale",
+      "La complémentaire santé",
+      "La CPAM",
+      "L'assureur %",
+      "Cf.MAL6"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "La complémentaire santé"
+  },
+  {
+    "id": "fce09414-7ffb-4095-ab4a-80048ca3eee5",
+    "question": "Les contrats d'assurance dépendance peuvent être cumulés avec :",
+    "propositions": [
+      "La garantie PTIA (Perte Totale et Irréversible d'autonomie)",
+      "La rente IPP (Incapacité Permanente Partielle)",
+      "La rente IPT (Invalidité Permanente et Totale)",
+      "L'APA (Allocation Personnalisée d’Autonomie)",
+      "Cf.MA4L5"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "L'APA (Allocation Personnalisée d'Autonomie)"
+  },
+  {
+    "id": "0589fc86-c5b8-4947-a006-54ffcaf48fab",
+    "question": "Les travailleurs non-salariés ne bénéficient pas d'une couverture obligatoire pour les accidents du travail et la perte d'emploi. om/mod/quiz/view.php?id=760 Dans un contrat en délégation d'assurance emprunteur, la cotisation est généralement calculée ?",
+    "propositions": [
+      "Sur le capital emprunté",
+      "Sur le capital restant dû",
+      "Sur les intérêts du prêt",
+      "Uniquement sur l'âge",
+      "Cf. MAL2"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Sur le capital restant dû"
+  },
+  {
+    "id": "bd77fe7f-f079-45ea-9107-bf97c901d4e1",
+    "question": "Dans le cadre des complémentaires santé, un contrat qualifié de « responsable » :",
+    "propositions": [
+      "À une empreinte écologique respectant certains quotas %",
+      "Offre un cadre fiscal et social avantageux",
+      "Est assujetti à la taxe sur les conventions d'assurance",
+      "Prévoit le versement de capitaux décès aux héritiers de l'assuré en cas de décès de ce dernier",
+      "Cf.MAL6"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Offre un cadre fiscal et social avantageux"
+  },
+  {
+    "id": "8c223e69-f9bb-4885-a649-45092837312d",
+    "question": "Dans le cadre de la dépendance des personnes âgées, quels groupes Iso- Ressources (GIR) sont éligibles à l'APA ?",
+    "propositions": [
+      "Les personnes en GIR 3,45 et 6",
+      "Les personnes en GIR 2,34 et 5",
+      "Les personnes en GIR 1,2,3 et 4",
+      "Tous les GIR sont éligibles",
+      "Cf.MAL5"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Les personnes en GIR 1,2,3 et 4"
+  },
+  {
+    "id": "b9907c6b-b861-4dbd-bfc5-3ab914e5827d",
+    "question": "Le capital d’une assurance décès :",
+    "propositions": [
+      "Est soumis à l'impôt sur le revenu à hauteur de 20% de son montant",
+      "Doit obligatoirement être déclaré à l'impôt sur le revenu %",
+      "N'est pas soumis à l'impôt sur le revenu",
+      "Est soumis à l'impôt sur le revenu à hauteur de 50% de son montant",
+      "Cf.MAL3"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "N'est pas soumis à l'impôt sur le revenu"
+  },
+  {
+    "id": "4db8ee65-75f4-4738-85c6-95e06d806ee8",
+    "question": "La pension d'invalidité versée par la sécurité sociale à un salarié se calcule à partir :",
+    "propositions": [
+      "Du salaire annuel moyen des 10 meilleures années d'activité",
+      "Du salaire perçu pendant les 10 mois qui ont précédé l'accident",
+      "Du salaire annuel moyen des 10 dernières années d'activité",
+      "Du degré d'invalidité de l'assuré et d’un barème appliqué par l'Assurance Maladie"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L1",
+    "explication": "Du salaire annuel moyen des 10 meilleures années d'activité"
+  },
+  {
+    "id": "de0380b9-256a-4224-a7e0-bc1ef3d5bac9",
+    "question": "Quelle est le montant de la participation forfaitaire de l'assuré sur les consultations, les actes de médecins et les actes de biologie ?",
+    "propositions": [
+      "10€",
+      "2€",
+      "Aucune participation %",
+      "se",
+      "Cf.MAL6"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "2 €"
+  },
+  {
+    "id": "7934801d-1f72-46e5-8951-4d0e8decec34",
+    "question": "Dans le cadre de l'assurance emprunteur, que signifie le sigle AERAS ?",
+    "propositions": [
+      "Aide aux Emprunteurs avec un Risque Aggravé de Santé",
+      "Association des Emprunteurs avec un Risque Aggravé de Santé",
+      "S'Assurer et Emprunter avec un Risque Aggravé de Santé",
+      "Assurance Emprunteur avec un Risque Aggravé de Santé",
+      "Cf.MAL2"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "S'Assurer et Emprunter avec un Risque Aggravé de Santé"
+  },
+  {
+    "id": "79eaf5f5-19f7-4395-967d-98ff0ca5239f",
+    "question": "Quelles sont les garanties de base d'un contrat d'assurance emprunteur ?",
+    "propositions": [
+      "Décès et Invalidité Permanente Partielle (IPP)",
+      "Incapacité Temporaire Totale de Travail (ITT) et Invalidité x",
+      "Permanente Partielle (IPP)",
+      "Invalidité Permanente Totale (IPT) et Incapacité Temporaire Totale de Travail (ITT)",
+      "Décès et Perte Totale et Irréversible d'Autonomie (PTIA)",
+      "Cf.MA4L2"
+    ],
+    "bonne_reponse": 4,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Décès et Perte Totale et Irréversible d'Autonomie (PTIA)"
+  },
+  {
+    "id": "af7f7b2b-b56d-4a64-9e4d-6609c29ef428",
+    "question": "En cas de décès de l'assuré, le capital décès versé par la Sécurité Sociale est en priorité versé:",
+    "propositions": [
+      "Au conjoint et aux enfants",
+      "Au conjoint uniquement",
+      "A l'ensemble des personnes désignées par l'assuré",
+      "A l'ensemble des personnes à la charge totale et permanente de l'assuré au moment de son décès"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L1",
+    "explication": "À l'ensemble des personnes à la charge totale et permanente de l'assuré au moment de son décès"
+  },
+  {
+    "id": "595f09c7-ca05-4219-8c60-4a2652ac6eb3",
+    "question": "Les garanties de frais de soins de santé permettent :",
+    "propositions": [
+      "La seule prise en charge du ticket modérateur",
+      "La prise en charge des dépenses médicales du régime x obligatoire",
+      "La prise en charge des personnes en incapacité total temporaire",
+      "La prise en charge des dépenses non remboursées par le régime obligatoire",
+      "Cf.MAL6"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "La prise en charge des dépenses non remboursées par le régime obligatoire"
+  },
+  {
+    "id": "21e56ed6-da33-4d4d-8c14-f656dc588b52",
+    "question": "Généralement, à quel moment le contrat d'assurance emprunteur prend-il effet ?",
+    "propositions": [
+      "15 jours après la signature de l'acte notarié %",
+      "A l'acceptation de l'offre de prêt",
+      "Au décès de la personne assurée",
+      "Après le paiement de la sixième mensualité de crédit",
+      "Cf.MA4L2"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "À l'acceptation de l'offre de prêt"
+  },
+  {
+    "id": "02efc1a1-ef7a-47f3-97fc-3ca91b8f90e1",
+    "question": "La Directive dite DDA exclut l'obligation de communiquer des informations sur les coûts et les frais lorsqu'il s'agit de contrats :",
+    "propositions": [
+      "De capitalisation souscrits par des professions non salariées",
+      "De prévoyance souscrits par des professions non salariées",
+      "De dépendance souscrits par des professions non salariées %",
+      "D'assurance vie souscrits par des professions non salariées"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "De prévoyance souscrits par des professions non salariées"
+  },
+  {
+    "id": "b0af8eda-a78e-494b-b5ff-f68c00a48b20",
+    "question": "La dévolution successorale représente :",
+    "propositions": [
+      "L'action en justice réalisée par l'héritier réservataire",
+      "La renonciation sur la succession par l’un des héritiers",
+      "Une succession réalisée sans testament X",
+      "La distribution aux héritiers des biens du défunt"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "La distribution aux héritiers des biens du défunt"
+  },
+  {
+    "id": "ceeade3f-ffca-4afa-8239-e1130c7d905f",
+    "question": "Dans le cadre des assurances de biens et de responsabilités, en matière de déclaration de risque, l'apparition de conséquences nouvelles et aggravantes :",
+    "propositions": [
+      "Contraint l'assureur à créer un nouveau contrat",
+      "Augmente la valeur de l'intérêt assuré",
+      "À une incidence financière sur l'assureur",
+      "Oblige l'assureur à résilier le contrat quelle que soit l'intensité du nouveau risque %"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "À une incidence financière sur l'assureur"
+  },
+  {
+    "id": "db0f73b5-be8d-4cc5-8329-dd42029354fe",
+    "question": "Quel type de contrat emprunteur est le plus adapté pour un tarif personnalisé selon l'état de santé ?",
+    "propositions": [
+      "Un contrat individuel",
+      "Un contrat entreprise",
+      "Un contrat en bénéficiant automatiquement d'AERAS %",
+      "Un contrat groupe"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M4L2",
+    "explication": "Un contrat individuel"
+  },
+  {
+    "id": "600089b4-5c19-46b5-b06f-b9df37fb7ca7",
+    "question": "Dans le cadre d'un contrat de capitalisation, pour les contrats d’une durée supérieure à 8 ans, le prélèvement forfaitaire obligatoire minimum est fixé à :",
+    "propositions": [
+      "30%",
+      "7,5%",
+      "12,8% %",
+      "15%"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L5",
+    "explication": "7,5%"
+  },
+  {
+    "id": "71cf01f1-24b9-47ee-950c-90e036cad71d",
+    "question": "Dans le cadre d’une assurance multirisques habitation, l'assuré a l'obligation de déclarer un sinistre (autre que le vol) dans un délai maximum de :",
+    "propositions": [
+      "2 jours à partir du moment où il en a connaissance",
+      "10 jours à partir du moment où il en a connaissance",
+      "5 jours à partir du moment où il en a connaissance",
+      "15 jours à partir du moment où il en a connaissance"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L2",
+    "explication": "5 jours à partir du moment où il en a connaissance"
+  },
+  {
+    "id": "cc717083-9235-4788-a555-3f9136fc10d8",
+    "question": "La protection sociale des travailleurs indépendants est dénommée :",
+    "propositions": [
+      "La sécurité Indépendante sociale",
+      "La sécurité sociale des indépendants",
+      "Le régime indépendant des travailleurs",
+      "Le régime des professionnels des indépendants %"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "La sécurité sociale des indépendants"
+  },
+  {
+    "id": "d6d7f27e-73fa-4054-b5c4-b35387d70897",
+    "question": "Dans le cadre de la fiscalité des produits des actions, l'option pour le barème progressif de l'impôt sur le Revenu est exercée pour une durée :",
+    "propositions": [
+      "De 5ans X",
+      "De 3 ans",
+      "D'un an",
+      "De 2 ans"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "D'un an"
+  },
+  {
+    "id": "bb3ec691-9bb2-474e-83f1-9f2637a942a9",
+    "question": "En matière de déontologie, les assureurs de contrats collectifs santé et prévoyance s'engagent à :",
+    "propositions": [
+      "Respecter le code de bonne conduite annexé à la convention AERAS uniquement pour les contrats de prévoyance",
+      "Couvrir les assurés, pour les contrats obligatoires, indépendamment de leur état de santé",
+      "Utiliser la mention “assurance dépendance”",
+      "Faciliter la compréhension et le choix des garanties de santé proposées dans le contrat"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L2",
+    "explication": "Couvrir les assurés, pour les contrats obligatoires, indépendamment de leur état de santé"
+  },
+  {
+    "id": "95456e85-3bf7-45c2-852a-b671e7c02f01",
+    "question": "En matière d'assurance automobile, la VRADE représente :",
+    "propositions": [
+      "La valeur neuve d'un véhicule",
+      "Le prix initial payé par l'assuré pour acquérir le véhicule",
+      "La valeur d’un véhicule, définie par le réparateur du véhicule sinistré (O] La valeur d’un véhicule avant sinistre, évaluée par un expert",
+      "Dans le cadre d'une assurance de biens, lorsque le délai de garantie conformité a expiré, l'assuré peut, sous certaines conditions, avoir recours :",
+      "A la garantie commerciale",
+      "A la garantie légale des vices cachés",
+      "A l'assistance proposée dans son contrat",
+      "Aux extensions de garantie"
+    ],
+    "bonne_reponse": 5,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L1",
+    "explication": "À la garantie légale des vices cachés"
+  },
+  {
+    "id": "ef8d5a46-ab09-4abd-bfe7-c92c0a09c684",
+    "question": "Pour tout type de contrat d'assurance de biens et de responsabilités, l'assuré à l'obligation de régler sa cotisation annuelle dans les :",
+    "propositions": [
+      "10 jours après la date d'échéance",
+      "15 jours suivant la date de fin du contrat",
+      "5 jours suivant la date de fin du contrat",
+      "2 jours suivant la date de fin du contrat"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L2",
+    "explication": "10 jours après la date d'échéance"
+  },
+  {
+    "id": "2c8fccfb-8e3f-4ab0-9c06-899c5982697e",
+    "question": "En matière d'assurance de responsabilité civile, les dommages immatériels :",
+    "propositions": [
+      "Peuvent être conditionnés par l'existence de dommages matériels garantis",
+      "Sont simultanés aux dommages matériels causés à un tiers",
+      "Couvrent toute détérioration, destruction ou vol d’un bien de l'assuré",
+      "Interviennent entre l'assuré et le lésé hors du cadre du contrat"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L1",
+    "explication": "Peuvent être conditionnés par l'existence de dommages matériels garantis"
+  },
+  {
+    "id": "3e43d37e-542e-44a3-b786-32dfd69e5848",
+    "question": "Conformément aux conditions de garantie des assurances de biens et de responsabilités, la garantie légale de conformité est :",
+    "propositions": [
+      "Obligatoire uniquement pour les contrats souscrits après 2020",
+      "Facultative uniquement pour les contrats souscrits après 2020",
+      "Facultative",
+      "@ Obligatoire",
+      "Un assuré peut faire appel à sa garantie des vices cachés s'il prévient le vendeur du défaut d’un produit dans un délai :",
+      "D'1 an à compter de la découverte du vice",
+      "De 6 mois à compter de la découverte du vice",
+      "D'1 mois à compter de la découverte du vice %",
+      "De 2 ans à compter de la découverte du vice"
+    ],
+    "bonne_reponse": 8,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L1",
+    "explication": "De 2 ans à compter de la découverte du vice"
+  },
+  {
+    "id": "87af9162-2015-43d6-b024-28744605e481",
+    "question": "En principe, les polices d'assurance de biens et de responsabilités sont assorties d’un plafond de garantie illimité en ce qui concerne :",
+    "propositions": [
+      "Les corporels, matériels et immatériels",
+      "Les dommages matériels",
+      "Les dommages immatériels %",
+      "Les dommages corporels"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L1",
+    "explication": "Les dommages corporels"
+  },
+  {
+    "id": "7b6c3b86-9260-4823-9a95-30cd61d05c01",
+    "question": "Dans le cadre des assurances de biens et de responsabilités, la déclaration ultérieure des circonstances aggravantes ne s'applique pas en assurance vie, pourquoi ?",
+    "propositions": [
+      "Les aggravations sont prises en charge par l'assureur dès la souscription",
+      "Les aggravations sont prévues dans les clauses d'exclusion %",
+      "Les aggravations sont généralement trop élevées pour que l'assureur puisse les assumer",
+      "Les aggravations sont garanties par d'autres contrats d'assurance"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L1",
+    "explication": "Les aggravations sont prises en charge par l'assureur dès la souscription"
+  },
+  {
+    "id": "be735810-63bf-4c02-a43d-b03273866557",
+    "question": "Le montant des franchises d’un contrat d'assurance de biens et de responsabilités :",
+    "propositions": [
+      "Est fixé lors de la réalisation du sinistre",
+      "Est indemnitaire et à la charge de l'assureur",
+      "Est forfaitaire et à la charge de l'assuré",
+      "Est toujours égale à zéro, quelle que soit la situation"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L1",
+    "explication": "Est forfaitaire et à la charge de l'assuré"
+  },
+  {
+    "id": "f4a3c98a-c180-4581-89c1-3349d6f7b607",
+    "question": "Le montant des franchises d’un contrat d'assurance de biens et de responsabilités :",
+    "propositions": [
+      "Est toujours égale à zéro, quelle que soit la situation",
+      "Est indemnitaire et à la charge de l'assureur",
+      "Est fixé lors de la réalisation du sinistre",
+      "Est forfaitaire et à la charge de l'assuré"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M6L1",
+    "explication": "Est forfaitaire et à la charge de l'assuré"
+  },
+  {
+    "id": "7124ade8-1376-4d3a-a739-264ff4d2924d",
+    "question": "Dans le cadre de l'information contractuelle à remettre à client qui souscrit un contrat d'assurance, les conditions particulières :",
+    "propositions": [
+      "Confèrent une présomption de garantie avant la signature du contrat",
+      "Sont les seuls documents de la police d'assurance qui ne sont pas signés par les parties",
+      "Peuvent être requalifiées en note de couverture %",
+      "Prévalent toujours sur les conditions générales et peuvent y déroger"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L1",
+    "explication": "Prévalent toujours sur les conditions générales et peuvent y déroger"
+  },
+  {
+    "id": "8d4b033b-2f55-4214-937f-141b80e237d8",
+    "question": "La souscription d'un contrat d'assurance-vie est un acte :",
+    "propositions": [
+      "D'administration",
+      "De disposition",
+      "De conservation",
+      "De gestion courante"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L4",
+    "explication": "De disposition"
+  },
+  {
+    "id": "cd8c0608-7009-4b03-937d-1928ad0fa99b",
+    "question": "Si un assuré souhaite transformer son contrat de capitalisation en euros en un contrat multisupport, il doit s'assurer que les sommes affectées à des UC représentent :",
+    "propositions": [
+      "Entre 10% et 20% du total",
+      "Au moins 20% du total",
+      "Au moins 30% du total",
+      "Moins de 10% du total"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L2",
+    "explication": "Au moins 20% du total"
+  },
+  {
+    "id": "9d13616a-d85d-4505-bfc2-1a0a6753b792",
+    "question": "Comment se nomme la prestation complémentaire dans un contrat dépendance qui couvre les frais exceptionnels liés à la dépendance ?",
+    "propositions": [
+      "Le capital santé",
+      "Le fonds de solidarité",
+      "Le capital équipement",
+      "L'allocation d'aide exceptionnelle",
+      "Cf.MA4L5"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "explication": "Le capital équipement"
+  },
+  {
+    "id": "838a5d81-0784-4540-8cef-7d73423680c3",
+    "question": "Le document normalisé d'information sur les produits d'assurance est requis pour les contrats d'assurance :",
+    "propositions": [
+      "Emprunteur %",
+      "Habitation",
+      "Garantissant les grands risques",
+      "Complémentaire santé collective"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L1",
+    "explication": "Habitation"
+  },
+  {
+    "id": "88b41681-7ea4-4a74-8c9e-65e05455d857",
+    "question": "Au-delà de son contenu obligatoire, le police d'une assurance-vie doit également indiquer :",
+    "propositions": [
+      "Le nom et l'adresse des autorités chargées du contrôle de l’entreprise d'assurance en question",
+      "La fiscalité applicable en cas de décès de l'assuré",
+      "La durée des engagements réciproques des parties et les conditions de la tacite reconduction",
+      "La loi applicable au contrat lorsqu'il ne s'agit pas de la loi française"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L1",
+    "explication": "La durée des engagements réciproques des parties et les conditions de la tacite reconduction"
+  },
+  {
+    "id": "2b9452a0-5ffb-4ecc-a111-9fc2e87388b3",
+    "question": "En matière de déontologie, les assureurs de contrats collectifs santé et prévoyance s'engagent à :",
+    "propositions": [
+      "Respecter le code de bonne conduite annexé à la convention AERAS uniquement pour les contrats de prévoyance",
+      "Utiliser la mention “assurance dépendance”",
+      "Faciliter la compréhension et le choix des garanties de santé proposées dans le contrat",
+      "Couvrir les assurés, pour les contrats obligatoires, indépendamment de leur état de santé"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L2",
+    "explication": "Couvrir les assurés, pour les contrats obligatoires, indépendamment de leur état de santé"
+  },
+  {
+    "id": "e2b0a17a-8fc7-4cdb-89e2-b66fda2535d7",
+    "question": "Dans le cadre des PIA (Produits d'Investissement fondés sur l'Assurance), des informations doivent être fournies au souscripteur au minimum chaque année, et notamment :",
+    "propositions": [
+      "Une évaluation périodique",
+      "Le processus de médiation",
+      "Une analyse des marchés financiers à échelle mondiale",
+      "La procédure de traitement des réclamations %"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L1",
+    "explication": "Une évaluation périodique"
+  },
+  {
+    "id": "a8224fa0-bc00-46d8-b5f0-367cf074a0a6",
+    "question": "Dans le cadre de l'information précontractuelle afférente à une proposition de contrat d'assurance, le modèle d'une fiche d'information est fixé par arrêté uniquement si le contrat :",
+    "propositions": [
+      "Est à caractère temporaire ou s’il couvre les grands risques X",
+      "Est collectif et souscrit par une personne morale",
+      "Est obligatoire pour tout assuré individuel",
+      "Comporte des garanties de responsabilité"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M5L1",
+    "explication": "Comporte des garanties de responsabilité"
+  },
+  {
+    "id": "fad04582-3979-4dfc-bb17-4fce045b8530",
+    "question": "Est un intermédiaire en assurance toute personnes physique ou morale qui :",
+    "propositions": [
+      "Recueille ou sollicite la souscription d’un contrat et perçoit une rémunération",
+      "Présente les conditions et les garanties d'un contrat mais ne perçoit aucune rémunération",
+      "Présente les conditions et les garanties d'un contrat sans recueillir la souscription %",
+      "Recueille ou sollicite la souscription d’un contrat sans percevoir de rémunération"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L4",
+    "explication": "Recueille ou sollicite la souscription d’un contrat et perçoit une rémunération"
+  },
+  {
+    "id": "f1e9b30f-d957-48bc-ac96-b329ae33e83f",
+    "question": "Quel type d'assurance arrive en tête des cotisations en France ?",
+    "propositions": [
+      "Les assurances de responsabilité civile générale",
+      "L'assurance de biens et responsabilité",
+      "L'assurance maladie et accidents corporels",
+      "Les assurances de personnes"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L1",
+    "explication": "Les assurances de personnes"
+  },
+  {
+    "id": "450b4424-1199-4142-9b43-33a4b0712721",
+    "question": "La donation au dernier vivant :",
+    "propositions": [
+      "Permet de déshériter ses enfants",
+      "Est révocable à tout moment",
+      "Crée un transfert immédiat de propriété",
+      "Est taxable"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L3",
+    "explication": "Est révocable à tout moment"
+  },
+  {
+    "id": "07c64741-c92b-45ec-a61e-220e0d9dee37",
+    "question": "Lors du dénouement d'un contrat de capitalisation avec une sortie en capital, le montant de l'impôt dépend :",
+    "propositions": [
+      "De l'âge du souscripteur au moment de la clôture du contrat",
+      "De l'âge des bénéficiaires",
+      "De l'âge du souscripteur au moment de l'ouverture du contrat",
+      "De la durée de détention du contrat"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M3L5",
+    "explication": "De la durée de détention du contrat"
+  },
+  {
+    "id": "72236884-4bbd-4670-8e08-5a0a3510dd21",
+    "question": "Au niveau du marché financier, le marché primaire est celui :",
+    "propositions": [
+      "Des émissions de titres",
+      "Des liquidations de titres",
+      "Des créations detitres x",
+      "Des échanges de valeurs mobilières déjà émises"
+    ],
+    "bonne_reponse": 0,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M2L6",
+    "explication": "Des émissions de titres"
+  },
+  {
+    "id": "06338655-8d91-46a4-8a0a-2847f91662a8",
+    "question": "Une Société d'Assurance Mutuelle (SAM) se distingue d’une Société Mutuelle d'Assurance (SMA) par :",
+    "propositions": [
+      "L'objet de la société exclusivement professionnel ou régional",
+      "Le fait d'appartenir au GEMA",
+      "La possibilité de rémunérer des intermédiaires pour commercialiser leurs produits",
+      "La tarification des assurances qui est uniquement à cotisation fixe"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-09",
+    "reference": "M1L4",
+    "explication": "La possibilité de rémunérer des intermédiaires pour commercialiser leurs produits"
   }
 ]
