@@ -1399,8 +1399,9 @@ function parseBatch() {
   // Nettoyage OCR (recolle lignes, supprime artefacts)
   raw = cleanOcrText(raw);
 
+  // Détecter le format AVANT le nettoyage (qui supprime "La réponse correcte est")
+  const hasFormatA = /la r[ée]ponse correcte est/i.test(raw);
   const cleaned = cleanBatchText(raw);
-  const hasFormatA = /la r[ée]ponse correcte est/i.test(cleaned);
 
   // Découpage en blocs question. Heuristique :
   // une question commence à une ligne se terminant par "?" OU précédée de "Question N"
