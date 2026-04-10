@@ -7071,5 +7071,81 @@
     "date": "2026-04-09",
     "reference": "M1L4",
     "explication": "La possibilité de rémunérer des intermédiaires pour commercialiser leurs produits"
+  },
+  {
+    "id": "0f841640-21f2-474f-b8db-1e4f1976a31e",
+    "question": "En cas de modification des facteurs de risque au cours d’un contrat d’assurance, un assuré doit déclarer ces circonstances nouvelles à son assureur dans un délai de :",
+    "propositions": [
+      "10 jours à partir du moment où il en a connaissance",
+      "40 jours à partir du moment où il en a connaissance",
+      "15 jours à partir du moment où il en a connaissance",
+      "30 jours à partir du moment où il en a connaissance"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-10",
+    "reference": "M5L1",
+    "explication": "15 jours à partir du moment où il en a connaissance"
+  },
+  {
+    "id": "8ec552c9-ddde-461a-83aa-4b0b681fd535",
+    "question": "La souscription d’un contrat d’assurance-vie est un acte :",
+    "propositions": [
+      "De conservation",
+      "D’administration",
+      "De gestion courante",
+      "De disposition"
+    ],
+    "bonne_reponse": 3,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-10",
+    "reference": "M5L4",
+    "explication": "De disposition"
+  },
+  {
+    "id": "0902439b-c49a-44f1-b410-23cc6cd032ed",
+    "question": "En matière de déontologie, les assureurs de contrats collectifs santé et prévoyance s’engagent à :",
+    "propositions": [
+      "Faciliter la compréhension et le choix des garanties de santé proposées dans le contrat",
+      "Couvrir les assurés, pour les contrats obligatoires, indépendamment de leur état de santé",
+      "Utiliser la mention “assurance dépendance”",
+      "Respecter le code de bonne conduite annexé à la convention AERAS uniquement pour les contrats de prévoyance"
+    ],
+    "bonne_reponse": 1,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-10",
+    "reference": "M5L2",
+    "explication": "Couvrir les assurés, pour les contrats obligatoires, indépendamment de leur état de santé"
+  },
+  {
+    "id": "ec1c7b58-6f2e-4c50-8599-d6574a977007",
+    "question": "Sur le plan fiscal, l’assurance vie permet :",
+    "propositions": [
+      "De profiter d’une réduction d’impôt, quel que soit l’objet du contrat",
+      "De profiter d’une déduction d’impôt lors des versements, quel que soit l’objet du contrat",
+      "De profiter d’une réduction d’impôt dans le cadre d’un contrat « rente survie »",
+      "De profiter d’un crédit d’impôt annuel"
+    ],
+    "bonne_reponse": 2,
+    "formation": {
+      "categorie": "habilitante",
+      "annee": "2026",
+      "nom": "Assurance Niveau II"
+    },
+    "date": "2026-04-10",
+    "reference": "M5L3",
+    "explication": "De profiter d’une réduction d’impôt dans le cadre d’un contrat « rente survie »"
   }
 ]
