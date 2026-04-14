@@ -879,6 +879,8 @@
   <div id="q-setup">
     <p>Lance un quiz avec des questions aléatoires de la banque.</p>
     <div id="q-formation"></div>
+    <label>Module (optionnel)</label>
+    <select id="q-module"><option value="">— Tous les modules —</option></select>
     <label>Nombre de questions</label>
     <input type="text" id="q-count" value="10" style="max-width:100px">
     <br>
@@ -1110,6 +1112,13 @@ function matchesFormationFilter(question, filter) {
   return true;
 }
 
+// Extrait le module (M1, M2…) depuis une référence type "M1L1", "P2M1L3", "M1L1-2"
+function moduleOf(reference) {
+  if (!reference) return null;
+  const m = reference.match(/M(\d+)/i);
+  return m ? "M" + m[1] : null;
+}
+
 // ========== UTILITAIRES ==========
 function uuid() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
@@ -1199,6 +1208,32 @@ function goToTab(name) {
   ["formateur","import","quiz"].forEach(n => {
     document.getElementById("panel-"+n).classList.toggle("hidden", n !== name);
   });
+  if (name === "quiz") refreshModuleList();
+}
+
+async function refreshModuleList() {
+  const sel = document.getElementById("q-module");
+  if (!sel) return;
+  const currentVal = sel.value;
+  try {
+    const all = await loadQuestions();
+    const filter = getQuizFilter();
+    const filtered = all.filter(q => matchesFormationFilter(q, filter));
+    const modules = {};
+    filtered.forEach(q => {
+      const m = moduleOf(q.reference);
+      if (m) modules[m] = (modules[m] || 0) + 1;
+    });
+    const sorted = Object.keys(modules).sort((a, b) => {
+      const na = parseInt(a.slice(1)), nb = parseInt(b.slice(1));
+      return na - nb;
+    });
+    sel.innerHTML = `<option value="">— Tous les modules —</option>` +
+      sorted.map(m => `<option value="${m}">${m} (${modules[m]} question${modules[m] > 1 ? "s" : ""})</option>`).join("");
+    if (sorted.includes(currentVal)) sel.value = currentVal;
+  } catch(e) {
+    // silencieux : si le chargement échoue, le select reste avec "Tous les modules"
+  }
 }
 document.querySelectorAll(".tab").forEach(t => {
   t.addEventListener("click", () => goToTab(t.dataset.tab));
@@ -1247,6 +1282,10 @@ const getQuizFilter = buildFormationSelector(
   document.getElementById("q-formation"),
   { allowAll: true, label: "Filtrer par formation (optionnel)", storageKey: "fs_quiz" }
 );
+// Rafraîchir la liste des modules à chaque changement du filtre formation
+document.getElementById("q-formation").addEventListener("change", () => {
+  if (!document.getElementById("panel-quiz").classList.contains("hidden")) refreshModuleList();
+});
 
 async function submitFormateur() {
   const question = document.getElementById("f-question").value.trim();
@@ -1649,8 +1688,10 @@ async function startQuiz() {
   if (all.length === 0) return showAlert(infoDiv, "error", "Aucune question dans la banque.");
 
   const filter = getQuizFilter();
-  const filtered = all.filter(q => matchesFormationFilter(q, filter));
-  if (filtered.length === 0) return showAlert(infoDiv, "error", "Aucune question ne correspond au filtre formation.");
+  const moduleFilter = document.getElementById("q-module").value;
+  let filtered = all.filter(q => matchesFormationFilter(q, filter));
+  if (moduleFilter) filtered = filtered.filter(q => moduleOf(q.reference) === moduleFilter);
+  if (filtered.length === 0) return showAlert(infoDiv, "error", "Aucune question ne correspond aux filtres.");
 
   const deduped = dedupQuestions(filtered);
   const count = Math.min(parseInt(document.getElementById("q-count").value) || 10, deduped.length);
